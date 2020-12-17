@@ -24,36 +24,15 @@
       repo: '',
       search: {
         maxAge: 86400000,
-        paths: [
-          '/',
-          '/MARKDOWN/',
-          '/MARKDOWN/LIST',
-          '/MARKDOWN/BLOCK',
-          '/MARKDOWN/HTML',
-          '/MARKDOWN/HYPERLINK',
-          '/MARKDOWN/LABEL',
-          '/MARKDOWN/LINE',
-          '/MARKDOWN/MARK',
-          '/MARKDOWN/OTHER',
-          '/MARKDOWN/PIC',
-          '/MARKDOWN/PROG',
-          '/MARKDOWN/TABLE',
-          '/MARKDOWN/WORD',
-          '/IDE/',
-          '/RTE/',
-          '/MAE/',
-        ],
+        paths: 'auto',
         placeholder: 'Type to search',
         // Localization
         placeholder: {
           '/': '搜尋'
         },
-        noData: 'No Results!',
         // Localization
-        noData: {
-          '/': '找不到结果'
-        },
-        depth: 2,
+        noData: '找不到结果',
+        depth: 6,
         hideOtherSidebarContent: false,
       },
       plugins: [
