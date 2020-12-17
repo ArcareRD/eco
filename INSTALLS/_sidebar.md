@@ -1,5 +1,8 @@
-* [安裝說明](INSTALLS/)
+* [首頁](/)
+    * [安裝說明](INSTALLS/)
     * [架構介紹]
+        * [單一伺服器](INSTALLS/ARCH/SINGLE/)
+        * [多台伺服器](INSTALLS/ARCH/MULTIPLE/)
     * [安裝流程]
         * [平台基礎套件安裝](INSTALLS/PACKAGE/)
         * [專案安裝](INSTALLS/PROJECT/)
