@@ -23,7 +23,7 @@
 
 ### 準備安裝程式
 
-1.將安裝套件[autodeploy.zip]放置於指定安裝路徑（例如 [c:\\\\]）
+1.將安裝套件[autodeploy.zip]放置於指定安裝路徑（例如 [c:\\\\]） <br>
 ![alt 準備安裝](img/001.png)
 
 2.解壓縮檔案於該路徑 <br>
@@ -55,21 +55,21 @@
 
 #### 3.安裝ExcelToPDF套件 <br>
 
-3-1.進入安裝資料夾autodeploy\opt
+3-1.進入安裝資料夾autodeploy\opt <br>
 ![alt 安裝Chromium](img/006-0.png)
 
-3-2.右鍵執行以系統管理員身分執行「install.bat」
+3-2.右鍵執行以系統管理員身分執行「install.bat」 <br>
 ![alt 安裝Chromium](img/006-1.png)
 
-3-3.當指令視窗執行完成並自行關閉視窗即完成安裝
+3-3.當指令視窗執行完成並自行關閉視窗即完成安裝 <br>
 ![alt 安裝Chromium](img/006-2.png)
 
 #### 4.安裝Tomcat <br>
 
-4-1.進入autodeploy\TOMCAT資料夾，在「tomcat_install.bat」上按滑鼠右鍵，然後點選「以系統管理員身分執行」。
+4-1.進入autodeploy\TOMCAT資料夾，在「tomcat_install.bat」上按滑鼠右鍵，然後點選「以系統管理員身分執行」。 <br>
 ![alt 安裝Tomcat](img/007-1.png)
 
-4-2.當指令視窗執行完成並自行關閉視窗即完成安裝
+4-2.當指令視窗執行完成並自行關閉視窗即完成安裝 <br>
 ![alt 完成安裝Tomcat](img/007-2.png)
 
 4-3.接著請切換到TOMCAT的bin目錄，如果剛才在C槽安裝，安裝的目錄會在C:\WebServer\TOMCAT\bin，如果在D槽安裝，則會在D:\WebServer\TOMCAT\bin，依此類推。進入TOMCAT的bin目錄之後，執行「tomcat8w.exe」<br>
@@ -87,27 +87,27 @@
 4-7.開啟瀏覽器，登入TOMCAT網頁(http://localhost:8080/manager)，確認TOMCAT是否正常。<br>
 ![alt 完成安裝Tomcat](img/007-7.jpg)
 
-4-8.基於安全因素考量，建議Undeploy [docs] / [examples]
+4-8.基於安全因素考量，建議Undeploy [docs] / [examples] <br>
 ![alt 完成安裝Tomcat](img/007-8.jpg)
 
-4-8.Undeploy [docs] / [examples] 完成後
+4-8.Undeploy [docs] / [examples] 完成後 <br>
 ![alt 完成安裝Tomcat](img/007-9.png)
 
 #### 5.安裝RTE <br>
 
-5-1.開啟Tomcat管理視窗
+5-1.開啟Tomcat管理視窗 <br>
 ![alt 完成安裝Tomcat](img/012.png)
 
-5-2.按下[選擇檔案]
+5-2.按下[選擇檔案] <br>
 ![alt 完成安裝Tomcat](img/013.png)
 
-5-3.選擇安裝檔[ArcareEng.war]
+5-3.選擇安裝檔[ArcareEng.war] <br>
 ![alt 完成安裝Tomcat](img/014.png)
 
-5-3.按下[Deploy]
+5-4.按下[Deploy] <br>
 ![alt 完成安裝Tomcat](img/015.png)
 
-5-3.完成安裝
+5-5.完成安裝 <br>
 ![alt 完成安裝Tomcat](img/016.png)
 
 ### RTE環境初始化作業準備
@@ -130,15 +130,15 @@
 
 ##### 作業說明：
 
-初次安裝RTE後，須進行資料庫設定以指定資料庫位置
+初次安裝RTE後，須進行資料庫設定以指定資料庫位置 <br>
 
 ##### 操作介面介紹：
 
-開啟Site資料庫設定 { http://localhost:8080/ArcareEng/SiteDatabaseSet.jsp }，進入頁面後輸入各項設定，完成後點擊右上儲存
+開啟Site資料庫設定 { http://localhost:8080/ArcareEng/SiteDatabaseSet.jsp }，進入頁面後輸入各項設定，完成後點擊右上儲存 <br>
 ![alt 完成安裝Tomcat](img/031.png)
-###### Site資料庫區塊：<br>
+###### Site資料庫區塊：
 
-輸入Server連線的SQL資料庫相關資訊，裝SQL_EXPRESS版本需注意，SQLServer名稱後面需加 [\SQLEXPRESS]且要先開啟TCP/IP相關設定才能進行此步驟
+輸入Server連線的SQL資料庫相關資訊，裝SQL_EXPRESS版本需注意，SQLServer名稱後面需加 [\SQLEXPRESS]且要先開啟TCP/IP相關設定才能進行此步驟 <br>
 
 * SQL 類型：預設[MSSQL]，指定單機型SQL伺服器
 * SQL Server名稱：輸入SQL Server電腦名稱
@@ -152,30 +152,30 @@
 * 稽核Log資料庫：挑選儲存使用者操作紀錄的資料庫，預設建議 [LOGDB]
     * 註.稽核LOG資料庫有設定時，DB容量會快速累積，請隨時注意 
 
-###### 暫存資料庫區塊：<br>
+###### 暫存資料庫區塊：
 
-輸入SQL連線服務程式的相關設定
+輸入SQL連線服務程式的相關設定 <br>
 
-* 暫存資料庫設定：不勾選自訂則引擎會使用上方SQL Server設定連線，如需自訂則打勾選項並依序填寫相關連線資料
-* 暫存資料庫：挑選資料庫，建議新增資料庫單獨給此功能使用，名稱建議：[TransactionCache]，此資料庫專為過帳暫存使用，日常備份不須備份此資料庫。
+* 暫存資料庫設定：不勾選自訂則引擎會使用上方SQL Server設定連線，如需自訂則打勾選項並依序填寫相關連線資料 <br>
+* 暫存資料庫：挑選資料庫，建議新增資料庫單獨給此功能使用，名稱建議：[TransactionCache]，此資料庫專為過帳暫存使用，日常備份不須備份此資料庫。 <br>
 
-###### 引擎設定：<br>
+###### 引擎設定：
 
-* 遠端連線IpPort：Server遠端連線時的IP與PORT
-* 共用資料夾網路路徑：共用資料夾的網路磁碟路徑(前面2.2節設定的)(如果沒有多台AP server架構，可設定和共用資料夾實體路徑相同即可)
-* 共用資料夾實體路徑：共用資料夾的實體路徑，例如C:\ArcareRobot\ArcareEngShare。
+* 遠端連線IpPort：Server遠端連線時的IP與PORT <br>
+* 共用資料夾網路路徑：共用資料夾的網路磁碟路徑(前面2.2節設定的)(如果沒有多台AP server架構，可設定和共用資料夾實體路徑相同即可) <br>
+* 共用資料夾實體路徑：共用資料夾的實體路徑，例如C:\ArcareRobot\ArcareEngShare。 <br>
 
-###### 設定Timeout資訊：<br>
+###### 設定Timeout資訊：
 
-輸入引擎處理各項功能時，逾期的秒數設定
+輸入引擎處理各項功能時，逾期的秒數設定 <br>
 
 * 連線資料庫(秒)：RTE與資料庫連線的逾期時間
 * 執行命令(秒)：RTE執行資料庫作業的逾期時間
-* 交易擁有資料的衝突鎖定(毫秒)：
-* 交易時間(秒)：
-* 匯入物件(秒)：
+* 交易擁有資料的衝突鎖定(毫秒)：整個資料交易鎖定最長時間
+* 交易時間(秒)：交易內單一作業逾期時間
+* 匯入物件(秒)：匯入作業逾期時間
 
-###### 設定取最大單號資訊：<br>
+###### 設定取最大單號資訊：
 
 * 失敗重取次數：取單據號碼失敗時，重新取單據號碼的次數
 * 失敗重取的間隔時間(毫秒)：每次重新取單據號碼的間隔時間
@@ -184,13 +184,13 @@
 
 #### 站台激活
 
-1. 進入管理介面 - 輸入網址【 http://IP:PORT/ArcareEng/SiteLogin.jsp 】
+1. 進入管理介面 - 輸入網址【 http://IP:PORT/ArcareEng/SiteLogin.jsp 】 <br>
 ![alt 完成安裝Tomcat](img/022.png)
 
-2. 預設帳戶密碼 [Admini_ArcareSite / arcare]
+2. 預設帳戶密碼 [Admini_ArcareSite / arcare] <br>
 ![alt 完成安裝Tomcat](img/023.png)
 
-3. 登入後進入設定國別/語系
+3. 登入後進入設定國別/語系 <br>
 ![alt 完成安裝Tomcat](img/024.png)
 
 4. 設定國別/語系 <br>
@@ -217,7 +217,7 @@
 
 7. 建立中間台資訊 <br>
 
-   中間台資訊主要是當多台負載平衡運作時指定排程有哪一台負責，避免重複執行
+   中間台資訊主要是當多台負載平衡運作時指定排程有哪一台負責，避免重複執行 <br>
 
     1. 新增鍵：新增中間台設定值
     2. 伺服器：請使用電名稱
@@ -228,11 +228,11 @@
 
 ![alt 完成安裝Tomcat](img/028.png)
 
-8. 選擇處理排程機台後確認，請按 [確定]
+8. 選擇處理排程機台後確認，請按 [確定] <br>
 
 ![alt 完成安裝Tomcat](img/029.png)
 
-9. 指定站台名稱後，請按 [啟動完成] 完成初始化作業
+9. 指定站台名稱後，請按 [啟動完成] 完成初始化作業 <br>
 
     a. 站台名稱建議以中英文名，請避免使用特殊字元<br>
     b. 完成後按下[啟動完成]按鍵，完成啟動作業
