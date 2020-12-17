@@ -3,4 +3,4 @@
     * [IDE](IDE/README.md)
     * [RTE](RTE/README.md)
     * [MAE](MAE/README.md)
-    * [安裝資訊](INSTALL/README.md)
+    * [安裝資訊](INSTALLS/README.md)
