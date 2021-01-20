@@ -23,3 +23,4 @@
 * [專案安裝](INSTALLS/PROJECT/README)
 
 ## 問題排除
+* [郵件帳號設定](INSTALLS/HOWTO/EMAIL/README#郵件帳號設定)
