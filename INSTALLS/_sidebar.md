@@ -7,3 +7,4 @@
         * [平台基礎套件安裝](INSTALLS/PACKAGE/)
         * [專案安裝](INSTALLS/PROJECT/)
     * [問題排除]
+        * [郵件帳號設定](INSTALLS/HOWTO/EMAIL/README#郵件帳號設定)
