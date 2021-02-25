@@ -1,2 +1,2 @@
-* [上一頁](/?id=main)
+* [首頁](/)
 * [版本資訊](RELEASE/README.md)
