@@ -1,10 +1,12 @@
 * [首頁](/)
-    * [安裝說明](INSTALLS/)
-    * [架構介紹]
-        * [單一伺服器](INSTALLS/ARCH/SINGLE/)
-        * [多台伺服器](INSTALLS/ARCH/MULTIPLE/)
-    * [安裝流程]
-        * [平台基礎套件安裝](INSTALLS/PACKAGE/)
-        * [專案安裝](INSTALLS/PROJECT/)
-    * [問題排除]
-        * [如何設定郵件發送帳號](INSTALLS/HOWTO/EMAIL/README#如何設定郵件發送帳號)
+    * [安裝說明](INSTALLS/README#安裝說明)
+    * [RTE](INSTALLS/README#RTE)
+        * [架構介紹]
+            * [單一伺服器](INSTALLS/ARCH/SINGLE/)
+            * [多台伺服器](INSTALLS/ARCH/MULTIPLE/)
+        * [安裝流程]
+            * [平台基礎套件安裝](INSTALLS/RTE/PACKAGE/)
+            * [專案安裝](INSTALLS/RTE/PROJECT/)
+        * [操作引導]
+            * [如何設定郵件發送帳號](INSTALLS/HOWTO/EMAIL/README#如何設定郵件發送帳號)
+    * [MAE](INSTALLS/README#MAE)
