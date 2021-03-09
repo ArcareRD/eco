@@ -9,5 +9,5 @@
             * [專案安裝](INSTALLS/RTE/PROJECT/)
         * [操作引導]
             * [如何設定郵件發送帳號](INSTALLS/HOWTO/EMAIL/README#如何設定郵件發送帳號)
-            * [如何設定郵件發送帳號](INSTALLS/HOWTO/202103090001/README#如何設定伺服器網址)
+            * [如何設定伺服器服務網址](INSTALLS/HOWTO/202103090001/README#如何設定伺服器網址)
     * [MAE](INSTALLS/README#MAE)
