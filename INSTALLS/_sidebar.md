@@ -3,7 +3,7 @@
     * [RTE](INSTALLS/README#RTE)
         * [架構介紹]
             * [單一伺服器](INSTALLS/ARCH/SINGLE/README.md "單一伺服器架構")
-            * [多台伺服器](INSTALLS/ARCH/MULTIPLE/README)
+            * [多台伺服器](INSTALLS/ARCH/MULTIPLE/README.md "多台伺服器架構")
         * [安裝流程]
             * [平台基礎套件安裝](INSTALLS/RTE/PACKAGE/README)
             * [專案安裝](INSTALLS/RTE/PROJECT/README)
