@@ -1,4 +1,4 @@
-![logo](RobotHeaderColor.png ':size=100')
+![logo](RobotHeaderColor.png ':size=100x100')
 
 # 如如研創軟體機器人
 
