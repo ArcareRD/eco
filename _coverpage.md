@@ -1,8 +1,8 @@
 <script type="application/ld+json">
     {
-      "@context": "https://docs.arcare-robot.com",
+      "@context": "http://schema.org",
       "@type": "Organization",
-      "url": "http://arcare-robot.com",
+      "url": "http://docs.arcare-robot.com",
       "logo": "https://docs.arcare-robot.com/RobotHeaderColor.png"
     }
 </script>
