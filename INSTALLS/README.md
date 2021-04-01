@@ -1,3 +1,9 @@
+---
+layout: page
+title:  "安裝說明"
+date:   2021-03-31 10:59:04 +0800
+---
+
 # 安裝說明
 
 ## 版本
@@ -17,16 +23,9 @@
 |記憶體|8G以上、建議16G||
 |硬碟|SSD / HD 7200轉 剩餘容量50G以上||
 
-### 架構介紹
-* [單一伺服器](INSTALLS/ARCH/SINGLE/)
-* [多台伺服器](INSTALLS/ARCH/MULTIPLE/)
-
 ### 安裝流程
-* [平台基礎套件安裝](INSTALLS/PACKAGE/README)
-* [專案安裝](INSTALLS/PROJECT/README)
-
-### 操作引導
-* [如何設定郵件發送帳號](INSTALLS/HOWTO/EMAIL/README#郵件帳號設定)
+* [平台基礎套件安裝](RTE/PACKAGE/README.html)
+* [專案安裝](RTE/PROJECT/README.html)
 
 ## MAE - 行動運行台 (Mobile Application Environment)
 
