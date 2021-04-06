@@ -2,6 +2,7 @@
 layout: page
 title:  "問答集"
 date:   2021-04-06 17:39:04 +0800
+lang: zh_TW
 ---
 
 * [如何設定郵件發送帳號](EMAIL/README.html)

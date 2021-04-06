@@ -2,6 +2,7 @@
 layout: page
 title:  "安裝說明"
 date:   2021-04-06 17:39:04 +0800
+lang: zh_TW
 ---
 
 ## 版本
