@@ -37,6 +37,8 @@ date:   2021-03-31 10:59:04 +0800
 |Android|Android 6 以上||
 
 ### 安裝路徑
+
+
 | IOS | Android |
 |:-:|:-:|
 | [![alt APP Store](img/mae-logo-ios-30.png)](https://apps.apple.com/us/app/id1489699152)  | [![alt APP Store](img/mae-logo-android-30.png)](https://play.google.com/store/apps/details?id=com.arcare.ruru.smarr)  |
