@@ -7,8 +7,9 @@
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
-    {%- include google-tag-manager.html -%}
   {%- endif -%}
+  
+  {%- include google-tag-manager.html -%}
 
   {%- include custom-head.html -%}
   
