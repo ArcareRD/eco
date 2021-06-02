@@ -11,3 +11,5 @@ lang: zh_TW
 |:-:|:-:|:-|
 |2020/10/30|8.10.0|[Run Time Environment(RTE)](RTE/README.html)|
 |2020/10/30|8.9.2|Mobile Application Environment(MAE)|
+
+[ruRU平台技術介紹2021024-V0.4.docx](/doc/ruRU平台技術介紹2021024-V0.4.docx)
