@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "ruRU® IDE 操作說明書 "
-date:   2021-05-03 17:30:00 +0800
+date:   2021-07-05 17:30:00 +0800
 lang: zh_TW
 ---
 ## Integrated Design Environment  Reference Manual
@@ -12,6 +12,7 @@ lang: zh_TW
 | 版本<br>Version<br> |出版日期<br>Issue Date <br>|修訂章節<br>Section Changed<br>|出版修訂原因<br>Reason for Issue<br>|
 | :-: | :-: | :-: | :-: |
 |7.00|2021/03/31|11.1, 11.22, 11.B|依808.10 改版功能增加.<br>推播通知功能及相關作業調整<br>|
+|7.01|2021/07/01|10.12 |依8.10.0.50 改版功能擴充.<br>嵌入元件-地圖 觸發按鍵功能<br>|
 
 
 ### <a name="MainMenu" ></a> **章節目錄**

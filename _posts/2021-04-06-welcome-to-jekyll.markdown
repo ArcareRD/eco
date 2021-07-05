@@ -17,11 +17,12 @@ categories: jekyll update
 
 	
 ## ruRU軟體機器人平台架構 {#Introduction-1}
-![](Introduction-1.png)
+![](/_posts/Introduction-1.png)
 
 ## ruRU軟體機器人平台各功能模組關聯圖 {#Introduction-2}
-![](Introduction-2.png)
+![](/_posts/Introduction-2.png)
 
+----
 ## ruRU軟體機器人平台各功能模組之功能說明
 ### 1. IDE (Integrated Design Environment 設計台)
 - 提供Web base的GUI圖形化操作介面，讓系統分析師或領域專家，針對Web/APP資料庫應用系統之需求，不用撰寫程式，直接透過拖拉及設定的方式，進行版面、表單欄位/按鍵規格、及資料庫結構之設計
