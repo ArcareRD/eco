@@ -58,16 +58,21 @@ categories: jekyll update
 - 身分驗證：針對登入運行台的帳號/密碼進行驗證，並支援與AD Server整合執行單一帳號登入Single Sign On (SSO)
 - 維運管理：線上使用者的服務與管理、推播通知服務與管理、系統排程服務管理、稽核管理、系統安裝與更新等
 
-## ruRU軟體機器人平台之技術規格{#Introduction-3}
+---- 
+
+## ruRU軟體機器人平台之技術規格 {#Introduction-3}
 ### 1. IDE設計台 
 - 技術架構：Microsoft .Net Framework
 - 資料庫：MS SQL
+
 ### 2. FMS管理中心
 - 技術架構：Java
 - 資料庫：MS SQL
+
 ### 3. AMS軟體工廠
 - 技術架構：Java
 - 資料庫：MS SQL
+
 ### 4. RTE運行台
 - 技術架構：Java
 - 資料庫：MS SQL

@@ -15,7 +15,7 @@ lang: zh_Tw
 ## RTE(Run Time Environment 運行台)
 - [RTE 結構展開圖](https://gitmind.com/app/doc/6522738050){:target='_blank'}
 
-----
+
 ## 平台各功能模組協作圖
 ![](Module_cooperation.png)
 
