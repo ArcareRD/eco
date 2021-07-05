@@ -17,10 +17,10 @@ categories: jekyll update
 
 	
 ## ruRU軟體機器人平台架構 {#Introduction-1}
-![](/_posts/Introduction-1.png)
+![](/img/Introduction-1.png)
 
 ## ruRU軟體機器人平台各功能模組關聯圖 {#Introduction-2}
-![](/_posts/Introduction-2.png)
+![](/img/Introduction-2.png)
 
 ----
 ## ruRU軟體機器人平台各功能模組之功能說明
