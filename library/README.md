@@ -7,7 +7,7 @@ lang: zh_Tw
 
 ## IDE (Integrated Design Environment 設計台)
 - [IDE 結構展開圖](https://gitmind.com/app/doc/bde2737708){:target='_blank'}
-- [版本8.10.0 MD](./doc/8.10.0/zh-Hant/index.html)
+- [版本8.10.0 MD](/doc/8.10.0/zh-Hant/index.html)
 - [版本8.10.0 PDF](/library/8.10.0/zh-Hant/index.html){:target='_blank'}
 - [版本8.9.2](/library/8.9.2/index.html){:target='_blank'}
 
