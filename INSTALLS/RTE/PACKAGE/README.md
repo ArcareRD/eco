@@ -61,7 +61,7 @@ lang: zh_TW
 2-3.當指令視窗執行完成並自行關閉視窗即完成安裝 <br>
 ![alt 安裝OpenJDK](img/005-2.png)
 
-#### 3.安裝ExcelToPDF套件
+#### 3.安裝ExcelToPDF套件[僅8.10.0以前版本需要]
 
 3-1.進入安裝資料夾autodeploy\opt <br>
 ![alt 安裝Chromium](img/006-0.png)
