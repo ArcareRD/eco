@@ -5,15 +5,18 @@ date:   2021-07-01 10:59:04 +0800
 categories: jekyll update
 ---
 
-## ”ruRU” 智慧軟體機器人
+# ruRU 智慧軟體機器人
 它是一個創新的企業軟體機器人 PaaS 服務，提供企業軟體的開發設計以及維護的平台服務
 
 軟體正在驅動整個世界，企業的運行需要大量的系統軟體， "ruRU"智慧軟體機器人的服務能提供企業快速、品質穩定、可長期維運的系統，並且協助企業有限的 IT 資源做最優化的配置，"ruRU"智慧軟體機器人將是所有企業邁向成功的標準配備。
+
 
 # ruRU軟體機器人平台技術簡介
 - [ruRU軟體機器人平台架構](#Introduction-1)
 - [ruRU軟體機器人平台各功能模組說明](#Introduction-2)
 - [ruRU軟體機器人平台之技術規格](#Introduction-3)
+- [ruRU軟體機器人平台之硬體規格](#Introduction-4)
+
 
 	
 ## ruRU軟體機器人平台架構 {#Introduction-1}
@@ -49,15 +52,20 @@ categories: jekyll update
 - 提供運行台[執行引擎]讓軟體機器人所產出的應用系統在其上運行
 - 提供各應用系統運行時的一些[共同服務]，包含程式設定、API設定、排程服務、郵件發送、推播通知等
 - 提供應用系統運行時的應用系統管理功能，包含
-- 系統資訊：組織資訊、應用系統執行時所需相關資訊等
-- 系統管理：API管理、圖示管理、檔案管理、推播通知管理等
-- 授權管理：標準帳號授權模式、整合式單一簽入模式、及支援應用系統物件授權管理等
-- 異常管理：當應用系統運行異常時會提供錯誤訊息及錯誤代碼、即快速封裝與回報機制、以供系統管理者做為障礙排除之參考
+	- 系統資訊：組織資訊、應用系統執行時所需相關資訊等
+	- 系統管理：API管理、圖示管理、檔案管理、推播通知管理等
+	- 授權管理：標準帳號授權模式、整合式單一簽入模式、及支援應用系統物件授權管理等
+	- 異常管理：當應用系統運行異常時會提供錯誤訊息及錯誤代碼、即快速封裝與回報機制、以供系統管理者做為障礙排除之參考
 - 提供多個企業的多個應用系統在同一運行台運行之管理功能，包含
-- 站台管理：提供站台管理員(Site Manager)新增/維護在此運行台上的各個企業管理員帳號
-- 企業管理：提供各企業管理員新增/維護企業內的各帳號
-- 身分驗證：針對登入運行台的帳號/密碼進行驗證，並支援與AD Server整合執行單一帳號登入Single Sign On (SSO)
-- 維運管理：線上使用者的服務與管理、推播通知服務與管理、系統排程服務管理、稽核管理、系統安裝與更新等
+	- 站台管理：提供站台管理員(Site Manager)新增/維護在此運行台上的各個企業管理員帳號
+	- 企業管理：提供各企業管理員新增/維護企業內的各帳號
+	- 身分驗證：針對登入運行台的帳號/密碼進行驗證，並支援與AD Server整合執行單一帳號登入Single Sign On (SSO)
+	- 維運管理：線上使用者的服務與管理、推播通知服務與管理、系統排程服務管理、稽核管理、系統安裝與更新等
+
+### 5. MAE (Mobile Application Environment 行動裝置運行台)
+- 提供運行台[執行引擎]讓軟體機器人所產出的應用系統在其上運行
+- 提供各應用系統運行時的一些[共同服務]，包含伺服器指定、程式設定、推播通知等
+- 與 RTE的站台管理採同架構
 
 ---- 
 
@@ -78,4 +86,46 @@ categories: jekyll update
 - 技術架構：Java
 - 資料庫：MS SQL
  
+### 5. MAE APP
+- 技術架構：Flutter
+
+---- 
+
+## ruRU軟體機器人平台之硬體規格 {#Introduction-4}
+ <a href="/doc/RTE運行環境系統需求表 2.00.pdf" download>檔案下載</a>
+ 
+### A. 伺服器軟硬體需求
+1. CPU(中央處理器)：Intel 4核心處理器，2.4GHZ或以上。若使用AWS或其它雲端主機，至少2個CPU。
+2. RAM(隨機存取記憶體)：8GB或更多
+3. HDD(硬式磁碟機)：容量1TB或以上。若使用AWS或其它雲端主機，作業系統及應用程式(AP)需100GB，資料庫(DB，或RDS)部份則視需求而定。如果雲端資料庫有備份需求，則需求大小為DB硬碟空間*備份保留天數，例如DB為10GB，需保留7天備份，則備份空間需求為70GB。
+4. OS(作業系統)：以下擇一
+- Microsoft Windows Server 2008
+- Microsoft Windows Server 2012
+- Microsoft Windows Server 2016
+5. DB(資料庫)：以下擇一
+- Microsoft SQL Server 2008
+- Microsoft SQL Server 2008 express
+- Microsoft SQL Server 2012
+- Microsoft SQL Server 2012 express
+- Microsoft SQL Server 2014
+- Microsoft SQL Server 2014 express
+- Microsoft SQL Server 2016
+- Microsoft SQL Server 2016 express
+6. Excel
+- Microsoft Excel 2007~2016
+
+### B. 終端機軟硬體需求
+1. CPU(中央處理器)：依各作業系統建議之CPU
+2. RAM(隨機存取記憶體)：依各作業系統建議之RAM容量
+3. OS(作業系統)：以下擇一
+- Microsoft Windows 7
+- Microsoft Windows 8
+- Microsoft Windows 8.1
+- Microsoft Windows 10
+- Android 
+- iOS 
+4. Web browser(瀏覽器)：Chrome、Firefox、Internet Explore(僅支援11版)、Safari
+5. Excel
+	Microsoft Excel 2007~2016
+
 
