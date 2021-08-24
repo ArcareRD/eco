@@ -61,7 +61,7 @@ lang: zh_TW
 2-3.當指令視窗執行完成並自行關閉視窗即完成安裝 <br>
 ![alt 安裝OpenJDK](img/005-2.png)
 
-#### 3.安裝ExcelToPDF套件
+#### 3.安裝ExcelToPDF套件[僅8.10.0以前版本需要]
 
 3-1.進入安裝資料夾autodeploy\opt <br>
 ![alt 安裝Chromium](img/006-0.png)
@@ -83,7 +83,7 @@ lang: zh_TW
 4-3.接著請切換到TOMCAT的bin目錄，如果剛才在C槽安裝，安裝的目錄會在C:\WebServer\TOMCAT\bin，如果在D槽安裝，則會在D:\WebServer\TOMCAT\bin，依此類推。進入TOMCAT的bin目錄之後，執行「tomcat8w.exe」<br>
 ![alt 完成安裝Tomcat](img/007-3.png)
 
-4-4.切換到「Java」頁籤，將記憶體容量設定為2048MB或是更高，然後按下「套用」 <br>
+4-4.切換到「Java」頁籤，將記憶體容量設定為4096MB或是更高，然後按下「套用」 <br>
 ![alt 完成安裝Tomcat](img/007-4.jpg)
 
 4-5.切換到General頁籤，按下「Stop」<br>
@@ -171,7 +171,7 @@ lang: zh_TW
 
 * 遠端連線IpPort：Server遠端連線時的IP與PORT <br>
 * 共用資料夾網路路徑：共用資料夾的網路磁碟路徑(前面2.2節設定的)(如果沒有多台AP server架構，可設定和共用資料夾實體路徑相同即可) <br>
-* 共用資料夾實體路徑：共用資料夾的實體路徑，例如C:\ArcareRobot\ArcareEngShare。 <br>
+* 共用資料夾實體路徑：共用資料夾的實體路徑，例如C:\ArcareRobot\ArcareEngShare。注意該路徑會定期清除，有需要保留的檔案請勿存放於此<br>
 
 ###### 設定Timeout資訊
 
