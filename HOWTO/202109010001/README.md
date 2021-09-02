@@ -34,7 +34,7 @@ lang: zh_TW
 
 2. 如何進行修改設計 ?
 
-    首先解壓縮檔案，其中logo.html負責HTML的Layout、物件佈放定義等、logo.css負責樣式定義、logo-rte.png是預設Logo檔案
+    首先解壓縮檔案，其中logo.html負責HTML的Layout、文字定義等、logo.css負責樣式定義、logo-rte.png是預設Logo檔案
 
     * 其他應注意事項：
 
@@ -55,7 +55,7 @@ lang: zh_TW
 
     * 勿隨意更改檔名
 
-    * 如需置換圖片、Icon注意大小需吻合
+    * 其他圖檔請勿更動
 
 4. 完成後上傳壓縮檔<br>
 
@@ -66,3 +66,5 @@ lang: zh_TW
     * 請依據語系上傳
 
         ![alt 上傳相應語系的版面設定壓縮檔](img/003.png)
+
+5. 完成後請重新顯示或執行登入登出即可檢視新設計。
