@@ -7,7 +7,7 @@ xmlns:xhtml="https://www.w3.org/1999/xhtml">
   </url>
   <url>
     <loc>https://docs.arcare-robot.com/RELEASE/README.html</loc>
-    <lastmod>2021-04-06</lastmod>
+    <lastmod>2021-09-02</lastmod>
   </url>
   <url>
     <loc>https://docs.arcare-robot.com/RELEASE/RTE/README.html</loc>
@@ -30,12 +30,96 @@ xmlns:xhtml="https://www.w3.org/1999/xhtml">
     <lastmod>2021-08-18</lastmod>
   </url>
   <url>
+    <loc>https://docs.arcare-robot.com/library/README.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
     <loc>https://docs.arcare-robot.com/library/8.9.2/index.html</loc>
     <lastmod>2021-04-07</lastmod>
   </url>
   <url>
     <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/index.html</loc>
     <lastmod>2021-04-21</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/01.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/02.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/03.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/04.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/05.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/06.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/07.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/08.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/09.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/10.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/11.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/12.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/13.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/14.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/15.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/16.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/17.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/18.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/19.html</loc>
+    <lastmod>2021-09-01</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/library/8.10.0/zh-Hant/20.html</loc>
+    <lastmod>2021-09-01</lastmod>
   </url>
   <url>
     <loc>https://docs.arcare-robot.com/INSTALLS/RTE/UPDATE/8.9.2.html</loc>

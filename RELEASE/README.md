@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "版本紀錄"
-date:   2021-04-06 17:39:04 +0800
+date:   2021-09-01 10:00:00 +0800
 lang: zh_TW
 ---
 
@@ -11,8 +11,4 @@ lang: zh_TW
 |:-:|:-:|:-|
 |2020/10/30|8.10.0|[Run Time Environment(RTE)](RTE/README.html)|
 |2020/10/30|8.9.2|Mobile Application Environment(MAE)|
-<<<<<<< Updated upstream
-
-=======
 |2020/10/30|8.9.1|IDE架構樹更新(IDE/README.html)|
->>>>>>> Stashed changes
