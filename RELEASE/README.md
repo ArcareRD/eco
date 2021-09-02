@@ -11,4 +11,4 @@ lang: zh_TW
 |:-:|:-:|:-|
 |2020/10/30|8.10.0|[Run Time Environment(RTE)](RTE/README.html)|
 |2020/10/30|8.9.2|Mobile Application Environment(MAE)|
-|2020/10/30|8.9.1|IDE架構樹更新(IDE/README.html)|
+|2020/10/30|8.9.1|[IDE架構樹更新](IDE/README.html)|
