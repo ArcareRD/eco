@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 xmlns:xhtml="https://www.w3.org/1999/xhtml">
   <url>
     <loc>https://docs.arcare-robot.com/</loc>
@@ -15,22 +15,6 @@ xmlns:xhtml="https://www.w3.org/1999/xhtml">
   </url>
   <url>
     <loc>https://docs.arcare-robot.com/INSTALLS/README.html</loc>
-    <lastmod>2021-04-06</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.arcare-robot.com/HOWTO/README.html</loc>
-    <lastmod>2021-04-06</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.arcare-robot.com/HOWTO/EMAIL/README.html</loc>
-    <lastmod>2021-04-06</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.arcare-robot.com/HOWTO/202103090001/README.html</loc>
-    <lastmod>2021-04-06</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.arcare-robot.com/HOWTO/202103240001/README.html</loc>
     <lastmod>2021-04-06</lastmod>
   </url>
   <url>
@@ -144,5 +128,25 @@ xmlns:xhtml="https://www.w3.org/1999/xhtml">
   <url>
     <loc>https://docs.arcare-robot.com/doc/8.10.0/zh-Hant/20.html</loc>
     <lastmod>2021-05-03</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/HOWTO/README.html</loc>
+    <lastmod>2021-04-06</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/HOWTO/EMAIL/README.html</loc>
+    <lastmod>2021-04-06</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/HOWTO/202103090001/README.html</loc>
+    <lastmod>2021-04-06</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/HOWTO/202103240001/README.html</loc>
+    <lastmod>2021-04-06</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/HOWTO/202109010001/README.html</loc>
+    <lastmod>2021-09-02</lastmod>
   </url>
 </urlset>

@@ -1,6 +1,6 @@
 ---
 layout: page
-title:  "如何自訂系統版面"
+title:  "如何自行定義登入首頁樣式"
 date:   2021-09-01 17:00:00 +0800
 lang: zh_TW
 ---
@@ -13,7 +13,7 @@ lang: zh_TW
 
 ## 說明：
 
-    如何自訂登入首頁樣式？
+    如何自行定義登入(站台 / 系統)首頁樣式？
 
 ## 環境需求：
 
@@ -22,25 +22,46 @@ lang: zh_TW
 |帳號|請準備站台安裝所屬伺服器的系統管理員帳號||
 |RTE|8.10.0 及以後版本||
 
-## 解決方式：
-
-### 流程
+## 設計流程說明：
 
 1. 下載版面基本檔案壓縮包
-   - 每個語系會有獨立壓縮包，這是因為不同語系文字長度有差異，因此有不同版面設定，請下載所需語系
-    ![alt 下載版面基本檔案包](img/下載版面基本檔案包-1.png)
-2. 修改設計
-    - HTML不支援Link圖片、檔案，無論相對路徑或絕對路徑。
-    - login.css是提供附加所需的CSS設定，RTE會自行讀取與附加，建議勿刪除原有class或ID。
-    - 背景顏色及樣式設定請修改
 
-        body{
-            background:linear-gradient(to bottom,#396982,#0d202c);
-            FONT-FAMILY:Microsoft JhengHei;
-        }
+   - 每個語系會有獨立壓縮包，這是因為不同語系文字長度有差異，因此有不同版面設定需要，請依據需求下載所需語系的版面壓縮檔進行修改更新。
+   - 如果要更改系統登入首頁樣式請於[系統自訂版面]中下載，如果要更改站台登入首頁樣式請於[Site自訂版面]中下載。
 
-    - class name為arcare的DIV，是屬於LOGO容器除非不使用LOGO，否則請勿移除，相應的CSS設定也請勿異動，建議LOGO採用136x35，PNG格式，直接覆蓋(logo-rte.png)
+      ![alt 下載版面基本檔案包](img/001.png)
+
+2. 如何進行修改設計 ?
+
+    首先解壓縮檔案，其中logo.html負責HTML的Layout、物件佈放定義等、logo.css負責樣式定義、logo-rte.png是預設Logo檔案
+
+    * 其他應注意事項：
+
+      1. logo.html不支援Link圖片。
+
+      2. login.css是提供附加所需的CSS設定，RTE會自行讀取與附加，無須於logo.html中設定Link，另外、建議勿刪除原有class或ID。
+
+      3. 背景顏色及樣式設定請於logo.css中body{}中修改樣式設定
+
+          body{
+              background:linear-gradient(to bottom,#396982,#0d202c);
+              FONT-FAMILY:Microsoft JhengHei;
+          }
+
+      4. class為arcare的DIV，是LOGO容器，除非不使用LOGO，否則建議請勿移除，相應的CSS定義也請勿異動，建議LOGO採用136x35，PNG格式，直接覆蓋(logo-rte.png)
 
 3. 檔案處理應注意事項
-    1. 勿隨意更改檔名
-    2. 如需置換圖片、Icon注意大小需吻合
+
+    * 勿隨意更改檔名
+
+    * 如需置換圖片、Icon注意大小需吻合
+
+4. 完成後上船壓縮檔<br>
+
+    * 壓縮檔內檔案結構如下
+
+        ![alt 壓縮檔內檔案結構](img/002.png)
+
+    * 請依據語系上傳
+
+        ![alt 上傳相應語系的版面設定壓縮檔](img/003.png)
