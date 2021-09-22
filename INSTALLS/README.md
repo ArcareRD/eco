@@ -25,6 +25,8 @@ lang: zh_TW
 |資料庫|Microsoft SQL Server 2012 以上版本||
 |Excel|Microsoft Excel 2007~2016|安裝IRIS系統才需要|
 
+[下載[運行環境系統需求表]V3.01文件](運行環境系統需求表V3.01.pdf){:target='_blank'}
+
 ### 安裝流程
 * #### [平台基礎套件安裝](RTE/PACKAGE/README.html)
 * #### [專案安裝](RTE/PROJECT/README.html)
