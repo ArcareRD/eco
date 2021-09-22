@@ -92,7 +92,7 @@ categories: jekyll update
 ---- 
 
 ## ruRU軟體機器人平台之硬體規格 {#Introduction-4}
-* #### [檔案下載](/INSTALLS/運行環境系統需求表V3.01.pdf)
+* #### [檔案下載](/INSTALLS/運行環境系統需求表V3.01.pdf){:target='_blank'}
  
 ### A. 伺服器軟硬體需求
 1. CPU(中央處理器)：Intel 4核心處理器，2.4GHZ或以上。若使用AWS或其它雲端主機，至少2個CPU。
