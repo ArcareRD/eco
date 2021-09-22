@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "安裝說明"
-date:   2021-04-06 17:39:04 +0800
+date:   2021-09-22 09:22:00 +0800
 lang: zh_TW
 ---
 
@@ -9,6 +9,7 @@ lang: zh_TW
 
 |日期|版號|備註|
 |:--:|:--:|:--:|
+|2021-09-22|DIS-2021090001|改版|
 |2021-02-25|DIS-2021020001|改版|
 |2020-12-14|DIS-2020120001|初版|
 
@@ -18,9 +19,13 @@ lang: zh_TW
 
 |品名|內容|備註|
 |:-:|:-:|:-:|
-|CPU|Intel Core i5 / Xeon 4 core以上||
+|CPU|Intel Core i5 / Xeon 4 core以上，如採用運端平台(AWS / Azure等)虛擬機至少 2 core以上||
 |記憶體|8G以上、建議16G||
 |硬碟|SSD / HD 7200轉 剩餘容量50G以上||
+|伺服器作業系統|Microsoft Windows Server 2012 以上版本||
+|用戶端作業系統|Microsoft Windows 8 以上版本||
+|資料庫|Microsoft SQL Server 2012 以上版本||
+|Excel|Microsoft Excel 2007~2016|安裝IRIS系統才需要|
 
 ### 安裝流程
 * [平台基礎套件安裝](RTE/PACKAGE/README.html)
@@ -36,7 +41,6 @@ lang: zh_TW
 |Android|Android 6 以上||
 
 ### 安裝路徑
-
 
 | IOS | Android |
 |:-:|:-:|
