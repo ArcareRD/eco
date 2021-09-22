@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "歡迎光臨如如智慧軟體機器人世界"
-date:   2021-07-01 10:59:04 +0800
+date:   2021-09-22 11:00:00 +0800
 categories: jekyll update
 ---
 
@@ -92,19 +92,16 @@ categories: jekyll update
 ---- 
 
 ## ruRU軟體機器人平台之硬體規格 {#Introduction-4}
- <a href="/doc/RTE運行環境系統需求表 2.00.pdf" download>檔案下載</a>
+* #### [檔案下載](/INSTALLS/運行環境系統需求表V3.01.pdf)
  
 ### A. 伺服器軟硬體需求
 1. CPU(中央處理器)：Intel 4核心處理器，2.4GHZ或以上。若使用AWS或其它雲端主機，至少2個CPU。
 2. RAM(隨機存取記憶體)：8GB或更多
 3. HDD(硬式磁碟機)：容量1TB或以上。若使用AWS或其它雲端主機，作業系統及應用程式(AP)需100GB，資料庫(DB，或RDS)部份則視需求而定。如果雲端資料庫有備份需求，則需求大小為DB硬碟空間*備份保留天數，例如DB為10GB，需保留7天備份，則備份空間需求為70GB。
 4. OS(作業系統)：以下擇一
-- Microsoft Windows Server 2008
 - Microsoft Windows Server 2012
 - Microsoft Windows Server 2016
 5. DB(資料庫)：以下擇一
-- Microsoft SQL Server 2008
-- Microsoft SQL Server 2008 express
 - Microsoft SQL Server 2012
 - Microsoft SQL Server 2012 express
 - Microsoft SQL Server 2014
@@ -125,7 +122,6 @@ categories: jekyll update
 - Android 
 - iOS 
 4. Web browser(瀏覽器)：Chrome、Firefox、Internet Explore(僅支援11版)、Safari
-5. Excel
-	Microsoft Excel 2007~2016
+5. Excel Microsoft Excel 2007~2016
 
 
