@@ -96,11 +96,12 @@ categories: jekyll update
  
 ### A. 伺服器軟硬體需求
 1. CPU(中央處理器)：Intel 4核心處理器，2.4GHZ或以上。若使用AWS或其它雲端主機，至少2個CPU。
-2. RAM(隨機存取記憶體)：8GB或更多
+2. RAM(隨機存取記憶體)：8GB、建議16G或更多
 3. HDD(硬式磁碟機)：容量1TB或以上。若使用AWS或其它雲端主機，作業系統及應用程式(AP)需100GB，資料庫(DB，或RDS)部份則視需求而定。如果雲端資料庫有備份需求，則需求大小為DB硬碟空間*備份保留天數，例如DB為10GB，需保留7天備份，則備份空間需求為70GB。
 4. OS(作業系統)：以下擇一
 - Microsoft Windows Server 2012
 - Microsoft Windows Server 2016
+- Microsoft Windows Server 2019
 5. DB(資料庫)：以下擇一
 - Microsoft SQL Server 2012
 - Microsoft SQL Server 2012 express
@@ -108,6 +109,10 @@ categories: jekyll update
 - Microsoft SQL Server 2014 express
 - Microsoft SQL Server 2016
 - Microsoft SQL Server 2016 express
+- Microsoft SQL Server 2017
+- Microsoft SQL Server 2017 express
+- Microsoft SQL Server 2019
+- Microsoft SQL Server 2019 express
 6. Excel
 - Microsoft Excel 2007~2016
 
