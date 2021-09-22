@@ -120,7 +120,6 @@ categories: jekyll update
 1. CPU(中央處理器)：依各作業系統建議之CPU
 2. RAM(隨機存取記憶體)：依各作業系統建議之RAM容量
 3. OS(作業系統)：以下擇一
-- Microsoft Windows 7
 - Microsoft Windows 8
 - Microsoft Windows 8.1
 - Microsoft Windows 10
