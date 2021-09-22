@@ -7,20 +7,18 @@ lang: zh_TW
 
 ## 版本
 
-|日期|版號|備註|
-|:--:|:--:|:--:|
-|2021-09-22|DIS-2021090001|改版|
-|2021-02-25|DIS-2021020001|改版|
-|2020-12-14|DIS-2020120001|初版|
+|最後更新日期|備註|
+|:--:|:--:|
+|2021-09-22|改版|
 
 ## RTE - 運行平台 (Run Time Environment)
 
 ### 設備建議
 
 |品名|內容|備註|
-|:-:|:-:|:-:|
-|CPU|Intel Core i5 / Xeon 4 core以上，如採用運端平台(AWS / Azure等)虛擬機至少 2 core以上||
-|記憶體|8G以上、建議16G||
+|:-:|:-|:-:|
+|CPU|Intel Core i5 / Xeon 4 core以上，如採用<br>雲端平台(AWS / Azure等)虛擬機至少 2 core以上||
+|記憶體|至少8G以上、建議16G||
 |硬碟|SSD / HD 7200轉 剩餘容量50G以上||
 |伺服器作業系統|Microsoft Windows Server 2012 以上版本||
 |用戶端作業系統|Microsoft Windows 8 以上版本||
@@ -28,8 +26,8 @@ lang: zh_TW
 |Excel|Microsoft Excel 2007~2016|安裝IRIS系統才需要|
 
 ### 安裝流程
-* [平台基礎套件安裝](RTE/PACKAGE/README.html)
-* [專案安裝](RTE/PROJECT/README.html)
+* #### [平台基礎套件安裝](RTE/PACKAGE/README.html)
+* #### [專案安裝](RTE/PROJECT/README.html)
 
 ## MAE - 行動運行台 (Mobile Application Environment)
 
