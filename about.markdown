@@ -11,4 +11,4 @@ permalink: /about/
 
 
 ## 文件下載
-* #### [ruRU平台技術介紹V0.4](/doc/ruRU平台技術介紹2021024-V0.4.pdf)
+* #### [ruRU平台技術介紹V0.4](/doc/ruRU平台技術介紹2021024-V0.4.pdf){:target='_blank'}
