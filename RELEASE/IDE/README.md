@@ -1,12 +1,12 @@
 ---
 layout: page
-title: "IDE 版本更新資訊"
+title: "IDE 版本清單"
 date:   2021-09-24 13:00:00 +0800
 lang: zh_TW
 ---
 
 
-|釋出日期|版本|規格文件|更新說明|
+|釋出日期|版本|規格文件|更新紀錄|
 |:-:|:-:|:-:|:-:|
 |2021/09/24|008.010.001.001|[Pages](https://pages.ruru.tw/#/8.10.1/UPDATE/ITEM_5/IDE/README){:target='_blank'}||
 |2021/09/13|008.010.000.052|[Pages](https://pages.ruru.tw/#/8.10.0/UPDATE/ITEM_25/IDE/README){:target='_blank'}||

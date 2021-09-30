@@ -1,12 +1,11 @@
 ---
 layout: page
-title: "RTE 版本更新資訊"
+title: "RTE 版本清單"
 date:   2021-09-24 13:00:00 +0800
 lang: zh_TW
 ---
 
-
-|釋出日期|版本|規格文件|更新說明|
+|釋出日期|版本|規格文件|更新紀錄|
 |:-:|:-:|:-:|:-:|
 |2021/09/24|008.010.001.001|[說明文件](/doc/8.10.0/zh-Hant/index.html){:target='_blank'}|[8.10.1](/INSTALLS/RTE/UPDATE/8.10.1.html)|
 |2021/6/28|008.010.000.082|[說明文件](/doc/8.10.0/zh-Hant/index.html){:target='_blank'}|[8.10.0](/INSTALLS/RTE/UPDATE/8.10.0.html)|
