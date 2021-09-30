@@ -8,5 +8,5 @@ lang: zh_TW
 
 |釋出日期|版本|規格文件|更新說明|
 |:-:|:-:|:-:|:-:|
-|2021/09/24|008.010.001.001|[Pages](https://pages.ruru.tw/#/8.10.1/MAE/Component/container){:target='_blank'}||
-|2021/09/13|008.010.000.082|[Pages](https://pages.ruru.tw/#/8.10.0/UPDATE/ITEM_25/MAE/README){:target='_blank'}||
+|2021/09/24|008.010.001.001|[8.10.1](https://pages.ruru.tw/#/8.10.1/MAE/Component/container){:target='_blank'}||
+|2021/09/13|008.010.000.082|[8.10.0](https://pages.ruru.tw/#/8.10.0/UPDATE/ITEM_25/MAE/README){:target='_blank'}||
