@@ -5,6 +5,12 @@ date:   2021-10-07 17:39:04 +0800
 lang: zh_TW
 ---
 
+# ruRU FAQ
+----
+* [FAQ搜尋-無登入](https://sit-3.arcare-robot.com/ArcareEng/login.jsp?projectid={E5EBA580-4826-4FC8-BFF5-29F386FDE5EF}&corpid={C5D45758-D072-4606-A448-53273EBE7DD7}&langCode=950&prototypingForm=FX000300001145&account=doc&password=6mC4YR/uG/s=&userName=Document&OnlyShowForm=true){:target='_blank'} 
+* [FAQ搜尋-需登入](https://sit-3.arcare-robot.com/ArcareEng/login.jsp){:target='_blank'} 
+
+
 # 機台設定
 ----
 * [如何設定郵件發送帳號](EMAIL/README.html)
@@ -13,6 +19,7 @@ lang: zh_TW
 * [如何自行定義登入首頁](202109010001/README.html)
 * [如何解決經常被踢出系統](202109020001/README.html)
 * [如何更新RTE引擎](202109140001/README.html)
+
 
 
 # IDE 設計案例 
