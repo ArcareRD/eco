@@ -10,8 +10,16 @@ xmlns:xhtml="https://www.w3.org/1999/xhtml">
     <lastmod>2021-09-22</lastmod>
   </url>
   <url>
-    <loc>https://docs.arcare-robot.com/RELEASE/RTE/README.html</loc>
-    <lastmod>2021-09-22</lastmod>
+    <loc>https://docs.arcare-robot.com/RELEASE/UPDATE/8.9.2.html</loc>
+    <lastmod>2021-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/RELEASE/UPDATE/8.10.0.html</loc>
+    <lastmod>2021-10-20</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/RELEASE/UPDATE/8.10.1.html</loc>
+    <lastmod>2021-10-20</lastmod>
   </url>
   <url>
     <loc>https://docs.arcare-robot.com/INSTALLS/README.html</loc>
@@ -24,14 +32,6 @@ xmlns:xhtml="https://www.w3.org/1999/xhtml">
   <url>
     <loc>https://docs.arcare-robot.com/INSTALLS/RTE/PROJECT/README.html</loc>
     <lastmod>2021-04-06</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.arcare-robot.com/INSTALLS/RTE/UPDATE/8.9.2.html</loc>
-    <lastmod>2021-04-21</lastmod>
-  </url>
-  <url>
-    <loc>https://docs.arcare-robot.com/INSTALLS/RTE/UPDATE/8.10.0.html</loc>
-    <lastmod>2021-09-22</lastmod>
   </url>
   <url>
     <loc>https://docs.arcare-robot.com/jekyll/update/2021/09/22/welcome-to-jekyll.html</loc>
