@@ -39,18 +39,20 @@ lang: zh_TW
 
     * 其他應注意事項：
 
-      1. logo.html不支援Link圖片。
+      1. logo.html：不支援Link圖片。
 
-      2. login.css是提供附加所需的CSS設定，RTE會自行讀取與附加，無須於logo.html中設定Link，另外、建議勿刪除原有class或ID。
+      2. login.css：是提供附加所需的CSS設定，RTE會自行讀取與附加，無須於logo.html中設定Link，另外、建議勿刪除原有class或ID。
 
-      3. 背景顏色及樣式設定請於logo.css中body{}中修改樣式設定
+      3. login_mobile.css：是提供附加當瀏覽器於行動裝置開啟首頁時所需的CSS設定，RTE會自行讀取與附加，無須於logo.html中設定Link，另外、建議勿刪除原有class或ID。
+
+      4. 背景顏色及樣式設定請於logo.css中body{}中修改樣式設定
 
           body{
               background:linear-gradient(to bottom,#396982,#0d202c);
               FONT-FAMILY:Microsoft JhengHei;
           }
 
-      4. class為arcare的DIV，是LOGO容器，除非不使用LOGO，否則建議請勿移除，相應的CSS定義也請勿異動，建議LOGO採用136x35，PNG格式，直接覆蓋(logo-rte.png)
+      5. class為arcare的DIV，是LOGO容器，除非不使用LOGO，否則建議請勿移除，相應的CSS定義也請勿異動，建議LOGO採用136x35，PNG格式，直接覆蓋(logo-rte.png)
 
 3. 檔案處理應注意事項
 
