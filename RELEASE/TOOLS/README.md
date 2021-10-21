@@ -13,7 +13,7 @@ lang: zh_TW
 
 ## 工具
 
-## Arcare encrypt key manager tool
+## Arcare 加密金鑰管理工具(Arcare encrypt key manager tool)
 
 |版本|釋出日期|技術文件|備註|
 |:-:|:-:|:-:|:-:|
