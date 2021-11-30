@@ -53,7 +53,7 @@ lang: zh_TW
 ![alt 完成佈署](img/004.png)
 
 ### 6. 前往資料庫設定頁面
-* http://localhost:8080/ArcareEng/SideDatabaseSet.jsp
+* http://localhost:8080/ArcareEng/SiteDatabaseSet.jsp
 
 ![alt 資料庫設定頁面](img/005.png)
 
