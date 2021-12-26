@@ -1,10 +1,10 @@
 ---
 layout: page
-title:  "ruRU® RTE 系統丄具操作說明書 "
+title:  "ruRU® RTE 運行台使用說明書 "
 date:   2021-06-30 17:30:00 +0800
 lang: zh_TW
 ---
-## Integrated Design Environment  Reference Manual
+## Runtime Time Environment Reference Manual
 
 
 ### **修訂記錄** (Revision History)
@@ -17,25 +17,17 @@ lang: zh_TW
 | 4.01 | 2017/09/17 | All | 依RTE運行台808.7 改版, 更新說明內容 |
 | 5.01 | 2021/06/30 | All | 依RTE運行台8.10.0 改版, 更新說明內容 |
 
-
 ### <a name="MainMenu" ></a> **章節目錄**
-[**1.	系統登入 **](01.html)
 
-[**2.	選單基本操作 **](02.html)
+[** Site Management 站台管理及設定說明 **](SIT.html)
 
-[**3.	表單基本操作 **](03.html)
+[** PC Web 使用說明 **](RTE.html)
 
-[**4.	權限設定**](04.html)
+[** RWD Web 使用說明 **](RWD.html)
 
-[**5.	系統設定 **](05.html)
+[** Mobile Apps 使用說明 **](MAE.html)
 
-[**6.	表單相關設定**](06.html)
+[** UTL 系統工具_使用說明 **](WFS.html)
 
-[**7.	按鍵相關設定 **](07.html)
-
-[**8.	報表相關設定 **](08.html)
-
-[**9.	API相關設定**](09.html)
-
-[**10.	問題處理 **](10.html)
+[** WFS 簽核模組_使用說明 **](WFS.html)
 
