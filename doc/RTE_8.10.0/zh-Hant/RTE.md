@@ -5,6 +5,16 @@ date:   2021-06-30 17:30:00 +0800
 lang: zh_TW
 ---
 
+## Runtime Time Environment Reference Manual
+
+### **修訂記錄** (Revision History)
+
+| 版本<br>Version<br> |出版日期<br>Issue Date <br>|修訂章節<br>Section Changed<br>|出版修訂原因<br>Reason for Issue<br>|
+| :-: | :-: | :-: | :-: |
+| 8.10.1 | 2021/12/25 | All | 依RTE運行台8.10.1 改版, 更新說明內容 |
+
+
+
 [**1.登入系統**](#Login)  
 &nbsp;&nbsp;&nbsp;1.1 登入ruRU RTE平台  
 
