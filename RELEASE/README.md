@@ -13,4 +13,4 @@ lang: zh_TW
 |2020/10/30|[8.9.2](UPDATE/8.9.2.html)|[[IDE]](/library/8.9.2/index.html){:target='_blank'} [RTE] [MAE]||
 
 
-### [BIZ Application Store](STORE/README.html){:target='_blank'}
+- [BIZ Application Store](STORE/README.html){:target='_blank'}
