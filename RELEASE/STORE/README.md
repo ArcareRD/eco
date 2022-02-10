@@ -52,8 +52,8 @@ lang: zh_TW
  - [總帳會計系統](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={B8CF74C2-1948-485C-B2A7-EE0B2FD6BF7F}&corpid={65884DFC-540C-49A1-9E41-D1A59597B239}&langCode=950&defaultLangCode=950&account=PJ000200000048&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={TestUser}&idePrjId=2548&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
  - [應收帳款模組](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={A8C130B7-D5E3-4C33-9CB9-0FFAA1E293CF}&corpid={2D7F1C18-EAB2-4CAF-96F1-D223A507F030}&langCode=950&defaultLangCode=950&account=PJ000200000052&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={TestUser}&idePrjId=2552&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
  - [應付帳款模組](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={3A329E94-81BC-4B91-A69F-07C5B9F87707}&corpid={F42C2CAB-96A7-40BA-92F0-A208D5E43B12}&langCode=950&defaultLangCode=950&account=PJ000200000050&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={TestUser}&idePrjId=2550&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
- - 出納模組(){:target='_blank'}
- - 零用金模組(){:target='_blank'}
+ - 出納模組
+ - 零用金模組
  
 ### 補習班
  - 家長聯絡簿
