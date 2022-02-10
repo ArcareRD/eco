@@ -38,8 +38,8 @@ lang: zh_TW
 
 |系統類別|系統版本|備註|
 |:-:|:-:|:-:|
-|IOS|IOS 9 以上||
-|Android|Android 6 以上||
+|IOS|IOS 11 以上||
+|Android|Android 7.1 以上||
 
 ### 安裝路徑
 
