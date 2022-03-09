@@ -17,9 +17,9 @@ lang: zh_TW
 
 |品名|內容|備註|
 |:-:|:-|:-:|
-|CPU|Intel Core i5 / Xeon 4 core以上，如採用<br>雲端平台(AWS / Azure等)虛擬機至少 2 core以上||
+|CPU|Intel 4 core以上||
 |記憶體|至少8G以上、建議16G||
-|硬碟|SSD / HD 7200轉 剩餘容量50G以上||
+|硬碟|SSD / HD IO速度至少500MBs以上 剩餘容量50G以上||
 |伺服器作業系統|Microsoft Windows Server 2012 以上版本||
 |用戶端作業系統|Microsoft Windows 8 以上版本||
 |資料庫|Microsoft SQL Server 2012 以上版本||
