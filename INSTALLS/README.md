@@ -26,7 +26,7 @@ lang: zh_TW
 |Excel|Microsoft Excel 2007~2016|安裝IRIS系統才需要|
 
 ### 文件下載
-* #### [下載[運行環境系統需求表]V3.01文件](運行環境系統需求表V3.01.pdf){:target='_blank'}
+* #### [下載[運行環境系統需求表]文件](運行環境系統需求表V3.02.pdf){:target='_blank'}
 
 ### 安裝流程
 * #### [平台基礎套件安裝](RTE/PACKAGE/README.html)
