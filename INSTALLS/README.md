@@ -25,6 +25,10 @@ lang: zh_TW
 |資料庫|Microsoft SQL Server 2012 以上版本||
 |Excel|Microsoft Excel 2007~2016|安裝IRIS系統才需要|
 
+### 雲端架構建議
+
+* [雲端架構建議](CLOUD.html)
+
 ### 文件下載
 * #### [下載[運行環境系統需求表]文件](運行環境系統需求表V3.02.pdf){:target='_blank'}
 
