@@ -5,16 +5,13 @@ date:   2022-03-30 17:39:04 +0800
 lang: zh_TW
 ---
 
-# RTE 平台基礎套件安裝
+# RTE 平台基礎套件安裝 CentOS
 
 ## 版本：
 
 |日期|版號|備註|
 |:--:|:--:|:--:|
-|2022-03-30|2022030002|改版|
-|2022-03-07|2022030007|改版|
-|2021-02-25|2021020001|改版|
-|2020-11-25|2020110001|初版|
+|2022-03-30|2022030001|初版|
 
 ## 作業目的：
 
@@ -25,99 +22,67 @@ lang: zh_TW
 |項目|內容|備註|
 |:--:|:--:|:--:|
 |帳號|請使用本機帳號，且該帳號具有Administrator權限||
-|作業系統|Windows 2012 以上|[Linux CentOS版](README.centos.html)|
+|作業系統|CentOS 7 以上||
 |資料庫版本|MS SQL 2012 以上||
-|安裝套件|autodeploy.zip|請聯繫客服|
+|安裝套件|autodeploy.zip|下載帳號密碼請聯繫服務窗口|
 
 ## 安裝步驟：
 
-### 準備安裝程式
+### 基本套件安裝
 
-1.將安裝套件[autodeploy.zip]放置於指定安裝路徑（例如 [c:\\\\]） <br>
-![alt 準備安裝](img/001.png)
+1.下載安裝套件 <br>
+
+    ftp://{帳號}:{密碼}@agri.ruru.tw/openjdk.zip
+    ftp://{帳號}:{密碼}@agri.ruru.tw/tomcat-ruru.zip
+    ftp://{帳號}:{密碼}@agri.ruru.tw/ArcareEng.war
 
 2.解壓縮檔案於該路徑 <br>
-![alt 解壓縮安裝檔](img/003.png)
 
-3.完成解壓縮可以看見該路徑下有[autodeploy]資料夾 <br>
-![alt 完成解壓縮](img/002.png)
+    unzip openjdk.zip /opt
+    unzip tomcat-ruru.zip /opt
 
-### 執行程式套件安裝
+3.設定環境變數 <br>
 
-#### 1.安裝Chromium瀏覽器
+    echo "JAVA_HOME=/opt/jdk-8u201-ojdkbuild-linux-x64" >> /etc/profile
+    echo "PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH" >> /etc/profile
+    echo "/opt/tomcat/bin/startup.sh" >> /etc/rc.d/rc.local
 
-1-1.進入autodeploy\chromium資料夾選擇，在「chromium_install.bat」上按滑鼠右鍵，然後點選「以系統管理員身分執行」 <br>
-![alt 安裝Chromium](img/004.png)
+4.重啟伺服器 <br>
 
-1-2.當指令視窗執行完成並自行關閉視窗即完成安裝 <br>
-![alt 安裝Chromium](img/004-1.png)
+    shutdown -r now
 
-#### 2.安裝OpenJDK
+### 管理用工作站套件安裝
 
-2-1.進入autodeploy\openjdk資料夾，在「openjdk_install.bat」上按滑鼠右鍵，然後點選「以系統管理員身分執行」。<br>
-![alt 執行安裝OpenJDK](img/005-1.png)
+#### 1. 安裝Chrome瀏覽器
 
-2-2.點選[執行] <br>
-![alt 安裝OpenJDK](img/005.png)
+- [下載安裝chrome瀏覽器](https://www.google.com/intl/zh-TW/chrome)
 
-2-3.當指令視窗執行完成並自行關閉視窗即完成安裝 <br>
-![alt 安裝OpenJDK](img/005-2.png)
+#### 2. Tomcat設定
 
-#### 3.安裝ExcelToPDF套件[僅8.10.0以前版本需要]
-
-3-1.進入安裝資料夾autodeploy\opt <br>
-![alt 安裝Chromium](img/006-0.png)
-
-3-2.右鍵執行以系統管理員身分執行「install.bat」 <br>
-![alt 安裝Chromium](img/006-1.png)
-
-3-3.當指令視窗執行完成並自行關閉視窗即完成安裝 <br>
-![alt 安裝Chromium](img/006-2.png)
-
-#### 4.安裝Tomcat
-
-4-1.進入autodeploy\TOMCAT資料夾，在「tomcat_install.bat」上按滑鼠右鍵，然後點選「以系統管理員身分執行」。 <br>
-![alt 安裝Tomcat](img/007-1.png)
-
-4-2.當指令視窗執行完成並自行關閉視窗即完成安裝 <br>
-![alt 完成安裝Tomcat](img/007-2.png)
-
-4-3.接著請切換到TOMCAT的bin目錄，如果剛才在C槽安裝，安裝的目錄會在C:\WebServer\TOMCAT\bin，如果在D槽安裝，則會在D:\WebServer\TOMCAT\bin，依此類推。進入TOMCAT的bin目錄之後，執行「tomcat8w.exe」<br>
-![alt 完成安裝Tomcat](img/007-3.png)
-
-4-4.切換到「Java」頁籤，將記憶體容量設定為4096MB或是更高，然後按下「套用」 <br>
-![alt 完成安裝Tomcat](img/007-4.jpg)
-
-4-5.切換到General頁籤，按下「Stop」<br>
-![alt 完成安裝Tomcat](img/007-5.jpg)
-
-4-6.當Service Status變為Stopped之後，再按下「Start」，重新啟動TOMCAT。<br>
-![alt 完成安裝Tomcat](img/007-6.jpg)
-
-4-7.開啟瀏覽器，登入TOMCAT網頁(http://localhost:8080/manager)，確認TOMCAT是否正常。<br>
+2-1.開啟瀏覽器，登入TOMCAT網頁(http://{伺服器IP或網址}:8080/manager)，確認TOMCAT是否正常。<br>
 ![alt 完成安裝Tomcat](img/007-7.jpg)
 
-4-8.基於安全因素考量，建議Undeploy [docs] / [examples] <br>
+2-2.基於安全因素考量，建議Undeploy [docs] / [examples] <br>
 ![alt 完成安裝Tomcat](img/007-8.jpg)
 
-4-8.Undeploy [docs] / [examples] 完成後 <br>
+2-3.Undeploy [docs] / [examples] 完成後 <br>
 ![alt 完成安裝Tomcat](img/007-9.png)
 
-#### 5.安裝RTE
+### 安裝RTE
 
-5-1.開啟Tomcat管理視窗 <br>
+1.開啟Tomcat管理視窗 <br>
 ![alt 完成安裝Tomcat](img/012.png)
 
-5-2.按下[選擇檔案] <br>
+2.按下[選擇檔案] <br>
 ![alt 完成安裝Tomcat](img/013.png)
 
-5-3.選擇安裝檔[ArcareEng.war] <br>
+3.選擇安裝檔[ArcareEng.war] <br>
 ![alt 完成安裝Tomcat](img/014.png)
 
-5-4.按下[Deploy] <br>
+4.按下[Deploy] <br>
 ![alt 完成安裝Tomcat](img/015.png)
 
-5-5.完成安裝 <br>
+5.完成安裝 <br>
 ![alt 完成安裝Tomcat](img/016.png)
 
 ### RTE環境初始化作業準備
@@ -125,16 +90,12 @@ lang: zh_TW
 #### 共用資料夾設定
 
 用途說明：引擎運作時，需要一個磁碟空間來存放暫存檔案，所以需要在伺服器上規劃一個資料夾讓引擎使用。<br>
-1.在伺服器任一磁碟路徑上，建立一個Share資料夾，例如 [C:\ArcareRobot\ArcareEngShare]<br>
-2.如果運行的環境要使用多台AP伺服器進行負載平衡(load balance)，請將這個Share資料夾設定為共用(如下圖)，[否則可跳過此設定]<br>
-![alt 完成安裝Tomcat](img/017.jpg)<br>
-若有需要針對此共用資料夾進行指定帳號的權限鎖定，才需進行以下 3 ~ 5 步驟設定：<br>
-3.設定可存取資料夾的帳號，權限需設定成可讀取/寫入，如下圖所示：<br>
-![alt 完成安裝Tomcat](img/018.png)<br>
-4.開啟Windows服務，找到Apache Tomcat的服務後，將該組帳號密碼指定給Tomcat，此設定表示Tomcat服務使用此帳號權限進行程式執行。<br>
-![alt 完成安裝Tomcat](img/019.png)<br>
-5.確認後重啟Tomcat服務：<br>
-![alt 完成安裝Tomcat](img/020.png)<br>
+
+1.注意必須讓直行Tomcat程式的帳號有該資料夾讀取及寫入的完整權限。<br>
+
+2.在伺服器任一磁碟路徑上，建立一個Share資料夾，例如：[/opt/storage/ArcareEngShare]<br>
+
+3.如果運行的環境要使用多台AP伺服器進行負載平衡(load balance)，請於AP伺服器建立檔案目錄，並透過nfs服務掛載網路共享資料夾至該目錄，提供[共用資料夾網路路徑]設定使用。<br>
 
 #### 資料庫設定
 
@@ -144,8 +105,9 @@ lang: zh_TW
 
 ##### 操作介面介紹
 
-開啟Site資料庫設定 { http://localhost:8080/ArcareEng/SiteDatabaseSet.jsp }，進入頁面後輸入各項設定，完成後點擊右上儲存 <br>
+開啟Site資料庫設定 { http://{伺服器IP或網址}:8080/ArcareEng/SiteDatabaseSet.jsp }，進入頁面後輸入各項設定，完成後點擊右上儲存 <br>
 ![alt 完成安裝Tomcat](img/031.png)
+
 ###### Site資料庫區塊
 
 輸入Server連線的SQL資料庫相關資訊，裝SQL_EXPRESS版本需注意，SQLServer名稱後面需加 [\SQLEXPRESS]且要先開啟TCP/IP相關設定才能進行此步驟 <br>
@@ -156,7 +118,7 @@ lang: zh_TW
 * SQL Server登入名稱：輸入登入帳號
 * SQL Server登入密碼：輸入登入密碼
 * SQL Server資料庫：挑選儲存Site資料的DB，預設建立 [WellWareProject]
-* 資料庫備份資料夾：輸入系統更新時的自動備份路徑，例：C:\ArcareRobot\ArcareEngDBbak
+* 資料庫備份資料夾：輸入系統更新時的自動備份路徑，例：[/opt/storage/ArcareEngDBbak]
 * Table備份資料庫名稱：挑選Site資料庫的備份DB，預設建立 [WellWareProject_UPG]
 * Table保留份數：輸入Site資料庫備份的份數
 * 稽核Log資料庫：挑選儲存使用者操作紀錄的資料庫，預設建議 [LOGDB]
@@ -173,7 +135,7 @@ lang: zh_TW
 
 * 遠端連線IpPort：Server遠端連線時的IP與PORT <br>
 * 共用資料夾網路路徑：共用資料夾的網路磁碟路徑(前面2.2節設定的)(如果沒有多台AP server架構，可設定和共用資料夾實體路徑相同即可) <br>
-* 共用資料夾實體路徑：共用資料夾的實體路徑，例如C:\ArcareRobot\ArcareEngShare。注意該路徑會定期清除，有需要保留的檔案請勿存放於此<br>
+* 共用資料夾實體路徑：共用資料夾的實體路徑，例如 [/opt/storage/ArcareEngShare]。注意該路徑會定期清除，有需要保留的檔案請勿存放於此<br>
 
 ###### 設定Timeout資訊
 
@@ -194,7 +156,7 @@ lang: zh_TW
 
 #### 站台激活
 
-1. 進入管理介面 - 輸入網址【 http://IP:PORT/ArcareEng/SiteLogin.jsp 】 <br>
+1. 進入管理介面 - 輸入網址【 http://{伺服器IP或網址}:8080/ArcareEng/SiteLogin.jsp 】 <br>
 ![alt 完成安裝Tomcat](img/022.png)
 
 2. 預設帳戶密碼 [Admini_ArcareSite / arcare] <br>
