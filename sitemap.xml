@@ -47,7 +47,11 @@ xmlns:xhtml="https://www.w3.org/1999/xhtml">
   </url>
   <url>
     <loc>https://docs.arcare-robot.com/INSTALLS/RTE/PROJECT/README.html</loc>
-    <lastmod>2021-04-06</lastmod>
+    <lastmod>2022-03-30</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/INSTALLS/RTE/PROJECT/README.8.10.1.50.html</loc>
+    <lastmod>2022-03-30</lastmod>
   </url>
   <url>
     <loc>https://docs.arcare-robot.com/jekyll/update/2021/09/22/welcome-to-jekyll.html</loc>
