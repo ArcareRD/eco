@@ -38,8 +38,8 @@ lang: zh_TW
 
 2.解壓縮檔案於該路徑 <br>
 
-    unzip openjdk.zip /opt
-    unzip tomcat-ruru.zip /opt
+    unzip openjdk.zip -d /opt
+    unzip tomcat-ruru.zip -d /opt
 
 3.設定環境變數 <br>
 
