@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "安裝說明"
-date:   2022-03-15 09:22:00 +0800
+date:   2022-03-31 09:22:00 +0800
 lang: zh_TW
 ---
 
@@ -9,8 +9,9 @@ lang: zh_TW
 
 |最後更新日期|備註|
 |:--:|:--:|
-|2021-09-22|改版|
+|2022-03-31|改版|
 |2022-03-15|改版|
+|2021-09-22|改版|
 
 ## RTE - 運行平台 (Run Time Environment)
 
@@ -21,7 +22,7 @@ lang: zh_TW
 |CPU|Intel 4 core以上||
 |記憶體|至少8G以上、建議16G||
 |硬碟|SSD / HD IO速度至少500MBs以上 剩餘容量50G以上||
-|伺服器作業系統|Microsoft Windows Server 2012 以上版本||
+|伺服器作業系統|Microsoft Windows Server 2012 以上版本，Linux CentOS 7以上、ubuntu 18.04以上||
 |用戶端作業系統|Microsoft Windows 8 以上版本||
 |資料庫|Microsoft SQL Server 2012 以上版本||
 |Excel|Microsoft Excel 2007~2016|安裝IRIS系統才需要|
@@ -44,7 +45,7 @@ lang: zh_TW
 
 ### 安裝流程
 * #### [平台基礎套件安裝](RTE/PACKAGE/README.html)
-* #### [專案安裝](RTE/PROJECT/README.html)
+* #### [系統安裝](RTE/PROJECT/README.html)
 
 ## MAE - 行動運行台 (Mobile Application Environment)
 
