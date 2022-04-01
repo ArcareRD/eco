@@ -49,10 +49,15 @@ lang: zh_TW
 
 4.指定遠端管理用IP白名單、由於管理來源基於安全必須限制，預設是本機電腦為開放遠端管理，所以需要設定來源白名單<br>
 
-        echo "遠端管理電腦IP" >> /opt/tomcat/conf/source_list.txt
+    echo "遠端管理電腦IP" >> /opt/tomcat/conf/source_list.txt
+
+5.修改資料夾權限 <br>
+
+    chmod 775 /opt/tomcat/conf
+    chmod 755 /opt/tomcat/bin/*
 
 
-5.重啟伺服器 <br>
+6.重啟伺服器 <br>
 
     shutdown -r now
 
