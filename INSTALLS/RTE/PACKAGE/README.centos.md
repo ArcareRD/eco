@@ -47,7 +47,12 @@ lang: zh_TW
     echo "PATH=$JAVA_HOME/bin:$JAVA_HOME/jre/bin:$PATH" >> /etc/profile
     echo "/opt/tomcat/bin/startup.sh" >> /etc/rc.d/rc.local
 
-4.重啟伺服器 <br>
+4.指定遠端管理用IP白名單、由於管理來源基於安全必須限制，預設是本機電腦為開放遠端管理，所以需要設定來源白名單<br>
+
+        echo "遠端管理電腦IP" >> /opt/tomcat/conf/source_list.txt
+
+
+5.重啟伺服器 <br>
 
     shutdown -r now
 
@@ -70,7 +75,7 @@ lang: zh_TW
 
 ### 安裝RTE
 
-1.開啟Tomcat管理視窗 <br>
+1.開啟Tomcat管理視窗 (預設帳號密碼請聯絡服務窗口)<br>
 ![alt 完成安裝Tomcat](img/012.png)
 
 2.按下[選擇檔案] <br>
@@ -154,12 +159,14 @@ lang: zh_TW
 
 ### RTE環境初始化作業
 
+建議管理用電腦解析度至少 1300 x 1024
+
 #### 站台激活
 
 1. 進入管理介面 - 輸入網址【 http://{伺服器IP或網址}:8080/ArcareEng/SiteLogin.jsp 】 <br>
 ![alt 完成安裝Tomcat](img/022.png)
 
-2. 預設帳戶密碼 [Admini_ArcareSite / arcare] <br>
+2. 預設帳戶密碼 [Admin_ArcareSite / arcare] <br>
 ![alt 完成安裝Tomcat](img/023.png)
 
 3. 登入後進入設定國別/語系 <br>
