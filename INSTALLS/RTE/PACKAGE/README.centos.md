@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "平台安裝"
-date:   2022-03-30 17:39:04 +0800
+date:   2022-04-06 17:39:04 +0800
 lang: zh_TW
 ---
 
@@ -15,7 +15,7 @@ lang: zh_TW
 
 ## 作業目的：
 
-    在安裝RTE前，必須先安裝server端所需的相關套件。
+    在安裝系統前，必須先安裝RTE及伺服器端所需的相關套件。
 
 ## 環境需求：
 
@@ -32,14 +32,15 @@ lang: zh_TW
 
 1.下載安裝套件 <br>
 
-    ftp://{帳號}:{密碼}@agri.ruru.tw/openjdk.zip
-    ftp://{帳號}:{密碼}@agri.ruru.tw/tomcat-ruru.zip
-    ftp://{帳號}:{密碼}@agri.ruru.tw/ArcareEng.war
+    wget ftp://{帳號}:{密碼}@agri.ruru.tw/openjdk.zip
+    wget ftp://{帳號}:{密碼}@agri.ruru.tw/tomcat-ruru.zip
+    wget ftp://{帳號}:{密碼}@agri.ruru.tw/ArcareEng.war
 
 2.解壓縮檔案於該路徑 <br>
 
     unzip openjdk.zip -d /opt
     unzip tomcat-ruru.zip -d /opt
+    cp ArcareEng.war /opt/tomcat/webapps
 
 3.設定環境變數 <br>
 
@@ -50,12 +51,12 @@ lang: zh_TW
 4.指定遠端管理用IP白名單、由於管理來源基於安全必須限制，預設是本機電腦為開放遠端管理，所以需要設定來源白名單<br>
 
     echo "遠端管理電腦IP" >> /opt/tomcat/conf/source_list.txt
+    chmod 755 /opt/tomcat/conf/source_list.txt
 
 5.修改資料夾權限 <br>
 
-    chmod 775 /opt/tomcat/conf
+    chmod 755 /opt/tomcat/conf
     chmod 755 /opt/tomcat/bin/*
-
 
 6.重啟伺服器 <br>
 
