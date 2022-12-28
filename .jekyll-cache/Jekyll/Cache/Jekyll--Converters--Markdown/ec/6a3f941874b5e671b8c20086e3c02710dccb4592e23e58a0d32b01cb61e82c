@@ -1,0 +1,384 @@
+I"M:<h1 id="rte-專案安裝">RTE 專案安裝</h1>
+
+<h2 id="版本">版本</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">日期</th>
+      <th style="text-align: center">版號</th>
+      <th style="text-align: center">備註</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">2022-03-30</td>
+      <td style="text-align: center">2022030002</td>
+      <td style="text-align: center">改版</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2021-08-18</td>
+      <td style="text-align: center">2021080001</td>
+      <td style="text-align: center">改版</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2021-02-25</td>
+      <td style="text-align: center">2021020001</td>
+      <td style="text-align: center">改版</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2020-12-14</td>
+      <td style="text-align: center">2020120001</td>
+      <td style="text-align: center">初版</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="作業目的">作業目的</h2>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>當完成基礎平台安裝後，進入專案安裝
+</code></pre></div></div>
+
+<h2 id="環境需求">環境需求</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">項目</th>
+      <th style="text-align: center">內容</th>
+      <th style="text-align: center">備註</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">帳號</td>
+      <td style="text-align: center">請使用RURU站台管理員帳號</td>
+      <td style="text-align: center">平台預設帳號，安裝過程會預設強制修改密碼</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">環境</td>
+      <td style="text-align: center">RTE</td>
+      <td style="text-align: center">已完成基礎套件安裝及初始作業，且版本為008.010.001.050含以前</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">系統工具</td>
+      <td style="text-align: center">Project_UTL.mdb</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">應用系統安裝檔</td>
+      <td style="text-align: center">{專案料號}_{版本號}.mdb</td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="安裝步驟">安裝步驟</h2>
+
+<h3 id="建立企業">建立企業</h3>
+
+<ol>
+  <li>
+    <p>以站台管理員帳號[Admin_ArcareSite]登入站台管理系統 <br />
+<img src="img/001.png" alt="alt 登入站台" /></p>
+  </li>
+  <li>
+    <p>設定密碼激活等待時間<br />
+<img src="img/密碼有效時間設定.png" alt="alt 郵件激活等待時間" /></p>
+  </li>
+  <li>設定郵件伺服器<br />
+<img src="img/郵件伺服器設定.png" alt="alt 設定郵件伺服器" />
+    <h4 id="備註如果帳號屬於不用驗證密碼則帳號密碼欄位請勿輸入並僅勾選使用匿名發送郵件請勿勾選需要使用安全密碼驗證spa登入">備註：如果帳號屬於不用驗證密碼則帳號、密碼欄位請勿輸入，並僅勾選[使用匿名發送郵件]，請勿勾選[需要使用安全密碼驗證(SPA)登入]</h4>
+  </li>
+  <li>
+    <p>點選[企業設定]、並按下[新增]按鈕 <br />
+<img src="img/002.png" alt="alt 準備安裝" /></p>
+  </li>
+  <li>跳出[企業資料]設定畫面 <br />
+<img src="img/003.png" alt="alt 企業資料" />
+ # 企業資料：
+    <ol>
+      <li>企業代號： 公司簡稱，可以使用英文或中文但請勿使用特殊字元，20個字元<br /></li>
+      <li>公司名稱： 公司名稱，可以使用英文或中文但請勿使用特殊字元，80個字元<br /></li>
+      <li>公司英文名： 公司英文名稱，80個字元<br /></li>
+      <li>公司地址： 公司地址，80個字元<br /></li>
+      <li>國別代碼： 繁體中文、英文、西班牙語、簡體中文<br /></li>
+      <li>電話國碼： 電話國碼，6個字元<br /></li>
+      <li>公司電話代表號： 公司對外電話代表號碼，12個字元<br /></li>
+      <li>收費聯絡人姓名： 帳務聯絡人，80個字元<br /></li>
+      <li>統一編號/稅籍碼：統一編號/稅籍碼，80個字元<br /></li>
+      <li>郵遞區號：郵遞區號，10個字元<br /></li>
+      <li>負責人姓名： 公司負責人，80個字元<br /></li>
+      <li>Google API Key： Google服務堤供的金鑰<br /></li>
+      <li>上傳檔案大小：預設50M，不得為零<br /></li>
+      <li>同時最大上線人數：0為不設限制<br /></li>
+      <li>使用者維持登入時間(分鐘)：0為不設限制<br />
+ <br /></li>
+    </ol>
+  </li>
+  <li>
+    <p>站台完成設定，按下[儲存]鍵完成建立企業 <br />
+<img src="img/004E.png" alt="alt 站台完成設定" /></p>
+  </li>
+  <li>企業建立完成 <br />
+<img src="img/EnterpricesList.png" alt="alt 建立完成" /></li>
+</ol>
+
+<h3 id="建立企業管理員帳號">建立企業管理員帳號</h3>
+
+<ol>
+  <li>
+    <p>使用站台管理員帳號，登入站台管理系統，進入[帳號清單] &gt; [按下新增按鈕] <br />
+<img src="img/AdminNewAccount.png" alt="alt 帳號清單" /></p>
+  </li>
+  <li>設定帳號資訊 <br />
+<img src="img/AccountContent.png" alt="alt 帳號清單" />
+ #### 帳號資訊：
+    <ol>
+      <li>帳號：帳號名稱請以英文、數字設定不重複<br /></li>
+      <li>所屬企業名稱：企業設定中的企業名稱<br /></li>
+      <li>姓名：人員姓名<br /></li>
+      <li>電子郵件信箱：電子郵件信箱<br /></li>
+      <li>備用信箱：備用信箱位置<br /></li>
+      <li>分機號碼/專線：市話分機、專線<br /></li>
+      <li>手機號碼：行動電話<br /></li>
+      <li>國別：台灣、西班牙、美國、中華人民共和國<br /></li>
+      <li>部門單位：[部門單位管理]中的部門名稱<br />
+ <br /></li>
+    </ol>
+  </li>
+  <li>
+    <p>指定帳號所屬企業<br />
+<img src="img/015.png" alt="alt 選擇帳號所屬企業" /></p>
+  </li>
+  <li>完成帳號設定，按下[儲存]鍵完成新增作業 <br />
+<img src="img/017.png" alt="alt 完成帳戶設定" /></li>
+</ol>
+
+<h3 id="指定企業管理員">指定企業管理員</h3>
+
+<ol>
+  <li>
+    <p>以站台管理員帳號登入站台管理系統，選取[企業設定] <br />
+<img src="img/018-開啟企業設定.png" alt="alt 企業設定" /></p>
+  </li>
+  <li>
+    <p>開啟帳號清單，指定企業管理員 <br />
+<img src="img/019-選取企業管理員.png" alt="alt 選取企業管理員" /></p>
+  </li>
+  <li>
+    <p>選取欲指定人員，勾選帶回 <br />
+<img src="img/021-選取人員.png" alt="alt 選取企業管理員" /></p>
+  </li>
+  <li>
+    <p>按下儲存按鍵，完成指定企業管理員 <br />
+<img src="img/022-完成指定企業管理員.png" alt="alt 完成指定企業管理員" /></p>
+  </li>
+</ol>
+
+<h3 id="建立新系統站台相關設定">建立新系統站台相關設定</h3>
+
+<ol>
+  <li>
+    <p>以站台管理員帳戶登入站台管理介面 <br />
+<img src="img/SiteAdminLogin.png" alt="alt 登入站台管理介面" /></p>
+  </li>
+  <li>
+    <p>新增系統相關設定，點選[WellWareProject] &gt; 按下[新增按鍵] <br />
+<img src="img/026-新增系統相關設定.png" alt="alt 新增系統相關設定" /></p>
+  </li>
+  <li>指定專案相關設定，並按下[儲存]鍵完成儲存 <br />
+<img src="img/027E.png" alt="alt 指定專案相關設定" />
+ # 專案資訊：
+    <ol>
+      <li>專案代號(UUID)：專案於站台中的唯一碼（由站台自動產生）<br /></li>
+      <li>組裝代號(UUID)：安裝的應用系統所屬組裝代號<br />
+<span style="color:red; font-size:1.5em;">(系統安裝前請務必確認組裝代號(UUID)正確無誤，否則系統將無法正確執行，該資料在[IDE][專案管理][工廠開案資訊]中)</span><br /></li>
+      <li>專案名稱：專案名稱，建議中英文或數字開頭，勿將第一個字元使用特殊字元<br /></li>
+      <li>資料庫名稱：資料庫名稱，建議勿將第一個字元使用特殊字元，並避開MS-SQL關鍵字<br /></li>
+      <li>Table 備份資料庫名稱：備份用資料庫名稱，建議勿將第一個字元使用特殊字元，並避開MS-SQL關鍵字<br /></li>
+      <li>Table 備份保留份數：數字，預設值3份<br /></li>
+      <li>電子郵件名稱：當該處有設定，且系統取用BPS功能，將主動寄一份給該電子郵件帳戶，主要提供RURU服務部門蒐集異常資訊提供支援服務<br /></li>
+      <li>儲存編輯<br />
+ <br /></li>
+    </ol>
+  </li>
+  <li>
+    <p>儲存中 <br />
+<img src="img/028.png" alt="alt 指定專案相關設定儲存中" /></p>
+  </li>
+  <li>
+    <p>完成儲存 <br />
+<img src="img/029.png" alt="alt 指定專案相關設定儲存完成" /></p>
+  </li>
+  <li>
+    <p>建立公司，選擇專案，按下[新增]按鍵 <br />
+<img src="img/030E.png" alt="alt 建立公司" /></p>
+  </li>
+  <li>指定公司相關設定，並按下[儲存]鍵完成儲存 <br />
+<img src="img/031E.png" alt="alt 指定專案相關設定" />
+ # 公司資訊：
+    <ol>
+      <li>公司代號(UUID)：公司於專案中的唯一碼（由站台自動產生）<br /></li>
+      <li>公司名稱：公司名稱，建議勿將第一個字元使用特殊字元<br /></li>
+      <li>公司英文名稱：公司英文名稱，建議勿將第一個字元使用特殊字元<br /></li>
+      <li>資料庫名稱：資料庫名稱，建議勿將第一個字元使用特殊字元，並避開MS-SQL關鍵字<br /></li>
+      <li>Table 備份資料庫名稱：備份用資料庫名稱，建議勿將第一個字元使用特殊字元，並避開MS-SQL關鍵字<br /></li>
+      <li>Table 備份保留份數：數字，預設值3份<br /></li>
+      <li>儲存<br />
+ <br /></li>
+    </ol>
+  </li>
+  <li>完成公司相關設定 <br />
+<img src="img/032.png" alt="alt 指定專案相關設定" /></li>
+</ol>
+
+<h3 id="為系統指定企業歸屬">為系統指定企業歸屬</h3>
+
+<ol>
+  <li>
+    <p>以站台管理員帳戶登入站台管理介面 <br />
+<img src="img/SiteAdminLogin.png" alt="alt 登入站台管理介面" /></p>
+  </li>
+  <li>
+    <p>選取[企業設定]，按下[編輯]按鍵 <br />
+<img src="img/018-開啟企業設定.png" alt="alt 企業設定" /></p>
+  </li>
+  <li>
+    <p>按下新增按鍵，指定系統與企業相關資訊 <br />
+<img src="img/022-完成連結企業與專案.png" alt="alt 建立企業中系統相關資訊" /></p>
+  </li>
+  <li>
+    <p>按下系統選擇按鍵，挑回所需系統 <br />
+<img src="img/024E.png" alt="alt 建立企業中系統相關資訊" /></p>
+  </li>
+  <li>
+    <p>按下[儲存]按鍵，完成設定結束 <br />
+<img src="img/025E.png" alt="alt 儲存專案所屬企業指定" />
+ # 系統資訊：</p>
+    <ol>
+      <li>系統名稱：挑選的系統名稱<br /></li>
+      <li>選單樣式：登入RTE後左側選單樣式<br /></li>
+      <li>上傳檔案大小：預設50M，不得為零<br /></li>
+      <li>同時最大上線人數：0為不設限制<br /></li>
+      <li>使用者維持登入時間(分鐘)：0為不設限制<br /></li>
+    </ol>
+  </li>
+</ol>
+
+<h3 id="安裝系統工具">安裝系統工具</h3>
+
+<ol>
+  <li>
+    <p>以企業管理員帳戶登入站台管理介面 <br />
+<img src="img/043-指定系統管理員.png" alt="alt 登入站台管理介面" /></p>
+  </li>
+  <li>
+    <p>選擇[參數設定] &gt; [選擇匯入系統]，按下[選擇檔案]選取要匯入的[系統工具]安裝檔 <br />
+<img src="img/035E.png" alt="alt 開啟檔案選取" /></p>
+  </li>
+  <li>
+    <p>選取要匯入的[系統工具]安裝檔(“Project_UTL.mdb”)，按下[開啟]按鍵 <br />
+<img src="img/036E.png" alt="alt 選取系統安裝檔案" /></p>
+  </li>
+  <li>
+    <p>按下[載入清單]後，開始載入要匯入的清單 <br />
+<img src="img/匯入系統工具E.png" alt="alt 選取系統安裝檔案" /></p>
+  </li>
+  <li>
+    <p>載入中 <br />
+<img src="img/037.png" alt="alt 載入中" /></p>
+  </li>
+  <li>
+    <p>完成清單載入 <br />
+<img src="img/038.png" alt="alt 完成載入" /></p>
+  </li>
+  <li>
+    <p>選擇要匯入的目的專案，按下[匯入]按鍵進行匯入作業 <br />
+<img src="img/038-1E.png" alt="alt 選擇要匯入的專案" /></p>
+  </li>
+  <li>
+    <p>完成匯入作業  <br />
+<img src="img/038-2.png" alt="alt 完成匯入作業" /></p>
+  </li>
+</ol>
+
+<h3 id="安裝應用系統">安裝應用系統</h3>
+
+<ol>
+  <li>
+    <p>以站台管理員帳戶登入站台管理介面 <br />
+<img src="img/043-指定系統管理員.png" alt="alt 登入站台管理介面" /></p>
+  </li>
+  <li>
+    <p>選擇[參數設定] &gt; [選擇匯入系統]，按下[選擇檔案]選取要匯入的[系統工具]安裝檔 <br />
+<img src="img/035E.png" alt="alt 開啟檔案選取" /></p>
+  </li>
+  <li>
+    <p>選取要匯入的[應用系統]安裝檔({專案料號}_{版本編號}.mdb)，按下[開啟]按鍵 <br />
+<img src="img/039E.png" alt="alt 選取系統安裝檔案" /></p>
+  </li>
+  <li>
+    <p>按下[載入清單]後，進行載入要匯入的清單 <br />
+<img src="img/039-1E.png" alt="alt 選取系統安裝檔案" /></p>
+  </li>
+  <li>
+    <p>完成清單載入 <br />
+<img src="img/039-2.png" alt="alt 完成載入" /></p>
+  </li>
+  <li>
+    <p>選擇要匯入的目的專案，按下[匯入]按鍵進行匯入作業 <br />
+<img src="img/039-3E.png" alt="alt 選擇要匯入的專案" /></p>
+  </li>
+  <li>
+    <p>完成匯入作業  <br />
+<img src="img/039-4.png" alt="alt 完成匯入作業" /></p>
+  </li>
+</ol>
+
+<h3 id="指定系統管理員">指定系統管理員</h3>
+
+<ol>
+  <li>
+    <p>以企業管理員帳戶登入站台管理介面 <br />
+<img src="img/043-指定系統管理員.png" alt="alt 企業設定" /></p>
+  </li>
+  <li>
+    <p>選取[系統_管理員設定]介面，開啟系統清單，挑選要指定的系統 <br />
+<img src="img/044E.png" alt="alt 系統_管理員設定" /></p>
+  </li>
+  <li>
+    <p>勾選指定系統帶回 <br />
+<img src="img/045E.png" alt="alt 勾選系統帶回" /></p>
+  </li>
+  <li>
+    <p>按下[過濾鍵]查詢該系統現有管理員清單 <br />
+<img src="img/046E.png" alt="alt 查詢現有股臉員清單" /></p>
+  </li>
+  <li>
+    <p>按下[新增]按鍵開啟帳號清單 <br />
+<img src="img/047E.png" alt="alt 開啟帳戶清單" /></p>
+  </li>
+  <li>
+    <p>勾選帳號按下[儲存]按鍵指定帶回 <br />
+<img src="img/049E.png" alt="alt 按鍵指定帶回" /></p>
+  </li>
+  <li>
+    <p>完成系統管理員帳號指定 <br />
+<img src="img/050.png" alt="alt 完成帳戶指定" /></p>
+  </li>
+</ol>
+
+<h2 id="測試安裝">測試安裝</h2>
+
+<ol>
+  <li>
+    <p>進入登入畫面 <br />
+<img src="img/051.png" alt="alt 登入" /></p>
+  </li>
+  <li>
+    <p>登入系統 <br />
+<img src="img/052.png" alt="alt 登入系統" /></p>
+  </li>
+</ol>
+:ET

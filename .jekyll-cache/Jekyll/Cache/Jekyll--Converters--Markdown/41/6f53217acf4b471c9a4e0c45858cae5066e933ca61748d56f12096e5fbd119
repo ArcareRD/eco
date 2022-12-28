@@ -1,0 +1,180 @@
+I"�<h1 id="清單">清單</h1>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*   Red
+*   Green
+*   Blue
+</code></pre></div></div>
+
+<ul>
+  <li>Red</li>
+  <li>Green</li>
+  <li>Blue</li>
+</ul>
+
+<h4 id="等同於">等同於</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+   Red
++   Green
++   Blue
+</code></pre></div></div>
+
+<ul>
+  <li>Red</li>
+  <li>Green</li>
+  <li>Blue</li>
+</ul>
+
+<h4 id="也等同於">也等同於</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-   Red
+-   Green
+-   Blue
+</code></pre></div></div>
+
+<ul>
+  <li>Red</li>
+  <li>Green</li>
+  <li>Blue</li>
+</ul>
+
+<h4 id="序號清單">序號清單</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.  Bird
+2.  McHale
+3.  Parish
+</code></pre></div></div>
+
+<ol>
+  <li>Bird</li>
+  <li>McHale</li>
+  <li>Parish</li>
+</ol>
+
+<h4 id="嚴謹便利於原始內容讀取">嚴謹(便利於原始內容讀取)</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+    Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+    viverra nec, fringilla in, laoreet vitae, risus.
+*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+    Suspendisse id sem consectetuer libero luctus adipiscing.
+</code></pre></div></div>
+
+<ul>
+  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.</li>
+  <li>Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.</li>
+</ul>
+
+<h4 id="隨意">隨意</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*   Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.
+*   Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.
+</code></pre></div></div>
+
+<ul>
+  <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi,
+viverra nec, fringilla in, laoreet vitae, risus.</li>
+  <li>Donec sit amet nisl. Aliquam semper ipsum sit amet velit.
+Suspendisse id sem consectetuer libero luctus adipiscing.</li>
+</ul>
+
+<h4 id="沒有空行">沒有空行</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*   Bird
+*   Magic
+</code></pre></div></div>
+
+<ul>
+  <li>Bird</li>
+  <li>Magic</li>
+</ul>
+
+<h4 id="空行">空行</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*   Bird
+
+*   Magic
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>Bird</p>
+  </li>
+  <li>
+    <p>Magic</p>
+  </li>
+</ul>
+
+<h4 id="段落運用">段落運用</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1.  This is a list item with two paragraphs. Lorem ipsum dolor
+    sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+    mi posuere lectus.
+
+    Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+    vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+    sit amet velit.
+
+2.  Suspendisse id sem consectetuer libero luctus adipiscing.
+</code></pre></div></div>
+
+<ol>
+  <li>
+    <p>This is a list item with two paragraphs. Lorem ipsum dolor
+sit amet, consectetuer adipiscing elit. Aliquam hendrerit
+mi posuere lectus.</p>
+
+    <p>Vestibulum enim wisi, viverra nec, fringilla in, laoreet
+vitae, risus. Donec sit amet nisl. Aliquam semper ipsum
+sit amet velit.</p>
+  </li>
+  <li>
+    <p>Suspendisse id sem consectetuer libero luctus adipiscing.</p>
+  </li>
+</ol>
+
+<h4 id="清單下也可以放置引言">清單下也可以放置引言</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*   A list item with a blockquote:
+
+    &gt; This is a blockquote.
+
+    &gt; inside a list item.
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>A list item with a blockquote:</p>
+
+    <blockquote>
+      <p>This is a blockquote.</p>
+    </blockquote>
+
+    <blockquote>
+      <p>inside a list item.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h4 id="內涵程式區塊兩個tab">內涵程式區塊（兩個Tab）</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*   A list item with a code block:
+
+        &lt;code goes here&gt;
+</code></pre></div></div>
+
+<ul>
+  <li>
+    <p>A list item with a code block:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;code goes here&gt;
+</code></pre></div>    </div>
+  </li>
+</ul>
+:ET

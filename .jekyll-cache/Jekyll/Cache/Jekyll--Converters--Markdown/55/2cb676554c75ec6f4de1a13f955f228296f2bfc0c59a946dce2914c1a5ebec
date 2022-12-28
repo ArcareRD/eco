@@ -1,0 +1,385 @@
+I"~5<h2 id="rte跨版升級注意事項">RTE跨版升級注意事項：</h2>
+
+<ol>
+  <li>如果不是逐版升級請注意各版需作業項目，應完整執行</li>
+  <li>更新作業流程<br />
+ a. 更新RTE引擎<br />
+ b. 重整資料庫<br />
+ c. 重啟Tomcat服務<br /></li>
+</ol>
+
+<h2 id="rte版本紀錄">RTE版本紀錄</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">版本</th>
+      <th style="text-align: left">注意事項</th>
+      <th style="text-align: left">重要更新功能</th>
+      <th style="text-align: center">更新日期</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">008.010.001.010</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"><a href="https://pages.ruru.tw/#/8.10.1/UPDATE/ITEM_5/RTE/README" target="_blank">本版異動資訊</a></td>
+      <td style="text-align: center">2021-09-27</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.012</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2021-09-28</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.013</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2021-09-30</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.016</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2021-10-04</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.018</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2021-10-07</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.020</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2021-10-19</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.022</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2021-11-07</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.023</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left">首頁驗證碼，使用者姓名顯示</td>
+      <td style="text-align: center">2021-11-13</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.024</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2021-11-13</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.025</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2021-11-22</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.026</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2021-11-28</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.028</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2021-12-05</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.031</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2021-12-18</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.033</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022-01-08</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.034</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022-01-13</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.041</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022-02-06</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.042</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022-02-08</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.046</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022-02-18</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.047</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left">使用8.10.1引擎的專案於 2022/02/24 後產出的專案都須更新該版以後RTE</td>
+      <td style="text-align: center">2022-02-24</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.049</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022-03-03</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.050</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left">更新站台帳號管理介面</td>
+      <td style="text-align: center">2022-03-07</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.051</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022-03-07</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.052</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022-03-09</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.054</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022-03-10</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.055</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022-03-21</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.056</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022-03-25</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.057</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022-03-29</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.058</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022-03-30</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.059</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022-03-31</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.060</td>
+      <td style="text-align: left">重整資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022-04-06</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ide-8101-停止更新全面更新至-8102">IDE 8.10.1 停止更新，全面更新至 8.10.2</h3>
+
+<h2 id="系統工具紀錄清單">系統工具紀錄清單</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">版本</th>
+      <th style="text-align: left">注意事項</th>
+      <th style="text-align: center">更新日期</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">008.010.000.021</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2021/9/9</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.001</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2021/10/21</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.002</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022/2/20</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.003</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">2022/2/28</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="ide版本紀錄">IDE版本紀錄</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">版本</th>
+      <th style="text-align: left">注意事項</th>
+      <th style="text-align: center">主要更新功能</th>
+      <th style="text-align: center">日期</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">008.010.001.007</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2021/09/24</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.008</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2021/09/30</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.010</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2021/10/06</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.011</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2021/10/12</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.012</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2021/10/19</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.018</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2021/11/07</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.020</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2021/11/13</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.022</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2021/11/28</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.023</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2021/12/05</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.025</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2021/01/03</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.026</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2021/01/08</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.027</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2021/01/10</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.030</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2021/02/06</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.031</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2021/02/10</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.047</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2022/02/24</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.049</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2022/03/04</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.051</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2022/03/07</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">008.010.001.052</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">2022/03/08</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="ide-8101-停止更新全面更新至-8102-1">IDE 8.10.1 停止更新，全面更新至 8.10.2</h3>
+
+<h2 id="arcare-encrypt-key-manager-tool">Arcare encrypt key manager tool</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">版本</th>
+      <th style="text-align: center">釋出日期</th>
+      <th style="text-align: center">備註</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">8.10.0.3</td>
+      <td style="text-align: center">2021/01/22</td>
+      <td style="text-align: center"> </td>
+    </tr>
+  </tbody>
+</table>
+:ET

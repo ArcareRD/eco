@@ -1,0 +1,78 @@
+I"�<h2 id="integrated-design-environment--reference-manual">Integrated Design Environment  Reference Manual</h2>
+
+<h3 id="修訂記錄-revision-history"><strong>修訂記錄</strong> (Revision History)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">版本<br />Version<br /></th>
+      <th style="text-align: center">出版日期<br />Issue Date <br /></th>
+      <th style="text-align: center">修訂章節<br />Section Changed<br /></th>
+      <th style="text-align: center">出版修訂原因<br />Reason for Issue<br /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">7.00</td>
+      <td style="text-align: center">2021/03/31</td>
+      <td style="text-align: center">11.1, 11.22, 11.B</td>
+      <td style="text-align: center">依808.10 改版功能增加.<br />推播通知功能及相關作業調整<br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">7.01</td>
+      <td style="text-align: center">2021/07/01</td>
+      <td style="text-align: center">10.12</td>
+      <td style="text-align: center">依8.10.0.50 改版功能擴充.<br />嵌入元件-地圖 觸發按鍵功能<br /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">8.10.1</td>
+      <td style="text-align: center">2021/12/24</td>
+      <td style="text-align: center">4.5,10,19</td>
+      <td style="text-align: center">依8.10.1 改版功能擴充.<br />容器增加磚塊式、MAE擴充更新帶值<br /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="-章節目錄"><a name="MainMenu"></a> <strong>章節目錄</strong></h3>
+<p><a href="01.html"><strong>1.	簡介 Introduction</strong></a></p>
+
+<p><a href="02.html"><strong>2.	系統登入 Log in platform</strong></a></p>
+
+<p><a href="03.html"><strong>3.	專案管理 Project Management</strong></a></p>
+
+<p><a href="04.html"><strong>4.	模組流程</strong></a></p>
+
+<p><a href="05.html"><strong>5.	作業表單的規劃 Design form</strong></a></p>
+
+<p><a href="06.html"><strong>6.	表單規格描述</strong></a></p>
+
+<p><a href="07.html"><strong>7.	資料表規劃規格 DB table define</strong></a></p>
+
+<p><a href="08.html"><strong>8.	檢視表加註 DB View define</strong></a></p>
+
+<p><a href="09.html"><strong>9.	表單的處理規格</strong></a></p>
+
+<p><a href="10.html"><strong>10.	表單元件加註 Design form component process spec</strong></a></p>
+
+<p><a href="11.html"><strong>11.	按鍵功能的處理規格 Design button function spec</strong></a></p>
+
+<p><a href="12.html"><strong>12.	資料交易 Data transation</strong></a></p>
+
+<p><a href="13.html"><strong>13.	報表的設計 Define report</strong></a></p>
+
+<p><a href="14.html"><strong>14.	報表的處理規格 Design report process spec</strong></a></p>
+
+<p><a href="15.html"><strong>15.	報表元件的處理規格 Design report component process spec</strong></a></p>
+
+<p><a href="16.html"><strong>16.	專案資源</strong></a></p>
+
+<p><a href="17.html"><strong>17.	設計輔助工具</strong></a></p>
+
+<p><a href="18.html"><strong>18.	平台管理</strong></a></p>
+
+<p><a href="19.html"><strong>19.	系統公用資源</strong></a></p>
+
+<p><a href="20.html"><strong>附錄 A. 共通性操作</strong></a></p>
+
+<p><a href="20.html#Posting_Struct"><strong>附錄 B. 過帳架構及案例說明</strong></a></p>
+:ET

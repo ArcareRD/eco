@@ -1,0 +1,149 @@
+I"�<h1 id="範例">範例</h1>
+
+<h4 id="階層插圖">階層插圖</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>* LEVEL1
+    * LEVEL2
+        * LEVEL3
+
+            ![Alt PIC1](PIC1.jpg)
+</code></pre></div></div>
+
+<ul>
+  <li>LEVEL1
+    <ul>
+      <li>LEVEL2
+        <ul>
+          <li>
+            <p>LEVEL3</p>
+
+            <p><img src="PIC1.jpg" alt="Alt PIC1" /></p>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="表格階層欄位">表格階層欄位</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>| Tables   |        |                | Are           | Cool  |
+| ---------|:------:|:--------------:|:-------------:| -----:|
+| col 3 is |        |                | right-aligned | $1600 |
+|          | 2 is   |                | centered      |   $12 |
+|          | zebra  |                | are neat      |    $1 |
+|          |        | ssssssssss     | qqqqqqq       |     $3|
+|          |        | zebra stripes  | are neat      |    $1 |
+|          |        | ssssssssss     | qqqqqqq       |     $3|
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tables</th>
+      <th style="text-align: center">2 colspan</th>
+      <th style="text-align: center"> </th>
+      <th style="text-align: center">Are</th>
+      <th style="text-align: right">Cool</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>col 3 is</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">right-aligned</td>
+      <td style="text-align: right">$1600</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center">2 is</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">centered</td>
+      <td style="text-align: right">$12</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center">zebra</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">are neat</td>
+      <td style="text-align: right">$1</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">ssssssssss</td>
+      <td style="text-align: center">qqqqqqq</td>
+      <td style="text-align: right">$3</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">zebra stripes</td>
+      <td style="text-align: center">are neat</td>
+      <td style="text-align: right">$1</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">ssssssssss</td>
+      <td style="text-align: center">qqqqqqq</td>
+      <td style="text-align: right">$3</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h4 id="範例1">範例1</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;details&gt;
+&lt;summary&gt;DKS &lt;/summary&gt;
+&lt;pre&gt;
+    &lt;code&gt;
+
+| 功能 | Table_Name | Table_Descrip | 歷史區 |
+| --- | ---------- | -------------- | ----- |
+| 專案 | UI_Prj_Main | [專案主檔](/UI_Prj_Main.md) | 無 |
+| 專案 | UI_PrjExportImportLog | [專案匯出入記錄](/UI_PrjExportImportLog.md) | 無 |
+
+    &lt;/code&gt;
+&lt;/pre&gt;
+&lt;/details&gt;
+</code></pre></div></div>
+
+<details>
+<summary>DKS </summary>
+<pre><code>
+
+| 功能 | Table_Name | Table_Descrip | 歷史區 |
+|------|------------|----------------|-------|
+| 專案 | UI_Prj_Main | [專案主檔](/UI_Prj_Main.md) | 無 |
+| 專案 | UI_PrjExportImportLog | [專案匯出入記錄](/UI_PrjExportImportLog.md) | 無 |
+
+</code></pre>
+</details>
+
+<hr />
+
+<h4 id="範例2">範例2</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;details&gt;
+&lt;summary&gt;Project &lt;/summary&gt;
+
+| 功能 | Table_Name | Table_Descrip | 歷史區 |
+| ---- | ---------- | ------------- | ------ |
+| 事件 | UI_Flow | [事件主檔](/UI_Flow.md) | 有 |
+
+&lt;/details&gt;
+</code></pre></div></div>
+
+<details>
+<summary>Project </summary>
+
+| 功能 | Table_Name | Table_Descrip | 歷史區 |
+|---------|:------:|:--------------:|:-------------:|
+| 事件 | UI_Flow | [事件主檔](/UI_Flow.md) | 有 |
+
+</details>
+:ET

@@ -1,0 +1,93 @@
+I"�<h2 id="版本">版本</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">最後更新日期</th>
+      <th style="text-align: center">備註</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">2022-03-15</td>
+      <td style="text-align: center">初版</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="rte---運行平台-run-time-environment雲端虛擬機設定建議">RTE - 運行平台 (Run Time Environment)雲端虛擬機設定建議</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">項目</th>
+      <th style="text-align: left">AP伺服器</th>
+      <th style="text-align: left">DB伺服器(或AP + DB)</th>
+      <th style="text-align: center">備註</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">CPU</td>
+      <td style="text-align: left">2 core以上</td>
+      <td style="text-align: left">4 core以上</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">記憶體</td>
+      <td style="text-align: left">至少8G以上</td>
+      <td style="text-align: left">至少16G以上</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">OS硬碟</td>
+      <td style="text-align: left">優化/進階SSD IPOS至少500以上(100MBs) 剩餘容量50G以上</td>
+      <td style="text-align: left">優化/進階SSD IPOS至少500以上(100MBs) 剩餘容量50G以上</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">DB DATA硬碟</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">優化/進階SSD IPOS至少1100以上(125MBs)</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">伺服器作業系統</td>
+      <td style="text-align: left">Microsoft Windows Server 2012 以上版本</td>
+      <td style="text-align: left">Microsoft Windows Server 2012 以上版本</td>
+      <td style="text-align: center"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center">資料庫</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Microsoft SQL Server 2012 以上版本</td>
+      <td style="text-align: center">建議採用含MSSQL影像檔建立</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Excel</td>
+      <td style="text-align: left">Microsoft Excel 2007~2016</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: center">安裝IRIS系統才需要</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="效能提升方式建議">效能提升方式建議</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">AP伺服器</th>
+      <th style="text-align: left">DB伺服器(或AP + DB)</th>
+      <th style="text-align: center">備註</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">以CPU 1code + 記憶體4g配對升級</td>
+      <td style="text-align: left">以CPU 2code + 記憶體8g、DATA磁碟IPOS 1000配對升級</td>
+      <td style="text-align: center">配對升級提供最佳資劉流暢度</td>
+    </tr>
+  </tbody>
+</table>
+:ET

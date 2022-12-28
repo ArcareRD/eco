@@ -1,0 +1,3254 @@
+I"��<h2 id="ThemeStyle"><strong>主題樣式</strong></h2>
+
+<p><img src="images/19.1-1.png" alt="" /></p>
+<ol>
+  <li>[樣式名稱]：樣式的名稱，可利用開窗鍵, 開啟<a href="16.html#MaintainMultilingual">【多語詞庫】</a>指定挑選詞庫, 請參考［16.2］來指定啟動說明</li>
+  <li>[元件群組]：下拉：元件／按鍵／表單／首頁</li>
+  <li>[元件類型]：依據元件群組，下拉挑選要設定樣式的類型</li>
+  <li>[狀態樣式]：各元件類型有可適用的狀態樣式，請參考［19.1.1］</li>
+  <li>[底色]：設定該狀態下的背景色</li>
+  <li>[底色_顏色]：設定顏色，開啟<a href="20.html#Palette">【調色盤】</a>指定色碼，操作說明請參考［附錄A3］</li>
+  <li>[底色＿透明度]：數字０是全透明，數字愈大愈不透明</li>
+  <li>[底色＿漸層色]：設定要做漸層顏色，開啟<a href="20.html#Palette">【調色盤】</a>指定色碼，操作說明請參考［附錄A3］</li>
+  <li>[底色＿漸層方向]：下拉：無／上／下／左／右／垂直／水平／向內／向外</li>
+  <li>[內容]：設定該狀態下的前景字體的內容</li>
+  <li>[內容＿文字顏色]：設定文字顏色，開啟<a href="20.html#Palette">【調色盤】</a>指定色碼，操作說明請參考［附錄A3］</li>
+  <li>[內容＿透明]：設定透明度，數字０是全透明，數字愈大愈不透明</li>
+  <li>[內容＿超連結點擊前]：具超連結的文字，點擊前顯示的顏色，開啟<a href="20.html#Palette">【調色盤】</a>指定色碼，操作說明請參考［附錄A3］</li>
+  <li>[內容＿超連結點擊後]：具超連結的文字，點擊後顯示的顏色，開啟<a href="20.html#Palette">【調色盤】</a>指定色碼，操作說明請參考［附錄A3］</li>
+  <li>[內容＿字型]：字型的選擇</li>
+  <li>[內容＿大小]：字體的大小</li>
+  <li>[內容＿水平]：字體水平對齊的方式</li>
+  <li>[內容＿垂直]：字體垂直對齊的方式</li>
+  <li>[內容＿粗體]：勾選本項，表示字體變粗</li>
+  <li>[內容＿斜體]：勾選本項，表示字體變斜</li>
+  <li>[內容＿底線]：勾選本項，表示字體加底線</li>
+  <li>[內容＿刪除線]：勾選本項，表示字體加刪除線</li>
+  <li>[列底色]：設定表格資料列的數據</li>
+  <li>[列底色＿標題列]：表格的標題列顏色，開啟<a href="20.html#Palette">【調色盤】</a>指定色碼，操作說明請參考［附錄A3］</li>
+  <li>[列底色＿單數資料列]：表格的資料列位於單數時的列顏色，開啟<a href="20.html#Palette">【調色盤】</a>指定色碼，操作說明請參考［附錄A3］</li>
+  <li>[列底色＿雙數資料列]：表格的資料列位於雙數時的列顏色，開啟<a href="20.html#Palette">【調色盤】</a>指定色碼，操作說明請參考［附錄A3］</li>
+  <li>[框線]：設定元件的框線屬性</li>
+  <li>[框線＿線條]：指定框線的樣式，下拉：無／實線／虛線／嵌入線／浮出線</li>
+  <li>[框線＿線條弧度]：指定框線的四個角的手戈廿水，０代表直角，最大５０</li>
+  <li>[框線＿上邊寛度]：指定上邊框線的寛度，數字愈大愈粗</li>
+  <li>[框線＿上邊顏色]：指定上邊框線的顏色，開啟<a href="20.html#Palette">【調色盤】</a>指定色碼，操作說明請參考［附錄A3］</li>
+  <li>[框線＿下邊寛度]：指定下邊框線的寛度，數字愈大愈粗</li>
+  <li>[框線＿下邊顏色]：指定下邊框線的顏色，開啟<a href="20.html#Palette">【調色盤】</a>指定色碼，操作說明請參考［附錄A3］</li>
+  <li>[框線＿左邊寛度]：指定左邊框線的寛度，數字愈大愈粗</li>
+  <li>[框線＿左邊顏色]：指定左邊框線的顏色，開啟<a href="20.html#Palette">【調色盤】</a>指定色碼，操作說明請參考［附錄A3］</li>
+  <li>[框線＿右邊寛度]：指定右邊框線的寛度，數字愈大愈粗</li>
+  <li>[框線＿右邊顏色]：指定右邊框線的顏色，開啟<a href="20.html#Palette">【調色盤】</a>指定色碼，操作說明請參考［附錄A3］</li>
+  <li>[內框線]：按鈕及容器元件有內框的設定，各欄位的設定操作同28~37</li>
+  <li>[光棒]：表格元件及選項清單有設定光棒的顏色，各欄位的設定操作同28~37，6~8</li>
+  <li>[光棒]：表格元件及選項清單有設定光棒的顏色，各欄位的設定操作同28~37，6~8</li>
+  <li>[圖示]：當元件類型有圖示可替代時，可在此處設定圖示，開啟<a href="16.html#Icon">【圖示設定】</a>挑選圖示，請參考［16.3］</li>
+</ol>
+
+<h3 id="1911-樣式狀態對照"><strong>19.1.1 樣式狀態對照</strong></h3>
+<blockquote>
+  <p>作業目的：各類元件可使用的樣式狀態, 打V者　表示可設定有作用。</p>
+</blockquote>
+
+<p><img src="images/19.1.1-1.png" alt="" />
+各類樣式狀態的使用時機
+	1. 按下OnClick：當元件被滑鼠或利用熱鍵按下時
+	2. 除能Disable：當元件設定為除能狀態時
+	3. 致能Enable：當元件設定為致能狀態時
+	4. 滑鼠移入MouseIn：滑鼠移到元件位置上方，但未駐留OnFocus
+	5. 駐留OnFocus：游標停留在元件上
+	6. 標題Tilte：元件的標題文字
+	7. 顯示Enable：當元件設定僅供顯示的狀態
+	8. 顯示駐留OnFocus：當元件設定僅供顯示的狀態，但游標停留該元件上
+	9. 選項清單ItemList：下拉元件的清單</p>
+
+<p>|對於行動裝置下, 狀態樣式可也獨立設定|
+<img src="images/19.1.1-2.png" alt="" /></p>
+
+<h2 id="SystemFunction"><strong>19.2 系統函數</strong></h2>
+<blockquote>
+  <p>作業目的：對已定義好的規格，進行語法及完成度的檢查。</p>
+</blockquote>
+
+<p><img src="images/19.2-1.png" alt="" /></p>
+<ol>
+  <li>函數名稱：顯示函數的名稱</li>
+  <li>對應語法：顯示在系統執行時的語法</li>
+  <li>參數：勾選時，表示在條件時的左運算式出現時，必須指定參數</li>
+  <li>左邊：勾選時，表示本函數可以出現在條件式左側</li>
+  <li>右邊：勾選時，表示本函數可以出現在條件式右側</li>
+  <li>狀態：勾選時，表示本函數回傳值為一判斷邏輯</li>
+  <li>說明：顯示函數的說明文字</li>
+  <li>料號：顯示函數的料號</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">序</th>
+      <th style="text-align: left">函數名稱(參數)</th>
+      <th style="text-align: left">說明</th>
+      <th style="text-align: left">回傳</th>
+      <th style="text-align: left">Scrip語法</th>
+      <th style="text-align: left">SQL 語法</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">01</td>
+      <td style="text-align: left">右去空白</td>
+      <td style="text-align: left">無條件捨去字串後所有多餘空格後，傳回字元字串。</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">RTrim</td>
+      <td style="text-align: left">RTrim</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">02</td>
+      <td style="text-align: left">去空白</td>
+      <td style="text-align: left">無條件捨去字串前後所有多餘空格後，傳回字元字串。</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">Trim</td>
+      <td style="text-align: left">LTrim(RTrim</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">03</td>
+      <td style="text-align: left">左取</td>
+      <td style="text-align: left">傳回字串左邊特定長度的字元。</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">Left</td>
+      <td style="text-align: left">Left</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">04</td>
+      <td style="text-align: left">右取</td>
+      <td style="text-align: left">傳回字串右邊特定長度的字元。</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">Right</td>
+      <td style="text-align: left">Right</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">05</td>
+      <td style="text-align: left">中取</td>
+      <td style="text-align: left">傳回字串右邊特定長度的字元。</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">Mid</td>
+      <td style="text-align: left">SubString</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">06</td>
+      <td style="text-align: left">內容值不存在或空白 (可取代)</td>
+      <td style="text-align: left">檢查指定的內容值是否為空值</td>
+      <td style="text-align: left">布林</td>
+      <td style="text-align: left">IsEmptyVal</td>
+      <td style="text-align: left">IsNull</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">07</td>
+      <td style="text-align: left">找字</td>
+      <td style="text-align: left">回傳一個字串在另一個字串中首次出現的位置</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">InStr</td>
+      <td style="text-align: left">CHARINDEX</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">08</td>
+      <td style="text-align: left">傳回給定的字串運算式之字元數</td>
+      <td style="text-align: left">計算字串長度</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">Len</td>
+      <td style="text-align: left">Len</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">09</td>
+      <td style="text-align: left">算長度(右去空白)</td>
+      <td style="text-align: left">將字串右去空白後計算長度</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">Len(RTrim</td>
+      <td style="text-align: left">Len(RTrim</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">10</td>
+      <td style="text-align: left">轉文字</td>
+      <td style="text-align: left">將指定變數轉換為文字</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">ToString</td>
+      <td style="text-align: left">Cast</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">11</td>
+      <td style="text-align: left">轉數字</td>
+      <td style="text-align: left">將指定變數轉換為數字</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">CDbl</td>
+      <td style="text-align: left">Cast</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">12</td>
+      <td style="text-align: left">日期轉文字(有斜線)</td>
+      <td style="text-align: left">日期轉文字(有斜線)</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">Left(ToString</td>
+      <td style="text-align: left">Convert</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">13</td>
+      <td style="text-align: left">日期轉文字(無斜線)</td>
+      <td style="text-align: left">日期轉文字(無斜線)</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">Left(DTOS</td>
+      <td style="text-align: left">Convert</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">14</td>
+      <td style="text-align: left">日期差</td>
+      <td style="text-align: left">計算兩日期之間的差。</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">DateDiff</td>
+      <td style="text-align: left">DateDiff</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">15</td>
+      <td style="text-align: left">取餘數</td>
+      <td style="text-align: left">數字二對數字一取餘數</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">16</td>
+      <td style="text-align: left">使用者代號(數字型態)</td>
+      <td style="text-align: left">取得使用者代號(數字型態)</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">GetUserId()</td>
+      <td style="text-align: left">RT[GetUserId()]</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">17</td>
+      <td style="text-align: left">使用者代號(文字型態))</td>
+      <td style="text-align: left">取得使用者代號(文字型態)</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">ToString(GetUserId())</td>
+      <td style="text-align: left">RT[ToString(GetUserId())]</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">18</td>
+      <td style="text-align: left">使用者帳號</td>
+      <td style="text-align: left">取得使用者帳號</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">GetAccount()</td>
+      <td style="text-align: left">RT[GetAccount()]</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">19</td>
+      <td style="text-align: left">使用者姓名</td>
+      <td style="text-align: left">取得使用者姓名</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">GetUserName()</td>
+      <td style="text-align: left">RT[GetUserName()]</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">20</td>
+      <td style="text-align: left">簽入語系(數字型態)</td>
+      <td style="text-align: left">簽入語系(數字型態)</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">GetLanguageId()</td>
+      <td style="text-align: left">RT[GetLanguageId()]</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">21</td>
+      <td style="text-align: left">簽入語系(文字型態))</td>
+      <td style="text-align: left">簽入語系(文字型態)</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">ToString(GetLanguageId())</td>
+      <td style="text-align: left">RT[ToString(GetLanguageId())]</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">22</td>
+      <td style="text-align: left">根目錄</td>
+      <td style="text-align: left">取得根目錄狀態</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">cId_IsGetRootNodeing()</td>
+      <td style="text-align: left">RT[cId_IsGetRootNodeing()]</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">23</td>
+      <td style="text-align: left">大寫字母</td>
+      <td style="text-align: left">判斷字串開頭是否為大寫字母</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">24</td>
+      <td style="text-align: left">系統日期</td>
+      <td style="text-align: left">取得系統日期</td>
+      <td style="text-align: left">日期</td>
+      <td style="text-align: left">GetSysDate()</td>
+      <td style="text-align: left">cast(convert(nchar(10),getdate(),21) as datetime)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">25</td>
+      <td style="text-align: left">執行唯一號()</td>
+      <td style="text-align: left">取得執行唯一號</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">GetRunSrlid()</td>
+      <td style="text-align: left">RT[GetRunSrlid()]</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">26</td>
+      <td style="text-align: left">登入組織序號</td>
+      <td style="text-align: left">取得登入組織帳務的序號</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">GetCorpId()</td>
+      <td style="text-align: left">RT[GetCorpId()]</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">27</td>
+      <td style="text-align: left">取日期欄位年度值</td>
+      <td style="text-align: left">取日期欄位年度值</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">Year</td>
+      <td style="text-align: left">Year</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">28</td>
+      <td style="text-align: left">取日期欄位月份值</td>
+      <td style="text-align: left">取日期欄位月份值</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">Month</td>
+      <td style="text-align: left">Month</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">29</td>
+      <td style="text-align: left">取日期欄位日值</td>
+      <td style="text-align: left">取日期欄位日值</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">Day</td>
+      <td style="text-align: left">Day</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">30</td>
+      <td style="text-align: left">取得週次</td>
+      <td style="text-align: left">取得週次</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">WeekOfYear</td>
+      <td style="text-align: left">dbo.fn_WeekOfYear</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">31</td>
+      <td style="text-align: left">取得表格駐留欄次</td>
+      <td style="text-align: left">取得表格駐留欄次</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">ColPos</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">32</td>
+      <td style="text-align: left">取得登入用戶代號</td>
+      <td style="text-align: left">取得登入使用者用戶代號</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">GetUserNo()</td>
+      <td style="text-align: left">RT[GetUserNo()]</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">33</td>
+      <td style="text-align: left">日期計算</td>
+      <td style="text-align: left">在指定日期新增一個時間間隔，並傳回新的 datetime 值。</td>
+      <td style="text-align: left">日期</td>
+      <td style="text-align: left">DateAdd</td>
+      <td style="text-align: left">DateAdd</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">34</td>
+      <td style="text-align: left">取得萬年曆週次(指定起始星期)</td>
+      <td style="text-align: left">取得萬年曆週次(指定起始星期)</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">WeekOfYear2</td>
+      <td style="text-align: left">dbo.fn_WeekOfYear2</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">35</td>
+      <td style="text-align: left">數字加總</td>
+      <td style="text-align: left">將函數內的參數進行加總。</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">36</td>
+      <td style="text-align: left">文字函數</td>
+      <td style="text-align: left">可任意輸入一段文字</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">37</td>
+      <td style="text-align: left">文字轉日期</td>
+      <td style="text-align: left">輸入一個長度為8碼(YYYYMMDD)或14碼(YYYYMMDDhhmmss)的字串，轉換為對應的日期或日期時間</td>
+      <td style="text-align: left">日期</td>
+      <td style="text-align: left">STOD</td>
+      <td style="text-align: left">Convert</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">38</td>
+      <td style="text-align: left">文字轉日期(有斜線)</td>
+      <td style="text-align: left">輸入一個完整的日期字串(YYYY/MM/DD)或日期時間字串(YYYY/MM/DD hh:mm:ss)，轉換為對應的日期或日期時間</td>
+      <td style="text-align: left">日期</td>
+      <td style="text-align: left">CDate</td>
+      <td style="text-align: left">Convert</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">39</td>
+      <td style="text-align: left">左補字元</td>
+      <td style="text-align: left">檢查指定的字串(參數一)，若長度小於指定的長度(參數二)則靠左補足指定字元(參數三)</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">padl</td>
+      <td style="text-align: left">REPLACE</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">40</td>
+      <td style="text-align: left">日期時間轉文字(有斜線)</td>
+      <td style="text-align: left">將一個日期時間型態的變數轉為字串(YYYY/MM/DD hh:mm:ss)</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">ToString</td>
+      <td style="text-align: left">Replace(Convert</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">41</td>
+      <td style="text-align: left">取空格</td>
+      <td style="text-align: left">取得指定長度的空白字串</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">Space</td>
+      <td style="text-align: left">Space</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">42</td>
+      <td style="text-align: left">取整數</td>
+      <td style="text-align: left">將指定數字無條件捨去至整數</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">Fix</td>
+      <td style="text-align: left">Floor</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">43</td>
+      <td style="text-align: left">數字函數</td>
+      <td style="text-align: left">可任意輸入串數字</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">44</td>
+      <td style="text-align: left">左去空白</td>
+      <td style="text-align: left">除去前導空格後，傳回字元運算式。</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">LTrim</td>
+      <td style="text-align: left">LTrim</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">45</td>
+      <td style="text-align: left">登入人員聯絡信箱</td>
+      <td style="text-align: left">NULL</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">46</td>
+      <td style="text-align: left">內容值不存在</td>
+      <td style="text-align: left">NULL</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">47</td>
+      <td style="text-align: left">取得外部程式狀態</td>
+      <td style="text-align: left">NULL</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">48</td>
+      <td style="text-align: left">取得外部程式暫存區資料</td>
+      <td style="text-align: left">NULL</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">49</td>
+      <td style="text-align: left">新增模式</td>
+      <td style="text-align: left">NULL</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">50</td>
+      <td style="text-align: left">修改模式</td>
+      <td style="text-align: left">NULL</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">51</td>
+      <td style="text-align: left">刪除模式</td>
+      <td style="text-align: left">NULL</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">52</td>
+      <td style="text-align: left">取得表單成品料號</td>
+      <td style="text-align: left">NULL</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">GetFormFinishPdno()</td>
+      <td style="text-align: left">RT[GetFormFinishPdno()]</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">53</td>
+      <td style="text-align: left">取得指定日期當月首日( 日期 )</td>
+      <td style="text-align: left">NULL</td>
+      <td style="text-align: left">日期</td>
+      <td style="text-align: left">GetMonthFirstDay</td>
+      <td style="text-align: left">dbo.fn_GetMonthFirstDay</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">54</td>
+      <td style="text-align: left">取得指定日期當月末日( 日期 )</td>
+      <td style="text-align: left">NULL</td>
+      <td style="text-align: left">日期</td>
+      <td style="text-align: left">GetMonthLastDay</td>
+      <td style="text-align: left">dbo.fn_GetMonthLastDay</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">55</td>
+      <td style="text-align: left">判斷日期是否相等</td>
+      <td style="text-align: left">判斷日期是否相等</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">ValueCompare</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">56</td>
+      <td style="text-align: left">取得伺服器IP</td>
+      <td style="text-align: left">取得伺服器IP</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">GetServerIpAddress()</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">57</td>
+      <td style="text-align: left">取得伺服器Port</td>
+      <td style="text-align: left">取得伺服器Port</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">GetServerPort()</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">58</td>
+      <td style="text-align: left">數值四捨五入(銀行型)</td>
+      <td style="text-align: left">數值四捨五入(銀行型)</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">Round</td>
+      <td style="text-align: left">dbo.fn_Round</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">59</td>
+      <td style="text-align: left">數值四捨五入(一般型)</td>
+      <td style="text-align: left">數值四捨五入(一般型)</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">FormatNumber</td>
+      <td style="text-align: left">Round</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">60</td>
+      <td style="text-align: left">邏表輸出欄位給值判斷</td>
+      <td style="text-align: left">邏表輸出欄位給值判斷</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">IsNull</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">61</td>
+      <td style="text-align: left">取得駐留元件檔區</td>
+      <td style="text-align: left">需求說明 : 右邊判斷式, 寫(固定值)表頭檔區/表身檔區</td>
+      <td style="text-align: left">布林</td>
+      <td style="text-align: left">ControlIsAttachAlias_ByIdName</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">64</td>
+      <td style="text-align: left">取得點擊多筆表格元件代號</td>
+      <td style="text-align: left">取得點擊多筆表格元件代號</td>
+      <td style="text-align: left">布林</td>
+      <td style="text-align: left">GetPreClickColId</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">65</td>
+      <td style="text-align: left">判斷點擊多筆表格空白欄位</td>
+      <td style="text-align: left">判斷點擊多筆表格空白欄位</td>
+      <td style="text-align: left">布林</td>
+      <td style="text-align: left">ClickOnEmptyRow</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">66</td>
+      <td style="text-align: left">判斷元件駐留狀態</td>
+      <td style="text-align: left">判斷元件駐留狀態</td>
+      <td style="text-align: left">布林</td>
+      <td style="text-align: left">IsFocused</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">67</td>
+      <td style="text-align: left">日期時間取日期</td>
+      <td style="text-align: left">日期時間取日期</td>
+      <td style="text-align: left">日期</td>
+      <td style="text-align: left">CDate</td>
+      <td style="text-align: left">cast</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">68</td>
+      <td style="text-align: left">取得指定段落產生變數值</td>
+      <td style="text-align: left">取得指定段落產生變數值</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">GetNowDSValue</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">69</td>
+      <td style="text-align: left">取得暫存鍵值</td>
+      <td style="text-align: left">取得暫存鍵值</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">SF000000000069</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">70</td>
+      <td style="text-align: left">取得登入企業代號</td>
+      <td style="text-align: left">取得登入企業代號</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">GetEnterpriseNo()</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">71</td>
+      <td style="text-align: left">取得行動裝置尺寸</td>
+      <td style="text-align: left">取得行動裝置尺寸</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">GetMobileDeviceWidth()</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">72</td>
+      <td style="text-align: left">裝置解析度尺寸(5吋)</td>
+      <td style="text-align: left">裝置解析度尺寸(5吋)</td>
+      <td style="text-align: left">布林</td>
+      <td style="text-align: left">IsSmallDeviceWidth()</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">73</td>
+      <td style="text-align: left">裝置解析度尺寸(7吋)</td>
+      <td style="text-align: left">裝置解析度尺寸(7吋)</td>
+      <td style="text-align: left">布林</td>
+      <td style="text-align: left">IsMediumDeviceWidth()</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">74</td>
+      <td style="text-align: left">裝置解析度尺寸(9吋)</td>
+      <td style="text-align: left">裝置解析度尺寸(9吋)</td>
+      <td style="text-align: left">布林</td>
+      <td style="text-align: left">IsBigDeviceWidth()</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">75</td>
+      <td style="text-align: left">次序函數</td>
+      <td style="text-align: left">次序函數</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">ROW_NUMBER() OVER</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">76</td>
+      <td style="text-align: left">次序函數(無群組欄位)</td>
+      <td style="text-align: left">次序函數(無群組欄位)</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">ROW_NUMBER() OVER</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">77</td>
+      <td style="text-align: left">排序函數</td>
+      <td style="text-align: left">排序函數</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">RANK() OVER</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">78</td>
+      <td style="text-align: left">排序函數(無群組欄位)</td>
+      <td style="text-align: left">排序函數(無群組欄位)</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">RANK() OVER</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">79</td>
+      <td style="text-align: left">取得目前輸入值</td>
+      <td style="text-align: left">取得目前輸入值</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">GetZnSelfVal()</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">80</td>
+      <td style="text-align: left">陣列函數</td>
+      <td style="text-align: left">陣列函數</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">Array</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">81</td>
+      <td style="text-align: left">開單參數轉換</td>
+      <td style="text-align: left">開單參數轉換</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">TransParam</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">82</td>
+      <td style="text-align: left">系統日期時間</td>
+      <td style="text-align: left">取得系統日期時間</td>
+      <td style="text-align: left">日期</td>
+      <td style="text-align: left">GetSysDateTime()</td>
+      <td style="text-align: left">GetDate()</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">83</td>
+      <td style="text-align: left">時間差</td>
+      <td style="text-align: left">計算兩時間之間的差</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">TimeDiff</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">84</td>
+      <td style="text-align: left">取得登入企業名稱</td>
+      <td style="text-align: left">取得登入企業名稱</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">GetEnterpriseName()</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">85</td>
+      <td style="text-align: left">換行函數</td>
+      <td style="text-align: left">換行函數</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">\r\n</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">86</td>
+      <td style="text-align: left">相關係數函數</td>
+      <td style="text-align: left">判斷兩個陣列內容之間的關係</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">CORREL</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">87</td>
+      <td style="text-align: left">截距函數</td>
+      <td style="text-align: left">利用現有的x值和y值計算出一線與y軸的交叉點</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">INTERCEPT</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">88</td>
+      <td style="text-align: left">斜率函數</td>
+      <td style="text-align: left">傳回穿過yArray和xArray中資料點之線性迴歸線的斜率</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">SLOPE</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">89</td>
+      <td style="text-align: left">布林函數</td>
+      <td style="text-align: left">可輸入true、false或位元(邏輯)型態欄位</td>
+      <td style="text-align: left">布林</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">90</td>
+      <td style="text-align: left">全唯碼函數</td>
+      <td style="text-align: left">可輸入全唯碼字串或全唯碼型態欄位</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">91</td>
+      <td style="text-align: left">日期時間函數</td>
+      <td style="text-align: left">可輸入 yyyy/mm/dd 或 yyyy/mm/dd hh:mm:ss 或 yyyy/mm/dd hh:mm 或 日期(日期時間)型態欄位</td>
+      <td style="text-align: left">日期</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">92</td>
+      <td style="text-align: left">GPS差異距離計算_直徑</td>
+      <td style="text-align: left">計算兩點座標直線距離, 回傳指定單位的距離數值</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">GetMapsDistance1</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">93</td>
+      <td style="text-align: left">GPS差異距離計算_行徑</td>
+      <td style="text-align: left">依據交通工具計算兩點座標可行走距離, 回傳指定單位的距離數值</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">GetMapsDistance2</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">94</td>
+      <td style="text-align: left">行事曆_取得目前駐留日期</td>
+      <td style="text-align: left">取得行事曆物件目前駐留日期內容值</td>
+      <td style="text-align: left">日期</td>
+      <td style="text-align: left">CtrlEmbed_GetInfo</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">95</td>
+      <td style="text-align: left">系統時間</td>
+      <td style="text-align: left">取得系統時間</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">GetSysTime2()</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">96</td>
+      <td style="text-align: left">GPS位置轉換</td>
+      <td style="text-align: left">對於指定的位置進行經緯度與地址內容轉換</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">TransMapsPosition</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">97</td>
+      <td style="text-align: left">取得檔案系統資料參數</td>
+      <td style="text-align: left">在嵌入網址物件, 指向圖片網址+檔案唯一號所在的檔案路徑, 來開啟圖片</td>
+      <td style="text-align: left">文字</td>
+      <td style="text-align: left">GetSystemFilePath</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">98</td>
+      <td style="text-align: left">取得檔案系統二進位資料</td>
+      <td style="text-align: left">經檔案唯一號取得檔案系統二進位資料, 僅在過帳的目的欄位使用</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">GetSystemFileBinary</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">99</td>
+      <td style="text-align: left">取得型態預設值</td>
+      <td style="text-align: left">依據指定的欄位型態給預設值(類似清空的動作)</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">GetDefaultValue</td>
+      <td style="text-align: left">dbo.fn_GetDefaultValue</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">100</td>
+      <td style="text-align: left">取得民國年</td>
+      <td style="text-align: left">依傳入的西元年日期或文字, 回傳數字型態的民國年</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">GetChineseYear</td>
+      <td style="text-align: left">(DATEPART</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">101</td>
+      <td style="text-align: left">查詢轉換欄位為空值</td>
+      <td style="text-align: left">針對下拉多選的欄位值,若經轉換者,判斷是否為空的狀態</td>
+      <td style="text-align: left">布林</td>
+      <td style="text-align: left">SqlFormatItemEmpty</td>
+      <td style="text-align: left">dbo.fn_SqlFormatItemEmpty</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">102</td>
+      <td style="text-align: left">身份證字號驗證</td>
+      <td style="text-align: left">驗證傳入的身分證字號是否合法，合法回傳true，不合法回傳false</td>
+      <td style="text-align: left">布林</td>
+      <td style="text-align: left">IdentityValid</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">103</td>
+      <td style="text-align: left">統一編號驗證</td>
+      <td style="text-align: left">驗證傳入的統一編號是否合法，合法回傳true，不合法回傳false</td>
+      <td style="text-align: left">布林</td>
+      <td style="text-align: left">TaxIdValid</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">104</td>
+      <td style="text-align: left">EAN-13商品條碼驗證</td>
+      <td style="text-align: left">驗證傳入的條碼是否符合EAN-13的編碼，符合回傳true，不符合回傳false</td>
+      <td style="text-align: left">布林</td>
+      <td style="text-align: left">EAN13Valid</td>
+      <td style="text-align: left"> </td>
+    </tr>
+    <tr>
+      <td style="text-align: left">105</td>
+      <td style="text-align: left">無條件進位</td>
+      <td style="text-align: left">將傳入的值依據指定的小數位數進行無條件進位</td>
+      <td style="text-align: left">數字</td>
+      <td style="text-align: left">Ceil</td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<h2 id="LogicalFunction"><strong>19.3 邏輯函數</strong></h2>
+<blockquote>
+  <p>作業目的：為特定邏輯所撰寫的函數，稱之為邏輯函數。對於比較複雜的產業界常用的	處理功能，平台上特別開發了一些邏輯函數，讓設計師在按鈕的公格設計時可以引用，以簡化設計工程。本章節針對邏輯函數的各項用途及參數進行說	明。</p>
+
+</blockquote>
+
+<h3 id="1931-表單暫存區設定">19.3.1 表單暫存區設定</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">vtcName</td>
+      <td style="text-align: left">名稱</td>
+      <td style="text-align: left">NULL</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">vtxVal</td>
+      <td style="text-align: left">欲儲存的值</td>
+      <td style="text-align: left">NULL</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="1932--圖檔上傳_至資料庫">19.3.2 	圖檔上傳_至資料庫</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">vtcFldNm</td>
+      <td style="text-align: left">圖片元件</td>
+      <td style="text-align: left">類別:/元件</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">vtcUpdTblNm</td>
+      <td style="text-align: left">存入實體表格的名稱</td>
+      <td style="text-align: left">類別:/實體表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">vtcUpdFilt</td>
+      <td style="text-align: left">存入實體表格的過濾式</td>
+      <td style="text-align: left">類別:/條件式</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: left">vtcUpdFldNm</td>
+      <td style="text-align: left">存入實體表格的欄位名稱</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td style="text-align: left">vtcShareYn</td>
+      <td style="text-align: left">寫入的實體是否在共用資料庫 (1.是/2.否)</td>
+      <td style="text-align: left">選項:/是/否</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="1933--多筆元件_執行勾選">19.3.3 	多筆元件_執行勾選</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">vtcBrwId</td>
+      <td style="text-align: left">多筆元件</td>
+      <td style="text-align: left">類別:/元件</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">vtcNextSkip</td>
+      <td style="text-align: left">1:往下移動/2:往上移動</td>
+      <td style="text-align: left">選項:/往下移動/往上移動</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">vtnChoose</td>
+      <td style="text-align: left">0:取消勾選 1:勾選</td>
+      <td style="text-align: left">選項:/取消勾選/勾選</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: left">vtcMsg</td>
+      <td style="text-align: left">執行完成後，欲顯示的訊息盒</td>
+      <td style="text-align: left">類別:/多語詞庫</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td style="text-align: left">vtnCountType</td>
+      <td style="text-align: left">勾選類型=1.本頁/2.全部記錄/3.指定筆數(未設時，預設為1.本頁)</td>
+      <td style="text-align: left">選項:/本頁/全部記錄/指定筆數</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">6</td>
+      <td style="text-align: left">vtnCount</td>
+      <td style="text-align: left">指定筆數(當干涉.vtnCountType=3.指定筆數時)</td>
+      <td style="text-align: left">類別:/固定值/元件/參數</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="1934--執行系統功能鍵_新增">19.3.4 	執行系統功能鍵_新增</h3>
+
+<h3 id="1935--檔區_駐留指定記錄">19.3.5 	檔區_駐留指定記錄</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">vtoAls</td>
+      <td style="text-align: left">檔區</td>
+      <td style="text-align: left">類別:/檔區</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">vtcKeyValExpr</td>
+      <td style="text-align: left">檔區排序欄位值條件式(例:元件1+元件2)</td>
+      <td style="text-align: left">類別:/運算式</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="1936--主檔區_移動記錄除能">19.3.6 	主檔區_移動記錄除能</h3>
+
+<h3 id="1937--bom正展_用量計算">19.3.7 	BOM正展_用量計算</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">vtcSelect</td>
+      <td style="text-align: left">來源SELECT子句</td>
+      <td style="text-align: left">類別:/邏輯表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">vtcFldNm</td>
+      <td style="text-align: left">來源本階KEY欄位名</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">vtcFFldNm</td>
+      <td style="text-align: left">來源父階KEY欄位名</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">vtcRootSelect</td>
+      <td style="text-align: left">ROOT節點來源</td>
+      <td style="text-align: left">類別:/邏輯表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">5</td>
+      <td style="text-align: left">vtcRootFilter</td>
+      <td style="text-align: left">ROOT過濾式</td>
+      <td style="text-align: left">類別:/條件式</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">6</td>
+      <td style="text-align: left">vtcRootPKNO</td>
+      <td style="text-align: left">ROOT本階PKEY</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">7</td>
+      <td style="text-align: left">vtcRootQTY</td>
+      <td style="text-align: left">計算用量</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">8</td>
+      <td style="text-align: left">vtcRootTreeKey</td>
+      <td style="text-align: left">ROOT節點KEY</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">9</td>
+      <td style="text-align: left">vtcDesTblNm</td>
+      <td style="text-align: left">目的實體</td>
+      <td style="text-align: left">類別:/實體表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">10</td>
+      <td style="text-align: left">vtcDesSrlidFldNm</td>
+      <td style="text-align: left">唯一號欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">11</td>
+      <td style="text-align: left">vtcSrlid</td>
+      <td style="text-align: left">唯一號</td>
+      <td style="text-align: left">類別:/函數</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">12</td>
+      <td style="text-align: left">vtcDesFldNm</td>
+      <td style="text-align: left">目的本階KEY欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">13</td>
+      <td style="text-align: left">vtcDesFFldNm</td>
+      <td style="text-align: left">目的父階KEY欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">14</td>
+      <td style="text-align: left">vtcDesLevelFldNm</td>
+      <td style="text-align: left">目的階層欄位(系統用)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">15</td>
+      <td style="text-align: left">vtcDesSeqFldNm</td>
+      <td style="text-align: left">目的順序欄位(系統用)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">16</td>
+      <td style="text-align: left">vtcDesChildQtyFldNm</td>
+      <td style="text-align: left">目的子階數量(系統用)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">17</td>
+      <td style="text-align: left">vtcDesRootIdFldNm</td>
+      <td style="text-align: left">目的ROOT欄位(系統用)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">18</td>
+      <td style="text-align: left">vtcDesTreeKey</td>
+      <td style="text-align: left">TREE-KEY</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">19</td>
+      <td style="text-align: left">vtcUseQty</td>
+      <td style="text-align: left">標準用量欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">20</td>
+      <td style="text-align: left">vtcType</td>
+      <td style="text-align: left">1.無秏損率/2.有秏損率</td>
+      <td style="text-align: left">選項:/無耗損率/有耗損率</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">20</td>
+      <td style="text-align: left">vtcType</td>
+      <td style="text-align: left">1.無秏損率/2.有秏損率</td>
+      <td style="text-align: left">類別:/元件/參數/選項</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">21</td>
+      <td style="text-align: left">vtcLoss</td>
+      <td style="text-align: left">秏損率欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">22</td>
+      <td style="text-align: left">vtcUsage</td>
+      <td style="text-align: left">展開用量目的欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">23</td>
+      <td style="text-align: left">vtcRelation</td>
+      <td style="text-align: left">目的.PKNO=來源.PKNO</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">24</td>
+      <td style="text-align: left">vtcDesFSeqFldNm</td>
+      <td style="text-align: left">目的父階的順序欄位(系統用)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">25</td>
+      <td style="text-align: left">來源排序欄位1</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">26</td>
+      <td style="text-align: left">來源排序欄位2</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">27</td>
+      <td style="text-align: left">來源排序欄位3</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">28</td>
+      <td style="text-align: left">來源排序欄位4</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">29</td>
+      <td style="text-align: left">來源排序欄位5</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">30</td>
+      <td style="text-align: left">來源排序欄位6</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">31</td>
+      <td style="text-align: left">來源排序欄位7</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">32</td>
+      <td style="text-align: left">來源排序欄位8</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">33</td>
+      <td style="text-align: left">來源排序欄位9</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">34</td>
+      <td style="text-align: left">來源排序欄位10</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">35</td>
+      <td style="text-align: left">來源排序欄位11</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">36</td>
+      <td style="text-align: left">來源排序欄位12</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="1938--bom逆展_料工費計算">19.3.8 	BOM逆展_料工費計算</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">vtcFeed_Semi</td>
+      <td style="text-align: left">目的欄位：本料件的料錢(所有子階總合)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">vtcCost</td>
+      <td style="text-align: left">目的欄位：本料件成本(料工費總合)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">vtcRelation</td>
+      <td style="text-align: left">目的.PKNO=來源.PKNO</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">vtcSelect</td>
+      <td style="text-align: left">來源SELECT子句</td>
+      <td style="text-align: left">類別:/邏輯表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">5</td>
+      <td style="text-align: left">vtcFldNm</td>
+      <td style="text-align: left">來源本階KEY欄位名</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">6</td>
+      <td style="text-align: left">vtcFFldNm</td>
+      <td style="text-align: left">來源父階KEY欄位名</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">7</td>
+      <td style="text-align: left">vtcRootSelect</td>
+      <td style="text-align: left">ROOT節點來源</td>
+      <td style="text-align: left">類別:/邏輯表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">8</td>
+      <td style="text-align: left">vtcRootFilter</td>
+      <td style="text-align: left">ROOT過濾式</td>
+      <td style="text-align: left">類別:/條件式</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">9</td>
+      <td style="text-align: left">vtcRootPKNO</td>
+      <td style="text-align: left">ROOT本階PKEY</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">10</td>
+      <td style="text-align: left">vtcRootTreeKey</td>
+      <td style="text-align: left">ROOT節點KEY</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">11</td>
+      <td style="text-align: left">vtcDesTblNm</td>
+      <td style="text-align: left">目的實體</td>
+      <td style="text-align: left">類別:/實體表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">12</td>
+      <td style="text-align: left">vtcDesSrlidFldNm</td>
+      <td style="text-align: left">唯一號欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">13</td>
+      <td style="text-align: left">vtcSrlid</td>
+      <td style="text-align: left">唯一號</td>
+      <td style="text-align: left">類別:/函數</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">14</td>
+      <td style="text-align: left">vtcDesFldNm</td>
+      <td style="text-align: left">目的本階KEY欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">15</td>
+      <td style="text-align: left">vtcDesFFldNm</td>
+      <td style="text-align: left">目的父階KEY欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">16</td>
+      <td style="text-align: left">vtcDesLevelFldNm</td>
+      <td style="text-align: left">目的階層欄位(系統用)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">17</td>
+      <td style="text-align: left">vtcDesSeqFldNm</td>
+      <td style="text-align: left">目的順序欄位(系統用)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">18</td>
+      <td style="text-align: left">vtcDesChildQtyFldNm</td>
+      <td style="text-align: left">目的子階數量(系統用)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">19</td>
+      <td style="text-align: left">vtcDesRootIdFldNm</td>
+      <td style="text-align: left">目的ROOT欄位(系統用)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">20</td>
+      <td style="text-align: left">vtcDesTreeKey</td>
+      <td style="text-align: left">TREE-KEY</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">21</td>
+      <td style="text-align: left">vtcType</td>
+      <td style="text-align: left">1.無秏損率/2.有秏損率</td>
+      <td style="text-align: left">選項:/無耗損率/有耗損率</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">21</td>
+      <td style="text-align: left">vtcType</td>
+      <td style="text-align: left">1.無秏損率/2.有秏損率</td>
+      <td style="text-align: left">類別:/元件/參數/選項</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">22</td>
+      <td style="text-align: left">vtcLoss</td>
+      <td style="text-align: left">秏損率欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">23</td>
+      <td style="text-align: left">vtcUseQty</td>
+      <td style="text-align: left">標準用量欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">24</td>
+      <td style="text-align: left">vtcFeed</td>
+      <td style="text-align: left">料錢欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">25</td>
+      <td style="text-align: left">vtcWork</td>
+      <td style="text-align: left">工錢欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">26</td>
+      <td style="text-align: left">vtcFee</td>
+      <td style="text-align: left">費用欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">27</td>
+      <td style="text-align: left">來源排序欄位1</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">28</td>
+      <td style="text-align: left">來源排序欄位2</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">29</td>
+      <td style="text-align: left">來源排序欄位3</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">30</td>
+      <td style="text-align: left">來源排序欄位4</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">31</td>
+      <td style="text-align: left">來源排序欄位5</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">32</td>
+      <td style="text-align: left">來源排序欄位6</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">33</td>
+      <td style="text-align: left">來源排序欄位7</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">34</td>
+      <td style="text-align: left">來源排序欄位8</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">35</td>
+      <td style="text-align: left">來源排序欄位9</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">36</td>
+      <td style="text-align: left">來源排序欄位10</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">37</td>
+      <td style="text-align: left">來源排序欄位11</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">38</td>
+      <td style="text-align: left">來源排序欄位12</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="1939--bom正逆展_mrp日期計算">19.3.9 	BOM正逆展_MRP日期計算</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">vtcMODE</td>
+      <td style="text-align: left">1:正排/2:逆排</td>
+      <td style="text-align: left">選項:/正排/逆排</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">vtcDATE</td>
+      <td style="text-align: left">計算基準日期   例如：2013-09-01 或 date()</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">vtcOFFVIEW</td>
+      <td style="text-align: left">放假日參數1:來源VIEW</td>
+      <td style="text-align: left">類別:/邏輯表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: left">vtcYEAR</td>
+      <td style="text-align: left">放假日參數2:年欄位名</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td style="text-align: left">vtcMONTH</td>
+      <td style="text-align: left">放假日參數3:月欄位名</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">6</td>
+      <td style="text-align: left">vtcDAY</td>
+      <td style="text-align: left">放假日參數4:日欄位名</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">7</td>
+      <td style="text-align: left">vtcHRS</td>
+      <td style="text-align: left">放假日參數5:工廠生產時數欄位名</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">8</td>
+      <td style="text-align: left">vtcPRODVIEW</td>
+      <td style="text-align: left">產品資料來源參數1:來源VIEW</td>
+      <td style="text-align: left">類別:/邏輯表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">9</td>
+      <td style="text-align: left">vtcSOURCTYPE</td>
+      <td style="text-align: left">產品資料來源參數3:主要來源別欄位名(內容為：1.採購/2.製造/3.委外/4.其它)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td style="text-align: left">vtcLTTDAYS</td>
+      <td style="text-align: left">產品資料來源參數4:前置天數欄位名(採購件的購買天數)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">11</td>
+      <td style="text-align: left">vtcLEADTIME</td>
+      <td style="text-align: left">產品資料來源參數5:標準工時欄位名</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">12</td>
+      <td style="text-align: left">vtcLTUNIT</td>
+      <td style="text-align: left">產品資料來源參數6:工期單位欄位名(內容為D.天/H.時/M.分)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">13</td>
+      <td style="text-align: left">vtcBOMFilter</td>
+      <td style="text-align: left">本次執行的過濾式。</td>
+      <td style="text-align: left">類別:/條件式</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">14</td>
+      <td style="text-align: left">vtcBOMKey</td>
+      <td style="text-align: left">產品資料來源參數7:BOM ROOT欄位名</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">15</td>
+      <td style="text-align: left">vtcBOMFSEQ</td>
+      <td style="text-align: left">產品資料來源參數8:BOM父階順序欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">16</td>
+      <td style="text-align: left">vtcBOMSEQ</td>
+      <td style="text-align: left">產品資料來源參數9:BOM本階順序欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">17</td>
+      <td style="text-align: left">vtcBOMQTY</td>
+      <td style="text-align: left">產品資料來源參數10:BOM用量欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">18</td>
+      <td style="text-align: left">vtcBOMLevel</td>
+      <td style="text-align: left">產品資料來源參數11:BOM階層欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">19</td>
+      <td style="text-align: left">vtcBOMNextQTY</td>
+      <td style="text-align: left">產品資料來源參數12:BOM子階數量欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">20</td>
+      <td style="text-align: left">vtcMRPTable</td>
+      <td style="text-align: left">目的寫入參數1:實體英文名</td>
+      <td style="text-align: left">類別:/實體表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">21</td>
+      <td style="text-align: left">vtcBookStartDay</td>
+      <td style="text-align: left">目的寫入參數2:預定開工日欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">22</td>
+      <td style="text-align: left">vtcBookCompletionDay</td>
+      <td style="text-align: left">目的寫入參數3:預定完工日欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">23</td>
+      <td style="text-align: left">vtcBookDuration</td>
+      <td style="text-align: left">目的寫入參數4:預定工期欄位(內容值:單位(分))</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19310-bom正展_用量計算_支援重複料號">19.3.10	BOM正展_用量計算_支援重複料號</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">vtcSelect</td>
+      <td style="text-align: left">來源SELECT子句</td>
+      <td style="text-align: left">類別:/邏輯表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">vtcFldNm</td>
+      <td style="text-align: left">來源本階KEY欄位名</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">vtcFFldNm</td>
+      <td style="text-align: left">來源父階KEY欄位名</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: left">vtcRootSelect</td>
+      <td style="text-align: left">ROOT節點來源</td>
+      <td style="text-align: left">類別:/邏輯表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td style="text-align: left">vtcRootFilter</td>
+      <td style="text-align: left">ROOT過濾式</td>
+      <td style="text-align: left">類別:/條件式</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">6</td>
+      <td style="text-align: left">vtcRootPKNO</td>
+      <td style="text-align: left">ROOT本階PKEY</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">7</td>
+      <td style="text-align: left">vtcRootQTY</td>
+      <td style="text-align: left">計算用量</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">8</td>
+      <td style="text-align: left">vtcRootTreeKey</td>
+      <td style="text-align: left">ROOT節點KEY</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">9</td>
+      <td style="text-align: left">vtcDesTblNm</td>
+      <td style="text-align: left">目的實體</td>
+      <td style="text-align: left">類別:/實體表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td style="text-align: left">vtcDesSrlidFldNm</td>
+      <td style="text-align: left">唯一號欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">11</td>
+      <td style="text-align: left">vtcSrlid</td>
+      <td style="text-align: left">唯一號</td>
+      <td style="text-align: left">類別:/函數</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">12</td>
+      <td style="text-align: left">vtcDesFldNm</td>
+      <td style="text-align: left">目的本階KEY欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">13</td>
+      <td style="text-align: left">vtcDesFFldNm</td>
+      <td style="text-align: left">目的父階KEY欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">14</td>
+      <td style="text-align: left">vtcDesLevelFldNm</td>
+      <td style="text-align: left">目的階層欄位(系統用)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">15</td>
+      <td style="text-align: left">vtcDesSeqFldNm</td>
+      <td style="text-align: left">目的順序欄位(系統用)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">16</td>
+      <td style="text-align: left">vtcDesChildQtyFldNm</td>
+      <td style="text-align: left">目的子階數量(系統用)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">17</td>
+      <td style="text-align: left">vtcDesRootIdFldNm</td>
+      <td style="text-align: left">目的ROOT欄位(系統用)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">18</td>
+      <td style="text-align: left">vtcDesTreeKey</td>
+      <td style="text-align: left">TREE-KEY</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">19</td>
+      <td style="text-align: left">vtcUseQty</td>
+      <td style="text-align: left">標準用量欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">20</td>
+      <td style="text-align: left">vtcType</td>
+      <td style="text-align: left">1.無秏損率/2.有秏損率</td>
+      <td style="text-align: left">選項:/無秏損率/有秏損率</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">20</td>
+      <td style="text-align: left">vtcType</td>
+      <td style="text-align: left">1.無秏損率/2.有秏損率</td>
+      <td style="text-align: left">類別:/元件/參數/選項</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">21</td>
+      <td style="text-align: left">vtcLoss</td>
+      <td style="text-align: left">秏損率欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">22</td>
+      <td style="text-align: left">vtcDesUsage</td>
+      <td style="text-align: left">展開用量目的欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">23</td>
+      <td style="text-align: left">vtcRelation</td>
+      <td style="text-align: left">目的.PKNO=來源.PKNO</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">24</td>
+      <td style="text-align: left">vtcDesFSeqFldNm</td>
+      <td style="text-align: left">目的父階的順序欄位(系統用)</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">25</td>
+      <td style="text-align: left">來源排序欄位1</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">26</td>
+      <td style="text-align: left">來源排序欄位2</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">27</td>
+      <td style="text-align: left">來源排序欄位3</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">28</td>
+      <td style="text-align: left">來源排序欄位4</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">29</td>
+      <td style="text-align: left">來源排序欄位5</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">30</td>
+      <td style="text-align: left">來源排序欄位6</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">31</td>
+      <td style="text-align: left">來源排序欄位7</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">32</td>
+      <td style="text-align: left">來源排序欄位8</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">33</td>
+      <td style="text-align: left">來源排序欄位9</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">34</td>
+      <td style="text-align: left">來源排序欄位10</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">35</td>
+      <td style="text-align: left">來源排序欄位11</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">36</td>
+      <td style="text-align: left">來源排序欄位12</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19311-異動公司資料">19.3.11	異動公司資料</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">分公司序號</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">公司名稱</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">公司英文名稱</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19312-外包單料錢計算_需求展開">19.3.12	外包單料錢計算_需求展開</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">vtcSelect</td>
+      <td style="text-align: left">來源</td>
+      <td style="text-align: left">類別:/邏輯表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">vtcDesTblNm</td>
+      <td style="text-align: left">目的實體</td>
+      <td style="text-align: left">類別:/實體表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">vtcSrlid</td>
+      <td style="text-align: left">執行唯一號</td>
+      <td style="text-align: left">類別:/函數</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19313-外包單料工費分開計算">19.3.13	外包單料工費分開計算</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">vtcSelect1</td>
+      <td style="text-align: left">來源1-料品BOM</td>
+      <td style="text-align: left">類別:/邏輯表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">vtcSelect2</td>
+      <td style="text-align: left">來源2-外包入庫資訊</td>
+      <td style="text-align: left">類別:/邏輯表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">vtcSelect3</td>
+      <td style="text-align: left">來源3-外包發料資訊</td>
+      <td style="text-align: left">類別:/邏輯表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">vtcSelect4</td>
+      <td style="text-align: left">來源4-料號資訊</td>
+      <td style="text-align: left">類別:/邏輯表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">5</td>
+      <td style="text-align: left">vtcSrlid</td>
+      <td style="text-align: left">執行唯一號</td>
+      <td style="text-align: left">類別:/函數</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19314-申請執行唯一號">19.3.14	申請執行唯一號</h3>
+
+<h3 id="19315-樹元件_編輯功能">19.3.15	樹元件_編輯功能</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">vtcId</td>
+      <td style="text-align: left">樹元件</td>
+      <td style="text-align: left">類別:/元件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">vtnType</td>
+      <td style="text-align: left">1.新增子階/2.插入同階/3.刪除/4.複製/5.剪下/6.貼上/7.同階上移/8.同階下移</td>
+      <td style="text-align: left">選項:/新增子階/插入同階/刪除/複製/剪下/貼上/同階上移/同階下移</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19316-呼叫其它專案表單">19.3.16	呼叫其它專案表單</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">vtbHttps</td>
+      <td style="text-align: left">連線型態是否為HTTPS</td>
+      <td style="text-align: left">選項:/true/false</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">vtcParam4_Nm</td>
+      <td style="text-align: left">參數4的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">vtxParam4_Val</td>
+      <td style="text-align: left">參數4的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: left">vtcParam5_Nm</td>
+      <td style="text-align: left">參數5的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td style="text-align: left">vtxParam5_Val</td>
+      <td style="text-align: left">參數5的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">6</td>
+      <td style="text-align: left">vtcParam6_Nm</td>
+      <td style="text-align: left">參數6的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">7</td>
+      <td style="text-align: left">vtxParam6_Val</td>
+      <td style="text-align: left">參數6的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">8</td>
+      <td style="text-align: left">vtcParam7_Nm</td>
+      <td style="text-align: left">參數7的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">9</td>
+      <td style="text-align: left">vtxParam7_Val</td>
+      <td style="text-align: left">參數7的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td style="text-align: left">vtcParam8_Nm</td>
+      <td style="text-align: left">參數8的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">11</td>
+      <td style="text-align: left">vtxParam8_Val</td>
+      <td style="text-align: left">參數8的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">12</td>
+      <td style="text-align: left">vtcParam9_Nm</td>
+      <td style="text-align: left">參數9的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">13</td>
+      <td style="text-align: left">vtxParam9_Val</td>
+      <td style="text-align: left">參數9的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">14</td>
+      <td style="text-align: left">vtcParam10_Nm</td>
+      <td style="text-align: left">參數10的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">15</td>
+      <td style="text-align: left">vtxParam10_Val</td>
+      <td style="text-align: left">參數10的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">16</td>
+      <td style="text-align: left">vtcParam11_Nm</td>
+      <td style="text-align: left">參數11的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">17</td>
+      <td style="text-align: left">vtxParam11_Val</td>
+      <td style="text-align: left">參數11的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">18</td>
+      <td style="text-align: left">vtcParam12_Nm</td>
+      <td style="text-align: left">參數12的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">19</td>
+      <td style="text-align: left">vtxParam12_Val</td>
+      <td style="text-align: left">參數12的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">20</td>
+      <td style="text-align: left">vtcKey</td>
+      <td style="text-align: left">若為空白，會再開新單，若Key有值時，會判斷是否已開啟，若已開啟，會切至該單上，否則開新單</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">21</td>
+      <td style="text-align: left">vtcServer</td>
+      <td style="text-align: left">伺服器名稱</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">22</td>
+      <td style="text-align: left">vtcPort</td>
+      <td style="text-align: left">伺服器的連接埠</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">23</td>
+      <td style="text-align: left">vtcProjectId</td>
+      <td style="text-align: left">專案代號</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">24</td>
+      <td style="text-align: left">vtnCmpId</td>
+      <td style="text-align: left">公司序號</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">25</td>
+      <td style="text-align: left">vtnLanguageId</td>
+      <td style="text-align: left">語言代號</td>
+      <td style="text-align: left">類別:/函數</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">26</td>
+      <td style="text-align: left">vtcLoginName</td>
+      <td style="text-align: left">登入帳號</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">27</td>
+      <td style="text-align: left">vtcPassword</td>
+      <td style="text-align: left">登入密碼</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">28</td>
+      <td style="text-align: left">vtcFormObjectId</td>
+      <td style="text-align: left">表單的OBJECTID(ex.FMD:FMD.成品料號)</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">29</td>
+      <td style="text-align: left">vtcParam1_Nm</td>
+      <td style="text-align: left">參數1的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">30</td>
+      <td style="text-align: left">vtxParam1_Val</td>
+      <td style="text-align: left">參數1的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">31</td>
+      <td style="text-align: left">vtcParam2_Nm</td>
+      <td style="text-align: left">參數2的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">32</td>
+      <td style="text-align: left">vtxParam2_Val</td>
+      <td style="text-align: left">參數2的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">33</td>
+      <td style="text-align: left">vtcParam3_Nm</td>
+      <td style="text-align: left">參數3的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">34</td>
+      <td style="text-align: left">vtxParam3_Val</td>
+      <td style="text-align: left">參數3的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">35</td>
+      <td style="text-align: left">vtcFiltExpr</td>
+      <td style="text-align: left">過濾條件式</td>
+      <td style="text-align: left">類別:/運算式</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">39</td>
+      <td style="text-align: left">vtcParam13_Nm</td>
+      <td style="text-align: left">參數13的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">40</td>
+      <td style="text-align: left">vtxParam13_Val</td>
+      <td style="text-align: left">參數13的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">41</td>
+      <td style="text-align: left">vtcParam14_Nm</td>
+      <td style="text-align: left">參數14的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">42</td>
+      <td style="text-align: left">vtxParam14_Val</td>
+      <td style="text-align: left">參數14的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">43</td>
+      <td style="text-align: left">vtcParam15_Nm</td>
+      <td style="text-align: left">參數15的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">44</td>
+      <td style="text-align: left">vtxParam15_Val</td>
+      <td style="text-align: left">參數15的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">45</td>
+      <td style="text-align: left">vtcParam16_Nm</td>
+      <td style="text-align: left">參數16的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">46</td>
+      <td style="text-align: left">vtxParam16_Val</td>
+      <td style="text-align: left">參數16的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">47</td>
+      <td style="text-align: left">vtcParam17_Nm</td>
+      <td style="text-align: left">參數17的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">48</td>
+      <td style="text-align: left">vtxParam17_Val</td>
+      <td style="text-align: left">參數17的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">49</td>
+      <td style="text-align: left">vtcParam18_Nm</td>
+      <td style="text-align: left">參數18的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">50</td>
+      <td style="text-align: left">vtxParam18_Val</td>
+      <td style="text-align: left">參數18的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">51</td>
+      <td style="text-align: left">vtcParam19_Nm</td>
+      <td style="text-align: left">參數19的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">52</td>
+      <td style="text-align: left">vtxParam19_Val</td>
+      <td style="text-align: left">參數19的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">53</td>
+      <td style="text-align: left">vtcParam20_Nm</td>
+      <td style="text-align: left">參數20的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">54</td>
+      <td style="text-align: left">vtxParam20_Val</td>
+      <td style="text-align: left">參數20的值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19317-從資料庫_至伺服端">19.3.17	從資料庫_至伺服端</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">vtcParamNm</td>
+      <td style="text-align: left">儲存的表單暫存區的名稱</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">vtcTable</td>
+      <td style="text-align: left">Table名稱</td>
+      <td style="text-align: left">類別:/實體表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">vtcShareYn</td>
+      <td style="text-align: left">1:共用資料庫 2:分公司資料庫</td>
+      <td style="text-align: left">選項:/共用資料庫/分公司資料庫</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">vtcShareYn</td>
+      <td style="text-align: left">1:共用資料庫 2:分公司資料庫</td>
+      <td style="text-align: left">類別:/選項</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: left">vtcFldNm</td>
+      <td style="text-align: left">欄位名稱</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td style="text-align: left">vtcFiltExpr</td>
+      <td style="text-align: left">過濾條件式</td>
+      <td style="text-align: left">類別:/條件式</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">6</td>
+      <td style="text-align: left">vtcExtrFileNm</td>
+      <td style="text-align: left">下載檔案的副檔名</td>
+      <td style="text-align: left">類別:/查表欄位/固定值</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19318-執行表單更新鍵">19.3.18	執行表單更新鍵</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">vtoAls</td>
+      <td style="text-align: left">更新檔區</td>
+      <td style="text-align: left">類別:/檔區</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">vtcType</td>
+      <td style="text-align: left">檔區更新方式(1.駐留筆/2.駐留筆及子檔區/3.整個檔區)</td>
+      <td style="text-align: left">選項:/駐留筆/駐留頁面/全部</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">vtcTreeType</td>
+      <td style="text-align: left">樹元件更新方式(1.本節點/2.父節點/3.正展/4.逆展/5.根節點/6.重顯更新)</td>
+      <td style="text-align: left">選項:/駐留筆/正展/逆展/根節點/整棵樹</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19319-bom樹狀展開">19.3.19	BOM樹狀展開</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">鍵值</td>
+      <td style="text-align: left">來源鍵值</td>
+      <td style="text-align: left">類別:/元件/參數/函數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">查詢邏輯表格</td>
+      <td style="text-align: left">來源VIEW</td>
+      <td style="text-align: left">類別:/邏輯表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">ROOT節點過濾式</td>
+      <td style="text-align: left">ROOT節點過濾式</td>
+      <td style="text-align: left">類別:/條件式</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">4</td>
+      <td style="text-align: left">父階欄位名稱</td>
+      <td style="text-align: left">父階欄位名稱</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">5</td>
+      <td style="text-align: left">本階欄位名稱</td>
+      <td style="text-align: left">本階欄位名稱</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">6</td>
+      <td style="text-align: left">排序類別</td>
+      <td style="text-align: left">排序類別(1.每個ROOT個別排序的順序/2.所有ROOT統一排序的順序)</td>
+      <td style="text-align: left">選項:/個別排序/統一排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">7</td>
+      <td style="text-align: left">展開類型</td>
+      <td style="text-align: left">展開類型(1.正展/2.逆展/3.正展(展過不寫)/4.逆展後正展/5.正展(展過不展))</td>
+      <td style="text-align: left">選項:/正展/逆展/正展(展過不寫)/逆展後正展/正展(展過不展)</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">8</td>
+      <td style="text-align: left">查詢排序欄位1</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">9</td>
+      <td style="text-align: left">查詢排序欄位2</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">10</td>
+      <td style="text-align: left">查詢排序欄位3</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">11</td>
+      <td style="text-align: left">查詢排序欄位4</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">12</td>
+      <td style="text-align: left">查詢排序欄位5</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">13</td>
+      <td style="text-align: left">查詢排序欄位6</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">14</td>
+      <td style="text-align: left">查詢排序欄位7</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">15</td>
+      <td style="text-align: left">查詢排序欄位8</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">16</td>
+      <td style="text-align: left">查詢排序欄位9</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">17</td>
+      <td style="text-align: left">查詢排序欄位10</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">18</td>
+      <td style="text-align: left">查詢排序欄位11</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">19</td>
+      <td style="text-align: left">查詢排序欄位12</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/欄位排序</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19320-執行系統登出">19.3.20	執行系統登出</h3>
+
+<h3 id="19321-表身記錄_插入單筆">19.3.21	表身記錄_插入單筆</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">插入資料元件</td>
+      <td style="text-align: left">多筆元件/樹元件</td>
+      <td style="text-align: left">類別:/元件/元件</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19322-表身記錄_刪除全部">19.3.22	表身記錄_刪除全部</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">刪除資料元件</td>
+      <td style="text-align: left">多筆元件/樹元件</td>
+      <td style="text-align: left">類別:/元件/元件</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19323-表身記錄_移動位置">19.3.23	表身記錄_移動位置</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">多筆元件</td>
+      <td style="text-align: left">多筆元件</td>
+      <td style="text-align: left">類別:/元件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">搜尋運算式</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/運算式</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19324-檔區_改變資料排序">19.3.24	檔區_改變資料排序</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">元件1</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/元件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">元件2</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/元件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">元件3</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/元件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">元件4</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/元件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">5</td>
+      <td style="text-align: left">元件5</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/元件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">6</td>
+      <td style="text-align: left">元件排序方式1</td>
+      <td style="text-align: left">1:升冪/”2”:降冪</td>
+      <td style="text-align: left">選項:/升冪/降冪</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">7</td>
+      <td style="text-align: left">元件排序方式2</td>
+      <td style="text-align: left">1:升冪/”2”:降冪</td>
+      <td style="text-align: left">選項:/升冪/降冪</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">8</td>
+      <td style="text-align: left">元件排序方式3</td>
+      <td style="text-align: left">1:升冪/”2”:降冪</td>
+      <td style="text-align: left">選項:/升冪/降冪</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">9</td>
+      <td style="text-align: left">元件排序方式4</td>
+      <td style="text-align: left">1:升冪/”2”:降冪</td>
+      <td style="text-align: left">選項:/升冪/降冪</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">10</td>
+      <td style="text-align: left">元件排序方式5</td>
+      <td style="text-align: left">1:升冪/”2”:降冪</td>
+      <td style="text-align: left">選項:/升冪/降冪</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19325-表身記錄_插入多筆">19.3.25	表身記錄_插入多筆</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">流水編碼元件</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/元件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">指定起始號</td>
+      <td style="text-align: left">當未設定時，表示最大流水號加1</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">產生筆數</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">編碼模版</td>
+      <td style="text-align: left">ex:’999’,’Z999’ (9:0~9 Z:0~9 A~Z A:A~Z)</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19326-產生qrcode">19.3.26	產生QRCODE</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">vtcData</td>
+      <td style="text-align: left">產生QRCODE的文字</td>
+      <td style="text-align: left">類別:/固定值/元件/參數/運算式</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">vtcTable</td>
+      <td style="text-align: left">儲存的Table名</td>
+      <td style="text-align: left">類別:/實體表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">vtcFldNm</td>
+      <td style="text-align: left">儲存的欄位名稱</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">vtnUpdType</td>
+      <td style="text-align: left">更新資料庫方式  1.新增/2.修改</td>
+      <td style="text-align: left">選項:/新增/修改</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">vtnUpdType</td>
+      <td style="text-align: left">更新資料庫方式  1.新增/2.修改</td>
+      <td style="text-align: left">類別:/選項</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">5</td>
+      <td style="text-align: left">vtcFilter</td>
+      <td style="text-align: left">過濾式</td>
+      <td style="text-align: left">類別:/條件式</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">6</td>
+      <td style="text-align: left">vtcExtrFld1_Nm</td>
+      <td style="text-align: left">額外儲存的欄位1_欄位名稱</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">7</td>
+      <td style="text-align: left">vtxExtrFld1_Val</td>
+      <td style="text-align: left">額外儲存的欄位1_寫入值</td>
+      <td style="text-align: left">類別:/固定值/元件/參數</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">8</td>
+      <td style="text-align: left">vtcExtrFld2_Nm</td>
+      <td style="text-align: left">額外儲存的欄位2_欄位名稱</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">9</td>
+      <td style="text-align: left">vtxExtrFld2_Val</td>
+      <td style="text-align: left">額外儲存的欄位2_寫入值</td>
+      <td style="text-align: left">類別:/固定值/元件/參數</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">10</td>
+      <td style="text-align: left">vtcExtrFld3_Nm</td>
+      <td style="text-align: left">額外儲存的欄位3_欄位名稱</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">11</td>
+      <td style="text-align: left">vtxExtrFld3_Val</td>
+      <td style="text-align: left">額外儲存的欄位3_寫入值</td>
+      <td style="text-align: left">類別:/固定值/元件/參數</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19327-動態面版_切換頁籤">19.3.27	動態面版_切換頁籤</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">動態面版元件</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/元件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">頁籤ID</td>
+      <td style="text-align: left">切換至哪個頁籤ID</td>
+      <td style="text-align: left">類別:/面版名稱</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19328-畫布上傳_至伺服端">19.3.28	畫布上傳_至伺服端</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">畫布元件</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/元件</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19329-駐留指定元件">19.3.29	駐留指定元件</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">vtcFocusNo</td>
+      <td style="text-align: left">指定要駐留的元件</td>
+      <td style="text-align: left">類別:/元件</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19330-行動裝置_挑選檔案上傳">19.3.30	行動裝置_挑選檔案上傳</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">vtcSrlId</td>
+      <td style="text-align: left">執行唯一號</td>
+      <td style="text-align: left">類別:/函數</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">vtcTable</td>
+      <td style="text-align: left">儲存的Table名</td>
+      <td style="text-align: left">類別:/實體表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">vtnUpdType</td>
+      <td style="text-align: left">更新資料庫方式  1.新增/2.修改</td>
+      <td style="text-align: left">選項:/新增/修改</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">vtnUpdType</td>
+      <td style="text-align: left">更新資料庫方式  1.新增/2.修改</td>
+      <td style="text-align: left">類別:/選項</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">vtcFilter</td>
+      <td style="text-align: left">過濾式</td>
+      <td style="text-align: left">類別:/條件式</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">5</td>
+      <td style="text-align: left">vtcExtrFld1_Nm</td>
+      <td style="text-align: left">額外儲存的欄位1_欄位名稱</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">6</td>
+      <td style="text-align: left">vtxExtrFld1_Val</td>
+      <td style="text-align: left">額外儲存的欄位1_寫入值</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">7</td>
+      <td style="text-align: left">vtcExtrFld2_Nm</td>
+      <td style="text-align: left">額外儲存的欄位2_欄位名稱</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">8</td>
+      <td style="text-align: left">vtxExtrFld2_Val</td>
+      <td style="text-align: left">額外儲存的欄位2_寫入值</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">9</td>
+      <td style="text-align: left">vtcExtrFld3_Nm</td>
+      <td style="text-align: left">額外儲存的欄位3_欄位名稱</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">10</td>
+      <td style="text-align: left">vtxExtrFld3_Val</td>
+      <td style="text-align: left">額外儲存的欄位3_寫入值</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">11</td>
+      <td style="text-align: left">vtcFileCttFld</td>
+      <td style="text-align: left">儲存的欄位名稱</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">12</td>
+      <td style="text-align: left">vtcFileNameFld</td>
+      <td style="text-align: left">紀錄檔名的實體欄位名稱</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19331-定時翻頁">19.3.31	定時翻頁</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">vtnTimer</td>
+      <td style="text-align: left">翻頁時間(單位:秒)，若小於等於0代表執行一次就停止</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">vtnLastPageStep</td>
+      <td style="text-align: left">最後一筆時的處理方式  1.回第一筆 / 2.停在目前駐留筆</td>
+      <td style="text-align: left">選項:/回第一筆/停在目前駐留筆</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19332-產生檔案並回傳url">19.3.32	產生檔案並回傳URL</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">vtcTable</td>
+      <td style="text-align: left">Table名稱</td>
+      <td style="text-align: left">類別:/實體表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">vtcUrlFldName</td>
+      <td style="text-align: left">儲存超連結位置的欄位</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">vtnUpdType</td>
+      <td style="text-align: left">更新資料庫方式  1.新增/2.修改</td>
+      <td style="text-align: left">選項:/新增/修改</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">vtnUpdType</td>
+      <td style="text-align: left">更新資料庫方式  1.新增/2.修改</td>
+      <td style="text-align: left">類別:/選項</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">vtcFilter</td>
+      <td style="text-align: left">過濾式</td>
+      <td style="text-align: left">類別:/條件式</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">5</td>
+      <td style="text-align: left">vtcIPPort</td>
+      <td style="text-align: left">指定的超連結IP位置  ex: https://192.168.20.1:8080/    若不指定</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">6</td>
+      <td style="text-align: left">vtcBinaryFldName</td>
+      <td style="text-align: left">檔案儲存的欄位，若有設定，則會在指定的資料實體中儲存</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">7</td>
+      <td style="text-align: left">vtcFileNameFld</td>
+      <td style="text-align: left">儲存檔案名稱的欄位，若有指定干涉.vtcBinaryFldName則有效</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="19333-產生iris報告書">19.3.33	產生IRIS報告書</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">#</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數說明</th>
+      <th style="text-align: left">對應內容</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">CORPDBNAME</td>
+      <td style="text-align: left">CorpDBName</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">CASENO</td>
+      <td style="text-align: left">CaseNo</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">REVISION</td>
+      <td style="text-align: left">Revision</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">FILENAME</td>
+      <td style="text-align: left">FileName</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">5</td>
+      <td style="text-align: left">FTPURL</td>
+      <td style="text-align: left">FtpUrl</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">6</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">錯誤寫入實體表格</td>
+      <td style="text-align: left">類別:/實體表格</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">7</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">錯誤寫入CASENO欄位名</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">8</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">錯誤寫入錯誤訊息欄位名</td>
+      <td style="text-align: left">類別:/查表欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">9</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">進度尺標題</td>
+      <td style="text-align: left">類別:/多語詞庫</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">10</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">外部程式料號</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">11</td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left">來源邏輯表格</td>
+      <td style="text-align: left">類別:/固定值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">12</td>
+      <td style="text-align: left">DOCSERIAL</td>
+      <td style="text-align: left">　</td>
+      <td style="text-align: left">類別:/元件/參數/固定值</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<p><a href="index.html#MainMenu"><strong>回到章節目錄</strong></a></p>
+:ET

@@ -1,0 +1,21 @@
+I"@<h1 id="強調">強調</h1>
+
+<h4 id="唯一的限制是你用什麼符號開啟標籤就要用什麼符號結束">唯一的限制是，你用什麼符號開啟標籤，就要用什麼符號結束。</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*single asterisks*
+
+_single underscores_
+
+**double asterisks**
+
+__double underscores__
+</code></pre></div></div>
+
+<p><em>single asterisks</em></p>
+
+<p><em>single underscores</em></p>
+
+<p><strong>double asterisks</strong></p>
+
+<p><strong>double underscores</strong></p>
+:ET
