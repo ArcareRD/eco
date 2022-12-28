@@ -1,6 +1,0 @@
-* [首頁](/)
-    * [版本資訊](RELEASE/README.md)
-    * [IDE](IDE/README.md)
-    * [RTE](RTE/README.md)
-    * [MAE](MAE/README.md)
-    * [markdown 教學](MARKDOWN/README.md)
