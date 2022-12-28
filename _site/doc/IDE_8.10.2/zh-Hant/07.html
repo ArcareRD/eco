@@ -1,0 +1,1491 @@
+<!DOCTYPE html>
+<html lang="zh_TW"><head>
+  <meta charset="utf-8">
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>IDE操作手冊 7.資料表規劃規格 | 如如-智慧軟體機器人</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="IDE操作手冊 7.資料表規劃規格" />
+<meta property="og:locale" content="zh_TW" />
+<meta name="description" content="一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。" />
+<meta property="og:description" content="一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。" />
+<link rel="canonical" href="https://docs.arcare-robot.com//doc/IDE_8.10.2/zh-Hant/07.html" />
+<meta property="og:url" content="https://docs.arcare-robot.com//doc/IDE_8.10.2/zh-Hant/07.html" />
+<meta property="og:site_name" content="如如-智慧軟體機器人" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-02-16T09:10:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="IDE操作手冊 7.資料表規劃規格" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"IDE操作手冊 7.資料表規劃規格","dateModified":"2022-02-16T09:10:00+08:00","url":"https://docs.arcare-robot.com//doc/IDE_8.10.2/zh-Hant/07.html","datePublished":"2022-02-16T09:10:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.arcare-robot.com//doc/IDE_8.10.2/zh-Hant/07.html"},"description":"一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://docs.arcare-robot.com//feed.xml" title="如如-智慧軟體機器人" /><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W6J98QS');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">
+      <img src="/img/robotcolor.png" style="width: 40px; height: 40px; padding-right: 5px;" >如如-智慧軟體機器人
+    </a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/HOWTO/README.html">問答集</a><a class="page-link" href="/RELEASE/README.html">產品清單</a><a class="page-link" href="/INSTALLS/README.html">安裝說明</a><a class="page-link" href="/library/README.html">線上說明</a><a class="page-link" href="/about/">關於</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">IDE操作手冊 7.資料表規劃規格</h1>
+  </header>
+
+  <div class="post-content">
+    <p>作業目的：定義資料庫裡面的各個資料表及其包含資料欄位的各項屬性。</p>
+
+<p>可單擊資料表格節點後彈出【資料表】頁面<br /> {#DBTableDefine}
+<img src="images/07.1-2.png" alt="" /></p>
+
+<p>資料庫資料表的定義包含下列項目：<br /></p>
+<ul>
+  <li><a href="#DBTableDefine_BasicSet">7.1 新增資料表</a></li>
+  <li><a href="#DBTableDefine_BasicSet2">7.2 資料表工具列</a></li>
+  <li><a href="#DBTableDefine_FieldList">7.3 欄位清單</a></li>
+  <li><a href="#DBTableDefine_ForeignFileRelation">7.4 外檔關聯</a></li>
+  <li><a href="#DBTableDefine_IndexDefine">7.5 索引定義</a></li>
+  <li><a href="#DBTableDefine_InitialRecord">7.6 初始資料行</a></li>
+  <li><a href="#DBTableDefine_PushUpdate">7.7 主動更新</a></li>
+  <li><a href="#DBTableDefine_AccessControl">7.8 資料管理</a></li>
+  <li><a href="#DBTableDefine_ExcelImport">7.9.以匯入方式建立資料表</a></li>
+</ul>
+
+<p>資料庫運用相關的項目：<br /></p>
+<ul>
+  <li><a href="#ExternalDB">7.10. 外部資料庫連線</a></li>
+  <li><a href="#StoredProcedure">7.11. 預存程序</a></li>
+  <li><a href="#SystemTable">7.12 系統表格</a></li>
+  <li><a href="#SystemAPI">7.13 系統API</a></li>
+</ul>
+
+<h2 id="DBTableDefine_BasicSet"><strong>7.1 新增資料表</strong></h2>
+<p>參考資料：</p>
+<ul>
+  <li><a href="pdf/6-1什麼是資料表.pdf" target="_blank">℗什麼是資料表</a></li>
+  <li><a href="pdf/6-3-1資料表欄位型態說明.pdf" target="_blank">℗欄位型態說明</a></li>
+  <li><a href="pdf/6-2資料表設計-新增資料表.pdf" target="_blank">℗新增資料表</a></li>
+</ul>
+
+<p><img src="images/07.1-1.png" alt="" /></p>
+<ol>
+  <li>開啟架構樹下資料表格節點，駐留資料交易。</li>
+  <li>滑鼠右鍵，彈出選單，點選「新增資料表」開啟【新增資料表】頁面，</li>
+  <li>資料交易名稱：此名稱是SD在專案發展時的資源resource名稱。</li>
+  <li>設定完畢後，按儲存，則此記錄新增完成</li>
+</ol>
+
+<h2 id="DBTableDefine_BasicSet2"><strong>7.2 資料表工具列</strong></h2>
+<blockquote>
+  <p>功能說明：</p>
+</blockquote>
+
+<p><img src="images/07.2-1.png" alt="" /></p>
+
+<ol>
+  <li>以頁籤方開啟多個資料表，可點選頁籤名，進行切換。</li>
+  <li>新增鍵：新增一個資料表，在編輯區出現新增資料表（同7.1)。</li>
+  <li>修改鍵：異動資料表基本設定。</li>
+  <li>刪除鍵：刪除駐留資料表。</li>
+  <li>檢錯鍵：檢查駐留的資料表格內容是否符合設定。當有異常時，會提示錯誤內容。</li>
+  <li>表格欄位清單：開啟<a href="17.html#TableFieldList">【表格欄位清單】</a>查詢與資料表相關的欄位資訊。操作方式請參考［17.5 表格欄位清單］</li>
+  <li>規格描述：開啟<a href="06.html#SpecificationAnnotated">【規格描述】</a>]說明及述敘此表格的相關事項。操作方式請參考［6.1.1］</li>
+  <li>匯入鍵：以事先準備好的excel 檔，匯入產生資料表。操作方式請參考［7.9.以匯入方式建立資料表］</li>
+</ol>
+
+<h2 id="DBTableDefine_FieldList"><strong>7.3 欄位清單</strong></h2>
+<blockquote>
+  <p>功能說明：</p>
+</blockquote>
+
+<h3 id="731-新增資料欄位"><strong>7.3.1 新增資料欄位</strong></h3>
+<p>參考資料：</p>
+<ul>
+  <li><a href="pdf/6-3資料表設計-新增資料表欄位(資料行).pdf" target="_blank">℗新增欄位</a></li>
+  <li><a href="pdf/6-5資料表設計-複製資料表欄位(資料行).pdf" target="_blank">℗複製欄位</a></li>
+</ul>
+
+<p><img src="images/07.3.1-1.png" alt="" /></p>
+<ol>
+  <li>點選畫面的[欄位清單]頁籤。</li>
+  <li>新增鍵：點選 + 新增鍵新增資料表的資料欄位(data field)。</li>
+  <li>欄位名稱：輸入資料欄位的中文名稱，為SD在規格設計時引用之名。</li>
+  <li>料號：顯示此資料欄位的料號，由平台自動編定之，不可修改</li>
+  <li>結構命名：輸入資料欄位的英文名稱，即是DB schema 的field name。首字必須為英文字，後續字僅可英數、底線。</li>
+  <li>資料型態：挑選型態(data type)=文字/數字(bigint)/數字(int)/數字(smallint)/數字(tinyint)/數字/日期/日期時間/備註/二進位/全唯碼</li>
+  <li>可變長度：指定此資料欄，存入DB時是固定或變動長度；勾選者代表為變動長度。</li>
+  <li>Unicode：設定本欄位是否需要Unicode編碼轉換。若勾選者在輸入不同語系文字時可自動轉換。</li>
+  <li>資料長度：輸入資料欄位的長度；小數位：若型態為數字, 進階指定小數位數</li>
+  <li>初始值：輸入本資料欄位的初始值</li>
+  <li>允空值：指定本資料欄位是否允許空值</li>
+  <li>密碼處理：指定本欄位是否受在表單呈現時，以密碼方式處理；限制不可為鍵值或個資加密欄位；必須為文字型態欄位</li>
+  <li>個資加密：指定本欄位儲存到資料庫時，是否採加密模式；限制不可為鍵值或序號、備註、二進位欄位型態；外部資料庫連線者，不允設定個資加密。</li>
+  <li>鍵值：指定本資料欄位是否為鍵值欄位key field</li>
+  <li>檔案唯一號：指定本欄位是否為檔案傳輸中記錄上下傳檔案的唯一號用途；僅適用於欄位型態=全唯碼　者</li>
+  <li>儲存鍵：設定完畢後，點選本鍵則此資料欄位新增完成</li>
+</ol>
+
+<h3 id="732-修改資料欄位"><strong>7.3.2 修改資料欄位</strong></h3>
+<p>參考資料：<a href="pdf/6-4資料表設計-修改資料表欄位(資料行).pdf" target="_blank">℗文件</a></p>
+
+<p><img src="images/07.3.2-1.png" alt="" /></p>
+<ol>
+  <li>在元件清單裡，駐留指定要修改的資料欄位名稱。</li>
+  <li>修改鍵：點選本鍵修改資料表的資料欄位(data field)。</li>
+  <li>各欄位的說明同［7.3.1 新增資料欄位］</li>
+  <li>儲存鍵：修改完畢後，點選本鍵則此資料欄位異動完成</li>
+</ol>
+
+<h3 id="733-刪除資料欄位"><strong>7.3.3 刪除資料欄位</strong></h3>
+<blockquote>
+  <p>功能說明：</p>
+</blockquote>
+
+<p><img src="images/07.3.3-1.png" alt="" /></p>
+<ol>
+  <li>在元件清單裡，駐留指定要刪除的資料欄位名稱。</li>
+  <li>刪除鍵：點選本鍵刪除資料表的資料欄位(data field)。系統會提示訊息要求再次確認</li>
+</ol>
+
+<h3 id="734-與其它資料欄位相關"><strong>7.3.4 與其它資料欄位相關</strong></h3>
+<blockquote>
+  <p>功能說明：</p>
+</blockquote>
+
+<p><img src="images/7.3.4-1.png" alt="" /></p>
+<ol>
+  <li>規格描述：開啟<a href="06.html#SpecificationAnnotated">【規格描述】</a>說明及述敘此欄位的相關事項。操作方式請參考［6.1.1］</li>
+  <li>同步參考欄位：開啟<a href="17.html#TableFieldSync">【同步參考欄位】</a>查詢與資料表相關的欄位資訊。操作方式請參考［17.5.1 同步參考欄位］</li>
+  <li>引用：可指定引用的來源為表格或欄位</li>
+  <li>關鍵字：指定搜尋的資料表名稱或欄位名稱</li>
+  <li>搜尋鍵：在指定引用來源及輸入關鍵字後，利用本鍵找出與有關的欄位, 進行標註點選</li>
+  <li>複製清單：系統載入符合條件的內容，可單選或複選(Ctrl+Click)多筆記錄</li>
+  <li>複製鍵：將欄位指定的欄位複製到欄位元件清單</li>
+</ol>
+
+<h2 id="DBTableDefine_ForeignFileRelation"><strong>7.4 外檔關聯</strong></h2>
+<blockquote>
+  <p>功能說明：為了保護被引用的資料，不會被任意刪除，進而造成資料失聯。例如：部門檔中有部門代碼欄位，員工檔內也有儲存部門代碼，若在員工檔設定使用登冊，可以在部門檔資料被刪除時，檢查該部門代碼是否被員工檔引用，若被引用則會不允刪除</p>
+</blockquote>
+
+<p>參考資料：</p>
+
+<p><img src="images/07.4-1.png" alt="" /></p>
+<ol>
+  <li>點選畫面的[外部關連]頁籤。</li>
+  <li>駐留根節點的資料表(以下簡稱A表)</li>
+  <li>新增鍵：新增資料表的關連表格。</li>
+  <li>被關連表格名：挑選指定與本資料表有關連的。(以下簡稱B表)</li>
+  <li>關聯型態：說明兩者的關係一對一、一對多、多對一、多對多</li>
+  <li>使用中的防護：當A表使用到B表的欄位時，若B表的欄位被刪除時, A表的欄位會產生失聯現象；勾選本欄位的作用於在Ｂ表的欄位修改或刪除時，受到Ａ表的檢查，必須是不存在Ａ表使用中的才可執行動作，由此產生防護的作用。</li>
+  <li>儲存鍵：設定表格完畢後，點選本鍵存回關連表格</li>
+  <li>駐留要設定關連的資料表格</li>
+  <li>連結欄位：指定B表的與A表有關的資料欄位。</li>
+  <li>連結本表欄位：指定A表的與B表有關的資料欄位。</li>
+  <li>關連新增鍵：建立儲存關連記錄</li>
+  <li>關連刪除鍵：刪除駐留的的關連記錄</li>
+  <li>關連修改鍵：異動駐留的的關連記錄</li>
+</ol>
+
+<h2 id="DBTableDefine_IndexDefine"><strong>7.5 索引定義</strong></h2>
+<blockquote>
+  <p>功能說明：資料庫的資料表是依據創建(create) 的時間順序存放的，很難直接找到你所需要的資料(只能sequencial serach)；所以，為了提高資料讀取的效率，就必須建立索引檔，設定其排序的規則，包含資料欄位及升降冪，日後資料表資料新增的同時，也會在各個索引檔內增加一筆資料，插入在其排序中的位置，可能會發生索引檔的分割(split) 來安插這一筆資索引紀錄(record)，指到其對應所資料表紀錄的位置。一個資料表可以同時設定多個索引檔來滿足各種不同的使用需求，但是，索引檔太多也會產生系統額外的負擔加大，必須恰當使用，以維護系統效能。</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/6-6資料表設計-設定索引.pdf" target="_blank">℗文件</a></p>
+
+<h3 id="751-設定主索引"><strong>7.5.1 設定主索引</strong></h3>
+
+<p><img src="images/07.5.1-1.png" alt="" /></p>
+<ol>
+  <li>點選畫面的[索引定義]頁籤。</li>
+  <li>元件清單：顯示本資料表格所有的欄位；可點選指定</li>
+  <li>列入鍵：將駐留在元件清單裡的欄位，設定為主鍵值；設定後會出現在[主鍵清單]裡</li>
+  <li>取消鍵：將駐留在[主鍵清單]欄位，取消為主鍵的設定；設定後會從在[主鍵清單]裡消失</li>
+  <li>主鍵清單：顯示所有設定為主鍵的欄位</li>
+</ol>
+
+<h3 id="752-設定副索引"><strong>7.5.2 設定副索引</strong></h3>
+
+<p><img src="images/07.5.2-1.png" alt="" /></p>
+<ol>
+  <li>點選畫面的[索引定義]頁籤。</li>
+  <li>新增鍵：建立新的索引；點選後開啟 [新增索引] 視窗</li>
+  <li>索引名稱：輸入索引名稱。同一表格裡索引名稱不可重複</li>
+  <li>儲存鍵：存回指定的索引名稱</li>
+  <li>索引清單：顯示所有設定為索引的內容。主索引為系統內定</li>
+  <li>元件清單：挑選要加入索引的欄位。</li>
+  <li>加入鍵：將駐留在[元件清單]裡的欄位，列入[排序清單]裡</li>
+  <li>排序清單：顯示依駐留在索引清單的記錄，所設定排序欄位內容</li>
+  <li>上移鍵：將駐留在[排序清單]裡的欄位，順序往上移；影響[排序清單]</li>
+  <li>下移鍵：將駐留在[排序清單]裡的欄位，順序往下移；影響[排序清單]</li>
+  <li>排序鍵：改變駐留在[排序清單]裡的欄位，排序的生降冪；點選後開啟 [切換排序] 視窗</li>
+  <li>排序方式：下拉挑選升冪/降冪</li>
+  <li>儲存鍵：儲存設定內容</li>
+</ol>
+
+<h2 id="DBTableDefine_InitialRecord"><strong>7.6 初始資料行</strong></h2>
+<blockquote>
+  <p>功能說明：準備一些基本資料，當資料庫初始化後，可以直接載入作為基本資料來支持表單的運作，例如比較標準的項目代號一覽表。</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/6-7資料表設計-初始資料設定.pdf" target="_blank">℗文件</a></p>
+
+<p><img src="images/07.6-1.png" alt="" /></p>
+<ol>
+  <li>點選畫面的[初始資料行]頁籤。</li>
+  <li>新增鍵：點選 + 新增鍵新增資料表的初始記錄。</li>
+  <li>資料行代號：輸入資料行中文名稱，同一資料表資料行名稱不允重複。</li>
+  <li>載入鍵：載入資料表的所有欄位在清單中。</li>
+  <li>欄位值：輸入本筆資料欄位要預設的內容值</li>
+  <li>儲存鍵：設定完畢後，點選本鍵則新增完成；新增記錄顯示在[資料行清單]</li>
+  <li>資料行清單：顯示已建立的資料行內容；可利用駐留指定切換欄位清單的記錄內容</li>
+  <li>複製鍵：可複製駐留在[資料行清單]內的記錄內容</li>
+</ol>
+
+<h2 id="DBTableDefine_PushUpdate"><strong>7.7 主動更新</strong></h2>
+<blockquote>
+  <p>功能說明：為了維持兩個關聯度極高的資料表之間的資料正確性，可使用連續處發功能來達成。例如：A資料表儲存訂單基本資料，B資料表儲存訂單明細資料，當A資料表的資料被刪除時，也必須連帶刪除B資料表的對應資料，就可在A資料表上設定連續觸發功能。</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/6-8資料表設計-主動更新(Trigger)設定.pdf" target="_blank">℗文件</a></p>
+
+<p><img src="images/07.7-1.png" alt="" /></p>
+<ol>
+  <li>點選畫面的[主動更新]頁籤。</li>
+  <li>新增鍵：點選 + 新增鍵新增資料表的更新動作。</li>
+  <li>執行時機：選擇執行時機 新增／修改／刪除。(本資料表資料受到何種影響時要執行)。</li>
+  <li>標的資料表：選擇標的資料表名稱。(連帶要影響的資料表)</li>
+  <li>更新方式：選擇更新方式　新增／修改／刪除。(要如何異動被連帶影響的表格)</li>
+  <li>載入鍵：載入資料表的所有欄位在清單中。</li>
+  <li>資料列新增鍵：點選 + 新增鍵新增做為比對依據的資料列。</li>
+  <li>標的資料表欄位：點選標的資料表中的欄位名。(依據標的資料表的哪個欄位異動標的資料表的資料)</li>
+  <li>外部鍵：若要符合條件才異動標的資料表的資料，請勾選此欄位。</li>
+  <li>資料來源：選擇資料來源。(固定值：標的資料表的欄位符合某個固定值就異動。本表欄位：目的資料表的指定欄位值與本張資料表的指定欄位值相符合才異動)</li>
+  <li>內容：輸入要對應的固定值或是本表欄位。</li>
+  <li>資料列刪除鍵：刪除不須要的資料列。</li>
+  <li>儲存鍵：設定完畢後，點選本鍵則新增完成；新增記錄顯示在[資料行清單]</li>
+  <li>主動更新清單：顯示已建立的資料行內容；可利用駐留指定切換欄位清單的記錄內容</li>
+</ol>
+
+<h2 id="DBTableDefine_AccessControl"><strong>7.8 資料管理</strong></h2>
+<blockquote>
+  <p>功能說明：</p>
+</blockquote>
+
+<p><img src="images/07.8-1.png" alt="" /></p>
+<ol>
+  <li>點選畫面的[資料管理]頁籤。</li>
+  <li>修改鍵：進入修改資料表的動作。</li>
+  <li>歸屬資料庫：設定為系統共用，表示本資料表在各分公司都必須使用，在安裝時會放在share-class內。</li>
+  <li>歸屬資料庫：設定為分公司專用，表示此資料表存在個別公司架構下的資料庫裡(每個公司有一個DB instant)</li>
+  <li>歸屬資料庫：設定為其它，表示此資料表非本系統管控，而是在連線允許的狀況態可存取的其它資料庫</li>
+  <li>其它資料庫名：當歸屬資料庫設定為其它時，須指定該資料庫的連線設定。原設定請參考［7.10］</li>
+  <li>永久保存：此資料表如果是作業處理中的一個資料暫存區域，則屬與非永久保存，運行時在該表單作業完成後，這個資料鰾內的紀錄就被刪4除，以節省資料庫空間，並且維持資料庫效率。預設為[是]，若否，則產出在暫存用的MDB檔。</li>
+  <li>儲存鍵：設定完畢後，點選本鍵儲存內容</li>
+</ol>
+
+<h2 id="DBTableDefine_ExcelImport"><strong>7.9 從EXCEL載入Table Schema</strong></h2>
+<blockquote>
+  <p>功能說明：為了讓舊系統的轉換(proting) 更加快速，可以將其schema 整理為EXCEL格式，直接匯進來產生資料表，也可以同時產生檢視表，作為自動(從檢視表) 繪製表單畫面之用。</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/6-10資料表設計-以匯入方式建立資料表.pdf" target="_blank">℗文件</a></p>
+
+<p><img src="images/07.9-1.png" alt="" /></p>
+<ol>
+  <li>匯入鍵：在資料表加註畫面點選匯入功能按鍵。</li>
+  <li>檔案新增鍵：增加一筆資料列</li>
+  <li>來源檔案：選擇要匯入的檔案。</li>
+  <li>產生檢視表：可選擇是否要在匯入資料表後，自動產成檢視表(View)。</li>
+  <li>執行結果：顯示駐留的資料列，執行匯入後的狀態</li>
+  <li>詳細鍵：當執行異常時，可利用本鍵開啟錯誤的訊息檔內容</li>
+  <li>檔案刪除鍵：刪除留的資料列
+8.執行鍵：開始匯入動作。執行完畢後，可查詢詳細執行結果</li>
+</ol>
+
+<h3 id="791-匯入資料表的格式"><strong>7.9.1 匯入資料表的格式</strong></h3>
+<blockquote>
+  <p>EXCEL 格式說明</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><strong>Col#</strong></th>
+      <th style="text-align: center"><strong>填寫欄位</strong></th>
+      <th style="text-align: center"><strong>內容長度</strong></th>
+      <th style="text-align: left"><strong>填寫說明</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">A</td>
+      <td style="text-align: center">表格中文名</td>
+      <td style="text-align: center">80</td>
+      <td style="text-align: left">資料庫資料表格的中文名稱</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">B</td>
+      <td style="text-align: center">表格英文名</td>
+      <td style="text-align: center">20</td>
+      <td style="text-align: left">資料庫資料表格的英文名稱，使用於 database schema,<br />所以不能夾雜特殊符號與空格，可以包含大小寫英文字母及底線(underline _ )。必須是唯一的</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">C</td>
+      <td style="text-align: center">欄位中文名</td>
+      <td style="text-align: center">80</td>
+      <td style="text-align: left">資料庫資料欄位的中文名稱</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">D</td>
+      <td style="text-align: center">欄位英文名</td>
+      <td style="text-align: center">20</td>
+      <td style="text-align: left">資料庫資料欄位的英文名稱，使用於 database schema,<br />所以不能夾雜特殊符號與空格，可以包含大小寫英文字母<br />必須是唯一的，最起碼在同一個資料表內是唯一</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">E</td>
+      <td style="text-align: center">可否空值</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">是否可以為 Null?  Y.可 N.不可, 沒填值時預設為Y</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">F</td>
+      <td style="text-align: center">初始值</td>
+      <td style="text-align: center">80</td>
+      <td style="text-align: left">　</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">G</td>
+      <td style="text-align: center">資料型態</td>
+      <td style="text-align: center">8</td>
+      <td style="text-align: left">位元/文字/整數(bigint)/整數(int)/整數(smallint)/整數(tinyint)/數字/日期/日期時間/備註/二進位/全唯碼</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">H</td>
+      <td style="text-align: center">可變長度</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">是否可以為變動長度? Y.是</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">I</td>
+      <td style="text-align: center">Unicode</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">是否是否需要Unicode編碼轉換 ? Y.是</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">J</td>
+      <td style="text-align: center">序號</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">是否由系統產生序號? Y.是</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">K</td>
+      <td style="text-align: center">長度</td>
+      <td style="text-align: center">5</td>
+      <td style="text-align: left">資料長度</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">L</td>
+      <td style="text-align: center">小數位數</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">小數點以下的位數長度。沒填值, 預設為0</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">M</td>
+      <td style="text-align: center">個資加密</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">Y.是 N.否, 沒填值, 預設為N</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">N</td>
+      <td style="text-align: center">密碼處理</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">Y.是 N.否, 沒填值, 預設為N</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">O</td>
+      <td style="text-align: center">檔案唯一號</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">Y.是 N.否, 沒填值, 預設為N</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">P</td>
+      <td style="text-align: center">鍵值欄位</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">是否為 key field? Y. 是 N.否, 沒填值, 預設為N</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>依此規格，一個工作表內可以敘述多個資料表的資訊，以前兩欄的資料表名稱可以清楚區分。</p>
+
+<h3 id="792-excel-範例"><strong>7.9.2 EXCEL 範例</strong></h3>
+
+<p><img src="images/07.9.2-1.png" alt="" />
+執行結果：</p>
+<ol>
+  <li>在專案資源區的資料表內可以找到新增的客戶檔和客戶聯絡人檔</li>
+  <li>在專案資源區的檢視表內可以找到新增的且與資料表同名的檢視表客戶檔和客戶聯絡人檔</li>
+  <li>點開檢視表：客戶檔，可以在其結構展開的頁籤中看到資料表的連結</li>
+</ol>
+
+<h2 id="ExternalDB"><strong>7.10 外部資料庫連線</strong></h2>
+<blockquote>
+  <p>功能說明：</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/6-11資料表設計-外部資料庫連線.pdf" target="_blank">℗文件</a></p>
+
+<p><img src="images/07.10-1.png" alt="" /></p>
+<ol>
+  <li>新增鍵：可利用本鍵，進入新增模式</li>
+  <li>連線名稱：可利用開窗鍵, 開啟<a href="16.html#MaintainMultilingual">【多語詞庫】</a>指定挑選詞庫，操作方法請參考［16.2］, 來指定函數的名稱</li>
+  <li>跨機台：指定資料庫是否同在一個DB Server．版本808.8以前均只提供同機台資料庫</li>
+  <li>資料庫類型：指定資庫的類型，下拉：MSSQL/MYSQL/ORACLE，版本808.8以前均只提供MS-SQL資料庫</li>
+  <li>料號：顯示料號</li>
+  <li>連線說明：自行輸入</li>
+  <li>儲存鍵：可利用本鍵，儲存內容到資料庫</li>
+  <li>關鍵字：輸入指定的關鍵字，以方便搜尋查詢</li>
+  <li>搜尋鍵：濾出符合關鍵字的內容到速查清單</li>
+  <li>速查清單：經由搜尋鍵查出符合關鍵字的內容清單，可駐留指定記錄，查詢進而編修內容</li>
+</ol>
+
+<h2 id="StoredProcedure"><strong>7.11 預存程序</strong></h2>
+
+<p><img src="images/07.11-1.png" alt="" /></p>
+<ol>
+  <li>新增鍵：可利用本鍵，進入新增模式</li>
+  <li>預存程序名稱：可利用開窗鍵, 開啟<a href="16.html#MaintainMultilingual">【多語詞庫】</a>指定挑選詞庫，操作方法請參考［16.2］, 來指定預存程序的名稱,以下簡稱SP</li>
+  <li>歸屬資料庫：指定SP附掛的資料庫資料，下拉選項：系統/分公司/其它</li>
+  <li>資料庫類型：指定資庫的類型，下拉：MSSQL/MYSQL/ORACLE，版本808.8以前均只提供MS-SQL資料庫</li>
+  <li>資料庫名稱：當歸屬資料庫=其它 時致能，挑選顯示 共用_專案資源:A14外部資料庫連線</li>
+  <li>程式說明：自行輸入</li>
+  <li>參數設定：呼叫ＳＰ時必須傳入的參數</li>
+  <li>回傳結果：執行ＳＰ後預計得到的內容</li>
+  <li>儲存鍵：可利用本鍵，儲存內容到資料庫</li>
+  <li>關鍵字：輸入指定的關鍵字，以方便搜尋查詢</li>
+  <li>搜尋鍵：濾出符合關鍵字的內容到速查清單</li>
+  <li>速查清單：經由搜尋鍵查出符合關鍵字的內容清單，可駐留指定記錄，查詢進而編修內容</li>
+</ol>
+
+<h2 id="SystemTable"><strong>7.12 系統表格</strong></h2>
+<blockquote>
+  <p>作業目的：平台提供系統管理工具時, 會有部份資料表可開放給設定系統時引用, 例如: 使用者帳號, 角色權限等, 萬年曆 等, 我們稱之為「系統表格」；在設計系統時，若有相關需要時可執行引用，讓專案可以使用系統工具的資料表。</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/18-15公用工具-系統表格.pdf" target="_blank">℗文件</a></p>
+
+<h3 id="7121-新增引用系統表格"><strong>7.12.1 新增引用系統表格</strong></h3>
+<blockquote>
+  <p>作業目的：將系統表格引用到指定的專案中，方便後續的查表或異動動作。</p>
+</blockquote>
+
+<p><img src="images/07.12.1-1.png" alt="" /></p>
+<ol>
+  <li>關鍵字：輸入系統表格的關鍵字</li>
+  <li>搜尋鍵：點選本鍵，將符合關鍵字的表格列入清單中</li>
+  <li>表格清單：駐留到引用的表格名稱記錄</li>
+  <li>複製引用：點選本鍵，將指定的表格納入本專案的資料表中，供後續引用</li>
+  <li>存取權限：說明本系統表格是否允許在過帳時進行增修或刪除的異動</li>
+  <li>引用清單：顯示本系統表格被引用的專案清單</li>
+  <li>資料表：複製引用鍵, 會在資料表新增記錄</li>
+  <li>系統表格：複製引用鍵, 會在資料表新增記錄, 並標示為系統表格，不允異動刪除</li>
+</ol>
+
+<h3 id="7122-系統表格同更新"><strong>7.12.2 系統表格同更新</strong></h3>
+<blockquote>
+  <p>作業目的：當系統表格的結構有異動時，受收到異動的通知，必須執行同步的動作，資料結構才會一致。</p>
+</blockquote>
+
+<p><img src="images/07.12.2-1.png" alt="" /></p>
+<ol>
+  <li>差異：當系統表格有異動時，除了收到郵件通知外，本欄位會出現打勾的狀態</li>
+  <li>同步更新：點選本鍵，依最近的結構，更新到資料表格裡。</li>
+</ol>
+
+<h3 id="7123-系統表格清單"><strong>7.12.3 系統表格清單</strong></h3>
+<blockquote>
+  <p>作業目的：系統提供的可引用的表格清單。</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">系統表格名稱</th>
+      <th style="text-align: left">系統資料表名</th>
+      <th style="text-align: left">主要用途</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">SYS_工作排程執行LOG</td>
+      <td style="text-align: left">SYS_TASKLOG</td>
+      <td style="text-align: left">系統執行排程後的歷程資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SYS_系統API</td>
+      <td style="text-align: left">UTL_SYAPISET</td>
+      <td style="text-align: left">系統提供的API清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SYS_系統API_接收</td>
+      <td style="text-align: left">UTL_APIJRCE</td>
+      <td style="text-align: left">系統提供的API接收參數的明細</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SYS_系統API_傳遞</td>
+      <td style="text-align: left">UTL_APIJTNS</td>
+      <td style="text-align: left">系統提供的API傳遞參數的明細</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SYS_系統參數</td>
+      <td style="text-align: left">SYS_PARAM</td>
+      <td style="text-align: left">系統設定的參數內容</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SYS_系統專案版本資訊</td>
+      <td style="text-align: left">SYS_INSTALL2</td>
+      <td style="text-align: left">系統專案版本資訊</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SYS_系統語言</td>
+      <td style="text-align: left">UTL_SYSLANG</td>
+      <td style="text-align: left">各專案使用的語系的清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SYS_表格清單</td>
+      <td style="text-align: left">SYS_TBLS</td>
+      <td style="text-align: left">各專案使用的資料表的清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SYS_表格鍵值欄位清單</td>
+      <td style="text-align: left">SYS_TBLPKEYS</td>
+      <td style="text-align: left">各專案使用資料表的鍵值清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SYS_解鎖工具</td>
+      <td style="text-align: left">SYS_LOCKHANDLE</td>
+      <td style="text-align: left">運行狀態下已鎖定的清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">SYS_輸出LOG</td>
+      <td style="text-align: left">SYS_OUTPUTLOG</td>
+      <td style="text-align: left">系統執行匯出、報表等的歷程資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL_API限定來源檔</td>
+      <td style="text-align: left">UTL_APIIPLIMITED</td>
+      <td style="text-align: left">呼叫API限定來源白名單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL_BOM展開暫存檔</td>
+      <td style="text-align: left">UTL_CACHE</td>
+      <td style="text-align: left">使用展BOM的邏輯函數時,暫存的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL_元件代號</td>
+      <td style="text-align: left">UTL_COMP</td>
+      <td style="text-align: left">各專案表報上的元件內容</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL_伺服器主檔</td>
+      <td style="text-align: left">UTL_SERVERSET</td>
+      <td style="text-align: left">系統工具上伺服器的設定資訊</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL_表單勾選記錄檔</td>
+      <td style="text-align: left">UTL_CHBOXLOG</td>
+      <td style="text-align: left">表單在進行勾選時的鍵值</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL_表單引用單元</td>
+      <td style="text-align: left">UTL_FMDUSUT</td>
+      <td style="text-align: left">表單設定欄位被引用檢查清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL_專案清單</td>
+      <td style="text-align: left">UTL_PROJLS</td>
+      <td style="text-align: left">同一系統上安裝專案的清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL_幣別設定</td>
+      <td style="text-align: left">UTL_CURRENCY</td>
+      <td style="text-align: left">系統工具提供的幣別選項</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL_編碼模版主檔</td>
+      <td style="text-align: left">UTL_PICTYPEN</td>
+      <td style="text-align: left">系統工具提供的模版範本</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL多語_多語言編輯表身</td>
+      <td style="text-align: left">UTL_LANGETB</td>
+      <td style="text-align: left">專案的多語言詞庫</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL多語_系統多語言詞庫主檔表身</td>
+      <td style="text-align: left">UTL_SLANGSB</td>
+      <td style="text-align: left">專案的多語言詞庫</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL多語_系統多語言詞庫主檔表頭</td>
+      <td style="text-align: left">UTL_SLANGSH</td>
+      <td style="text-align: left">專案的多語言詞庫</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL多語_系統多語言編輯表身</td>
+      <td style="text-align: left">UTL_SLANGETB</td>
+      <td style="text-align: left">專案的多語言詞庫</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_API查詢資料設定檔</td>
+      <td style="text-align: left">UTL_APIDATAQUERYH</td>
+      <td style="text-align: left">專案使用的API查詢資料的設定</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_API查詢資料設定參數檔</td>
+      <td style="text-align: left">UTL_APIDATAQUERYB</td>
+      <td style="text-align: left">專案使用的API查詢資料的參數明細</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_MAIL來源欄位明細</td>
+      <td style="text-align: left">UTL_MAILFLDS</td>
+      <td style="text-align: left">專案使用MAIL發送的變動欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_工作排程執行方式設定</td>
+      <td style="text-align: left">SYS_TASKB</td>
+      <td style="text-align: left">專案各工作排程執行設定</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_工作排程清單</td>
+      <td style="text-align: left">UTL_TASK</td>
+      <td style="text-align: left">專案各工作排程的清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_外部呼叫功能鍵_接收</td>
+      <td style="text-align: left">UTL_EXCAFNI</td>
+      <td style="text-align: left">專案開放外部呼叫功能鍵的接收參數</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_外部呼叫功能鍵_傳遞</td>
+      <td style="text-align: left">UTL_EXCAFNS</td>
+      <td style="text-align: left">專案開放外部呼叫功能鍵的傳遞參數</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_外部呼叫功能鍵表頭</td>
+      <td style="text-align: left">UTL_EXCAFNH</td>
+      <td style="text-align: left">專案開放外部呼叫功能鍵的清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_外部程式設定</td>
+      <td style="text-align: left">UTL_APISET</td>
+      <td style="text-align: left">專案對外呼叫API清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_表單功能鍵代號檔</td>
+      <td style="text-align: left">UTL_FUNC</td>
+      <td style="text-align: left">專案的表單上功能鍵清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_表單資訊檔</td>
+      <td style="text-align: left">UTL_FRMINFO</td>
+      <td style="text-align: left">專案的表單資訊</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_表單對應多語清單</td>
+      <td style="text-align: left">UTL_FMDLGST</td>
+      <td style="text-align: left">專案的表單多語系清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_表單編碼原則變動欄位清單</td>
+      <td style="text-align: left">UTL_INNOPICL</td>
+      <td style="text-align: left">專案使用編碼原則裡的變動欄位清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_表單檔</td>
+      <td style="text-align: left">UTL_PJFMDLS</td>
+      <td style="text-align: left">專案的表單清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_單據編碼重新依據檔</td>
+      <td style="text-align: left">UTL_FCAGAIN</td>
+      <td style="text-align: left">專案使用模版裡設定重新編碼的依據</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_單據編碼原則表身檔</td>
+      <td style="text-align: left">SYS_NOPIC_B</td>
+      <td style="text-align: left">專案使用的單據編碼的條件明細</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_單據編碼原則表頭檔</td>
+      <td style="text-align: left">SYS_NOPIC_H</td>
+      <td style="text-align: left">專案使用的單據編碼的清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_報表元件代號</td>
+      <td style="text-align: left">UTL_RPDCOMP</td>
+      <td style="text-align: left">專案的報表清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_報表元件對應條文設定</td>
+      <td style="text-align: left">UTL_RPDNOH</td>
+      <td style="text-align: left">專案報表對應條文設定</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_報表條文</td>
+      <td style="text-align: left">UTL_LAWNO</td>
+      <td style="text-align: left">專案的報表使用的條文設定</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_報表資訊檔</td>
+      <td style="text-align: left">UTL_RPDINFO</td>
+      <td style="text-align: left">專案的報表資訊</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_發送MAIL設定</td>
+      <td style="text-align: left">UTL_FORMALSET</td>
+      <td style="text-align: left">專案使用發送MAIL的設定</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_發送MAIL替換字設定</td>
+      <td style="text-align: left">UTL_FORMABST</td>
+      <td style="text-align: left">專案使用發送MAIL的裡有替換字的明細</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_資料交換輸出設定檔</td>
+      <td style="text-align: left">UTL_OUTSET</td>
+      <td style="text-align: left">專案使用資料交換輸出的清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_圖示設定</td>
+      <td style="text-align: left">SYS_ICON</td>
+      <td style="text-align: left">專案使用圖示的清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_模版設定</td>
+      <td style="text-align: left">SYS_CTRLPICT</td>
+      <td style="text-align: left">專案使用資料模版的清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_模版設定_遮罩位置</td>
+      <td style="text-align: left">SYS_CTRLPICT_COVER</td>
+      <td style="text-align: left">專案使用資料模版裡遮罩位置明細</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_輸入來源資料</td>
+      <td style="text-align: left">UTL_INSET_SOURCE</td>
+      <td style="text-align: left">專案使用輸入來源資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_輸入設定</td>
+      <td style="text-align: left">UTL_INSET</td>
+      <td style="text-align: left">專案使用輸入清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_輸出入實體欄位明細</td>
+      <td style="text-align: left">UTL_FLDS</td>
+      <td style="text-align: left">專案使用輸出入欄位明細</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_輸出來源資料</td>
+      <td style="text-align: left">UTL_OUTSET_SOURCE</td>
+      <td style="text-align: left">專案使用輸出來源資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_輸出排序設定</td>
+      <td style="text-align: left">UTL_OUTODBY</td>
+      <td style="text-align: left">專案使用輸出的排序內容</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL專案_檔案櫃設定</td>
+      <td style="text-align: left">UTL_FILESET</td>
+      <td style="text-align: left">專案使用檔案櫃的資訊</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL組織_組織名稱多語檔</td>
+      <td style="text-align: left">SYS_CORP_NAME</td>
+      <td style="text-align: left">系統工具建置組織的名稱多語清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL組織_組織編制計劃檔</td>
+      <td style="text-align: left">UTL_ORGPLAN</td>
+      <td style="text-align: left">系統工具建置組織編制計劃清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL組織_組織檔</td>
+      <td style="text-align: left">SYS_CORP</td>
+      <td style="text-align: left">系統工具建置組織清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL登入_公司權限檔</td>
+      <td style="text-align: left">UTL_ORGBRAN</td>
+      <td style="text-align: left">系統工具管理使用者可登入組織的記錄</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL登入_使用者帳號檔</td>
+      <td style="text-align: left">UTL_USERINFO</td>
+      <td style="text-align: left">系統工具管理使用者帳號的清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL登入_前置處理主檔</td>
+      <td style="text-align: left">UTL_LAFTEMST</td>
+      <td style="text-align: left">系統工具管理專案設定使用者登入時可選擇前置處理作業</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL萬年曆_日期檔</td>
+      <td style="text-align: left">UTL_CALENDARMD</td>
+      <td style="text-align: left">系統工具供萬年曆使用的月份(1~12)、日期(1~31)計43筆固定資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL萬年曆_月份檔</td>
+      <td style="text-align: left">UTL_CALENDARMONTH</td>
+      <td style="text-align: left">系統工具建置萬年曆中的月份(一年12筆)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL萬年曆_每週第一天</td>
+      <td style="text-align: left">UTL_YEARWEEKONE</td>
+      <td style="text-align: left">系統工具建置萬年曆中的每週第一天(一年52筆)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL萬年曆_萬年曆檔</td>
+      <td style="text-align: left">UTL_CALENDAR</td>
+      <td style="text-align: left">系統工具建置萬年曆中的日期(一年365筆)</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL選單_系統選單主檔</td>
+      <td style="text-align: left">UTL_SYSFLOWINFO</td>
+      <td style="text-align: left">系統工具設定選單的清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL選單_系統選單對應表單</td>
+      <td style="text-align: left">UTL_SYSFLOWFRM</td>
+      <td style="text-align: left">系統工具設定選單點擊時對應表單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL選單_選單下表單資訊檔</td>
+      <td style="text-align: left">UTL_FLOWFRM</td>
+      <td style="text-align: left">系統工具設定選單下的表單清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL選單_選單資訊檔</td>
+      <td style="text-align: left">UTL_FLOWINFO</td>
+      <td style="text-align: left">系統工具設定選單的資訊</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL權限_人員角色別設定檔</td>
+      <td style="text-align: left">UTL_PJOBINER</td>
+      <td style="text-align: left">系統工具設定權限時指定人員對角色的清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL權限_人員組織別設定檔</td>
+      <td style="text-align: left">UTL_BRANCH</td>
+      <td style="text-align: left">系統工具設定權限時指定人員對組織的清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL權限_角色表單別權限檔</td>
+      <td style="text-align: left">UTL_GRFRMLUB</td>
+      <td style="text-align: left">系統工具設定權限時角色對表單的權限</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL權限_角色按鍵別權限檔</td>
+      <td style="text-align: left">UTL_GRFMSYSET</td>
+      <td style="text-align: left">系統工具設定權限時角色對表單功能鍵的權限</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL權限_角色選單別權限檔</td>
+      <td style="text-align: left">UTL_FLOWGRLU</td>
+      <td style="text-align: left">系統工具設定權限時角色對選單的權限</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL權限_角色檔</td>
+      <td style="text-align: left">UTL_GROUPMS</td>
+      <td style="text-align: left">系統工具設定權限區分角色的清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL權限_保密群組表單元件檔</td>
+      <td style="text-align: left">UTL_PASSB</td>
+      <td style="text-align: left">系統工具設定保密群組下表單的保欄密欄位</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL權限_保密群組對應角色檔</td>
+      <td style="text-align: left">UTL_PASSGRST</td>
+      <td style="text-align: left">系統工具設定權限時角色對保密群組的權限</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">UTL權限_保密群組檔</td>
+      <td style="text-align: left">UTL_PASSH</td>
+      <td style="text-align: left">系統工具設定的保密群組清單</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_表報流程附件內容檔</td>
+      <td style="text-align: left">WFS_FMDRPTFLOWATTFL</td>
+      <td style="text-align: left">表報在執行簽核流程時,所設定的附件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_表報流程重簽條件檔</td>
+      <td style="text-align: left">WFS_FMDRPTFLOWCOND</td>
+      <td style="text-align: left">表報在執行簽核流程時,所設定的重送的條件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_表報流程設定檔</td>
+      <td style="text-align: left">WFS_FMDRPTFLOWH</td>
+      <td style="text-align: left">WFS_表報流程設定檔</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_單據送簽記錄附件檔</td>
+      <td style="text-align: left">WFS_SIGNDATAFILE</td>
+      <td style="text-align: left">簽核模組設定單據送簽附件的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_單據送簽記錄檔</td>
+      <td style="text-align: left">WFS_SIGNDATA</td>
+      <td style="text-align: left">簽核模組設定單據送簽的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_單據簽核查詢作業表身</td>
+      <td style="text-align: left">WFS_FRPWHB</td>
+      <td style="text-align: left">簽核模組設定單據簽核查詢作業表身</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_單據簽核關卡加簽郵件替代檔</td>
+      <td style="text-align: left">WFS_SIGNSTAGEADDPARA</td>
+      <td style="text-align: left">簽核模組設定單據簽核關卡加簽郵件替代的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_單據簽核關卡歷程檔</td>
+      <td style="text-align: left">WFS_SIGNSTAGEHIS</td>
+      <td style="text-align: left">簽核模組設定單據簽核關卡歷程的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_單據簽核關卡檔</td>
+      <td style="text-align: left">WFS_SIGNSTAGE</td>
+      <td style="text-align: left">簽核模組設定單據簽核關卡的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核人員代理檔</td>
+      <td style="text-align: left">WFS_SIGNAGENT</td>
+      <td style="text-align: left">簽核模組設定簽核人員代理的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核人員匯入暫存檔</td>
+      <td style="text-align: left">WFS_USERLISTTMP</td>
+      <td style="text-align: left">簽核模組設定簽核人員匯入暫存的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核人員檔</td>
+      <td style="text-align: left">WFS_USERLIST</td>
+      <td style="text-align: left">簽核模組設定簽核人員的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核流程定義參數檔</td>
+      <td style="text-align: left">WFS_FLOWPARAMETER</td>
+      <td style="text-align: left">簽核模組設定簽核流程定義參數的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核流程定義郵件替代參數檔</td>
+      <td style="text-align: left">WFS_FLOWMAILPARA</td>
+      <td style="text-align: left">簽核模組設定簽核流程定義郵件替代參數的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核流程定義檔</td>
+      <td style="text-align: left">WFS_FLOW</td>
+      <td style="text-align: left">簽核模組設定簽核流程定義的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核流程定義簽核人員檔</td>
+      <td style="text-align: left">WFS_FLOWIITEMSIGN</td>
+      <td style="text-align: left">簽核模組設定簽核流程定義簽核人員的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核流程定義關卡條件檔</td>
+      <td style="text-align: left">WFS_FLOWITEMCOND</td>
+      <td style="text-align: left">簽核模組設定簽核流程定義關卡條件的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核流程項次檔</td>
+      <td style="text-align: left">WFS_FLOWITEM</td>
+      <td style="text-align: left">簽核模組設定簽核流程項次的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核專案編制人員檔</td>
+      <td style="text-align: left">WFS_PRJUSERLIST</td>
+      <td style="text-align: left">簽核模組設定簽核專案編制人員的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核專案編制結構檔</td>
+      <td style="text-align: left">WFS_PRJSTRUCTURE</td>
+      <td style="text-align: left">簽核模組設定簽核專案編制結構的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核專案檔</td>
+      <td style="text-align: left">WFS_PRJINFO</td>
+      <td style="text-align: left">簽核模組設定簽核專案的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核組織單位匯入暫存檔</td>
+      <td style="text-align: left">WFS_ORGTABLETMP</td>
+      <td style="text-align: left">簽核模組設定簽核組織單位匯入暫存的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核組織單位檔</td>
+      <td style="text-align: left">WFS_ORGTABLE</td>
+      <td style="text-align: left">簽核模組設定簽核組織單位的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核組織編制人員檔</td>
+      <td style="text-align: left">WFS_ORGJOBPOS</td>
+      <td style="text-align: left">簽核模組設定簽核組織編制人員的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核組織編制結構檔</td>
+      <td style="text-align: left">WFS_ORGSTRU</td>
+      <td style="text-align: left">簽核模組設定簽核組織編制結構的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核組織編制檔</td>
+      <td style="text-align: left">WFS_ORGVER</td>
+      <td style="text-align: left">簽核模組設定簽核組織編制的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核催簽設定檔</td>
+      <td style="text-align: left">WFS_PUSHSIGN</td>
+      <td style="text-align: left">簽核模組設定簽核催簽設定的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核催簽郵件替代參數檔</td>
+      <td style="text-align: left">WFS_WPUSHMAILSWAP</td>
+      <td style="text-align: left">簽核模組設定簽核催簽郵件替代參數的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">WFS_簽核編制匯入暫存檔</td>
+      <td style="text-align: left">WFS_ORGSTRUTMP</td>
+      <td style="text-align: left">簽核模組設定簽核編制匯入暫存的資料</td>
+    </tr>
+    <tr>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+      <td style="text-align: left"> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="SystemAPI"><strong>7.13 系統API</strong></h2>
+<blockquote>
+  <p>作業目的：為了開放此專案內的資源給外部系統使用，平台提供了四個API讓外部系統呼叫。</p>
+</blockquote>
+
+<h3 id="7131-新增資料表記錄"><strong>7.13.1 新增資料表記錄</strong></h3>
+<blockquote>
+  <p>API名稱：http://ip:port/ArcareEng/ProjectAppendService</p>
+
+  <p>功能說明：新增專案中的實體資料，以下範例為新增資料到指定專案的兩個實體中</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">類別</th>
+      <th style="text-align: center">順序</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數型態</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">專案全唯碼(型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">分公司全唯碼(型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: left">要新增到專案的實體清單(型態:JSON陣列)</td>
+      <td style="text-align: left">陣列</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: left">專案全唯碼(型態:JSON物件)</td>
+      <td style="text-align: left">物件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: center">5</td>
+      <td style="text-align: left">實體英文名(型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: center">6</td>
+      <td style="text-align: left">是否為共用資料庫實體(型態:布林)</td>
+      <td style="text-align: left">布林</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: center">7</td>
+      <td style="text-align: left">要新增的實體資料列(型態:JSON陣列)</td>
+      <td style="text-align: left">陣列</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: center">8</td>
+      <td style="text-align: left">要新增的實體資料行(型態:JSON物件)</td>
+      <td style="text-align: left">物件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: center">9</td>
+      <td style="text-align: left">欄位內容值(key:欄位名稱)</td>
+      <td style="text-align: left">　</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: center">1</td>
+      <td style="text-align: left">執行結果(型態:布林)</td>
+      <td style="text-align: left">布林</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: left">執行失敗時的錯誤訊息(型態:字串)，執行失敗時才有此參數</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="7132-資料表記錄的增刪查改"><strong>7.13.2 資料表記錄的增刪查改</strong></h3>
+<blockquote>
+  <p>API名稱：<a href="http://ip:port/ArcareEng/ProjectDataService">http://ip:port/ArcareEng/ProjectDataService</a></p>
+
+  <p>功能說明：呼叫運行系統中，資料表記錄的增刪查改</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">類別</th>
+      <th style="text-align: left">順序</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數型態</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">專案全唯碼(型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">分公司全唯碼(型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">異動的實體表格英文名(型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">實體表格在共用資料庫否(型態:布林)</td>
+      <td style="text-align: left">布林</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">5</td>
+      <td style="text-align: left">異動類型(型態:數字，1.新增/2.修改/3.查詢/4.刪除)</td>
+      <td style="text-align: left">數字</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">6</td>
+      <td style="text-align: left">過濾式(型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">7</td>
+      <td style="text-align: left">異動欄位陣列(型態:一維JSON物件陣列)</td>
+      <td style="text-align: left">陣列</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">8</td>
+      <td style="text-align: left">異動欄位(型態:JSON物件)</td>
+      <td style="text-align: left">物件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">9</td>
+      <td style="text-align: left">異動欄位名稱(型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">10</td>
+      <td style="text-align: left">異動欄位內容值(型態:依異動欄位資料型態而定)</td>
+      <td style="text-align: left">　</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">執行結果(型態:布林)</td>
+      <td style="text-align: left">布林</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">執行失敗時的錯誤訊息(型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">:執行查詢時的資料紀錄(型態:一維JSON物件陣列)</td>
+      <td style="text-align: left">陣列</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">紀錄欄位(型態:JSON物件)</td>
+      <td style="text-align: left">物件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: left">5</td>
+      <td style="text-align: left">欄位內容值(key:欄位名稱)</td>
+      <td style="text-align: left">　</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="7133-呼叫指定功能鍵"><strong>7.13.3 呼叫指定功能鍵</strong></h3>
+<blockquote>
+  <p>API名稱：<a href="http://ip:port/ArcareEng/ProjectPsdService">http://ip:port/ArcareEng/ProjectPsdService</a></p>
+
+  <p>功能說明：呼叫指定功能鍵</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">類別</th>
+      <th style="text-align: left">順序</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數型態</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">專案全唯碼(型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">語言別(型態:數字)，不帶的話，預設給950</td>
+      <td style="text-align: left">數字</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">功能鍵料號(型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">分公司全唯碼(型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">5</td>
+      <td style="text-align: left">使用者自定義參數(型態:物件，內容為{“參數名稱”:”參數內容值}”)</td>
+      <td style="text-align: left">物件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">執行結果(型態:布林)</td>
+      <td style="text-align: left">布林</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">中間台引擎回傳值(執行成功時才有此參數，型態:任意)</td>
+      <td style="text-align: left">　</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">錯誤訊息(執行失敗時才有此參數，型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">中間台引擎回傳的BPS資訊，型態:字串</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="7134-呼叫查詢資料"><strong>7.13.4 呼叫查詢資料</strong></h3>
+<blockquote>
+  <p>API名稱：<a href="http://ip:port/ArcareEng/ProjectQueryService">http://ip:port/ArcareEng/ProjectQueryService</a></p>
+
+  <p>功能說明：呼叫在運行專案中設定好查詢資料的API</p>
+</blockquote>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">類別</th>
+      <th style="text-align: left">順序</th>
+      <th style="text-align: left">參數名稱</th>
+      <th style="text-align: left">參數型態</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">專案全唯碼(型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">分公司全唯碼(型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">API代號(型態:字串)</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">自訂參數物件(型態:物件)</td>
+      <td style="text-align: left">物件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">傳遞</td>
+      <td style="text-align: left">5</td>
+      <td style="text-align: left">自訂參數</td>
+      <td style="text-align: left">　</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: left">1</td>
+      <td style="text-align: left">執行結果(型態:布林)</td>
+      <td style="text-align: left">布林</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: left">2</td>
+      <td style="text-align: left">執行失敗時的錯誤訊息(型態:字串)，執行失敗時才有此參數</td>
+      <td style="text-align: left">字串</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: left">3</td>
+      <td style="text-align: left">執行查詢時的資料紀錄(型態:一維JSON物件陣列)</td>
+      <td style="text-align: left">陣列</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">紀錄欄位(型態:JSON物件)</td>
+      <td style="text-align: left">物件</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">接收</td>
+      <td style="text-align: left">5</td>
+      <td style="text-align: left">欄位內容值(key:欄位名稱)</td>
+      <td style="text-align: left">　</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+<p><a href="index.html#MainMenu"><strong>回到章節目錄</strong></a></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6J98QS"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+  </body>
+
+</html>

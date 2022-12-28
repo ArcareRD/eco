@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="zh_TW"><head>
+  <meta charset="utf-8">
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>IDE操作手冊 | 如如-智慧軟體機器人</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="IDE操作手冊" />
+<meta property="og:locale" content="zh_TW" />
+<meta name="description" content="一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。" />
+<meta property="og:description" content="一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。" />
+<link rel="canonical" href="https://docs.arcare-robot.com//doc/IDE_8.10.2/zh-Hant/01.html" />
+<meta property="og:url" content="https://docs.arcare-robot.com//doc/IDE_8.10.2/zh-Hant/01.html" />
+<meta property="og:site_name" content="如如-智慧軟體機器人" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-02-16T09:10:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="IDE操作手冊" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"IDE操作手冊","dateModified":"2022-02-16T09:10:00+08:00","url":"https://docs.arcare-robot.com//doc/IDE_8.10.2/zh-Hant/01.html","datePublished":"2022-02-16T09:10:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.arcare-robot.com//doc/IDE_8.10.2/zh-Hant/01.html"},"description":"一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://docs.arcare-robot.com//feed.xml" title="如如-智慧軟體機器人" /><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W6J98QS');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">
+      <img src="/img/robotcolor.png" style="width: 40px; height: 40px; padding-right: 5px;" >如如-智慧軟體機器人
+    </a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/HOWTO/README.html">問答集</a><a class="page-link" href="/RELEASE/README.html">產品清單</a><a class="page-link" href="/INSTALLS/README.html">安裝說明</a><a class="page-link" href="/library/README.html">線上說明</a><a class="page-link" href="/about/">關於</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">IDE操作手冊</h1>
+  </header>
+
+  <div class="post-content">
+    <h1 id="1-簡介-introduction"><strong>1. 簡介 Introduction</strong></h1>
+<h2 id="11-平台簡介-platform-introduction"><strong>1.1 平台簡介 Platform Introduction</strong></h2>
+<p>　　ruRU Robot<strong>®</strong>　是本公司所研發出來的第一代軟體機器人平台(Software Robot) ，它是一套以 “知識封裝方法Knowledge Fabrication Methodology” 所架構出來的宣告式軟體系統發展平台(system generator)，徹底地解決了程式設計師的人力、技術、工時，以及績效管理等等問題，讓資訊系統的開發與維護工作，排除了程式撰寫及文件不足/不符的瓶頸，以加速資訊管理系統的開發與流通，協助企業提升其CQDS的管理能力，提高其市場競爭力。</p>
+
+<p>ruRU Robot<strong>®</strong> 軟體系統發展平台如下圖所示，包含了三大區塊：<br />
+(1) ruRU IDE (ruRU Integrated Design Environment) 前端的整合設計平台<br />
+(2) ruRU SDE (ruRU System Development Environment), 後端以軟體機器人為主的電腦輔助生產平台<br />
+(3) ruRU RTE (ruRU Run Time Environment) 運行台引擎執行開發完成後的三層式企業端運行台。
+<br />
+<img src="images/01.1-1.png" alt="" /></p>
+
+<p>　　ruRU IDE是SA/SD系統設計的前端工作平台，從使用者需求的角度，以結構化的工作表來宣告、敘述及定義商業流程，以及作業處理的相關資源與處理邏輯，甚至日後需求變更的系統設計調整。其產出就是完整的結構化設計規格書，並以三種格式呈現：<br />
+(1) XML, 作為ruRU SDE的資料來源之用 <br />
+(2) HTML/.docx, 作為系統分析/設計師的設計規格文件以及使用說明書之用 <br />
+(3) soft-print 軟體系統爆炸圖，<br />
+類似硬體設計爆炸圖的方式，以視覺化、多維度的方式來鳥瞰系統結構及微觀作業處理細節與關聯。</p>
+
+<p>　　ruRU SDE 是智慧型軟體機器人群的雲端後台，依據ruRU IDE所提供的設計規格資訊，結合作業行為物件庫( business behavior library) 產出百分之百對應於設計規格之運行資訊，其超高的生產力及穩定的品質，解決了傳統工法的程式設計師人力短缺、技術參差不齊、工時長、品質不穩，以及人員管理與發展的成本等等問題。</p>
+
+<p>　　ruRU RTE是三層式(3 tier) 企業端運行台的核心，支持多種資料庫管理系統(DBMS)及作業系統(OS)，並且提供各類API與企業的既有系統進行線上資料交換，彼此分工、合作，以達到最大的企業投資效益。它也提供了一套系統工具來設定與管理相關作業環境資料，連結終端用戶到被授權使用的應用系統，並且依據使用者的權限及應用系統的作業規格來執行各個表單的運作及資料庫的更新，提供企業及時、完整的管理資訊，協助其提高CQDS的管理能力。</p>
+
+<p>　　整體而言，ruRU Robot<strong>®</strong>　會帶來軟體產業的變革，讓資訊系統發展只需專注於需求面的整理、分析與設計，完成詳細的規格就可以得到新版的系統，及時面對市場挑戰與競爭，如虎添翼！</p>
+
+<h3 id="111-ruru-robot-的硬體架構">1.1.1. <strong>ruRU Robot 的硬體架構</strong></h3>
+<p>　　ruRU Robot<strong>®</strong>　的開發環境及運行環境都採用最成熟的硬體與網路架構，如右圖所示，前端是web terminal, 透過TCP/IP 連結到AP server, 以及其後的資料庫伺服器(DB server )，AP server 及DB server 都可以橫向擴充(scale out)，以滿足業務量成長的需求。</p>
+
+<p><img src="images/01.1.1-1.png" alt="" /></p>
+
+<h3 id="112-伺服器硬體規格">1.1.2. <strong>伺服器硬體規格</strong></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Component</strong></th>
+      <th style="text-align: left"><strong>Specification</strong></th>
+      <th style="text-align: left"><strong>Remarks</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">CPU</td>
+      <td style="text-align: left">Xeon E5620 2.8GHz　<br />(雙CPU, 四核)</td>
+      <td style="text-align: left">相同等級的CPU，或規格以上</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Main Memory</td>
+      <td style="text-align: left">&gt;=8GB</td>
+      <td style="text-align: left">主記憶體的增加，對反應速度有幫助</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Hard Disk</td>
+      <td style="text-align: left">&gt;=50GB</td>
+      <td style="text-align: left">1. 需有兩顆硬碟作為備援(RAID 1)<br />2. SSD的讀寫效率較佳，成本高一些<br /></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="12-ruru-robot-運行台軟體環境"><strong>1.2 ruRU Robot® 運行台軟體環境</strong></h2>
+<p>　　ruRU Robot<strong>®</strong>　是三層式(3 tiers) web base的軟體架構，以降低前端的設備規格，以及後續的技術支援需求。</p>
+<ul>
+  <li>瀏覽器以支援 HTML 5完整功能者為限，如：Firefox、Google Chrome瀏覽器及iOS與Android系統行動裝置的Sofaris與Google Chrome瀏覽器。</li>
+  <li>AP server採用TomCat，以減輕客戶的資本支出。</li>
+  <li>作業系統(OS, Operating System) 目前是採用微軟公司的Windows，未來會支援Linux。</li>
+  <li>資料庫管理系統(DBMS) 目前支援MS SQL Server，未來還會增加mySQL及Oracle DB，以滿足各類客戶的不同需求。</li>
+</ul>
+
+<h3 id="121-系統軟體規格">1.2.1 <strong>系統軟體規格</strong></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"><strong>Component</strong></th>
+      <th style="text-align: left"><strong>Specification</strong></th>
+      <th style="text-align: left"><strong>Remarks</strong></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">作業系統(OS)</td>
+      <td style="text-align: left">Microsoft Windows Server 2012 以上版本</td>
+      <td style="text-align: left">支援 Linux</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">資料庫管理系統(DBMS)</td>
+      <td style="text-align: left">Microsoft SQL Server 2012 以上版本</td>
+      <td style="text-align: left">未來可以支援 MySQL, Oracle</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="122-ruru-robot-運行台與企業既有系統的整合">1.2.2 <strong>ruRU Robot® 運行台與企業既有系統的整合</strong></h3>
+<p>　　與企業既有系統的整合，是ruRU Robot<strong>®</strong>　的重要功能，彼此分工合作，以利系統的推展。所以，目前市場上普遍使用的API 協定及資料格式都會被支持，例如：HTTP(s)、web service/WCF、REST等等。資料格式例如：Json、XML等。<br />|
+<img src="images/01.2.2-1.png" alt="" /></p>
+
+<h2 id="13-ruru-ide-系統發展流程">1.3 <strong>ruRU IDE 系統發展流程</strong></h2>
+<p>　　ruRU IDE 的系統開發主要是圍繞在表單(form) 的處理，包含表單元件的宣告、運用以及對資料庫更新的複雜處理邏輯，往上是作業處理流程(process flow) 與系統結構；往下是資料庫的資料表(table)、檢視表(view) 以及資料欄位。<br />ruRU IDE 的專案執行步驟是先在專案內先資源宣告(resources declaration)，以及人機介面(User Interface)來完成系統概要設計(functional design)，完成對使用者端的系統功能確認，再來進行各個作業表單的資料處理邏輯，以及相關資料庫檢視表與交易狀態的資料庫更新，提供資料處理的作業細節，完成詳細設計書(detail design)；在完成各個表單的打樣與(單元)測試之後，即可申請系統發行，交付雲端的機器人作業平台，生產出可運行的資訊系統。
+系統概要設計(functional design)的資源宣告(resources declaration) 主要包含：<br />
+(1) 系統結構、作業流程圖以及對應的作業表單與報表，<br />
+(2) 作業表單的畫面欄位及功能按鈕，<br />
+(3) 報表的格式與資料欄位，<br />
+(4) 資料庫的資料表及其資料欄位與屬性。<br /></p>
+
+<p>詳細設計(detail design) 的資料處理邏輯定義主要包含：<br />
+(1) 表單按鈕的作業功能與邏輯，<br />
+(2) 表單欄位的輸入輔助與檢核，欄位間的資料更新時機與邏輯，<br />
+(3) 資料庫檢視表(view) 的資料組合邏輯，<br />
+(4) 報表內各經階層資料欄位的來源及處理邏輯，<br />
+(5) 表單資料收集後的資料庫更新作業與處理邏輯。<br /></p>
+
+<p><img src="images/01.3-1.png" alt="" /></p>
+
+<h3 id="131-top-down-系統發展流程">1.3.1. <strong>Top-down 系統發展流程</strong></h3>
+<p>　　ruRU IDE系統設計平台的專案統發展模式分為由上而下(top down)及由下而上(bottom up) 兩種，由上而下的模式適用於新系統開發，或是非資訊背景人員負責的專案；由下而上的模式適用於現行系統的移轉(porting)，或是資訊背景人員負責的專案。<br />由上而下的開發模式其步驟就是先依作業分工及流程來敘述與宣告使用到的表單及報表，接下來就可以進作表單的畫面繪製，宣告表單欄位及功能按鈕；繪製完成的表單就可以由系統幫忙產出對應的資料表(table)以及檢視表(view)，並且提供基本的資料表新增、修改、刪除等標準的系統按鈕功能，快速完成基本的資料處理作業，至於較複雜的邏輯處理或是資料庫更新處理，則可以再分別利用 ”按鈕”及 “資料庫更新” 項下的規格設定表單，繼續完成其需求定義。
+<img src="images/01.3.1-1.png" alt="" /></p>
+
+<h3 id="132-bottom-up-系統發展流程">1.3.2. <strong>Bottom-up 系統發展流程</strong></h3>
+<p>　　ruRU IDE下的專案統發展模式分為由上而下及由下而上兩種，由上而下的模式適用於新系統開發，或是非資訊背景人員負責的專案；由下而上的模式適用於現行系統的移轉(porting)，或是資訊背景人員負責的專案。<br />由下而上的開發模式其步驟就是先將規劃好的資料庫整理成下表的EXCEL格式，直接導入ruRU IDE完成資料表與檢視表的建置，再以檢視表的內容在表單設計中直接導入畫面，完成表單的繪製，即可進行該表單的打樣與測試。最後再將已經開發好的表單串入業務處理流程(business process flow) 內，以得到系統繪製的作業流程圖。至於較複雜的邏輯處理或是資料庫更新處理，則再分別於 “按鈕”及 “資料庫更新”項次下繼續定義之。
+<img src="images/01.3.1-2.png" alt="" /></p>
+
+<h2 id="14-多層次的多語系架構"><strong>1.4 多層次的多語系架構</strong></h2>
+<p>　　ruRU Robot<strong>®</strong>　提供了多語系(multilingual) 架構在三個層次：(1) 平台本身、(2) SA/SD設計文件，以及(3) 運行台人機介面及使用手冊。<br />
+　　ruRU Robot<strong>®</strong>　平台本身的多語系架構當然是要將此平台推展於全球，讓所有的系統發展人員都可以使用這個平台，享受軟體機器人帶來的超高產能，並且脫離程式設計師的牽絆。<br />
+　　SA/SD設計文件的多語系架構是為了讓ISV發展的應用系統規格書(open spec)　可以拿來銷售，讓國外買方可以接手後續的維護或是服務其在地的客群。<br />
+　　而運行台的多語系能力就是擴大應用系統的客群為全球化，例如套裝軟體的外銷，或是SaaS軟體的跨國營運。</p>
+
+<hr />
+<p><a href="index.html#MainMenu"><strong>回到章節目錄</strong></a></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6J98QS"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+  </body>
+
+</html>

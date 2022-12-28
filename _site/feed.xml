@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://docs.arcare-robot.com//feed.xml" rel="self" type="application/atom+xml" /><link href="https://docs.arcare-robot.com//" rel="alternate" type="text/html" /><updated>2022-12-28T14:53:05+08:00</updated><id>https://docs.arcare-robot.com//feed.xml</id><title type="html">如如-智慧軟體機器人</title><subtitle>一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。</subtitle><entry><title type="html">歡迎光臨如如智慧軟體機器人世界</title><link href="https://docs.arcare-robot.com//jekyll/update/2021/09/22/welcome-to-jekyll.html" rel="alternate" type="text/html" title="歡迎光臨如如智慧軟體機器人世界" /><published>2021-09-22T11:00:00+08:00</published><updated>2021-09-22T11:00:00+08:00</updated><id>https://docs.arcare-robot.com//jekyll/update/2021/09/22/welcome-to-jekyll</id><content type="html" xml:base="https://docs.arcare-robot.com//jekyll/update/2021/09/22/welcome-to-jekyll.html">&lt;h1 id=&quot;ruru-智慧軟體機器人&quot;&gt;ruRU 智慧軟體機器人&lt;/h1&gt;
+&lt;p&gt;它是一個創新的企業軟體機器人 PaaS 服務，提供企業軟體的開發設計以及維護的平台服務&lt;/p&gt;
+
+&lt;p&gt;軟體正在驅動整個世界，企業的運行需要大量的系統軟體， “ruRU”智慧軟體機器人的服務能提供企業快速、品質穩定、可長期維運的系統，並且協助企業有限的 IT 資源做最優化的配置，”ruRU”智慧軟體機器人將是所有企業邁向成功的標準配備。&lt;/p&gt;
+
+&lt;h1 id=&quot;ruru軟體機器人平台技術簡介&quot;&gt;ruRU軟體機器人平台技術簡介&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#Introduction-1&quot;&gt;ruRU軟體機器人平台架構&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#Introduction-2&quot;&gt;ruRU軟體機器人平台各功能模組說明&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#Introduction-3&quot;&gt;ruRU軟體機器人平台之技術規格&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#Introduction-4&quot;&gt;ruRU軟體機器人平台之硬體規格&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;Introduction-1&quot;&gt;ruRU軟體機器人平台架構&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/img/Introduction-1.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;Introduction-2&quot;&gt;ruRU軟體機器人平台各功能模組關聯圖&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;/img/Introduction-2.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;ruru軟體機器人平台各功能模組之功能說明&quot;&gt;ruRU軟體機器人平台各功能模組之功能說明&lt;/h2&gt;
+&lt;h3 id=&quot;1-ide-integrated-design-environment-設計台&quot;&gt;1. IDE (Integrated Design Environment 設計台)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;提供Web base的GUI圖形化操作介面，讓系統分析師或領域專家，針對Web/APP資料庫應用系統之需求，不用撰寫程式，直接透過拖拉及設定的方式，進行版面、表單欄位/按鍵規格、及資料庫結構之設計&lt;/li&gt;
+  &lt;li&gt;針對設計出來的表單或系統，提供打樣、檢錯功能&lt;/li&gt;
+  &lt;li&gt;針對設計出來的表單或系統，提供測試及預覽運行操作畫面之功能&lt;/li&gt;
+  &lt;li&gt;可產生Word形式的系統需求規格文件或系統設計規格文件&lt;/li&gt;
+  &lt;li&gt;將通過檢錯打樣之系統進行發行以產生安裝包(Install Pack)&lt;/li&gt;
+  &lt;li&gt;提供多個企業的多個應用系統在同一IDE設計台同時進行設計之管理功能，包含&lt;/li&gt;
+  &lt;li&gt;規格設計：依據軟體系統需求，透過IDE設計介面，以結構化方式定義軟體規格&lt;/li&gt;
+  &lt;li&gt;站台管理：提供站台管理員(Site Manager)新增/維護在此IDE設計台上的各個企業管理員帳號&lt;/li&gt;
+  &lt;li&gt;企業管理：提供各企業管理員新增/維護企業內的各帳號&lt;/li&gt;
+  &lt;li&gt;授權管理：針對企業內的各IDE帳號進行權限管理&lt;/li&gt;
+  &lt;li&gt;身分驗證：針對登入IDE設計台的帳號/密碼進行驗證&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-fms-factory-management-system-管理中心&quot;&gt;2. FMS (Factory Management System 管理中心)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;專案管理：負責IDE中各專案資訊之管理&lt;/li&gt;
+  &lt;li&gt;發行管理：負責將IDE發行需求分派給適當的AMS軟體工廠去執行&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-ams-assembly-management-system-軟體工廠&quot;&gt;3. AMS (Assembly Management System 軟體工廠)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;負責將FMS轉來的發行需求，運用軟體工廠的各軟體機器人轉譯為應用系統&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;4-rte-run-time-environment-運行台&quot;&gt;4. RTE (Run Time Environment 運行台)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;3-Tier三層式Web資料庫應用系統架構&lt;/li&gt;
+  &lt;li&gt;提供運行台[執行引擎]讓軟體機器人所產出的應用系統在其上運行&lt;/li&gt;
+  &lt;li&gt;提供各應用系統運行時的一些[共同服務]，包含程式設定、API設定、排程服務、郵件發送、推播通知等&lt;/li&gt;
+  &lt;li&gt;提供應用系統運行時的應用系統管理功能，包含
+    &lt;ul&gt;
+      &lt;li&gt;系統資訊：組織資訊、應用系統執行時所需相關資訊等&lt;/li&gt;
+      &lt;li&gt;系統管理：API管理、圖示管理、檔案管理、推播通知管理等&lt;/li&gt;
+      &lt;li&gt;授權管理：標準帳號授權模式、整合式單一簽入模式、及支援應用系統物件授權管理等&lt;/li&gt;
+      &lt;li&gt;異常管理：當應用系統運行異常時會提供錯誤訊息及錯誤代碼、即快速封裝與回報機制、以供系統管理者做為障礙排除之參考&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;提供多個企業的多個應用系統在同一運行台運行之管理功能，包含
+    &lt;ul&gt;
+      &lt;li&gt;站台管理：提供站台管理員(Site Manager)新增/維護在此運行台上的各個企業管理員帳號&lt;/li&gt;
+      &lt;li&gt;企業管理：提供各企業管理員新增/維護企業內的各帳號&lt;/li&gt;
+      &lt;li&gt;身分驗證：針對登入運行台的帳號/密碼進行驗證，並支援與AD Server整合執行單一帳號登入Single Sign On (SSO)&lt;/li&gt;
+      &lt;li&gt;維運管理：線上使用者的服務與管理、推播通知服務與管理、系統排程服務管理、稽核管理、系統安裝與更新等&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5-mae-mobile-application-environment-行動裝置運行台&quot;&gt;5. MAE (Mobile Application Environment 行動裝置運行台)&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;提供運行台[執行引擎]讓軟體機器人所產出的應用系統在其上運行&lt;/li&gt;
+  &lt;li&gt;提供各應用系統運行時的一些[共同服務]，包含伺服器指定、程式設定、推播通知等&lt;/li&gt;
+  &lt;li&gt;與 RTE的站台管理採同架構&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;Introduction-3&quot;&gt;ruRU軟體機器人平台之技術規格&lt;/h2&gt;
+&lt;h3 id=&quot;1-ide設計台&quot;&gt;1. IDE設計台&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;技術架構：Microsoft .Net Framework&lt;/li&gt;
+  &lt;li&gt;資料庫：MS SQL&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;2-fms管理中心&quot;&gt;2. FMS管理中心&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;技術架構：Java&lt;/li&gt;
+  &lt;li&gt;資料庫：MS SQL&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;3-ams軟體工廠&quot;&gt;3. AMS軟體工廠&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;技術架構：Java&lt;/li&gt;
+  &lt;li&gt;資料庫：MS SQL&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;4-rte運行台&quot;&gt;4. RTE運行台&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;技術架構：Java&lt;/li&gt;
+  &lt;li&gt;資料庫：MS SQL&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;5-mae-app&quot;&gt;5. MAE APP&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;技術架構：Flutter&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;Introduction-4&quot;&gt;ruRU軟體機器人平台之硬體規格&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h4 id=&quot;檔案下載&quot;&gt;&lt;a href=&quot;/INSTALLS/運行環境系統需求表V3.01.pdf&quot; target=&quot;_blank&quot;&gt;檔案下載&lt;/a&gt;&lt;/h4&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;a-伺服器軟硬體需求&quot;&gt;A. 伺服器軟硬體需求&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;CPU(中央處理器)：Intel 4核心處理器，2.4GHZ或以上。若使用AWS或其它雲端主機，至少2個CPU。&lt;/li&gt;
+  &lt;li&gt;RAM(隨機存取記憶體)：8GB、建議16G或更多&lt;/li&gt;
+  &lt;li&gt;HDD(硬式磁碟機)：容量1TB或以上。若使用AWS或其它雲端主機，作業系統及應用程式(AP)需100GB，資料庫(DB，或RDS)部份則視需求而定。如果雲端資料庫有備份需求，則需求大小為DB硬碟空間*備份保留天數，例如DB為10GB，需保留7天備份，則備份空間需求為70GB。&lt;/li&gt;
+  &lt;li&gt;OS(作業系統)：以下擇一
+    &lt;ul&gt;
+      &lt;li&gt;Microsoft Windows Server 2012&lt;/li&gt;
+      &lt;li&gt;Microsoft Windows Server 2016&lt;/li&gt;
+      &lt;li&gt;Microsoft Windows Server 2019&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;DB(資料庫)：以下擇一
+    &lt;ul&gt;
+      &lt;li&gt;Microsoft SQL Server 2012&lt;/li&gt;
+      &lt;li&gt;Microsoft SQL Server 2012 express&lt;/li&gt;
+      &lt;li&gt;Microsoft SQL Server 2014&lt;/li&gt;
+      &lt;li&gt;Microsoft SQL Server 2014 express&lt;/li&gt;
+      &lt;li&gt;Microsoft SQL Server 2016&lt;/li&gt;
+      &lt;li&gt;Microsoft SQL Server 2016 express&lt;/li&gt;
+      &lt;li&gt;Microsoft SQL Server 2017&lt;/li&gt;
+      &lt;li&gt;Microsoft SQL Server 2017 express&lt;/li&gt;
+      &lt;li&gt;Microsoft SQL Server 2019&lt;/li&gt;
+      &lt;li&gt;Microsoft SQL Server 2019 express&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Excel
+    &lt;ul&gt;
+      &lt;li&gt;Microsoft Excel 2007~2016&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;b-終端機軟硬體需求&quot;&gt;B. 終端機軟硬體需求&lt;/h3&gt;
+&lt;ol&gt;
+  &lt;li&gt;CPU(中央處理器)：依各作業系統建議之CPU&lt;/li&gt;
+  &lt;li&gt;RAM(隨機存取記憶體)：依各作業系統建議之RAM容量&lt;/li&gt;
+  &lt;li&gt;OS(作業系統)：以下擇一
+    &lt;ul&gt;
+      &lt;li&gt;Microsoft Windows 8&lt;/li&gt;
+      &lt;li&gt;Microsoft Windows 8.1&lt;/li&gt;
+      &lt;li&gt;Microsoft Windows 10&lt;/li&gt;
+      &lt;li&gt;Android&lt;/li&gt;
+      &lt;li&gt;iOS&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Web browser(瀏覽器)：Chrome、Firefox、Internet Explore(僅支援11版)、Safari&lt;/li&gt;
+  &lt;li&gt;Excel Microsoft Excel 2007~2016&lt;/li&gt;
+&lt;/ol&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">ruRU 智慧軟體機器人 它是一個創新的企業軟體機器人 PaaS 服務，提供企業軟體的開發設計以及維護的平台服務</summary></entry></feed>

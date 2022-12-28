@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh_TW"><head>
+  <meta charset="utf-8">
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>ruRU® MAE 基本操作說明書 | 如如-智慧軟體機器人</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="ruRU® MAE 基本操作說明書" />
+<meta property="og:locale" content="zh_TW" />
+<meta name="description" content="一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。" />
+<meta property="og:description" content="一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。" />
+<link rel="canonical" href="https://docs.arcare-robot.com//doc/MAE_8.10.0/zh-Hant/MAE.html" />
+<meta property="og:url" content="https://docs.arcare-robot.com//doc/MAE_8.10.0/zh-Hant/MAE.html" />
+<meta property="og:site_name" content="如如-智慧軟體機器人" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-12-30T17:30:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="ruRU® MAE 基本操作說明書" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"ruRU® MAE 基本操作說明書","dateModified":"2021-12-30T17:30:00+08:00","url":"https://docs.arcare-robot.com//doc/MAE_8.10.0/zh-Hant/MAE.html","datePublished":"2021-12-30T17:30:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.arcare-robot.com//doc/MAE_8.10.0/zh-Hant/MAE.html"},"description":"一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://docs.arcare-robot.com//feed.xml" title="如如-智慧軟體機器人" /><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W6J98QS');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">
+      <img src="/img/robotcolor.png" style="width: 40px; height: 40px; padding-right: 5px;" >如如-智慧軟體機器人
+    </a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/HOWTO/README.html">問答集</a><a class="page-link" href="/RELEASE/README.html">產品清單</a><a class="page-link" href="/INSTALLS/README.html">安裝說明</a><a class="page-link" href="/library/README.html">線上說明</a><a class="page-link" href="/about/">關於</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">ruRU® MAE 基本操作說明書 </h1>
+  </header>
+
+  <div class="post-content">
+    <h2 id="mobile-application-environment-reference-manual">Mobile Application Environment Reference Manual</h2>
+
+<h3 id="修訂記錄-revision-history"><strong>修訂記錄</strong> (Revision History)</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">版本<br />Version<br /></th>
+      <th style="text-align: center">出版日期<br />Issue Date <br /></th>
+      <th style="text-align: center">修訂章節<br />Section Changed<br /></th>
+      <th style="text-align: center">出版修訂原因<br />Reason for Issue<br /></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">8.10.1</td>
+      <td style="text-align: center">2021/12/25</td>
+      <td style="text-align: center">All</td>
+      <td style="text-align: center">依MAE運行台8.10.1 改版, 更新說明內容</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="章節目錄"><strong>章節目錄</strong></h3>
+
+<p><a href="#Login"><strong>1. 登入系統</strong></a><br />
+   1.1 安裝Apps<br />
+   1.2 登入MAE</p>
+
+<p><a href="#Basicoperation"><strong>2. 基本操作</strong></a><br />
+    2.1 MAE運行平台框架</p>
+
+<p><a href="#BasicSetting"><strong>3. 相關設定</strong></a><br />
+    3.1 設定<br />
+    3.2 問題回報   <br />
+    3.3 推播記錄<br />
+    3.4 主要裝置</p>
+
+<h1 id="Login"><strong>1.系統登入</strong></h1>
+<blockquote>
+  <p>作業目的：系統登入的目的管理用戶及其權限，每一個ruRU MAE user都需要有帳號，並規屬於一個以登記的企業/機構之下。新用戶必須先申請帳號，舊用戶必須輸入正確的帳號及密碼。ruRU MAE新帳號核准的權限是在企業管理員。</p>
+
+</blockquote>
+
+<h2 id="11-安裝apps"><strong>1.1 安裝Apps</strong></h2>
+<blockquote>
+  <p>作業目的：登入ruRU MAE之前必須安裝APP</p>
+</blockquote>
+
+<ul>
+  <li>Google 手機請在Google play, Apple 手機在Apple store 找關鍵字 「如如」, 找到ruRU MAE –如如研創後, 進行安裝</li>
+  <li>利用QR code 軟體, 依手機類型, 刷上面的行動條碼  QR Code
+<img src="images/MAE-01.1.0-1.png" alt="" /></li>
+</ul>
+
+<p><img src="images/MAE-01.1.0-2.png" alt="" /></p>
+<ol>
+  <li>找到ruRU  MAE 進行安裝</li>
+  <li>安裝完成, 點選開啟</li>
+</ol>
+
+<h3 id="111-指定伺服器"><strong>1.1.1 指定伺服器</strong></h3>
+<blockquote>
+  <p>作業目的：MAE為可提供一對多台伺服器的服務，在安裝完成後必須先指定伺服器才可執行應用系統。</p>
+
+</blockquote>
+
+<p><img src="images/MAE-01.1.1-1.png" alt="" /></p>
+
+<ol>
+  <li>為伺服器命名，系統預設為未命名</li>
+  <li>輸入伺服器所在的URL，輸入系統會進行連線測試。</li>
+  <li>若輸入的網址有QRCode, 可以點選本圖示啟動掃碼程式，進行讀取動作</li>
+  <li>指定是否設定為使用中的連線（一個MAE 可以設定多組連線伺服器，但同時間僅可一組為使用中</li>
+  <li>按下本鍵進行儲存。</li>
+</ol>
+
+<h2 id="12-登入mae"><strong>1.2 登入MAE</strong></h2>
+<blockquote>
+  <p>作業目的：。</p>
+</blockquote>
+
+<p><img src="images/MAE-01.2.0.png" alt="" /></p>
+
+<ol>
+  <li>輸入帳號。</li>
+  <li>輸入密碼。</li>
+  <li>按下登入鍵。</li>
+  <li>如果忘記密碼，可按下忘記密碼連結，並依照畫面指示操作。</li>
+  <li>如果沒有帳號，請按下立即申請帳號連結，並依照畫面指示操作，申請之後請通知貴公司系統管理員進行核准。</li>
+  <li>如果要切換伺服器，可按下切換伺服器連結，並依照畫面指示操作。</li>
+  <li>可勾選指定是否記錄帳號密碼。</li>
+</ol>
+
+<h3 id="121-帳號申請"><strong>1.2.1 帳號申請</strong></h3>
+<blockquote>
+  <p>作業目的：若未有帳號者，可點選「申請帳號」連結，依螢幕指示操作申請新帳號。為了管理使用者只能看到其所屬公司的系統，所以帳號的申請必須提供其服務公司的企業代號，來過濾出它可以看得到的系統清單。</p>
+
+  <p><img src="images/MAE-01.2.1.png" alt="" /></p>
+</blockquote>
+
+<ul>
+  <li>此部份功能請連結參照 RWD運行台 的 <a href="doc/RTE_8.10.0/zh-Hant/RWD.HTML#NewAccount">帳號申請</a></li>
+</ul>
+
+<h3 id="112-忘記密碼"><strong>1.1.2 忘記密碼</strong></h3>
+<blockquote>
+  <p>作業目的：使用者忘記密碼時，可依本節說明重設密碼，使用此功能之前，必須確定使用者的電子郵件地址是正確而且可以收到信的。。</p>
+</blockquote>
+
+<p><img src="images/MAE-01.2.2.png" alt="" /></p>
+
+<ul>
+  <li>此部份功能請連結參照 RWD運行台 的  <a href="doc/RTE_8.10.0/zh-Hant/RWD.HTML#ChangePassword">忘記密碼</a></li>
+</ul>
+
+<h2 id="SwapServer"><strong>1.1.3 切換伺服器</strong></h2>
+<blockquote>
+  <p>作業目的：登入ruRU MAE後，必須指定使用的系統名稱。唯是否有使用系統的權限則由系統管理員設定。</p>
+</blockquote>
+
+<h5 id="設定伺服器">設定伺服器：</h5>
+<p><img src="images/MAE-01.1.3-1.png" alt="" /></p>
+
+<ol>
+  <li>在登入畫面中，按下「切換伺服器」連結。</li>
+  <li>伺服器列表：表列所有伺服器的清單，有標註紅色星星者，為使用中的伺服器</li>
+  <li>若要改變 使用中的伺服器的資訊時， 可點選設定鍵</li>
+  <li>開啟設定的小選單後，點選「設定」項</li>
+  <li>伺服器名稱：依需求更名</li>
+  <li>伺服器網址：依環境設定連線內容</li>
+  <li>按下儲存鍵，完成編輯。</li>
+</ol>
+
+<h5 id="變更伺服器">變更伺服器：</h5>
+<p><img src="images/MAE-01.1.3-2.png" alt="" /></p>
+
+<ol>
+  <li>若要改變伺服器的資訊時， 可點選設定鍵，</li>
+  <li>開啟設定的小選單後，點選「更換伺服器」項</li>
+  <li>系統彈出更換的資訊, 要求確認</li>
+  <li>確定無誤後，按下確定鍵，完成變更。</li>
+  <li>原伺服器列表，重新顯示使用中的伺服器清單</li>
+</ol>
+
+<h5 id="刪除伺服器">刪除伺服器：</h5>
+<p><img src="images/MAE-01.1.3-3.png" alt="" /></p>
+
+<ol>
+  <li>若要刪除伺服器的資訊時， 可點選設定鍵</li>
+  <li>開啟設定的小選單後，點選「刪除」項</li>
+</ol>
+
+<h1 id="Basicoperation"><strong>2.基本操作</strong></h1>
+
+<h2 id="21-mae運行平台框架"><strong>2.1 MAE運行平台框架</strong></h2>
+<blockquote>
+  <p>作業目的：</p>
+</blockquote>
+
+<p>登入後的畫面選單呈現有兩種模式</p>
+
+<h3 id="211-清單式選單"><strong>2.1.1 清單式選單</strong></h3>
+
+<p><img src="images/MAE-02.1.1.png" alt="" /></p>
+<ol>
+  <li>功能清單: 依作業的選單或表單而顯示相關內容</li>
+  <li>系統設定:點選本鍵可進入設定頁面</li>
+  <li>依系統設計或權限選單上的設定顯示不同層次的類型，可以是模組、流程跟表單。</li>
+</ol>
+
+<h3 id="212-首頁式選單"><strong>2.1.2 首頁式選單</strong></h3>
+
+<p><img src="images/MAE-02.1.2.png" alt="" /></p>
+<ol>
+  <li>功能清單: 依作業的選單或表單而顯示相關內容</li>
+  <li>系統設定:點選本鍵可進入設定頁面</li>
+  <li>由系統設計時指定特定頁面為首頁，則登入系統時，優先顯示本表單</li>
+</ol>
+
+<h1 id="BasicSetting"><strong>3.相關設定</strong></h1>
+<blockquote>
+  <p>作業目的：。</p>
+
+</blockquote>
+
+<p><img src="images/MAE-03.0.0.png" alt="" /></p>
+
+<h2 id="31-設定">3.1 設定</h2>
+
+<p><img src="images/MAE-03.1.0.png" alt="" /></p>
+
+<h3 id="311-逾時時間"><strong>3.1.1 逾時時間</strong></h3>
+
+<p><img src="images/MAE-03.1.1.png" alt="" /></p>
+<ol>
+  <li>點選「設定」的功能項， 開啟設定的頁面。</li>
+  <li>點選「逾時時間」的功能項，設定系統發出指令等待伺服器回應最長等待秒數。若超過此秒數尚未收到回應則會彈錯誤訊息。</li>
+  <li>秒數：指定逾時的秒數，預計１０秒</li>
+</ol>
+
+<h3 id="312-伺服器狀態"><strong>3.1.2 伺服器狀態</strong></h3>
+
+<p><img src="images/MAE-03.1.2.png" alt="" /></p>
+
+<ol>
+  <li>點選「設定」的功能項， 開啟設定的頁面。</li>
+  <li>顯示目前使用中的伺服器資訊，若要切換伺服器，可點選標題進行動作，相關設定請參考<a href="#SwapServer">切換伺服器</a>。</li>
+</ol>
+
+<h2 id="313-系統文字倍率">3.1.3 系統文字倍率</h2>
+<p><img src="images/MAE-03.1.3.png" alt="" /></p>
+<ol>
+  <li>點選「系統文字大小」的功能項，設定系統在顯示系統文字時，所參照的倍數。</li>
+  <li>字體倍數：預設為１倍(原字大小)。</li>
+  <li>若要放大字體時，可下拉指定倍數。（倍數愈大字體愈大）</li>
+</ol>
+
+<h2 id="314-表單文字倍率">3.1.4 表單文字倍率</h2>
+
+<p><img src="images/MAE-03.1.4.png" alt="" /></p>
+<ol>
+  <li>點選「表單文字大小」的功能項，設定系統在顯示表單文字時，所參照的倍數。</li>
+  <li>字體倍數：預設為１倍(原字大小)。</li>
+  <li>若要放大字體時，可下拉指定倍數。（倍數愈大字體愈大）</li>
+</ol>
+
+<h2 id="32-問題回報">3.2 問題回報</h2>
+<blockquote>
+  <p>作業目的：當操作表單遇到錯誤發生時，可以使用問題會報功能，將問題回報給系統管理員。當然，您也可以使用其他傳統方式回報問題。</p>
+</blockquote>
+
+<p><img src="images/MAE-03.2.0.png" alt="" /></p>
+
+<ol>
+  <li>點選「設定」的功能項， 開啟設定的頁面。</li>
+  <li>點選「問題回報」的功能項，將相關問題回報給系統管理者。</li>
+  <li>問題類別：依據發生的錯誤情況，挑選提問類別。</li>
+  <li>詳細描述問題的內容，系統管理員才能看懂並處理您的問題。</li>
+  <li>選擇問題的嚴重程度。</li>
+  <li>若有圖片或是文件可上傳至此。</li>
+  <li>輸入E-MAIL地址。</li>
+  <li>送出問題即可。</li>
+</ol>
+
+<h2 id="33-推播記錄">3.3 推播記錄</h2>
+<blockquote>
+  <p>作業目的：行動裝置具有接收推播通知的功能，本作業主要在檢視接收到的通知內容</p>
+</blockquote>
+
+<p><img src="images/MAE-03.3.0-1.png" alt="" /></p>
+<ol>
+  <li>點選「推播記錄」的功能項，檢視與登入帳號有關的推播記錄。</li>
+  <li>系統別：選擇推播記錄的資料來源是全部系統或單一系統，預設為全部。</li>
+  <li>推播清單：顯示符合過濾條件的推播內容。</li>
+  <li>推播本文：點選推播記錄清單的本文文字。</li>
+  <li>推播明細：可開啟推播內容頁面，進行推播內容的後續。</li>
+  <li>點選過濾條件進行條件設定</li>
+</ol>
+
+<p><img src="images/MAE-03.3.0-2.png" alt="" /></p>
+<ol>
+  <li>推播人：下拉選擇全部或限定的推播人員。</li>
+  <li>發送狀態：選擇顯示的記錄的發送狀態。</li>
+  <li>讀取狀態：選擇顯示的記錄的讀取狀態。</li>
+  <li>日期區間：選擇預設或自訂
+    <ul>
+      <li>預設：系統日期</li>
+      <li>自訂：可指定日期的起、迄區間。<br />
+5.按下確定鍵，即可重新顯示推播清單。</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="34-主要裝置">3.4 主要裝置</h2>
+<blockquote>
+  <p>作業目的：同帳號可以在不同行動裝置上登入，當推播通知發送時，必須確定要通知的裝置設備，，以可以讓接收到推播訊息的同時，有通知列出現。</p>
+</blockquote>
+
+<p><img src="images/MAE-03.4.0.png" alt="" /></p>
+<ol>
+  <li>點選「設定為主要裝置」的功能項，開啟詢問視窗。</li>
+  <li>點選確定鍵，進行設定。</li>
+  <li>登入時不再詢問：每個登入的帳號都應該要設定主要裝置，系統在登入時會提示設定的通知；但若此帳號沒有推播的需求時，就可以勾選本設定，讓系統不再提示訊息。</li>
+</ol>
+
+<hr />
+<p><a href="/RELEASE/README.html"><strong>回到目錄</strong></a></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6J98QS"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+  </body>
+
+</html>

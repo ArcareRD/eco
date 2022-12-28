@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh_TW"><head>
+  <meta charset="utf-8">
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>IDE操作手冊 4 模組流程 | 如如-智慧軟體機器人</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="IDE操作手冊 4 模組流程" />
+<meta property="og:locale" content="zh_TW" />
+<meta name="description" content="一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。" />
+<meta property="og:description" content="一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。" />
+<link rel="canonical" href="https://docs.arcare-robot.com//doc/IDE_8.10.0/zh-Hant/04.html" />
+<meta property="og:url" content="https://docs.arcare-robot.com//doc/IDE_8.10.0/zh-Hant/04.html" />
+<meta property="og:site_name" content="如如-智慧軟體機器人" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2021-12-22T17:30:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="IDE操作手冊 4 模組流程" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"IDE操作手冊 4 模組流程","dateModified":"2021-12-22T17:30:00+08:00","url":"https://docs.arcare-robot.com//doc/IDE_8.10.0/zh-Hant/04.html","datePublished":"2021-12-22T17:30:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.arcare-robot.com//doc/IDE_8.10.0/zh-Hant/04.html"},"description":"一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://docs.arcare-robot.com//feed.xml" title="如如-智慧軟體機器人" /><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W6J98QS');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">
+      <img src="/img/robotcolor.png" style="width: 40px; height: 40px; padding-right: 5px;" >如如-智慧軟體機器人
+    </a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/HOWTO/README.html">問答集</a><a class="page-link" href="/RELEASE/README.html">產品清單</a><a class="page-link" href="/INSTALLS/README.html">安裝說明</a><a class="page-link" href="/library/README.html">線上說明</a><a class="page-link" href="/about/">關於</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">IDE操作手冊 4 模組流程</h1>
+  </header>
+
+  <div class="post-content">
+    <p>作業目的：說明在專案項下規劃子系統、業務模組，以及作業流程的規劃。</p>
+
+<h2 id="-41-業務模組架構"><a name="EventFlow"></a> <strong>4.1 業務模組架構</strong></h2>
+<blockquote>
+  <p>作業目的：</p>
+</blockquote>
+
+<h3 id="411-建立模組"><strong>4.1.1 建立模組</strong></h3>
+<p>參考資料：<a href="pdf/2-1在選單目錄建立模組.pdf" target="_blank">℗文件</a></p>
+
+<p>方式一<br />
+<img src="images/04.1.1-1.png" alt="" /></p>
+<ol>
+  <li>駐留在架構樹的「作業流程」節點，此時工具列上的「新增」圖示可點選。</li>
+  <li>點選工具列「新增」圖示，選擇『模組』</li>
+  <li>在開啟的【新增模組】頁面，輸入模組名稱</li>
+  <li>點選「確認」鍵後，頁面會回到架構樹</li>
+  <li>在架構樹產生新的模組名節點。</li>
+</ol>
+
+<p>方式二<br />
+<img src="images/04.1.1-2.png" alt="" /></p>
+<ol>
+  <li>駐留在架構樹的「作業流程」節點，點擊滑鼠右鍵</li>
+  <li>在開啟的小視窗，駐留「新增」選項，會浮出另一功能視窗</li>
+  <li>在功能視窗，選擇『模組』</li>
+  <li>以下作業, 請參照 方式一 步驟3</li>
+</ol>
+
+<h3 id="412-建立作業流程"><strong>4.1.2 建立作業流程</strong></h3>
+<p>參考資料：<a href="pdf/2-2在選單目錄建立流程.pdf" target="_blank">℗文件</a></p>
+
+<p><img src="images/04.1.2-1.png" alt="" /></p>
+<ol>
+  <li>駐留在架構樹的「作業流程」節點或 節點屬性為 模組 的節點，點擊滑鼠右鍵</li>
+  <li>在開啟的小視窗，駐留「新增」選項，會浮出另一功能視窗</li>
+  <li>在功能視窗選擇『新增流程』</li>
+  <li>輸入流程名稱</li>
+  <li>點選「確認」鍵後，頁面會回到架構樹</li>
+  <li>可在架構樹駐留節點下上產生新的作業流程節點。</li>
+</ol>
+
+<h3 id="413-流程節點對應表單"><strong>4.1.3 流程節點對應表單</strong></h3>
+<p>參考資料：<a href="pdf/3-1設定事件流程.pdf" target="_blank">℗文件</a></p>
+
+<p><img src="images/04.1.3-1.png" alt="" /></p>
+<ol>
+  <li>駐留在架構樹節點屬性為 模組 或 流程 的節點，點擊滑鼠右鍵</li>
+  <li>在開啟的小視窗，點選「流程表單」選項</li>
+  <li>在開啟的【流程表單】頁面，挑選表單名稱</li>
+  <li>點選「確認」鍵後，頁面會回架構樹</li>
+</ol>
+
+<h3 id="414-架構樹滑鼠右鍵功能"><strong>4.1.4 架構樹滑鼠右鍵功能</strong></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">節點類別右鍵功能</th>
+      <th style="text-align: center">專案</th>
+      <th style="text-align: center">作業流程</th>
+      <th style="text-align: center">模組</th>
+      <th style="text-align: center">流程</th>
+      <th style="text-align: center">表單</th>
+      <th style="text-align: center">報表</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">新增模組</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">　</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">新增流程</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">　</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">新增表單</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">　</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">重新命名</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">　</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">刪除</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">V</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">流程表單</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">　</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">規格描述</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">　</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">重新載入</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">　</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">全部展開</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center"> </td>
+      <td style="text-align: center">　</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">全部收合</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">V</td>
+      <td style="text-align: center">　</td>
+      <td style="text-align: center">　</td>
+      <td style="text-align: center">　</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="415-作業流程拖拉功能"><strong>4.1.5. 作業流程拖拉功能</strong></h3>
+<blockquote>
+  <p>作業目的：可以利用滑鼠拖拉, 移動作業流程下節點</p>
+</blockquote>
+
+<ol>
+  <li>移動模組或流程的順序：對著要移動的的節點，利用滑鼠長按，拖拉到欲插入的節點即可</li>
+  <li>移動表單的流程歸屬：對著要移動的的表單，利用滑鼠長按，拖拉到欲置入的流節點區塊內即可
+  2.1 根目錄下的表單-&gt;流程: 增加目的流程的事件清單, 移除原節點
+  2.2 流程下的表單-&gt;流程: 增加目的流程的事件清單, 原節點不異動</li>
+</ol>
+
+<hr />
+<h2 id="-42-作業流程敍述"><a name="EventFlowDefine"></a> <strong>4.2 作業流程敍述</strong></h2>
+<blockquote>
+  <p>作業目的：</p>
+</blockquote>
+
+<h3 id="421-工具列的操作"><strong>4.2.1 工具列的操作</strong></h3>
+
+<p><img src="images/04.2.1-1.png" alt="" /></p>
+<ol>
+  <li>新增鍵：在駐留的資料列往下增加一列</li>
+  <li>刪除鍵：刪除駐留的資料列</li>
+  <li>儲存鍵：存回編輯後的流程內容</li>
+  <li>重整鍵：重新載入流程內容</li>
+  <li>提升階層鍵：當在狀況或分支下增加資料列時, 會預設與上列同階層, 若不是同階而要往上層縮減時, 可利用本鍵操作</li>
+  <li>下降階層鍵：當在判斷或平行下增加資料列時, 會預設與上列同階層, 若不是同階而要往下增加時時, 可利用本鍵操作</li>
+  <li>操作說明鍵：開啟【線上說明】介紹操作及內容</li>
+  <li>流程打樣與測試鍵：將駐留指定的流程項目下所有的作業表單，進行打樣的動作</li>
+  <li>打樣狀態查詢鍵：開啟<a href="20.html#FormPrototypeing_Status">【打樣狀態查詢】</a>檢視打樣後的結果及歷程，操作方式請參考［附錄A7］</li>
+  <li>事件單據：當本流程在運行操作時，有指定開啟特定表單時，可在本欄位開窗挑選作業表單</li>
+  <li>清除鍵：清除已指定的事件單據內容</li>
+  <li>流程圖鍵：開啟【流程圖】，顯示依據作業流程內容，所繪製展開的流程圖</li>
+</ol>
+
+<h3 id="422-作業流程的敘述"><strong>4.2.2 作業流程的敘述</strong></h3>
+
+<p><img src="images/04.2.2-1.png" alt="" /></p>
+<ol>
+  <li>動作名稱：描述本程序的主要用途</li>
+  <li>活動型態：定義此動作程序, 所呼應的操作介面, 以下介紹<br />
+　2.1 單據：表示本步驟產生單據的查詢 <br />
+　2.2 報表：表示本步驟產生報表的查詢 <br />
+　2.3 人工：介紹人為的處理內容 <br />
+　2.4 標籤：介紹人為的處理內容 <br />
+　2.5 轉向：為流程中的某部份動作的起點 <br />
+　2.6 判定：表示以下的動作會依條件而分岐 <br />
+　2.7 狀況：配合判斷, 描述條件式 <br />
+　2.8 多角化：表示以下的動作會依條件而併行 <br />
+　2.9 分支：配合平行, 描述條件式 <br />
+　2.10 結束：流程的中斷點 <br /></li>
+  <li>表單/報表名稱：挑選或建立對應的單據及報表, 操作請參考作業流程的單據清單操作</li>
+  <li>核心動作：對單據或報表, 在介面上的操作</li>
+  <li>連結：若介面為流程者, 須在此欄位區分為流程內的程序或跨流程的動作</li>
+  <li>標籤名或作業名：配合動作欄位的區分, 挑選指定程序點或流程名</li>
+</ol>
+
+<h3 id="423-作業流程與流程圖的關係"><strong>4.2.3 作業流程與流程圖的關係</strong></h3>
+
+<p>判斷狀況：表示同一事件會有不同的狀況發生
+<img src="images/04.2.3-1.png" alt="" /></p>
+
+<p>多角化處理：表示同一事件同時往不同的方向進行
+<img src="images/04.2.3-2.png" alt="" /></p>
+
+<p>接續流程：完成一個動作, 可以回到同流程下的某一程序, 也可以是跳到另一流程
+<img src="images/04.2.3-3.png" alt="" /></p>
+
+<hr />
+<p><a href="index.html#MainMenu"><strong>回到章節目錄</strong></a></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6J98QS"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+  </body>
+
+</html>

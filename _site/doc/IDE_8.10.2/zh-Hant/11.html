@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="zh_TW"><head>
+  <meta charset="utf-8">
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>IDE操作手冊 11.按鍵功能的處理規格 | 如如-智慧軟體機器人</title>
+<meta name="generator" content="Jekyll v4.2.0" />
+<meta property="og:title" content="IDE操作手冊 11.按鍵功能的處理規格" />
+<meta property="og:locale" content="zh_TW" />
+<meta name="description" content="一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。" />
+<meta property="og:description" content="一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。" />
+<link rel="canonical" href="https://docs.arcare-robot.com//doc/IDE_8.10.2/zh-Hant/11.html" />
+<meta property="og:url" content="https://docs.arcare-robot.com//doc/IDE_8.10.2/zh-Hant/11.html" />
+<meta property="og:site_name" content="如如-智慧軟體機器人" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2022-02-16T09:10:00+08:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="IDE操作手冊 11.按鍵功能的處理規格" />
+<script type="application/ld+json">
+{"@type":"BlogPosting","headline":"IDE操作手冊 11.按鍵功能的處理規格","dateModified":"2022-02-16T09:10:00+08:00","url":"https://docs.arcare-robot.com//doc/IDE_8.10.2/zh-Hant/11.html","datePublished":"2022-02-16T09:10:00+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://docs.arcare-robot.com//doc/IDE_8.10.2/zh-Hant/11.html"},"description":"一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://docs.arcare-robot.com//feed.xml" title="如如-智慧軟體機器人" /><!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-W6J98QS');</script>
+    <!-- End Google Tag Manager -->
+</head>
+<body><header class="site-header">
+
+  <div class="wrapper"><a class="site-title" rel="author" href="/">
+      <img src="/img/robotcolor.png" style="width: 40px; height: 40px; padding-right: 5px;" >如如-智慧軟體機器人
+    </a><nav class="site-nav">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger">
+          <span class="menu-icon">
+            <svg viewBox="0 0 18 15" width="18px" height="15px">
+              <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger"><a class="page-link" href="/HOWTO/README.html">問答集</a><a class="page-link" href="/RELEASE/README.html">產品清單</a><a class="page-link" href="/INSTALLS/README.html">安裝說明</a><a class="page-link" href="/library/README.html">線上說明</a><a class="page-link" href="/about/">關於</a></div>
+      </nav></div>
+</header>
+<main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        <article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">IDE操作手冊 11.按鍵功能的處理規格</h1>
+  </header>
+
+  <div class="post-content">
+    <p>作業目的：當操作者在完成作業表單上的資料輸入(input) 後，就可提交(submit) 給伺服機進行資料加工與儲存，其處理邏輯的內容分類如下表，讓設計師依據實務需求逐一訂定之，每一項處理功能都可以設定執行條件，也可以設定多個條件。</p>
+
+<p>操作流程：</p>
+
+<p><img src="images/11-1.png" alt="" /></p>
+
+<p>按鍵功能包含以下項目：<br /></p>
+<ul>
+  <li><a href="#ButtonAnnotation"><strong>11.1 開啟按鍵加註畫面</strong> </a></li>
+  <li><a href="#ButtonAnnotation_BasicSet"><strong>11.2 基本設定</strong> </a></li>
+  <li><a href="#ButtonAnnotation_ExecutionRestriction"><strong>11.3 執行限制</strong> </a></li>
+  <li><a href="#ButtonAnnotation_OpenForm"><strong>11.4 開啟它單</strong> </a></li>
+  <li><a href="#ButtonAnnotation_OpenReport"><strong>11.5 開啟報表</strong> </a></li>
+  <li><a href="#ButtonAnnotation_DataUpdate"><strong>11.6 資料交易</strong> </a></li>
+  <li><a href="#ButtonAnnotation_DataExchange"><strong>11.7 資料交換</strong> </a></li>
+  <li><a href="#ButtonAnnotation_SendMail"><strong>11.8 郵件發送</strong> </a></li>
+  <li><a href="#ButtonAnnotation_DataLoad"><strong>11.9 資料載入</strong> </a></li>
+  <li><a href="#ButtonAnnotation_DataFilter"><strong>11.10 資料過濾</strong> </a></li>
+  <li><a href="#ButtonAnnotation_ExtemalExecution"><strong>11.11 外部執行</strong> </a></li>
+  <li><a href="#ButtonAnnotation_CommunicateMessage"><strong>11.12 溝通訊息</strong> </a></li>
+  <li><a href="#ButtonAnnotation_FormEffect"><strong>11.13 表單特效</strong> </a></li>
+  <li><a href="#ButtonAnnotation_DynamicTable"><strong>11.14 動態表格</strong> </a></li>
+  <li><a href="#ButtonAnnotation_AccountSynchronization"><strong>11.15 帳號同步</strong> </a></li>
+  <li><a href="#ButtonAnnotation_SystemReplication"><strong>11.16 系統複製</strong> </a></li>
+  <li><a href="#ButtonAnnotation_LocialFunction"><strong>11.17 邏輯函數</strong> </a></li>
+  <li><a href="#ButtonAnnotation_LinkObject"><strong>11.18 連結物件</strong> </a></li>
+  <li><a href="#ButtonAnnotation_FileTransfer"><strong>11.19 檔案傳輸</strong> </a></li>
+  <li><a href="#ButtonAnnotation_StoredProcedure"><strong>11.20 預存程序</strong> </a></li>
+  <li><a href="#ButtonAnnotation_LocalResource"><strong>11.21 裝置支援</strong> </a></li>
+  <li><a href="#ButtonAnnotation_Notice"><strong>11.22 推播通知</strong> </a></li>
+  <li><a href="#ButtonAnnotation_Condition"><strong>附錄 11.A 執行條件</strong> </a></li>
+  <li><a href="#ButtonAnnotation_Copy"><strong>附錄 11.B 按鍵加註複製</strong> </a></li>
+  <li><a href="#ButtonAnnotation_Hint"><strong>附錄 11.C 隱藏按鍵</strong> </a></li>
+</ul>
+
+<h2 id="ButtonAnnotation"><strong>11.1 開啟按鍵加註畫面</strong></h2>
+<blockquote>
+  <p>作業目的：在表單版面上點選「規格定義」鍵，開啟本單對表單下的按鍵行規格註解架構的展開<a href="#SpecificationDefinition">【規格定義】</a>的，操作方式請參考［6.2］</p>
+</blockquote>
+
+<p><img src="images/11.1-1.png" alt="" /></p>
+<ol>
+  <li>工具列：駐留「按鍵」節點時，工具列作用如下
+　	1.1 設定鍵：開啟【按鍵行為選項】
+　	1.2 複製鍵：開啟【按鍵內容複製】（詳見：附錄11.B ）</li>
+  <li>清單區：
+　	2.1 第一階是按鍵名稱
+　	2.2 第二階是基本設定及各類行為宣告
+3.按鍵行為選項：
+<img src="images/11.1-2.png" alt="" />
+ 3.1 所有跟按鍵有關的行為選項
+　	3.2 儲存鍵：系統依據勾選的項目，產生不同的行為，呈現在「清單區」
+　	3.3 重設鍵：清空原已勾選的項目</li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">類<br />別</th>
+      <th style="text-align: left">行為</th>
+      <th style="text-align: left">說明</th>
+      <th style="text-align: center">表單<br />Web</th>
+      <th><br />RWD</th>
+      <th><br />App</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">基本</td>
+      <td style="text-align: left">1.基本設定</td>
+      <td style="text-align: left">按鈕屬性的宣告，名稱、類型、位置、致能時機、圖式</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">2.執行限制</td>
+      <td style="text-align: left">此按鈕被點擊時的前置檢查條件，通常是檢查表單資料的完整性與合理性。<br />可以設定多個先決條件來把關，並且排定檢核順序，以減少後台處理失敗的機會。全部都通過後才會正式啟動此按鈕的各項處理功能，依設計者給定的順序執行之。</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">處理功能</td>
+      <td style="text-align: left">A.開啟它單</td>
+      <td style="text-align: left">依執行條件開啟另外一個表單，可以帶給參數</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">B.開啟報表</td>
+      <td style="text-align: left">挑選要開啟的報表，可以選擇：預覽(再打印)、郵件夾檔、郵件夾檔、產出PDF，或是存入資料庫</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">C.資料交易</td>
+      <td style="text-align: left">執行資料庫更新，呼叫資料交易的相關內容</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">D.資料交換</td>
+      <td style="text-align: left">檔案匯入DB、資料匯出為檔案</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">E.發送郵件</td>
+      <td style="text-align: left">依據執行條件發送電子郵件，並可夾檔或是連結</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">F.資料載入</td>
+      <td style="text-align: left">將資料庫的特定資料表內容載入對應檔區，以供操作者瀏覽</td>
+      <td style="text-align: center">V</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">G.過濾資料</td>
+      <td style="text-align: left">通常使用於條件多筆表單，使用者按下包含過濾功能的按鍵後，依過濾設定的條件濾出表身的資料</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">H.外部執行</td>
+      <td style="text-align: left">執行本表單以外的功能，例如：開啟檔案、啟動外部程式、啟動它表單的按鈕功能、匯出檔案後的處理等等</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">J.溝通訊息</td>
+      <td style="text-align: left">可在兩張表單間傳遞資料，例如A單開B單，兩張單可以主動或是被動式的互傳資訊</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">K1.表單特效</td>
+      <td style="text-align: left">一些控管表單上的特殊效果功能，集中在此處設定。</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">K2.動態表格</td>
+      <td style="text-align: left">當使用多筆表格的物件時，需要依據條件動態的決定顯示的欄位內容，可利用本作業進行設定。</td>
+      <td style="text-align: center">V</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">K3.帳號同步</td>
+      <td style="text-align: left">因應作業需求，可於系統內建立或註銷登入系統帳號，以期達到帳號同步的效果。</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">K4.系統複製</td>
+      <td style="text-align: left">當執行系統複製時，若不宣告時是以全欄位複製的方式產生記錄，但有些情況下對特定欄位不須要複製的，例如單號、製單日期、異動日期時間等。本畫面作用於指定那些欄位不需複製，以避免操作錯誤置入重複無效的記錄</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">K5.邏輯函數</td>
+      <td style="text-align: left">對於比較複雜的產業界常用的處理功能，平台上特別開發了一些邏輯函數，讓設計師在按鈕的設計時可以引用</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">K6.連結物件</td>
+      <td style="text-align: left">連結網頁可設定在瀏覽器中開啟指定的網頁，網址資訊需顯示在表單元件中。或跨專案表單可開啟指定專案中的指定表單。</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">K7.檔案傳輸</td>
+      <td style="text-align: left">利用檔案框的設定，統一指指定上傳、下載檔案的位置，方便文件的控管。</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">M.預存程序</td>
+      <td style="text-align: left">執行預存在資料庫的Stroed Procedure</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">N,裝置支援</td>
+      <td style="text-align: left">針對在APP表單時，設定可操作裝置上的資源，例如：拍照、相簿、定位等..</td>
+      <td style="text-align: center"> </td>
+      <td> </td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td style="text-align: center"> </td>
+      <td style="text-align: left">P.推播通知</td>
+      <td style="text-align: left">提供表單操作經由第三方服務，發送推播通知給行動裝置上的MAE App</td>
+      <td style="text-align: center">V</td>
+      <td>V</td>
+      <td>V</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="ButtonAnnotation_BasicSet"><strong>11.2 基本設定</strong></h2>
+<blockquote>
+  <p>作業目的：設定按鍵的基本資料，例如按鍵類型、熱鍵、結束訊息等等。</p>
+</blockquote>
+
+<p>參考資料：</p>
+<ul>
+  <li><a href="pdf/11-1-1表單按鍵-開啟按鍵加註頁面.pdf" target="_blank">℗開啟按鍵加註頁面</a></li>
+  <li><a href="pdf/11-1-2表單按鍵-按鍵基本設定.pdf" target="_blank">℗按鍵基本設定</a></li>
+  <li><a href="pdf/11-1-3表單按鍵-按鍵之勾選記錄管理.pdf" target="_blank">℗按鍵之勾選記錄管理</a></li>
+  <li><a href="pdf/11-1-4表單按鍵-按鍵列入排程.pdf" target="_blank">℗按鍵列入排程</a></li>
+  <li><a href="pdf/11-1-5表單按鍵-按鍵結束訊息.pdf" target="_blank">℗按鍵結束訊息</a></li>
+  <li><a href="pdf/11-1-6表單按鍵-表單按鍵-資料更新.pdf" target="_blank">℗資料更新</a></li>
+  <li><a href="pdf/11-1-7表單按鍵-樹內容更新.pdf" target="_blank">℗樹內容更新</a></li>
+</ul>
+
+<p><strong>傳統/RWD表單</strong></p>
+
+<p><img src="images/11.2-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱，可利用開窗鍵, 開啟<a href="16.html#MaintainMultilingual">【多語詞庫】</a>指定挑選詞庫, 請參考［16.2］來變更內容</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>按鈕類型：依按鍵在版面上配置，決定類型
+　系統按鈕：出現在版面的選單列
+　工具列選單：出現在版面的工具列，按鍵類型＝選單
+　工具列按鈕：出現在版面的工具列，按鍵類型＝按鈕
+　選單內選項：依附在具列選單下的選項
+　隱藏按鈕：未出現在版面上的按鈕</li>
+  <li>對應熱鍵：須定義挑選熱鍵, 且同一表單內不允重複
+　按鈕類型=工具列選單/工具列按鍵 時, 下拉: Ctrl+F2~ Ctrl+F9
+　按鈕類型=選單內選項 時, 下拉: Shift+A ~ Shift+N</li>
+  <li>保留系統訊息：勾選者，表示保留系統訊息</li>
+  <li>使用系統訊息盒：勾選者，表示本按鍵有提示訊息時，使用系統訊息盒</li>
+  <li>隱藏按鈕類別：當按鍵類型＝隱藏按鍵時，須指定按鍵的動作類別，選項：對應按鈕元件/被動運作處理/控制記錄移動
+　對應按鈕元件：配合著按鈕元件的點選才執行
+　被動運作處理：由其它元件或按鈕啟動本鍵功能
+　控制記錄移動：配合表單記錄的移動時，執行本鍵功能</li>
+  <li>歸屬工具列選單：顯示子選單所屬的按鍵名稱</li>
+  <li>順序：顯示子選單所屬的按鍵出現的順序</li>
+  <li>致能時機＿新增：勾選本項，表示可在表單的新增狀態下執行</li>
+  <li>致能時機＿修改：勾選本項，表示可在表單的修改狀態下執行</li>
+  <li>致能時機＿瀏覽：勾選本項，表示可在表單的瀏覽狀態下執行</li>
+  <li>勾選記錄檔區：當本按鍵執行需要用到勾選元件的記錄時，指定記的檔區</li>
+  <li>使用前存入實體：勾選時，表示當本按鍵執行需要用到勾選元件的記錄時，先把勾選內容存暫存的公用表格中，供後續參考引用</li>
+  <li>使用後清空實體：勾選本項，表示當本按鍵執行後，須清空暫存表格的內容</li>
+  <li>編修使用前存入暫存實體：勾選本項，表示當本按鍵執行前，把資料記錄在暫存表格</li>
+  <li>列入排程：勾選本項，表示需要依排程定義，執行本按鍵功能</li>
+  <li>排程設定：可利用開窗鍵, 開啟<a href="16.html#Schedule">【排程設定】</a>指定挑選排程內容，請參考［16.5］。 顯示排程名稱</li>
+  <li>結束訊息：勾選本項，表示按鍵執行完成後須提示訊息</li>
+  <li>結束訊息內容：可利用開窗鍵, 開啟<a href="16.html#MaintainMultilingual">【多語詞庫】</a>指定挑選訊息內容，操作方法請參考［16.2］。</li>
+  <li>替代鍵：當按鍵的訊息有變數需要替代時，可利用本鍵開啟<a href="20.html#MessageReplace">【訊息替代】</a>進行替代內容的設定</li>
+  <li>結束後關閉表單：勾選本項，表示執行本按鍵後，直接關閉表單</li>
+  <li>重顯網格：勾選本項，表示執行本按鍵後，重新顯示指定的多筆網格內容</li>
+  <li>重顯網格＿檔區：當重顯網格打勾時，指定重顯的多筆網格檔區</li>
+  <li>資料行更新方式：選擇更新的方式，選項：駐留筆／關聯檔區／全部記錄
+　　駐留筆：僅顯示指定檔區駐留的單筆
+　　關聯檔區：重新顯示指定檔區頁面上的記錄
+　　全部記錄：重新顯示指定檔區全部的記錄</li>
+  <li>樹內容重顯：勾選本項，表示執行本按鍵後，重新樹狀清單元件內容</li>
+  <li>樹內容重顯方式鍵：選擇更新的方式，選項：駐留筆／正展／逆展／根節點／整顆樹
+　　駐留筆：僅顯示指定檔區駐留的單筆
+　　正展：重新顯示駐留的單筆以下正展的所有記錄
+　　逆展：重新顯示駐留的單筆以下上逆展的所有記錄
+　　根節點：僅顯示根節點的單筆
+　　整顆樹：重新顯示樹元件的全部記錄</li>
+  <li>提示訊息：可利用開窗鍵, 開啟<a href="16.html#MaintainMultilingual">【多語詞庫】</a>指定挑選操作訊息內容，操作方法請參考［16.2］。</li>
+  <li>功能描述：顯示本按鍵規格描述的內容</li>
+</ol>
+
+<p><strong>APP表單</strong>
+<img src="images/11.2-2.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱，可利用開窗鍵, 開啟<a href="16.html#MaintainMultilingual">【多語詞庫】</a>指定挑選詞庫, 來變更內容</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>列入排程：勾選本項，表示需要依排程定義，執行本按鍵功能</li>
+  <li>排程設定：可利用開窗鍵, 開啟<a href="16.html#Schedule">【排程設定】</a>指定挑選排程內容。 顯示排程名稱</li>
+  <li>結束訊息：勾選本項，表示按鍵執行完成後須提示訊息</li>
+  <li>結束訊息內容：可利用開窗鍵, 開啟<a href="16.html#MaintainMultilingual">【多語詞庫】</a>指定挑選訊息內容。</li>
+  <li>替代鍵：訊息有變數需要替代時，可利用本鍵開啟<a href="20.html#MessageReplace">【訊息替代】</a>進行替代內容的設定</li>
+  <li>結束後關閉表單：勾選本項，表示執行本按鍵後，直接關閉表單</li>
+  <li>重顯網格：勾選本項，表示執行本按鍵後，重新顯示指定的多筆網格內容</li>
+  <li>重顯網格＿檔區：當重顯網格打勾時，指定重顯的多筆網格檔區</li>
+  <li>資料行更新方式：選擇更新的方式，選項：駐留筆／關聯檔區／全部記錄
+駐留筆：僅顯示指定檔區駐留的單筆
+關聯檔區：重新顯示指定檔區頁面上的記錄
+全部記錄：重新顯示指定檔區全部的記錄”</li>
+  <li>功能描述：顯示本按鍵規格描述的內容</li>
+</ol>
+
+<h2 id="ButtonAnnotation_ExecutionRestriction"><strong>11.3 執行限制(先決條件) prerequisite</strong></h2>
+<blockquote>
+  <p>作業目的：設定此按鈕可以被啟動執行的條件限制，也就是先決條件。通常是就輸入資料的完整性、合理性，或是作業狀態的要求加以確認之。一個按鈕功能要被啟動，可以設定多個先決條件加以把關，以避免後續執行功能失敗。</p>
+</blockquote>
+
+<p>參考資料：</p>
+<ul>
+  <li><a href="pdf/11-2-1表單按鍵-執行限制基本說明.pdf" target="_blank">℗執行限制基本說明</a></li>
+  <li><a href="pdf/11-2-2表單按鍵-一般檢控.pdf" target="_blank">℗一般檢控</a></li>
+  <li><a href="pdf/11-2-3表單按鍵-一般查表檢控.pdf" target="_blank">℗一般查表檢控</a></li>
+  <li><a href="pdf/11-2-4表單按鍵-檢查指定檔區是否有資料.pdf" target="_blank">℗檢查指定檔區是否有資料</a></li>
+  <li><a href="pdf/11-2-5表單按鍵-檢查指定檔區的數值合計.pdf" target="_blank">℗檢查指定檔區的數值合計</a></li>
+  <li><a href="pdf/11-2-6表單按鍵-檢查多筆表格內的資料是否重複.pdf" target="_blank">℗檢查多筆表格內的資料是否重複</a></li>
+  <li><a href="pdf/11-2-7表單按鍵-在指定檔區中找出最大筆資料做檢控.pdf" target="_blank">℗在指定檔區中找出最大筆資料做檢控</a></li>
+  <li><a href="pdf/11-2-8表單按鍵-檢查勾選狀況.pdf" target="_blank">℗檢查勾選狀況</a></li>
+  <li><a href="pdf/11-2-9表單按鍵-檢查駐留的位置.pdf" target="_blank">℗檢查駐留的位置</a></li>
+  <li><a href="pdf/11-2-10表單按鍵-動態訊息設定.pdf" target="_blank">℗動態訊息設定</a></li>
+</ul>
+
+<p><strong>傳統/RWD表單</strong>
+<img src="images/11.3-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱，可利用開窗鍵, 開啟<a href="16.html#MaintainMultilingual">【多語詞庫】</a>指定挑選詞庫,請參考［16.2］來指定訊息內容</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>執行序：同一按鍵下的執行限制有多筆時，可利用本欄位，排定判定的優先順序</li>
+  <li>前置條件：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定第一階段的判定條件。此條件無查表功能，僅提供表單內元件或狀態的判定</li>
+  <li>前置條件取消鍵：可利用本鍵, 取消初步條件內容</li>
+  <li>判斷條件：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定第二階段的較為複雜的判定條件。</li>
+  <li>判斷條件取消鍵：可利用本鍵, 取消進階條件內容</li>
+  <li>特殊檢控：勾選本項，表示使用系統提供的檢控機制來限定執行，可分為資料檢查／網格檢查／駐留地檢查三項</li>
+  <li>資料檢查：作用於驗證資料的存在與正確性</li>
+  <li>有效模式：勾選本項，表示限定資料的檢驗動作限制在編修或瀏覽狀態</li>
+  <li>特定範圍：勾選本項，表示檢查資料來源限定局部資料區或欄位</li>
+  <li>特定範圍＿資料區：挑選要檢查資料所在的資料區</li>
+  <li>特定範圍＿不可空白：限定指定的資料區或欄位，必須存在記錄或內容值不可空白</li>
+  <li>特定範圍＿數值合計判斷：勾選本項，表示要判斷欄位的合計值是否合理</li>
+  <li>特定範圍＿連同上層檔區：勾選本項，表示要判斷欄位的要連同上層資料區</li>
+  <li>特定範圍＿判定欄位：挑選指定要判斷合計值的欄位元件</li>
+  <li>特定範圍＿判定式：指定要比對的等式</li>
+  <li>特定範圍＿判定來源類別：指定要比對的來源內容，選項：固定值／表單元件</li>
+  <li>特定範圍＿判定來源內容：依 [判定來源類別] 輸入內容。固定值：輸入固定值；表單元件：挑選要參與計算的表單元件。</li>
+  <li>重複判斷：勾選本項，表示檢驗是否有重複的狀況</li>
+  <li>重複判斷＿區分群組：在指定要進行同值判斷時，可指定是否將記錄區分群組個別判定，若需要時，可開啟<a href="20.html#ExpressionStatement">【運算式】</a>設定運算內容，操作說明，請參考［］</li>
+  <li>重複判斷＿檢查欄位：在指定要進行重複判斷時，指定檢查的內容，開啟<a href="20.html#ExpressionStatement">【運算式】</a>設定運算內容，操作說明，請參考［］</li>
+  <li>最大筆數判斷：勾選本項，表示要判斷指定資料區的筆數限制</li>
+  <li>最大筆數判斷＿條件：在指定要進行筆數判斷時，指定檢查記錄須符合的條件，可開啟<a href="20.html#ConditionStatement">【條件式】</a>, 指定限定符合的條件內容</li>
+  <li>最大筆數判斷＿欄位：在指定要進行筆數判斷時，指定檢查的內容，開啟<a href="20.html#ExpressionStatement">【運算式】</a>設定運算內容，操作說明，請參考［］</li>
+  <li>錯誤註留：勾選本項，表示當檢查到錯誤點時，指定駐留到特定的欄位</li>
+  <li>錯誤註留＿欄位：在指定要錯誤駐留時，挑選欄位元件</li>
+  <li>網格檢查：作用於驗證多筆網格的勾選資料的存在與正確性。項目有二：已勾選筆數／駐留行狀態</li>
+  <li>已勾選筆數＿欄位：在指定要計算勾選筆數的欄位元件</li>
+  <li>已勾選筆數＿判斷類別：要判斷的等式，選項：大於/小於/等於/大於等於/小於等於/不等於</li>
+  <li>已勾選筆數＿判斷值：輸入筆數判斷值，0~9999</li>
+  <li>駐留行狀態：設定要判斷駐留筆的勾選狀態是否符合執行條件，選項：已勾選／未勾選</li>
+  <li>駐留地檢查：作用於驗證執行按鍵時，駐留的資訊是否正確。方式有二：指定資料區／指定元件</li>
+  <li>駐留地檢查＿指定資料區：執行前必須限制駐留在指定的資料區</li>
+  <li>駐留地檢查＿指定欄位：執行前必須限制駐留在指定的欄位</li>
+  <li>密碼狀態：執行前確認輸入的密碼欄位</li>
+  <li>密碼欄位：指定挑選要檢查的來源密碼欄位，配合判斷條件的查表來源，挑選欄位</li>
+  <li>驗證元件：指定挑選要檢查的表單密碼欄位</li>
+  <li>按鈕權限驗證：檢查登入的使用者對本按鍵是否有權限，若有權限者，視為條件成立</li>
+  <li>執行時機：依據上列條件及限定的內容，判定可執行按鍵的時機點，選項：條件成立／條件不成立</li>
+  <li>條件成立＿處理方式：當以上的條件成立時，要進行的動作是：
+執行：通過驗證，可執行按鍵內容
+訊息處理：必須彈出訊息提示
+除能：無點選的能力
+致能：有點選的能力
+顯示：會顯示在畫面上，則有點選能力
+隱藏：不會顯示在畫面上</li>
+  <li>條件成立＿處理方式：當以上的條件成立時，要進行的動作是：
+執行：通過驗證，可執行按鍵內容
+訊息處理：必須彈出訊息提示
+除能：無點選的能力
+致能：有點選的能力
+顯示：會顯示在畫面上，則有點選能力
+隱藏：不會顯示在畫面上</li>
+  <li>訊息類別：當處理方式中有指定為訊息處理時，必須指定訊息提示的類別：
+錯誤：內容有誤，須在訊息提示後，回到原表單修訂後再重新執行
+警告：訊息僅提示警告，但還是會執行
+線上詢問：訊息僅提示訊息，詢問使用者是否繼續執行
+無：沒有訊息</li>
+  <li>線上詢問＿類別：當訊息類別＝線上詢問時，可指定預設的答案：是／否</li>
+  <li>全部一起顯示：勾選本項，表示當檢查的資料是多筆時，等全數一起檢查完畢後，再一併提示訊息，而不是個別顯示</li>
+  <li>訊息處理：當處理方式中有指定為訊息處理時，必須指定訊息內容，, 開啟<a href="16.html#MaintainMultilingual">【多語詞庫】</a>指定挑選詞庫</li>
+  <li>替代鍵：訊息有變數需要替代時，可利用本鍵開啟<a href="20.html#MessageReplace">【訊息替代】</a>進行替代內容的設定</li>
+</ol>
+
+<p><strong>APP表單</strong>
+<img src="images/11.3-2.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱，可利用開窗鍵, 開啟<a href="16.html#MaintainMultilingual">【多語詞庫】</a>指定挑選詞庫,請參考［16.2］來指定訊息內容</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>執行序：同一按鍵下的執行限制有多筆時，可利用本欄位，排定判定的優先順序</li>
+  <li>前置條件：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定第一階段的判定條件。此條件無查表功能，僅提供表單內元件或狀態的判定</li>
+  <li>前置條件取消鍵：可利用本鍵, 取消初步條件內容</li>
+  <li>判斷條件：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定第二階段的較為複雜的判定條件。</li>
+  <li>判斷條件取消鍵：可利用本鍵, 取消進階條件內容</li>
+  <li>特殊檢控：勾選本項，表示使用系統提供的檢控機制來限定執行，可分為資料檢查／網格檢查／駐留地檢查三項</li>
+  <li>資料檢查：作用於驗證資料的存在與正確性
+10.錯誤註留：勾選本項，表示當檢查到錯誤點時，指定駐留到特定的欄位</li>
+  <li>錯誤註留＿欄位：在指定要錯誤駐留時，挑選欄位元件</li>
+  <li>按鈕權限驗證：檢查登入的使用者對本按鍵是否有權限，若有權限者，視為條件成立</li>
+  <li>執行時機：依據上列條件及限定的內容，判定可執行按鍵的時機點，選項：條件成立／條件不成立</li>
+  <li>條件成立＿處理方式：當以上的條件成立時，要進行的動作是：
+執行：通過驗證，可執行按鍵內容
+訊息處理：必須彈出訊息提示
+除能：無點選的能力
+致能：有點選的能力
+顯示：會顯示在畫面上，則有點選能力
+隱藏：不會顯示在畫面上</li>
+  <li>條件成立＿處理方式：當以上的條件成立時，要進行的動作是：
+執行：通過驗證，可執行按鍵內容
+訊息處理：必須彈出訊息提示
+除能：無點選的能力
+致能：有點選的能力
+顯示：會顯示在畫面上，則有點選能力
+隱藏：不會顯示在畫面上</li>
+  <li>訊息類別：當處理方式中有指定為訊息處理時，必須指定訊息提示的類別：
+錯誤：內容有誤，須在訊息提示後，回到原表單修訂後再重新執行
+警告：訊息僅提示警告，但還是會執行
+線上詢問：訊息僅提示訊息，詢問使用者是否繼續執行
+無：沒有訊息</li>
+  <li>線上詢問＿類別：當訊息類別＝線上詢問時，可指定預設的答案：是／否</li>
+  <li>訊息處理：當處理方式中有指定為訊息處理時，必須指定訊息內容，, 開啟<a href="16.html#MaintainMultilingual">【多語詞庫】</a>指定挑選詞庫</li>
+  <li>替代鍵：訊息有變數需要替代時，可利用本鍵開啟<a href="20.html#MessageReplace">【訊息替代】</a>進行替代內容的設定</li>
+</ol>
+
+<h2 id="ButtonAnnotation_OpenForm"><strong>11.4 開啟它單 open a form</strong></h2>
+<blockquote>
+  <p>作業目的：因應作業需求，於表單操作中再開啟另一個表單，以查詢或是查看資料，不會帶回結果值。</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/11-3-1表單按鍵-開單及傳入參數.pdf" target="_blank">℗開單及傳入參數</a></p>
+
+<p><strong>傳統/RWD表單(APP表單無此行為選項)</strong></p>
+
+<p><img src="images/11.4-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>表單名稱：開窗挑選表單名稱</li>
+  <li>來源表格：顯示指定的表單，所對應的表頭檔區檢視表格名</li>
+  <li>過濾條件：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定限定開單的條件內容，操作說明請參考［附錄A1］</li>
+  <li>過濾條件刪除鍵：清空過濾條件</li>
+  <li>駐留條件：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定限定開單後駐留的記錄條件，操作說明請參考［附錄A1］</li>
+  <li>駐留條件刪除鍵：清空駐留條件</li>
+  <li>樹根設定條件：針對樹狀表單，可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定限定駐留根節點的條件內容，操作說明請參考［附錄A1］</li>
+  <li>樹根設定條件刪除鍵：清空樹根設定條件</li>
+  <li>表單異動：勾選本項，表示開啟表單後的異動受到限定</li>
+  <li>表單異動限定＿新增：勾選本項，表示開啟限定表單後的仍開放新增</li>
+  <li>表單異動限定＿修改：勾選本項，表示開啟限定表單後的仍開放修改</li>
+  <li>表單異動限定＿刪除：勾選本項，表示開啟限定表單後的仍開放刪除</li>
+  <li>進入模式：設定開啟表單後的模式，選項：瀏覽／新增／修改</li>
+  <li>互動模式：設定開啟的表單與本單的互動
+主動：表示開啟的表單具獨立性與本單沒有關連
+被動：表示開啟的表單必須依附在本單的條件之下，必須操作結束才可回本單
+互動：表示可個自操作，但可利用表單的溝通訊息做到關聯，互相影響顯示內容
+斷離：表示開啟表單後，立即開閉本單</li>
+  <li>傳遞參數：若開啟的表單有接收參數的設定，必須在本表格填入參數內容</li>
+  <li>參數名：開窗勾選表單的接收參數，並指定回傳到欄位上</li>
+  <li>載入鍵：可利用本鍵，把表單的所有參數載入表格中</li>
+  <li>參數型態：顯示參數的類型</li>
+  <li>參數類別：參數類別: 元件/固定值/參數/運算式/變數/全域變數</li>
+  <li>給值內容：依指定的參數類別，經由不同清單介面內容值</li>
+  <li>新增參數項目鍵：點選本鍵增加參數的項目</li>
+  <li>刪除參數項目鍵：點選本鍵刪除參數的項目</li>
+</ol>
+
+<h2 id="ButtonAnnotation_OpenReport"><strong>11.5 開啟報表 run a report</strong></h2>
+<blockquote>
+  <p>作業目的：讓使用者預覽、下載、或列印報表。</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/11-4-1表單按鍵-開啟報表及傳入參數.pdf" target="_blank">℗開啟報表及傳入參數</a></p>
+
+<p><strong>傳統/RWD表單(APP表單無此行為選項)</strong></p>
+
+<p><img src="images/11.5-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>報表名稱：開窗挑選報表名稱</li>
+  <li>開啟方式＿預覽：勾選本項，表示以預覽的方式開啟報表</li>
+  <li>開啟方式＿郵件夾檔鍵：勾選本項，表示將報表產出後，當成郵件的附件</li>
+  <li>郵件夾檔_夾檔：勾選本項，表示將檔案當成郵件的附件夾檔處理</li>
+  <li>郵件夾檔_插入物件：勾選本項，表示將檔案當成郵件的插入物件處理</li>
+  <li>開啟方式_直接下載：勾選本項，表示先產出報表後，啟動下載機制直接下載</li>
+  <li>直接下載_檔案格式：在直接下載的狀態下，選擇檔案的格式，ＰＤＦ、ＸＬＳ、ＯＤＴ、ＯＤＳ、ＤＯＣ</li>
+  <li>開啟方式_直接列印：勾選本項，表示先產出報表後，不經檢視，直接啟動印表的介面</li>
+  <li>開啟方式_存入資料庫：勾選本項，表示先產出報表後，把報表以ＰＤＦ方式存到資料表格中</li>
+  <li>實體表格：在開啟方式＝存入資料庫時，指定儲存的資料表名稱</li>
+  <li>過濾條件：利用<a href="20.html#ConditionStatement">【條件式】</a>中, 指定找到對應的資料記錄的條件</li>
+  <li>過濾條件清除鍵鍵：清除過濾條件</li>
+  <li>存入欄位：在開啟方式＝存入資料庫時，指定儲存檔案內容的資料表欄位</li>
+  <li>檔名欄位：在開啟方式＝存入資料庫時，指定儲存檔名的資料表欄位</li>
+  <li>傳遞參數：若開啟的過帳有接收參數的設定，必須在本表格填入參數內容</li>
+  <li>參數名：開窗勾選表單的接收參數，並指定回傳到欄位上</li>
+  <li>載入鍵：可利用本鍵，把表單的所有參數載入表格中</li>
+  <li>參數型態：顯示參數的類型</li>
+  <li>參數類別：參數類別: 元件/固定值/參數/運算式/變數/全域變數</li>
+  <li>給值內容：依指定的參數類別，經由不同清單介面內容值</li>
+  <li>新增參數項目鍵：點選本鍵增加參數的項目</li>
+  <li>刪除參數項目鍵：點選本鍵刪除參數的項目</li>
+</ol>
+
+<h2 id="ButtonAnnotation_DataUpdate"><strong>11.6 資料交易 data transation</strong></h2>
+<blockquote>
+  <p>作業目的：讓使用者執行按鍵後，能夠呼叫指定的資料交易動作，依照指定的邏輯新增、刪除或修改資料庫的資料。</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/11-5表單按鍵-資料交易.pdf" target="_blank">℗文件</a></p>
+
+<p><img src="images/11.6-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>資料交易名稱：開窗挑選資料交易</li>
+  <li>傳遞參數：若開啟的資料交易有接收參數的設定，必須在本表格填入參數內容</li>
+  <li>參數名：開窗勾選資料交易的接收參數，並指定回傳到欄位上</li>
+  <li>載入鍵：可利用本鍵，把資料交易的所有接收參數載入表格中</li>
+  <li>參數型態：顯示參數的類型</li>
+  <li>參數類別：參數類別: 元件/固定值/參數/運算式/變數/全域變數</li>
+  <li>給值內容：依指定的參數類別，經由不同清單介面內容值</li>
+  <li>新增項目鍵：點選本鍵增加接收參數的項目</li>
+  <li>插入項目鍵：點選本鍵增加接收參數的項目</li>
+  <li>刪除項目鍵：點選本鍵刪除接收參數的項目</li>
+  <li>回傳參數：若開啟的資料交易有回傳參數的設定，必須在本表格指定接收回傳的欄位對應</li>
+  <li>參數名：開窗勾選資料交易的回傳參數，並指定回傳到欄位上</li>
+  <li>參數型態：顯示回傳參數的類型</li>
+  <li>全域變數：指定接收回傳值的全域變數</li>
+  <li>新增項目鍵：點選本鍵增加回傳參數的項目</li>
+  <li>插入項目鍵：點選本鍵插入回傳參數的項目</li>
+  <li>刪除項目鍵：點選本鍵刪除回傳參數的項目</li>
+</ol>
+
+<h2 id="ButtonAnnotation_DataExchange"><strong>11.7 資料交換 import/export file</strong></h2>
+<blockquote>
+  <p>作業目的：需要將系統的資料以檔案的方式輸出時，此功能可讓系統能依照設定的格式，將資料匯出至txt檔、Excel檔，或是由txt檔、Excel檔匯入資料。</p>
+</blockquote>
+
+<p>參考資料：</p>
+<ul>
+  <li><a href="pdf/11-6表單按鍵-資料交換.pdf" target="_blank">℗資料交換</a></li>
+  <li><a href="pdf/11-6-1表單按鍵-資料交換設定簡介.pdf" target="_blank">℗設定簡介</a></li>
+  <li><a href="pdf/11-6-2表單按鍵-資料交換-純文字檔格式設定.pdf" target="_blank">℗純文字檔格式設定</a></li>
+  <li><a href="pdf/11-6-3表單按鍵-資料交換-Excel明細型格式設定.pdf" target="_blank">℗Excel明細型格式設定</a></li>
+  <li><a href="pdf/11-6-4表單按鍵-資料交換-Excel表格型格式設定.pdf" target="_blank">℗Excel表格型格式設定</a></li>
+  <li><a href="pdf/11-6-5表單按鍵-資料交換-交換資訊設定.pdf" target="_blank">℗交換資訊設定</a></li>
+  <li><a href="pdf/11-6-6表單按鍵-資料交換-表格對應設定.pdf" target="_blank">℗表格對應設定</a></li>
+  <li><a href="pdf/11-6-7表單按鍵-資料交換-欄位對應設定.pdf" target="_blank">℗欄位對應設定</a></li>
+  <li><a href="pdf/11-6-8表單按鍵-簡易匯出功能.pdf" target="_blank">℗簡易匯出功能</a></li>
+  <li><a href="pdf/11-6-9先執行資料交易再匯出資料.pdf" target="_blank">℗先執行資料交易再匯出資料</a></li>
+  <li><a href="pdf/11-6-10表單按鍵-匯入資料(明細型).pdf" target="_blank">℗匯入資料(明細型)</a></li>
+  <li><a href="pdf/11-6-11表單按鍵-匯入資料時進行資料檢查.pdf" target="_blank">℗匯入資料時進行資料檢查</a></li>
+</ul>
+
+<p><strong>傳統/RWD表單(APP表單無此行為選項)</strong></p>
+
+<p><img src="images/11.7-1.png" alt="" /></p>
+
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>檔案格式名稱：開窗挑選交換格式清單</li>
+  <li>記錄類型：依指定的交換格式顯示其類型：明細型/表格型</li>
+  <li>檔案類型：依指定的交換格式顯示其類型：TXT/EXCEL/XML</li>
+  <li>交換類別＿匯入：勾選本項，表示選擇檔案進入資料匯入的動作</li>
+  <li>匯入指定檔案：勾選本項，表示在匯入時，有指定檔案名稱的元件對應</li>
+  <li>指定檔案元件：指定對應檔案名稱的元件欄位</li>
+  <li>交換類別＿匯出：勾選本項，表示選擇進行把資料匯出到檔案的動作</li>
+  <li>檔案處理選項：指定匯出後的檔案處理模式，下載檔案/直接開啟</li>
+  <li>轉PDF：勾選本項，表示在 交換類別選項=匯出 且 檔案類型=XLS時，可指定把匯出的excel檔先轉成PDF 再產出檔案</li>
+  <li>匯出後異動：在匯出成excel檔後，可指定執行範本裡的功能，例：更新樞紐分析</li>
+  <li>郵件夾檔：勾選本項，表示將檔案產出後，當成郵件的附件</li>
+  <li>郵件夾檔_夾檔：勾選本項，表示將檔案當成郵件的附件夾檔處理</li>
+  <li>郵件夾檔_插入物件：勾選本項，表示將檔案當成郵件的插入物件處理</li>
+  <li>查表來源：若在交換格式裡，指定匯出的檔名為查表給值者，在此處指定匯出資料的來源類型：資料表／檢視表</li>
+  <li>檔名來源：若在交換格式裡，指定匯出的檔名為查表給值者，在此處挑選查表來源類別的資料表名或檢視表名</li>
+  <li>過濾條件：若在交換格式裡，指定匯出的檔名為查表給值者，在此處限定查表來源的過濾條件</li>
+  <li>檔名欄位：若在交換格式裡，指定匯出的檔名為查表給值者，在此處挑選查表來源裡的檔名欄位</li>
+  <li>表格對應區：要進行資料交換，必須指定資料表對應的內容，在本表格中描述</li>
+  <li>對應：勾選各表格對應的項目；目前系統提供最多３個表格</li>
+  <li>對應類別：依匯出或匯入可對應的表格類別也有差異
+　　匯入：實體表格/實表暫存
+　　匯出：邏輯表格/實體表格/實體暫存/暫存表格”</li>
+  <li>表格名稱：依據選擇的表格類別，個別開窗挑選表格名稱</li>
+  <li>自動給序欄位：當 交換類別選項=匯入 時，可指定是否有需要系統自動給序的欄位，若有，則在本欄位指定給序的目的欄位</li>
+  <li>關聯排序鍵：定義參與交換的表格，其記錄排序及表格間關聯的說明。點選本鍵開啟【資料交換-關聯排序】，操作說明請參考［17.7.1］</li>
+  <li>頁籤命名：當交換類別選項=匯出時，可指定頁籤的依元件的內容來命名。在本欄位指定參考命名的來源欄位</li>
+  <li>欄位對應區：要進行資料交換，必須指定來源與目的欄位間的對應的關係，其內容在本表格中描述</li>
+  <li>載入鍵：利用本鍵，將交換格式下的所有欄位, 加入資料列</li>
+  <li>格式欄位：挑選在交換檔案下的格式欄位</li>
+  <li>表格別：依據格式的需求決定對應的表格，下拉：表格1/表格2/表格3</li>
+  <li>同名對應鍵：利用本鍵，將指定表格下的欄位與格式欄位同名者, 自動對應</li>
+  <li>對應欄位：依據指定的表格別，開啟挑選對應的欄位</li>
+  <li>排序順序：當 交換類別選項=匯出 時，把輸出的資料欄指定的順序輸出，苦空白者，表示依格式的順序為準。</li>
+  <li>排序方式：下拉挑選升冪(由小到大排)/降冪(由大到小排列)</li>
+  <li>新增項目鍵：點選本鍵增加對應的項目</li>
+  <li>刪除項目鍵：點選本鍵刪除對應的項目</li>
+  <li>資料檢控鍵：點選本鍵開啟匯入格式的欄位清單, 進行不可空白的匯入檢控, 及模版=金額且指定輸出金額符號者，必須同時指定對應的幣別欄位元件</li>
+</ol>
+
+<h3 id="1171資料交換-關聯排序"><strong>11.7.1資料交換-關聯排序</strong></h3>
+
+<p><img src="images/11.7.1-1.png" alt="" /></p>
+
+<ol>
+  <li>表格1：駐留本頁籤</li>
+  <li>編輯鍵：進入編輯狀態</li>
+  <li>表格名稱：顯示本表格對應的類別及表格名稱</li>
+  <li>參數鍵：若表格類別=檢視表時，可依該檢視表是否有定義接收參數，而點選本鍵開啟<a href="20.html#PassParameters">【傳遞參數】</a>，操作說明請參考［附錄A4］</li>
+  <li>過濾條件：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容</li>
+  <li>清除鍵：利用本鍵清除原指定的條件式</li>
+  <li>排序欄位：開窗挑選指定的來源檢視表格的欄位清單</li>
+  <li>排序方式：下拉挑選升冪(由小到大排)/降冪(由大到小排列)</li>
+  <li>排序增加鍵：增加排序的項目</li>
+  <li>排序刪除鍵：刪除排序的項目</li>
+  <li>排序移動鍵：移動資料列的順序</li>
+  <li>儲存鍵：可利用本鍵，儲存表格1內容到資料庫</li>
+  <li>表格2：當有多個表格時，須針對子表格進行關聯定義</li>
+  <li>編輯鍵：進入編輯狀態</li>
+  <li>表格排序：操作同步驟3~11 內容</li>
+  <li>關聯依據：設定本表格與上階表格1的關聯</li>
+  <li>欄位名稱：開窗挑選指定的本檔區檢視表格的欄位清單</li>
+  <li>父階欄位：開窗挑選指定的父階檔區檢視表格的欄位清單</li>
+  <li>關聯增加鍵：增加關聯的項目</li>
+  <li>關聯刪除鍵：刪除關聯的項目</li>
+  <li>儲存鍵：可利用本鍵，儲存表格1內容到資料庫</li>
+</ol>
+
+<h2 id="ButtonAnnotation_SendMail"><strong>11.8郵件發送 send e-mail</strong></h2>
+<blockquote>
+  <p>作業目的：某些作業具有前後流程的性質，設定發送郵件的功能，可讓系統自動發送郵件通知下一個流程的負責人，繼續完成作業。</p>
+</blockquote>
+
+<p>參考資料：</p>
+<ul>
+  <li><a href="pdf/11-7-1表單按鍵-基本郵件發送設定.pdf" target="_blank">℗基本郵件發送設定</a></li>
+  <li><a href="pdf/11-7-2表單按鍵-郵件內文及替代設定.pdf" target="_blank">℗郵件內文及替代設定</a></li>
+  <li><a href="pdf/11-7-3表單按鍵-郵件內文連結設定.pdf" target="_blank">℗郵件內文連結設定</a></li>
+  <li><a href="pdf/11-7-4表單按鍵-郵件收件對象設定.pdf" target="_blank">℗郵件收件對象設定</a></li>
+  <li><a href="pdf/11-7-5表單按鍵-郵件夾檔設定.pdf" target="_blank">℗郵件夾檔設定</a></li>
+  <li><a href="pdf/11-7-6表單按鍵-郵件物件設定.pdf" target="_blank">℗郵件物件設定</a></li>
+  <li><a href="pdf/11-7-7郵件連結Google日曆設定.pdf" target="_blank">℗連結Google日曆</a></li>
+</ul>
+
+<p><strong>傳統/RWD表單(APP表單無此行為選項)</strong></p>
+
+<p>|<img src="images/11.8-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>寄件人：指定發送郵件時的寄件人郵件，選項：管理者郵箱/使用者郵箱, 若為管理者，請在系統工具的參數設定中指定相關資料</li>
+  <li>主旨來源類別：指定發送郵件的資料來源，下拉：欄位指定/查表</li>
+  <li>主旨來源檢視表：參照類別=查表時，開窗挑選指定檢視表名稱</li>
+  <li>過濾：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容</li>
+  <li>主旨：輸入要出現在郵件主旨的內容, 編輯內文的相關工具</li>
+  <li>內文：經編輯工具或自行輸入的內容資料，編輯內文的相關工具改變樣式及內容</li>
+  <li>替代：當主旨或內文裡有需要替代的字元時（以％帶頭）可在此表格宣告替換的內容及方式</li>
+  <li>替換字變數：指定替代裡的變數名稱</li>
+  <li>替代類別：下拉:郵件來源欄位/表單元件/表單參數/全域變數/收件者來源欄位</li>
+  <li>替代來源欄位：參考來源類別裡的設定，挑選替換字資料來源</li>
+  <li>內文連結：當內文裡有需要連結動作時可利用本表格行設定；操作方法可參考［11.8.1］</li>
+  <li>連結字變數：指定連結的標題變數</li>
+  <li>連結類別：下拉:超連結表單/物件/元件插圖/資料表插圖/檢視表插圖/超連結按鍵/超連結Google行事曆</li>
+  <li>連結內容：依據指定的連結類別，輸入相關項目</li>
+  <li>儲存連結資訊：若有設定連結物件時，在本處可特別設定是否另存連結的記錄</li>
+  <li>儲存連結資訊內容：顯示設定儲存連結內容的資訊；操作方法可參考［11.8.2］</li>
+  <li>收件對象來源：指定發送郵件的對象指定，下拉:固定對象/表單元件/查表/郵件來源欄位/表單參數/全域變數 預設:查表</li>
+  <li>收件對象＿檢視表：參照類別=查表時，開窗挑選指定檢視表名稱</li>
+  <li>過濾鍵：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容</li>
+  <li>收件對象姓名：依收件對象類別個別指定件對象者姓名所對應的固定值、欄位或元件</li>
+  <li>收件對象信箱：依收件對象類別個別指定件對象者信箱所對應的固定值、欄位或元件</li>
+  <li>使用者序號：依收件對象類別個別指定件對象者序號所對應的固定值、欄位或元件</li>
+  <li>副本否：指定是否有副本的需求</li>
+  <li>副本：以副本形式發送mail</li>
+  <li>密件副本否：指定是否有副件的需求</li>
+  <li>密件副本：以密件副本形式發送mail</li>
+  <li>夾檔附件否：指定是否有夾檔附件的需求</li>
+  <li>夾檔附件內容：；操作方法可參考［11.8.4］</li>
+  <li>郵件資訊_發送異常：當郵件有發送的異常時, 選擇是忽略本封, 繼續發送下一封或是停止發送</li>
+  <li>郵件儲存資訊否：指定是否有儲存郵件發送的資訊需求</li>
+  <li>郵件儲存資訊：；操作方法可參考［11.8.5］</li>
+</ol>
+
+<h3 id="1181-內文連結"><strong>11.8.1 內文連結</strong></h3>
+
+<p><img src="images/11.8.1-1.png" alt="" /></p>
+<ol>
+  <li>顯示標題：在內文的裡放置一標題文字後, 圈選起來</li>
+  <li>超連結鍵：點選工具列的 連結 開啟設定的畫面【插入連結】</li>
+  <li>顯示文字：確定在內文的裡點選連結的標題文字</li>
+  <li>連結網址：填入對應連結字變數的名稱(要有%符號帶頭)</li>
+  <li>新視窗開啟：勾選本欄位，表示開啟表單時會在瀏覽器中，另開一視窗操作顯示</li>
+  <li>插入連結鍵：儲存內容，回到加註畫面</li>
+  <li>連結字變數：填入連結文字(不含%符號)</li>
+  <li>類別：指定連結類別=超連結表單</li>
+  <li>連結內容鍵：點選文字連結開啟設定晝面【連結內容_超連結表單】；當有設定內容後即顯示內容的說明</li>
+</ol>
+
+<p><img src="images/11.8.1-2.png" alt="" /></p>
+<ol>
+  <li>表單名稱：填入連結的表單名稱</li>
+  <li>表單過濾：指定開啟表單時，是否有過濾資料的條件式</li>
+  <li>通行碼：定義每封郵件的通行碼是否相同或不同</li>
+  <li>有效次數：定義每封郵件的點擊連結的次數為一次性或可多次</li>
+  <li>執行系統_要求登入：選擇在郵件裡點選連結時，要求登入系統</li>
+  <li>帳號驗證：若要求登入系統時，是否同時驗證此帳號為郵件的受文者</li>
+  <li>執行系統_自動登入：選擇在郵件裡點選連結時，要求自動登入</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+</ol>
+
+<p><img src="images/11.8.1-3.png" alt="" /></p>
+<ol>
+  <li>類別：指定連結類別=超連結按鍵</li>
+  <li>連結內容鍵：點選文字連結開啟設定晝面【連結內容_超連結按鍵】；當有設定內容後即顯示內容的說明</li>
+  <li>表單名稱：填入連結按鍵的表單名稱</li>
+  <li>按鍵名稱：指定連結按鍵的名稱</li>
+  <li>通行碼：同超連結表單12~16</li>
+  <li>成功訊息：在成功點選按鍵連結完成後，是否提示訊息</li>
+  <li>成功訊息_內容：須提示的成功訊息內容為何</li>
+  <li>成功訊息_替代：若有成功訊息裡有替代字時，設定替代的內容，作法同內文替代</li>
+  <li>失敗訊息：在點選按鍵連結操作失敗時，是否提示訊息</li>
+  <li>失敗訊息_內容：須提示的失敗訊息內容為何</li>
+  <li>失敗訊息_替代：若有失敗訊息裡有替代字時，設定替代的內容，作法同內文替代</li>
+  <li>參數名：開窗按鍵的接收參數，並指定回傳到欄位上</li>
+  <li>參數型態：顯示參數的類型</li>
+  <li>傳遞類別：下拉 郵件來源欄位/表單元件/表單參數/全域變數 預設:表單元件</li>
+  <li>傳遞內容：依傳遞參數的類別，指定欲傳入的內容</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+</ol>
+
+<p><img src="images/11.8.1-4.png" alt="" /></p>
+<ol>
+  <li>類別：指定連結類別=超連結按鍵</li>
+  <li>連結內容鍵：點選文字連結開啟設定晝面【連結內容_超連結按鍵】；當有設定內容後即顯示內容的說明</li>
+  <li>標題來源：下拉 郵件來源欄位/表單元件/表單參數/全域變數 預設:表單元件</li>
+  <li>行事曆標題：依標題來源的的類別，指定欲顯示的內容來源</li>
+  <li>內容來源：下拉 郵件來源欄位/表單元件/表單參數/全域變數 預設:表單元件</li>
+  <li>行事曆內容：依內容來源的的類別，指定欲顯示的內容來源</li>
+  <li>地點來源：下拉 郵件來源欄位/表單元件/表單參數/全域變數 預設:表單元件</li>
+  <li>行事曆地點：依地點來源的的類別，指定欲顯示的內容來源</li>
+  <li>日期替代類別：下拉 郵件來源欄位/表單元件/表單參數/全域變數 預設:表單元件</li>
+  <li>日期含時間：說明勾選的日期起、迄欄位是否含時間</li>
+  <li>整天：說明連結行事曆時，是否標示整天的狀態</li>
+  <li>格林威治時區：說明勾選的日期時間起、迄欄位是否以格林威治時間換算</li>
+  <li>日期起：依日期替代類別，指定欲替代的內容</li>
+  <li>日期迄：依日期替代類別，指定欲替代的內容</li>
+  <li>時間起：依日期替代類別，指定欲替代的內容</li>
+  <li>時間迄：依日期替代類別，指定欲替代的內容</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+</ol>
+
+<p><img src="images/11.8.1-4.png" alt="" /></p>
+<ol>
+  <li>定義變數：在內文的裡放置一變數欄位(要有%符號帶頭)</li>
+  <li>連結字變數：填入取代物件的文字(不含%符號)</li>
+  <li>類別：指定連結類別=物件</li>
+  <li>連結內容：點選文字連結開啟設定晝面【連結內容_物件】；當有設定內容後即顯示內容的說明</li>
+  <li>優先序：選擇本按鍵加註欲嵌入物件的執行序</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+</ol>
+
+<p><img src="images/11.8.1-5.png" alt="" /></p>
+<ol>
+  <li>定義變數：在內文的裡放置一變數欄位(要有%符號帶頭)</li>
+  <li>連結字變數：填入取代物件的文字(不含%符號)</li>
+  <li>類別：指定連結類別=元件插圖</li>
+  <li>連結內容：點選文字連結開啟設定晝面【連結內容_元件插圖】；當有設定內容後即顯示內容的說明</li>
+</ol>
+
+<p><img src="images/11.8.1-6.png" alt="" /></p>
+<ol>
+  <li>插圖檔名：指定對應插圖檔名的表單元件欄位</li>
+  <li>插圖欄位：指定對應插圖檔案內容的表單元件欄位</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+</ol>
+
+<p><img src="images/11.8.1-7.png" alt="" /></p>
+<ol>
+  <li>類別：指定連結類別=資料表插圖</li>
+  <li>連結內容：點選文字連結開啟設定晝面【連結內容_資料表插圖】；當有設定內容後即顯示內容的說明</li>
+  <li>資料表_表格名稱：開窗挑選指定資料表名稱</li>
+  <li>資料表_過濾鍵：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容</li>
+  <li>資料表_來源位置：上傳的檔案以二進位的方式，儲放在資料庫</li>
+  <li>資料表_資料庫_檔名欄位：指定圖片在資料表中，儲存檔名的欄位名稱</li>
+  <li>資料表_資料庫_資料欄：指定圖片在資料表中，儲存放置檔案的資料表欄位</li>
+  <li>資料表_檔案櫃：指定圖片儲放的是FPT的檔案櫃，由指定的目錄，透過FTP上的檔案</li>
+  <li>資料表_檔案櫃_檔名欄位：指定圖片在FTP檔案中，資料表儲存檔名的欄位名稱</li>
+  <li>資料表_檔案櫃_記錄：指定圖片在FTP檔案中，資料表指定記錄檔案櫃名稱對應的目的表格欄名稱</li>
+  <li>資料表_檔案系統：指定圖片儲放的是檔案目錄記錄在資料表裡</li>
+  <li>資料表_檔案系統_唯一號：指定圖片儲存在資料表裡的唯一號欄位</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+</ol>
+
+<p><img src="images/11.8.1-8.png" alt="" /></p>
+<ol>
+  <li>類別：指定連結類別=檢視表插圖</li>
+  <li>連結內容：點選文字連結開啟設定晝面【連結內容_檢視表插圖】；當有設定內容後即顯示內容的說明</li>
+  <li>檢視表_表格名稱：開窗挑選指定檢視表名稱</li>
+  <li>檢視表_過濾鍵：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容</li>
+  <li>檢視表_來源位置：上傳的檔案以二進位的方式，儲放在資料庫</li>
+  <li>檢視表_資料庫_檔名欄位：指定圖片在檢視表中，儲存檔名的欄位名稱</li>
+  <li>檢視表_資料庫_資料欄：指定圖片在檢視表中，儲存放置檔案的檢視表欄位</li>
+  <li>檢視表_檔案櫃：指定圖片儲放的是FPT的檔案櫃，由指定的目錄，透過FTP上的檔案</li>
+  <li>檢視表_檔案櫃_檔名欄位：指定圖片在FTP檔案中，檢視表儲存檔名的欄位名稱</li>
+  <li>檢視表_檔案櫃_記錄：指定圖片在FTP檔案中，檢視表指定記錄檔案櫃名稱對應的目的表格欄名稱</li>
+  <li>檢視表_檔案系統：指定圖片儲放的是檔案目錄記錄在檢視表裡</li>
+  <li>檢視表_檔案系統_唯一號：指定圖片儲存在檢視表裡的唯一號欄位</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+</ol>
+
+<h3 id="1182-儲存連結資訊"><strong>11.8.2 儲存連結資訊</strong></h3>
+
+<p><img src="images/11.8.2-1.png" alt="" /></p>
+<ol>
+  <li>存入資料表：指定欲將連結資訊存入的資料表名</li>
+  <li>通行碼：指定記錄通行碼的欄位名</li>
+  <li>額外寫入欄位：除了通行碼外，另外要寫入的欄位列表</li>
+  <li>目的欄位：從目的資料表中，指定要寫入的目的欄位，</li>
+  <li>給值類別：下拉 郵件來源欄位/表單元件/表單參數/全域變數/收件者使用序號/替換字變數</li>
+  <li>給值內容：依給值類別，挑選對應的內容</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+</ol>
+
+<h3 id="1183副本與密件副本"><strong>11.8.3副本與密件副本</strong></h3>
+
+<p><img src="images/11.8.3-1.png" alt="" /></p>
+<ol>
+  <li>副本來源類別：下拉 固定對象/表單元件/查表/郵件來源欄位/表單參數/全域變數</li>
+  <li>同收件者來源鍵：點選本鍵，將同步收件者來源類別與檢視表</li>
+  <li>表格名稱：指定副本者的來源表格</li>
+  <li>過濾：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容</li>
+  <li>姓名：依來源類別，挑選指定副本者的姓名欄位</li>
+  <li>信箱：依來源類別，挑選指定副本者的信箱欄位</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+  <li>密件副本：操作同副本，步驟1~7 內容</li>
+</ol>
+
+<h3 id="1184-夾檔副件"><strong>11.8.4 夾檔副件</strong></h3>
+<p><img src="images/11.8.4-1.png" alt="" /></p>
+
+<ol>
+  <li>類別：下拉 無/表單元件/查表/郵件來源欄位 預設查表</li>
+  <li>表格名稱：若類別=查表，則指定檢視表</li>
+  <li>過濾鍵：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容</li>
+  <li>來源位置_資料表：上傳的檔案以二進位的方式，儲放在資料庫</li>
+  <li>資料庫_檔名欄位：指定圖片在資料表中，儲存檔名的欄位名稱</li>
+  <li>資料庫_資料欄：指定圖片在資料表中，儲存放置檔案的資料表欄位</li>
+  <li>來源位置_檔案櫃：指定圖片儲放的是FPT的檔案櫃，由指定的目錄，透過FTP上的檔案</li>
+  <li>檔案櫃_檔名欄位：指定圖片在FTP檔案中，資料表儲存檔名的欄位名稱</li>
+  <li>檔案櫃_記錄：指定圖片在FTP檔案中，資料表指定記錄檔案櫃名稱對應的目的表格欄名稱</li>
+  <li>來源位置_檔案系統：指定圖片儲放的是檔案目錄記錄在資料表裡</li>
+  <li>檔案系統_唯一號：指定圖片儲存在資料表裡的唯一號欄位</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+</ol>
+
+<h2 id="ButtonAnnotation_DataLoad"><strong>11.9 資料載入  load DB data</strong></h2>
+<blockquote>
+  <p>作業目的：有時需讓使用者將符合一定條件的 資料載入到表單畫面中，再讓使用者繼續進行作業，以節省逐筆輸入資料的時間</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/11-8表單按鍵-資料載入.pdf" target="_blank">℗文件</a></p>
+
+<p><img src="images/11.9-1.png" alt="" />
+作業限制：</p>
+<ol>
+  <li>資料載入功能需在表單為編輯狀態時執行。</li>
+  <li>載入的資料來源僅限於檢視表。</li>
+  <li>載入表身檔區之多筆表格時，可以載入多筆資料。</li>
+  <li>載入表頭檔區時，只能載入一筆資料。</li>
+</ol>
+
+<p><img src="images/11.9-2.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>查表來源：指定載入資料的來源表格類別，下拉：資料表/檢視表</li>
+  <li>載入來源：依查表來源，開窗挑選指定表格名稱</li>
+  <li>參數鍵：依該檢視表是否有定義接收參數，而點選本鍵開啟<a href="20.html#PassParameters">【傳遞參數】</a>，操作說明請參考［附錄A4］</li>
+  <li>過濾鍵：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容</li>
+  <li>清除鍵：利用本鍵清除原指定的條件式</li>
+  <li>顯示欄位：開窗挑選指定的來源表格的欄位清單</li>
+  <li>排序方式：下拉挑選升冪(由小到大排)/降冪(由大到小排列)</li>
+  <li>排序增加鍵：增加排序的項目</li>
+  <li>排序刪除鍵：刪除排序的項目</li>
+  <li>排序移動鍵：移動資料列的順序</li>
+  <li>載入目的：定義目的端的記錄的判定方式</li>
+  <li>資料檔區：載入目的資料區域</li>
+  <li>資料檔區：載入目的資料區域</li>
+  <li>存在資料：對目的區存在資料處理方式，選項： 刪除/保留</li>
+  <li>刪除提示：要刪除記錄前是否須要提示，選項: 無/有</li>
+  <li>異動方式：對目的區存在資料處理方式，選項： 新增/修改/增修
+新增：無條件新增資料。
+修改：依據指定的判斷欄位比對資料，符合條件的資料就進行修改。
+增修：依據指定的判斷欄位比對資料，符合條件的資料就進行修改，不符合條件的資料就新增。”</li>
+  <li>筆數提示：載入完成後是否須要提示載入的筆數，選項: 無/有</li>
+  <li>目的欄位區：定義目的欄位的給值及判定方式</li>
+  <li>目的欄位：挑選表單目的檔區內的元件</li>
+  <li>同名對應鍵：同名對應功能可載入目的檔區的所有欄位，並與來源邏輯表格比對，若有相同名稱的欄位，自動將給值方式設為「來源」，並對應到該欄位。</li>
+  <li>給值類別：選擇要給目的欄位的資料類別，　下拉：來源/固定值/參數</li>
+  <li>給值內容：依據給值類別，挑選不同的元件及內容</li>
+  <li>判斷鍵：當異動方式為修改或增修，勾選本項，表示以本欄位做為鍵值判斷的依據</li>
+  <li>空值刪除鍵：勾選本項，表示在資料載入後，該欄位為空白的資料會被刪除。</li>
+  <li>更新帶值：勾選本項，表示在資料載入後，會執行本欄位在元件加註上更新帶值部份的功能。</li>
+  <li>欄位增加鍵：增加欄位的項目</li>
+  <li>欄位刪除鍵：刪除欄位的項目</li>
+</ol>
+
+<h2 id="ButtonAnnotation_DataFilter"><strong>11.10 資料過濾 Data Filter</strong></h2>
+<blockquote>
+  <p>作業目的：一個系統中常有查訊類型的表單，此時就需使用過濾功能，挑出符合作業			條件的資料。	資料過濾功能通常用在條件多筆表單，使用者按下包含過濾功能的按鍵後，依過濾設定的條件濾出表身的資料。</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/11-9表單按鍵-資料過濾.pdf" target="_blank">℗文件</a></p>
+
+<p><img src="images/11.10-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>過濾檔區：指定要重新過濾資料的區域</li>
+  <li>載入來源：依檔區顯示在表單上設定對應的檢視表名稱</li>
+  <li>過濾鍵：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容</li>
+  <li>提示筆數訊息：勾選在載入資料後，是否提示筆數訊息。</li>
+</ol>
+
+<h2 id="ButtonAnnotation_ExtemalExecution"><strong>11.11 啟動外部作業 fire up external service</strong></h2>
+<blockquote>
+  <p>作業目的：為了與其他系統交換資料，或是執行一些外部的程式，需使用此功能。</p>
+</blockquote>
+
+<p>參考資料：</p>
+<ul>
+  <li><a href="pdf/11-10-1表單按鍵-呼叫它單按鍵.pdf" target="_blank">℗呼叫它單按鍵</a></li>
+  <li><a href="pdf/11-10-2表單按鍵-合併匯出檔案.pdf" target="_blank">℗合併匯出檔案</a></li>
+  <li><a href="pdf/11-10-3表單按鍵-呼叫外部程式.pdf" target="_blank">℗呼叫外部程式</a></li>
+</ul>
+
+<p><strong>傳統/RWD表單</strong></p>
+
+<p><img src="images/11.11-1.png" alt="" />
+<img src="images/11.11-2.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>執行內容_呼叫按鈕：選擇本項，表示要利用按鍵去啟動其它表單的按鍵功能</li>
+  <li>表單名稱：挑選要呼叫的按鈕所在的表單名稱</li>
+  <li>按鍵名稱：挑選要呼叫的按鈕名稱</li>
+  <li>執行內容_檔案合併：選擇本項，表示在同一個功能鍵執行時，有產生多個檔案，利用本設定將檔案合併</li>
+  <li>檔案處理：指在對已合併後的檔案處理方式，選項：下載檔案/直接開啟</li>
+  <li>轉PDF：勾選本項，表示要把合併後的檔案，先轉成ＰＤＦ格式</li>
+  <li>執行內容_執行程式：可利用本鍵，把所有的規格項目全數勾選，或全數取消</li>
+  <li>API名稱：挑選已設定好基本資料的ＡＰＩ</li>
+  <li>固定URL：顯示挑選的ＡＰＩ是否為固定位置，或必須查表參照</li>
+  <li>URL來源：開窗挑選檢視表名稱</li>
+  <li>URL來源參數鍵：依該檢視表是否有定義接收參數，而點選本鍵開啟<a href="20.html#PassParameters">【傳遞參數】</a>，操作說明請參考［附錄A4］</li>
+  <li>URL欄位：挑選記載URL位置的檢視表欄位</li>
+  <li>URL來源過濾條件鍵：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容，操作說明請參考［附錄A1］</li>
+  <li>清除鍵：利用本鍵清除原指定的條件式</li>
+  <li>傳遞參數：顯示本API是否有傳遞參數的內容</li>
+  <li>查表類別：API傳遞參數來源表格類別，下拉：資料表/檢視表</li>
+  <li>查表來源：依查表來源，開窗挑選指定表格名稱</li>
+  <li>參數鍵：依該檢視表是否有定義接收參數，而點選本鍵開啟<a href="20.html#PassParameters">【傳遞參數】</a>，操作說明請參考［附錄A4］</li>
+  <li>過濾鍵：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容，操作說明請參考［附錄A1］</li>
+  <li>清除鍵：利用本鍵清除原指定的條件式</li>
+  <li>傳遞參數資料鍵：本表格在記錄傳遞參數的各項對應</li>
+  <li>參數名：執行API時的傳遞參數</li>
+  <li>載入鍵：可利用本鍵，把API所有傳遞參數載入表格中</li>
+  <li>參數型態：顯示參數的類型</li>
+  <li>接收類別：參數類別，下拉: 表單元件/查表欄位/固定值/函數</li>
+  <li>傳遞內容：依指定的參數類別，經由不同清單介面內容值</li>
+  <li>新增參數項目鍵：點選本鍵增加參數的項目</li>
+  <li>刪除參數項目鍵：點選本鍵刪除參數的項目</li>
+  <li>接收成功參數資料鍵：本表格在記錄接收成功參數的各項對應</li>
+  <li>表格類別：API接收參數儲存的表格類別，下拉：實體表格/實體暫存/暫存表格</li>
+  <li>表格名稱：依表格類別，開窗挑選指定表格名稱</li>
+  <li>參數名：執行API時的接收成功參數</li>
+  <li>載入鍵：可利用本鍵，把API所有接收成功參數載入表格中</li>
+  <li>參數型態：顯示參數的類型</li>
+  <li>接收類別：參數類別，下拉: 表單暫存區/實表欄位</li>
+  <li>接收成功內容：依指定的參數類別，經由不同清單介面內容值</li>
+  <li>新增參數項目鍵：點選本鍵增加參數的項目</li>
+  <li>刪除參數項目鍵：點選本鍵刪除參數的項目</li>
+  <li>接收失敗參數資料鍵：本表格在記錄接收失敗參數的各項對應</li>
+  <li>接收失敗參數資料鍵：操作動作同36~42</li>
+</ol>
+
+<h2 id="ButtonAnnotation_CommunicateMessage"><strong>11.12 溝通訊息   talk with another form</strong></h2>
+<blockquote>
+  <p>作業目的：遇到A單開B單的狀況時，有時需要在兩張表單間互相傳遞訊息，讓B表的		資料變更時，能夠有影響A表單的效果。</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/11-11表單按鍵-溝通訊息.pdf" target="_blank">℗文件</a></p>
+
+<p><strong>傳統/RWD表單(APP表單無此行為選項)</strong></p>
+
+<p><img src="images/11.12-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~999，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>操作說明請參考［11.A］</li>
+  <li>傳遞層級：指定本表單對指定表單是異動層級 選項：主動端/被動端
+主動端：A單開B單，由A單去改變B單的內容，稱為主動
+被動端：A單開B單，由B單去影響A單的內容，稱為被動</li>
+  <li>接收名稱：指定要被影響的表單，開窗挑選表單名稱</li>
+  <li>資料來源：顯示表單對的的資料來源檢視表</li>
+  <li>傳遞內容＿改變參數：選擇本項，表示要影響表單的接收參數</li>
+  <li>傳遞改變參數：若影響的表單有接收參數的設定，必須在本表格填入參數內容</li>
+  <li>參數名：開窗勾選表單的接收參數，並指定回傳到欄位上</li>
+  <li>給值類別：給值類別: 元件/固定值/參數</li>
+  <li>給值內容：依指定的參數類別，經由不同清單介面內容值</li>
+  <li>新增參數項目鍵：點選本鍵增加參數的項目</li>
+  <li>刪除參數項目鍵：點選本鍵刪除參數的項目</li>
+  <li>傳遞內容＿啟動功能：選擇本項，表示要啟動影響表單的指定功能鍵</li>
+  <li>按鈕名稱：挑選要呼叫的按鈕名稱</li>
+  <li>傳遞內容＿改變根目錄：選擇本項，適用於樹狀表單，改變根目錄內容值</li>
+  <li>根目錄給值內容：可利用開窗鍵, 開啟<a href="20.html#ExpressionStatement">【運算式】</a>設定組合運算式, 作為欄位給值的依據，操作說明請參考［附錄A2］</li>
+  <li>傳遞內容＿改變過濾式：選擇本項，表示要影響表單的過濾式，並重新載入內容</li>
+  <li>過濾式給值內容：可利用開窗鍵, 開啟<a href="20.html#ExpressionStatement">【運算式】</a>設定組合運算式, 作為欄位給值的依據，操作說明請參考［附錄A2］</li>
+  <li>傳遞內容＿資料重整：選擇本項，表示要重新顯示影響表單的內容</li>
+  <li>資料更新：勾選本項，表示要進行資料區的更新</li>
+  <li>檔區：指定更新的資料區</li>
+  <li>記錄更新方式：指定要更新的方式，選項：駐留筆/駐留頁面/全部記錄
+　駐留筆：只更新畫面駐留檔區的內容
+　駐留頁面：更新畫面上所有檔區的記錄
+　全部紀錄：更新指定檔區的所有記錄</li>
+  <li>樹內容更新鍵：勾選本項，表示要進行樹元件清單的更新</li>
+  <li>樹內容更新方式：指定更新的方式，選項：駐留筆/正展/逆展/根節點/整顆樹
+　正展：駐留筆以下, 全展
+　逆展：駐留筆以上, 全展
+　根節點：駐留筆的根目錄, 全展
+　整棵樹：全部更新</li>
+</ol>
+
+<h2 id="ButtonAnnotation_FormEffect"><strong>11.13 表單特效</strong></h2>
+<blockquote>
+  <p>作業目的：一些控管表單上的特殊效果功能，集中在此處設定。</p>
+  <ul>
+    <li><a href="pdf/11-12-1表單按鍵-關閉表單.pdf" target="_blank">℗關閉表單</a></li>
+    <li><a href="pdf/11-12-2表單按鍵-切換頁籤.pdf" target="_blank">℗切換頁籤</a></li>
+    <li><a href="pdf/11-12-3表單按鍵-更新欄位.pdf" target="_blank">℗更新欄位</a></li>
+    <li><a href="pdf/11-12-4表單按鍵-單次啟動按鍵.pdf" target="_blank">℗單次啟動按鍵</a></li>
+    <li><a href="pdf/11-12-5表單按鍵-多次啟動按鍵.pdf" target="_blank">℗多次啟動按鍵</a></li>
+    <li><a href="pdf/11-12-6表單按鍵-記錄移動.pdf" target="_blank">℗記錄移動</a></li>
+  </ul>
+</blockquote>
+
+<p><strong>傳統/RWD表單(APP表單無此行為選項)</strong></p>
+
+<p><img src="images/11.13-1.png" alt="" /></p>
+
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>處理內容_關閉表單：選擇本項，表示強制關閉表單</li>
+  <li>處理內容_切換頁籤：選擇本項，表示當條件符合時，切換頁籤到指定的頁面</li>
+  <li>頁籤元件：挑選要指切換的頁籤元件</li>
+  <li>頁籤名稱：指定要切換到那一個頁籤的頁面</li>
+  <li>處理內容_更新欄位：選擇本項，表示在功能鍵執行過程中去異動特定的欄位內容值</li>
+  <li>影響筆數：選項:單筆/多筆</li>
+  <li>指定檔區：若影響筆數=多筆，則選擇指定多筆表格的資料區</li>
+  <li>目的欄位：開窗挑選要異動的欄位元件
+當欄位元件是在多筆網格且影響筆數為多筆時，則多筆網格內的資料都會受到異動</li>
+  <li>給值內容：可利用開窗鍵, 開啟開啟<a href="20.html#ExpressionStatement">【運算式】</a>設定組合運算式, 作為欄位給值的依據，操作說明請參考［附錄A2］</li>
+  <li>處理內容_啟動按鍵：選擇本項，表示在功能鍵執行過程中去呼叫另外的功能按鍵</li>
+  <li>按鈕名稱：挑選被啟動的按鈕名稱</li>
+  <li>呼叫次數：指定要執行的次數，選項：單次/多次</li>
+  <li>表格元件：當呼叫次數選項=多次時，須指定多次參考的多筆表格</li>
+  <li>起始記錄：當呼叫次數選項=多次時，須指定記錄開始的位置，選項：首筆/末筆/駐留筆</li>
+  <li>依序方式：當呼叫次數選項=多次時，須指定記錄前進的方向，選項：往後移動/往前移動</li>
+  <li>處理內容_移動記錄：選擇本項，表示在功能鍵執行過程中去改變檔區的駐留記錄</li>
+  <li>指定檔區：指定要改變駐留記錄的資料區</li>
+  <li>移動方式：移動的方式，選項: 末筆/首筆</li>
+  <li>處理內容_更新變數：選擇本項，表示在功能鍵執行過程中去改變全域變數內容</li>
+  <li>全域變數：挑選全域變數名稱</li>
+  <li>給值來源：可利用開窗鍵, 開啟開啟<a href="20.html#ExpressionStatement">【運算式】</a>設定組合運算式, 作為欄位給值的依據，操作說明請參考［附錄A2］</li>
+</ol>
+
+<h2 id="ButtonAnnotation_DynamicTable"><strong>11.14 動態表格</strong></h2>
+<blockquote>
+  <p>作業目的：當使用多筆表格的物件時，需要依據條件動態的決定顯示的欄位內容，可利用本作業進行設定。</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/11-12-8表單按鍵-動態表格.pdf" target="_blank">℗動態表格</a></p>
+
+<p><strong>傳統/RWD表單(APP表單無此行為選項)</strong></p>
+
+<p><img src="images/11.14-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>表格欄位：指定要變動表格欄位的多筆表格元件</li>
+  <li>起始欄位：挑選多筆表格內可變動範圍的起始欄位</li>
+  <li>終止欄位：挑選多筆表格內可變動範圍的終止欄位</li>
+  <li>來源表格：依查表來源，開窗挑選指定檢視表名稱</li>
+  <li>參數鍵：依該檢視表是否有定義接收參數，而點選本鍵開啟<a href="20.html#PassParameters">【傳遞參數】</a>，操作說明請參考［附錄A4］</li>
+  <li>過濾鍵：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容，操作說明請參考［附錄A1］</li>
+  <li>清除鍵：利用本鍵清除原指定的條件式</li>
+  <li>參考欄位：依指定的來源表格，挑選要納入動態表格的元件</li>
+  <li>排序欄位：依指定的來源表格，挑選要參考的排序元件</li>
+</ol>
+
+<h2 id="ButtonAnnotation_AccountSynchronization"><strong>11.15 帳號同步</strong></h2>
+<blockquote>
+  <p>作業目的：因應作業需求，可於系統內建立或註銷登入系統帳號，以期達到帳號同步的效果。</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/11-12-9表單按鍵-帳號同步.pdf" target="_blank">℗帳號同步</a></p>
+
+<p>傳統/RWD表單(APP表單無此行為選項)</p>
+
+<p><img src="images/11.15-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>處理內容_建立：選擇本項，表示要依駐留記錄，建立登入的帳號</li>
+  <li>帳號重複：當執行建立帳號時，若帳號發生重的狀況，選擇執行的方式，選項: 覆蓋/彈訊息告知</li>
+  <li>建立帳號：要建立的帳號對應欄位，開窗挑選表單欄位</li>
+  <li>姓名：要建立的帳號對應姓名欄位，開窗挑選表單欄位</li>
+  <li>聯絡信箱：要建立的帳號對應聯絡信箱，開窗挑選表單欄位</li>
+  <li>用戶代號：要建立的帳號對應用戶代號，開窗挑選表單欄位</li>
+  <li>密碼：要建立的帳號對應密碼，選擇設定的方式
+系統預設：系統內定abc123 為預設密碼
+自定義：開窗挑選表單欄位</li>
+  <li>自定義：開窗挑選表單欄位</li>
+  <li>處理內容_建立：選擇本項，表示要依註銷登入的帳號為失效狀態</li>
+  <li>註銷帳號：註銷的帳號對應欄位，開窗挑選表單欄位</li>
+</ol>
+
+<h2 id="ButtonAnnotation_SystemReplication"><strong>11.16 系統複製</strong></h2>
+<blockquote>
+  <p>作業目的：當執行系統複製時，若不宣告時是以全欄位複製的方式產生記錄，但有些情況下對特定欄位不須要複製的，例如單號、製單日期、異動日期時間等。本畫面作用於指定那些欄位不需複製，以避免操作錯誤置入重複無效的記錄。</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/11-12-10表單按鍵-系統複製.pdf" target="_blank">℗系統複製</a></p>
+
+<p><strong>傳統/RWD表單(APP表單無此行為選項)</strong></p>
+
+<p><img src="images/11.16-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>處理內容：指定那些欄位不需複製的欄位清單</li>
+  <li>複製類別：選項：元件/檔區</li>
+  <li>不複製元件：依複製類別挑選檔區或元件</li>
+  <li>新增預設：勾選本項，表示不複製，但要執行新增初始值的規格定義</li>
+  <li>更新帶值：勾選本項，表示不複製，但要執行更新帶值的規格定義</li>
+  <li>資料列增加鍵：增加資料列的項目</li>
+  <li>資料列刪除鍵：刪除資料列的項目</li>
+</ol>
+
+<h2 id="ButtonAnnotation_LocialFunction"><strong>11.17 邏輯函數</strong></h2>
+<blockquote>
+  <p>作業目的：對於比較複雜的產業界常用的處理功能，平台上特別開發了一些邏輯函數，讓設計師在按鈕的設計時可以引用，本作業就操作進行說明，詳細的邏輯函數與參數，請參考［19.3］ 。</p>
+</blockquote>
+
+<p>參考資料：<a href="pdf/11-12-13表單按鍵-邏輯函數.pdf" target="_blank">℗邏輯函數</a></p>
+
+<p><strong>傳統/RWD表單(APP表單無此行為選項)</strong></p>
+
+<p><img src="images/11.17-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>函數名稱：開窗挑選要使用的函數名稱。各函數的用途及用法，請參考［19.3］</li>
+  <li>載入鍵：手動載入，函數所需要的參數內容</li>
+  <li>函數說明：顯示函數的用途</li>
+  <li>參數名：顯示參數的名稱</li>
+  <li>參數型態：顯示參數的類型</li>
+  <li>對應的父階：顯示參數的所沿襲的父階參數</li>
+  <li>空白：顯示本參數是否可空白，勾選者，代表可空白</li>
+  <li>來源型態：依據參數指定的型態，下拉挑選</li>
+  <li>給值內容：依指定的參數類別，經由不同清單介面內容值</li>
+  <li>排序：若有排序需求時，在本欄位下拉指定</li>
+</ol>
+
+<h2 id="ButtonAnnotation_LinkObject"><strong>11.18 連結物件</strong></h2>
+<blockquote>
+  <p>作業目的：連結網頁可設定在瀏覽器中開啟指定的網頁，網址資訊需顯示在表單元件中。或跨專案表單可開啟指定專案中的指定表單。</p>
+</blockquote>
+
+<p>參考資料：</p>
+<ul>
+  <li><a href="pdf/11-12-11表單按鍵-網頁連結.pdf" target="_blank">℗網頁連結</a></li>
+  <li><a href="pdf/11-12-12表單按鍵-跨專案開啟表單.pdf" target="_blank">℗跨專案開啟表單</a></li>
+</ul>
+
+<p><strong>傳統/RWD表單</strong></p>
+
+<p><img src="images/11.18-1.png" alt="" />
+<strong>APP 表單</strong>
+<img src="images/121-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>處理內容＿連結網頁：選擇本項，表示要連結網頁</li>
+  <li>網址元件：指定開始網頁的網址參，挑選表單下的表單元件</li>
+  <li>開啟方式：選擇開啟網頁的方式，選項：其他頁籤／另開視窗
+　其他頁籤：在瀏覽器中開啟新頁籤以顯示網頁。
+　另開視窗：新開一個瀏覽器視窗以顯示網頁</li>
+  <li>處理內容＿跨專案表單：選擇本項，表示要連結網頁</li>
+  <li>專案名稱：欲開啟表單所在的專案名稱</li>
+  <li>表單名稱：挑選欲開啟的表單名稱</li>
+  <li>傳遞參數：若開啟的表單有接收參數的設定，必須在本表格填入參數內容</li>
+  <li>參數名：開窗勾選表單的接收參數，並指定回傳到欄位上</li>
+  <li>載入鍵：可利用本鍵，把表單的所有參數載入表格中</li>
+  <li>參數型態：顯示參數的類型</li>
+  <li>參數類別：參數類別: 元件/固定值/參數/運算式/變數/全域變數</li>
+  <li>給值內容：依指定的參數類別，經由不同清單介面內容值</li>
+  <li>新增參數項目鍵：點選本鍵增加參數的項目</li>
+  <li>刪除參數項目鍵：點選本鍵刪除參數的項目</li>
+  <li>處理內容＿連結google行事曆：點選本鍵增加參數的項目</li>
+  <li>標題：指定出現在Google 行事曆的標題，開窗挑選表單欄位</li>
+  <li>內容：指定出現在Google 行事曆的內容，開窗挑選表單欄位</li>
+  <li>地點：指定出現在Google 行事曆的地址，開窗挑選表單欄位</li>
+  <li>日期含時間：指定日期起迄的欄位內容, 是否已包含時間在內；若勾選時，則時間起、迄隱藏不輸入</li>
+  <li>整天：指定安排行事曆，是否為全天模式；若勾選時，則時間起、迄隱藏不輸入</li>
+  <li>格林威治時區：指定日期時間是否依據公司所在地區進行時區時間的換算</li>
+  <li>日期起：指定出現在Google 起始日期，開窗挑選表單欄位</li>
+  <li>日期迄：指定出現在Google 終止日期，開窗挑選表單欄位</li>
+  <li>時間起：指定出現在Google 起始時間，開窗挑選表單欄位</li>
+  <li>時間迄：指定出現在Google 終止時間，開窗挑選表單欄位</li>
+</ol>
+
+<h2 id="ButtonAnnotation_FileTransfer"><strong>11.19 檔案傳輸</strong></h2>
+<blockquote>
+  <p>作業目的：利用檔案框的設定，統一指指定上傳、下載檔案的位置，方便文件的控管。</p>
+</blockquote>
+
+<p>參考資料：</p>
+<ul>
+  <li><a href="pdf/11-12-7表單按鍵-檔案傳輸(資料庫).pdf" target="_blank">℗檔案傳輸(資料庫)</a></li>
+  <li><a href="pdf/11-12-14表單按鍵-檔案傳輸(檔案系統).pdf" target="_blank">℗檔案傳輸(檔案系統)</a></li>
+</ul>
+
+<p><strong>傳統/RWD表單</strong>
+<img src="images/11.19-1.png" alt="" /></p>
+
+<p><strong>APP 表單</strong><br />
+<img src="images/11.19-2.png" alt="" /></p>
+
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>檔案傳輸類別＿上傳：選擇本項，表示要把檔案上傳</li>
+  <li>來源欄位：指定上傳的檔案名稱的欄位，挑選表單下的表單元件</li>
+  <li>寫入方式：上傳到目的表格的記錄異動方式，選項：新增／修改</li>
+  <li>表格類型：指定目的表格的類型：資料表/資料表暫存</li>
+  <li>目的表格：上傳到目的端的資料表格，挑選資料表名稱</li>
+  <li>過濾條件：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容</li>
+  <li>目的位置_資料庫：上傳的檔案以二進位的方式，儲放在資料庫</li>
+  <li>資料庫＿檔名欄位：指定目的表格下儲存檔名的欄位名稱</li>
+  <li>資料庫＿資料欄：上傳目的位置選項=資料欄 時，指定放置檔案的資料表欄位</li>
+  <li>資料庫＿縮圖否：若上傳為圖片檔，是否需要進行縮圖</li>
+  <li>資料庫＿解析度：在指定縮圖狀況下，選擇縮圖的解析度</li>
+  <li>目的位置_檔案櫃：上傳檔案儲放的是FPT的檔案櫃，由指定的目錄，透過FTP上下傳的檔案</li>
+  <li>檔案櫃＿檔名欄位：指定目的表格下儲存檔名的欄位名稱</li>
+  <li>檔案櫃＿櫃名：上傳目的位置選項=檔案櫃 時，指定記錄檔案檔案櫃名稱的資料表欄位</li>
+  <li>檔案櫃＿記錄：上傳目的位置選項=檔案櫃 時，指定記錄檔案櫃名稱對應的目的表格欄名稱</li>
+  <li>檔案櫃＿同檔名選項：上傳目的位置選項=檔案櫃 時，選項：覆蓋／中止／另存新檔</li>
+  <li>目的位置_檔案系統：上傳檔案儲放的是檔案目錄，由系統統一管理</li>
+  <li>檔案系統＿唯一號：指定系統管理檔案的唯一號欄位</li>
+  <li>其它目的欄位區：若在上傳檔案的部份還有其它目的欄位要同時異動的需求時可在本表格設定</li>
+  <li>其它目的欄位：指定要同時上傳的其它目的欄位</li>
+  <li>給值類型：要給目的欄位的來源類別，選項：元件/運算/參數/實際檔名/檔案大小/檔案建立時間/檔案異動時間/檔案類型</li>
+  <li>給值內容：依給值類型開啟不同選項清單，指定內容；當選項＝（實際檔名/檔案大小/檔案建立時間/檔案異動時間/檔案類型）不用輸入</li>
+  <li>資料列增加鍵：下載檔案櫃記錄：來源位置選項=檔案櫃, 挑選表格元件, 限定同[下載區來源表格]</li>
+  <li>資料列刪除鍵：刪除資料列的項目</li>
+  <li>檔案傳輸類別＿下傳：選擇本項，表示要把檔案下傳</li>
+  <li>查表來源：指定載入資料的來源表格類別，下拉：資料表/檢視表</li>
+  <li>載入來源：依查表來源，開窗挑選指定表格名稱</li>
+  <li>過濾鍵：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容</li>
+  <li>檔案處理：下載檔案儲放的位置，選項：下載檔案/直接開啟</li>
+  <li>來源位置＿資料庫：下載檔案的來源為資料庫</li>
+  <li>資料庫＿檔名欄：下載來源位置選項=資料庫 時，指定放置檔案名稱的資料表欄位</li>
+  <li>資料庫＿資料櫃：下載來源位置選項=資料庫 時，指定放置二進位檔案的資料表欄位</li>
+  <li>來源位置＿檔案櫃：下載檔案的來源為檔案櫃</li>
+  <li>檔案櫃＿檔名欄：下載來源位置選項=檔案櫃 時，指定放置檔案名稱的資料表欄位</li>
+  <li>檔案櫃＿記錄櫃：下載來源位置選項=檔案櫃 時，指定放置檔案記錄的資料表欄位</li>
+  <li>來源位置＿檔案系統：下載檔案的來源為檔案系統</li>
+  <li>檔案系統＿檔案唯一號：下載來源位置選項=檔案系統 時，指定放置檔案記錄的唯一號資料表欄位</li>
+</ol>
+
+<h2 id="ButtonAnnotation_StoredProcedure"><strong>11.20 預存程序 Stored Procedure</strong></h2>
+<blockquote>
+  <p>作業目的：執行預存在資料庫的Stroed Procedure。</p>
+</blockquote>
+
+<p>參考資料：</p>
+
+<p><strong>APP表單(傳統/RWD表單無此行為選項)</strong></p>
+
+<p><img src="images/11.20-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>預存程序名稱：開窗挑選預存程序（預存程序的建置請參考［7.11］</li>
+  <li>參數設定：若開啟的預存程序有接收參數的設定，必須在本表格填入參數內容</li>
+  <li>參數名稱：開窗勾選預存程序的接收參數，並指定回傳到欄位上</li>
+  <li>載入鍵：可利用本鍵，把預存程序的所有接收參數載入表格中</li>
+  <li>參數欄位型態：顯示參數的類型</li>
+  <li>傳入內容否：若勾選本項，表示本參數須傳給預存程序</li>
+  <li>傳入類別：下拉挑選: 元件/固定值/參數/運算值</li>
+  <li>傳入內容值：依指定的傳入類型輸入</li>
+  <li>回傳內容否：若勾選本項，表示本參數須同時回傳給呼叫者</li>
+  <li>回傳內容：依傳入類型給對應的全域變數</li>
+  <li>插入項目鍵：點選本鍵增加接收參數的項目</li>
+  <li>刪除項目鍵：點選本鍵刪除接收參數的項目</li>
+  <li>回傳結果：若開啟的預存程序有回傳參數的設定，必須在本表格指定接收回傳的欄位對應</li>
+  <li>表格類別：下拉指定: 資料表表格/資料表暫存</li>
+  <li>表格名稱：依據選擇的表格類別，個別開窗挑選表格名稱</li>
+  <li>項次：依資料列顯示項次</li>
+  <li>載入鍵：可利用本鍵，把預存程序的所有回傳參數載入表格中</li>
+  <li>欄位名稱：依表格名稱挑選儲存結果的表格位</li>
+  <li>欄位型態：顯示資料欄位的類型</li>
+  <li>不可空白：可指定本接收欄位是否為不可空白</li>
+  <li>回傳類型：下拉：(回傳欄位/運算值</li>
+  <li>回傳內容：依回傳類型輸入</li>
+  <li>插入項目鍵：點選本鍵插入回傳參數的項目</li>
+  <li>刪除項目鍵：點選本鍵刪除回傳參數的項目</li>
+  <li>異常處理：指定當預存程序執行異常時，是否需要提示訊息</li>
+  <li>失敗訊息：若勾選訊息提示時，必須指定訊息內容，, 開啟<a href="16.html#MaintainMultilingual">【多語詞庫】</a>指定挑選詞庫，操作方法請參考［16.2］</li>
+  <li>替代訊息鍵：當訊息內容有變數需要替代時，可利本鍵, 開啟<a href="20.html#MessageReplace">【訊息替代】</a>，操作說明，請參考［］</li>
+</ol>
+
+<h2 id="ButtonAnnotation_LocalResource"><strong>11.21 裝置支援 Local Resource</strong></h2>
+<blockquote>
+  <p>作業目的：在APP的表單作業時，可呼叫裝置上的資源，進行資料處理或邏輯判斷等。</p>
+</blockquote>
+
+<p>參考資料：</p>
+<ul>
+  <li><a href="pdf/11-14-1表單按鍵-裝置支援-QR Code讀取.pdf" target="_blank">℗QR Code讀取</a></li>
+  <li><a href="pdf/11-14-2表單按鍵-裝置支援-記錄GPS經緯度.pdf" target="_blank">℗GPS經緯度</a></li>
+  <li><a href="pdf/11-14-3表單按鍵-裝置支援-開啟地圖.pdf" target="_blank">℗地圖</a></li>
+  <li><a href="pdf/11-14-4表單按鍵-裝置支援-檔案容器控制儲存.pdf" target="_blank">℗檔案容器</a></li>
+</ul>
+
+<p><strong>APP表單</strong></p>
+
+<p><img src="images/11.21-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>處理內容＿QRCode：選擇本項，表示要啟動裝置上的鏡頭進行QRCode掃描的動作</li>
+  <li>QRCode＿目的元件：掃描完條碼，系統會解譯內容成為一串文字，放置到指定的欄位中；在此挑選指定放置內容的表單元件</li>
+  <li>處理內容＿記錄GPS經緯度：選擇本項，表示要啟動裝置上的定位功能，取得相關資料</li>
+  <li>GPS經緯度＿地址型態：選擇記錄地址的型態  1.地址 / 2.經緯度</li>
+  <li>GPS經緯度＿目的元件：取得的數據資料，放置到指定的欄位中；在此挑選指定放置內容的表單元件，該元件必須為文字型態</li>
+  <li>處理內容＿開啟地圖：選擇本項，表示要利用已知的定位資訊啟動裝置上地圖的功能</li>
+  <li>開啟地圖＿地址型態：說明記錄地址的型態  1.地址 / 2.經緯度</li>
+  <li>開啟地圖＿來源元件：放置定位資訊的欄位元件；系統依據此欄位的內容啟動地圖，並定址的該位置上</li>
+  <li>檔案容器控制儲存：當表單上有設計檔案容器時，在儲存到資料庫前，必須設定本選項</li>
+  <li>檔案容器控制儲存_元件：指定檔案容器元件</li>
+  <li>檔案容器控制儲存_重新載入：勾選儲存後，是否重載畫面上的相關內容</li>
+</ol>
+
+<h2 id="ButtonAnnotation_Notice"><strong>11.22 推播通知   push notice</strong></h2>
+<blockquote>
+  <p>作業目的：某些作業主動通知用戶的需求，設定推播通知的功能，可讓系統自動發送訊息通知相關作業人員，以利即時回應完成作業。</p>
+</blockquote>
+
+<p>參考資料：</p>
+<ul>
+  <li><a href="pdf/11-13-1表單按鍵-推播通知基本設定.pdf" target="_blank">℗基本設定</a></li>
+  <li><a href="pdf/11-13-2表單按鍵-推播內文及替代設定.pdf" target="_blank">℗內文替代</a></li>
+  <li><a href="pdf/11-13-3表單按鍵-推播內文連結設定.pdf" target="_blank">℗內文連結</a></li>
+  <li><a href="pdf/11-13-4表單按鍵-推播通知對象設定.pdf" target="_blank">℗推播對象</a></li>
+  <li><a href="pdf/11-13-5表單按鍵-推播連結Google日曆設定.pdf" target="_blank">℗連結Google日曆</a></li>
+</ul>
+
+<p><img src="images/11.22-1.png" alt="" /></p>
+<ol>
+  <li>按鈕名稱：顯示按鈕的名稱</li>
+  <li>料號：顯示按鍵的料號</li>
+  <li>優先序：同一按鍵下的執行項目有多筆時，可利用本欄位，排定執行的順序，輸入1~99，同一按鍵內，優先順不允重複</li>
+  <li>執行條件：設定功能鍵執行前的條件設定開啟<a href="11.html#ButtonAnnotation_Condition">【執行條件】</a>，操作說明請參考［11.A］</li>
+  <li>注意事項：提醒設計者推播訊息的限制</li>
+  <li>推播人：指定推播通知時的發送人姓名，選項：管理者/使用者
+若為管理者，請在系統工具的參數設定中指定相關資料”</li>
+  <li>推播內容來源類別：指定推播通知的資料來源，下拉：欄位指定/查表</li>
+  <li>推播內容來源檢視表：參照類別=查表時，開窗挑選指定檢視表名稱</li>
+  <li>過濾：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容</li>
+  <li>標題：輸入要出現在訊息主旨的內容</li>
+  <li>內文：輸入的內容資料</li>
+  <li>替代：當主旨或內文裡有需要替代的字元時（以％帶頭）可在此表格宣告替換的內容及方式</li>
+  <li>替換字變數：指定替代裡的變數名稱</li>
+  <li>替代類別：下拉:郵件來源欄位/表單元件/表單參數/全域變數/收件者來源欄位</li>
+  <li>替代來源欄位：參考來源類別裡的設定，挑選替換字資料來源</li>
+  <li>連結類別：下拉:超連結表單/超連結按鍵/超連結Google行事曆/連結網址；操作方法可參考［11.22.1］</li>
+  <li>連結內容鍵：依據指定的連結類別，顯示相關項目</li>
+  <li>儲存連結資訊：若有設定連結物件時，在本處可特別設定是否另存連結的記錄</li>
+  <li>儲存連結資訊內容鍵：顯示設定儲存連結內容的資訊；操作方法可參考［11.22.2］</li>
+  <li>通知對象來源：指定推播通知的對象指定，下拉:固定對象/表單元件/查表/通知來源欄位/表單參數/全域變數 預設:查表</li>
+  <li>通知對象＿檢視表：參照類別=查表時，開窗挑選指定檢視表名稱</li>
+  <li>過濾鍵：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 指定表格來源記錄的符合條件內容</li>
+  <li>通知對象帳號：依通知對象類別個別指定件對象者帳號所對應的固定值、欄位或元件</li>
+  <li>另儲存推播資訊否：指定是否有儲存推播的資訊需求</li>
+  <li>儲存推播資訊鍵：顯示設定儲存推播內容的資訊；操作方法可參考［11.22.3］</li>
+</ol>
+
+<h3 id="11221-訊息連結"><strong>11.22.1 訊息連結</strong></h3>
+<p>A. 連結表單 
+<img src="images/11.22.1-1.png" alt="" /></p>
+<ol>
+  <li>表單名稱：填入連結的表單名稱</li>
+  <li>表單過濾：指定開啟表單時，是否有過濾資料的條件式</li>
+  <li>通行碼：定義每封通知訊息的通行碼是否相同或不同</li>
+  <li>有效次數：定義每封通知訊息的點擊連結的次數為一次性或可多次</li>
+  <li>執行系統_要求登入：選擇在通知訊息裡點選連結時，要求登入系統</li>
+  <li>帳號驗證：若要求登入系統時，是否同時驗證此帳號為通知訊息的通知對象</li>
+  <li>執行系統_自動登入：選擇在通知訊息裡點選連結時，要求自動登入</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+</ol>
+
+<p>B.	連結按鍵 
+<img src="images/11.22.1-2.png" alt="" /></p>
+<ol>
+  <li>表單名稱：填入連結按鍵的表單名稱</li>
+  <li>按鍵名稱：指定連結按鍵的名稱</li>
+  <li>通行碼：同超連結表單12~16</li>
+  <li>成功訊息：在成功點選按鍵連結完成後，是否提示訊息</li>
+  <li>成功訊息_內容：須提示的成功訊息內容為何</li>
+  <li>成功訊息_替代：若有成功訊息裡有替代字時，設定替代的內容，作法同內文替代</li>
+  <li>失敗訊息：在點選按鍵連結操作失敗時，是否提示訊息</li>
+  <li>失敗訊息_內容：須提示的失敗訊息內容為何</li>
+  <li>失敗訊息_替代：若有失敗訊息裡有替代字時，設定替代的內容，作法同內文替代</li>
+  <li>參數名：開窗按鍵的接收參數，並指定回傳到欄位上</li>
+  <li>參數型態：顯示參數的類型</li>
+  <li>傳遞類別：下拉 郵件來源欄位/表單元件/表單參數/全域變數 預設:表單元件</li>
+  <li>傳遞內容：依傳遞參數的類別，指定欲傳入的內容</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+</ol>
+
+<p>C. 連結網址
+<img src="images/11.22.1-3.png" alt="" /></p>
+<ol>
+  <li>網址來源類別：下拉 推播來源欄位 / 表單元件 / 表單參數 / 全域變數</li>
+  <li>網址來源欄位：依傳遞參數的類別，指定欲傳入的內容</li>
+  <li>網址參數：可利用開窗鍵, 開啟<a href="20.html#ExpressionStatement">【運算式】</a>設定組合運算式, 作為欄位給值的依據</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+</ol>
+
+<p>D. 連結Google 行事曆
+<img src="images/11.22.1-4.png" alt="" /></p>
+<ol>
+  <li>標題來源：下拉 推播來源欄位 / 表單元件 / 表單參數 / 全域變數</li>
+  <li>行事曆標題：依標題來源的的類別，指定欲顯示的內容來源</li>
+  <li>內容來源：下拉 推播來源欄位 / 表單元件 / 表單參數 / 全域變數</li>
+  <li>行事曆內容：依內容來源的的類別，指定欲顯示的內容來源</li>
+  <li>地點來源：下拉 推播來源欄位 / 表單元件 / 表單參數 / 全域變數</li>
+  <li>行事曆地點：依地點來源的的類別，指定欲顯示的內容來源</li>
+  <li>日期替代類別：下拉 推播來源欄位 / 表單元件 / 表單參數 / 全域變數</li>
+  <li>整天：說明連結行事曆時，是否標示整天的狀態</li>
+  <li>日期含時間：說明勾選的日期起、迄欄位是否含時間</li>
+  <li>格林威治時間：說明勾選的日期時間起、迄欄位是否以格林威治時間計算</li>
+  <li>日期起：依日期替代類別，指定欲替代的內容</li>
+  <li>日期迄：依日期替代類別，指定欲替代的內容</li>
+  <li>時間起：依日期替代類別，指定欲替代的內容</li>
+  <li>時間迄：依日期替代類別，指定欲替代的內容</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+</ol>
+
+<h3 id="11222-儲存連結資訊"><strong>11.22.2 儲存連結資訊</strong></h3>
+
+<p><img src="images/11.22.2-1.png" alt="" /></p>
+<ol>
+  <li>存入資料表：指定欲將連結資訊存入的資料表名</li>
+  <li>通行碼：指定記錄通行碼的欄位名</li>
+  <li>額外寫入欄位：除了通行碼外，另外要寫入的欄位列表</li>
+  <li>目的欄位：從目的資料表中，指定要寫入的目的欄位</li>
+  <li>給值類別：下拉 推播來源欄位 / 表單元件 /表單參數 / 全域變數 / 通知者帳號</li>
+  <li>給值內容：依給值類別，挑選對應的內容</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+</ol>
+
+<h3 id="11223-儲存推播資訊"><strong>11.22.3 儲存推播資訊</strong></h3>
+
+<p><img src="images/11.22.2-2.png" alt="" /></p>
+<ol>
+  <li>存入資料表：指定欲將推播資訊存入的資料表名</li>
+  <li>儲存結果欄位：指定儲存推播結果的欄位名，寫入推播成功或失敗，該欄位必須為位元型態，以１／０表示</li>
+  <li>額外寫入欄位：除了推播結果外，另外要寫入的欄位列表</li>
+  <li>其它目的欄位：從目的資料表中，指定要寫入的目的欄位</li>
+  <li>給值類別：下拉 推播來源欄位 / 表單元件 / 表單參數 / 全域變數 / 推播發送失敗原因 / 推播內容</li>
+  <li>給值內容：依給值類別，挑選對應的內容；推播發送失敗原因 / 推播內容的目的欄位，必須為備註型態。</li>
+  <li>確認鍵：儲存內容，回到加註畫面</li>
+</ol>
+
+<h2 id="ButtonAnnotation_Condition"><strong>附錄 11.A 執行條件</strong></h2>
+<blockquote>
+  <p>作業目的：本作業通用於各功能鍵的執行條件，主要的功能在按鈕鍵執行前設定多組條件，每一條件的內容及訊息均可獨立設定，來影響執行按鍵的成效。</p>
+</blockquote>
+
+<p>參考資料：</p>
+<ul>
+  <li><a href="pdf/8-7條件式設定.pdf" target="_blank">℗條件式設定</a></li>
+  <li><a href="pdf/8-8.條件式之函數設定.pdf" target="_blank">℗函數設定</a></li>
+</ul>
+
+<p><img src="images/11.A-1.png" alt="" /></p>
+<ol>
+  <li>新增條件列鍵：點選本鍵增加條件列</li>
+  <li>條件內容：可利用本鍵, 開啟<a href="20.html#ConditionStatement">【條件式】</a>中, 設定判斷按鍵執行的條件內容，操作說明請參考［附錄A1］</li>
+  <li>訊息處理：當條件內容的判定有訊息提示時，可利用本鍵開啟訊息設定視窗</li>
+  <li>執行時機：依據上列條件及限定的內容，判定可執行按鍵的時機點，選項：條件成立／條件不成立</li>
+  <li>條件成立＿處理方式：當以上的條件成立時，要進行的動作是：
+正常執行：通過驗證，可執行按鍵內容
+異常處理：必須彈出訊息提示</li>
+  <li>條件不成立＿處理方式：當以上的條件不成立時，要進行的動作是：
+正常執行：通過驗證，可執行按鍵內容
+異常處理：必須彈出訊息提示</li>
+  <li>訊息類別：當處理方式中有指定為訊息處理時，必須指定訊息提示的類別：
+錯誤：內容有誤，須在訊息提示後，回到原表單修訂後再重新執行
+警告：訊息僅提示警告，但還是會執行
+線上詢問：訊息僅提示訊息，詢問使用者是否繼續執行
+無：沒有訊息</li>
+  <li>線上詢問＿類別：當訊息類別＝線上詢問時，可指定預設的答案：是／否</li>
+  <li>訊息處理：當處理方式中有指定為訊息處理時，必須指定訊息內容，, 開啟<a href="16.html#MaintainMultilingual">【多語詞庫】</a>指定挑選詞庫，操作方法請參考［16.2］</li>
+  <li>儲存鍵：儲存編修後的內容</li>
+  <li>刪除條件列鍵：點選本鍵刪除駐留條件列</li>
+  <li>條件上移鍵：點選本鍵將駐留條件列往上移一列</li>
+  <li>條件下移鍵：點選本鍵將駐留條件列往下移一列</li>
+</ol>
+
+<h2 id="ButtonAnnotation_Copy"><strong>附錄 11.B 按鍵加註複製</strong></h2>
+<blockquote>
+  <p>作業目的：不用表單觸發或啟動按鍵，有相同或類似的執行功能時，可利用複製動作，來產生一樣的規格定義，進而依據差異再行調整，減少輸入及設定的時	間。</p>
+
+  <p><strong>傳統/RWD表單</strong></p>
+</blockquote>
+
+<p><img src="images/11.B-1.png" alt="" /></p>
+
+<p><strong>APP 表單</strong></p>
+
+<p><img src="images/11.B-2.png" alt="" /></p>
+<ol>
+  <li>目的表單：顯示啟動本作業的表單名稱</li>
+  <li>目的元件：顯示啟動本作業的按鈕名稱</li>
+  <li>來源表單：挑選指定要複製的按鈕所在的表單名稱</li>
+  <li>表單同名鍵：將來源表單名稱預設與目的表單同名</li>
+  <li>來源按鈕：挑選指定要複製的按鈕名稱</li>
+  <li>按鈕同名鍵：將來源表單名稱預設與目的表單同名</li>
+  <li>載入鍵：點選本鍵時，會把來源按鈕在指定的規格項目裡所勾選的內容</li>
+  <li>規格項目：表列所有按鍵上可定義的功能項目，依作業需求進行勾選</li>
+  <li>全選鍵：可利用本鍵，把所有的規格項目全數勾選，或全數取消</li>
+  <li>替代：來源按鈕在指定的規格項目若有使用到須要替換的項目時，會表列在本表格，供設計者挑選指定</li>
+  <li>頁籤：顯示應替代內容所在的規格項目</li>
+  <li>類型：顯示應替代內容使用到的類型</li>
+  <li>原使用名稱：顯示應替代內容使用到的元件名稱</li>
+  <li>替換名稱：依應替換元件原先定義的類型，挑選指定要替代的內容</li>
+  <li>同名對應鍵：利用本按鍵，依替代表格內所出現的原使用名稱，找到本表單內有相同類型、相同名稱者進行對應，減少用戶挑選的時間</li>
+  <li>替代鍵：點選按鍵，把已指定好的規格項目及替代內容，替換掉原本按鍵的加註定義</li>
+  <li>附加鍵：點選按鍵，除了原有的規格定義外，把指定好的規格項目及替代內容，附加進來</li>
+</ol>
+
+<h2 id="ButtonAnnotation_Hint"><strong>11.C 隱藏按鍵</strong></h2>
+<blockquote>
+  <p>作業目的：為了避免使用者操作時輸入不合規範的資料，需在欄位中針對輸入內容進行檢控。</p>
+</blockquote>
+
+<p>參考資料：</p>
+<ul>
+  <li><a href="pdf/11-1-9表單按鍵-新增隱藏按鍵.pdf" target="_blank">℗新增</a></li>
+  <li><a href="pdf/11-1-10表單按鍵-刪除隱藏按鍵.pdf" target="_blank">℗刪除</a></li>
+</ul>
+
+<hr />
+<hr />
+<p><a href="index.html#MainMenu"><strong>回到章節目錄</strong></a></p>
+
+  </div>
+
+</article>
+
+      </div>
+    </main><footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col">
+        <p class="feed-subscribe">
+          <a href="/feed.xml">
+            <svg class="svg-icon orange">
+              <use xlink:href="/assets/minima-social-icons.svg#rss"></use>
+            </svg><span>Subscribe</span>
+          </a>
+        </p>
+      </div>
+      <div class="footer-col">
+        <p>一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。</p>
+      </div>
+    </div>
+
+    <div class="social-links"><ul class="social-media-list"></ul>
+</div>
+
+  </div>
+
+</footer>
+<!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W6J98QS"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+  </body>
+
+</html>
