@@ -14,12 +14,19 @@ lang: zh_TW
 ### **章節目錄**
 
 [**1.作業流程**](#SignOffFlow)  
-[**1.表單清單**](#FormList)  
+[**2.表單清單**](#FormList)  
 
 
 ---
 # 作業流程 {#SignOffFlow}
-<iframe height=1020 width=95% src="{0}/attachment/signoff.html"  frameborder=0  allowfullscreen></iframe>
+
+![](images/WFS-FlowChart_01.png)
+
+![](images/WFS-FlowChart_02.png)
+
+![](images/WFS-FlowChart_03.png)
+
+![](images/WFS-FlowChart_04.png)
 
 [Top](#SignOffFlow)
 
