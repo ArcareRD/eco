@@ -63,7 +63,7 @@ xmlns:xhtml="https://www.w3.org/1999/xhtml">
   </url>
   <url>
     <loc>https://docs.arcare-robot.com/library/README.html</loc>
-    <lastmod>2021-10-20</lastmod>
+    <lastmod>2023-02-06</lastmod>
   </url>
   <url>
     <loc>https://docs.arcare-robot.com/library/8.9.2/index.html</loc>
@@ -332,6 +332,26 @@ xmlns:xhtml="https://www.w3.org/1999/xhtml">
   <url>
     <loc>https://docs.arcare-robot.com/doc/IDE_8.10.2/zh-Hant/20.html</loc>
     <lastmod>2022-02-16</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/doc/RTE_8.10.2/zh-Hant/index.html</loc>
+    <lastmod>2022-12-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/doc/RTE_8.10.2/zh-Hant/SIT.html</loc>
+    <lastmod>2022-12-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/doc/RTE_8.10.2/zh-Hant/RTE.html</loc>
+    <lastmod>2022-12-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/doc/RTE_8.10.2/zh-Hant/RWD.html</loc>
+    <lastmod>2022-12-28</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/doc/RTE_8.10.2/zh-Hant/UTL.html</loc>
+    <lastmod>2022-12-28</lastmod>
   </url>
   <url>
     <loc>https://docs.arcare-robot.com/doc/RTE_8.10.2/zh-Hant/WFS.html</loc>
