@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: 如如-智慧軟體機器人
+title: 如如研創-智慧軟體機器人
 email: service@arcare.com.tw
 description: >- # this means to ignore newlines until "baseurl:"
-  一個基於系統需求規格進行系統自動化產生平台，解決企業軟體長期發展需求。
+  一個基於系統需求規格堤供系統自動化產生的平台，以便協助解決企業長期軟體發展的需求。
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://docs.arcare-robot.com/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb

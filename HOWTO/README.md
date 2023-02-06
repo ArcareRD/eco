@@ -18,6 +18,7 @@ lang: zh_TW
 * [如何自行定義登入首頁](202109010001/README.html)
 * [如何解決經常被踢出系統](202109020001/README.html)
 * [如何更新RTE引擎](202109140001/README.html)
+* [Windows Server 2019 Active Directory單一簽入整合設定](202302060001/README.html)
 
 
 

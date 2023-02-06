@@ -334,6 +334,10 @@ xmlns:xhtml="https://www.w3.org/1999/xhtml">
     <lastmod>2022-02-16</lastmod>
   </url>
   <url>
+    <loc>https://docs.arcare-robot.com/doc/RTE_8.10.2/zh-Hant/WFS.html</loc>
+    <lastmod>2022-12-28</lastmod>
+  </url>
+  <url>
     <loc>https://docs.arcare-robot.com/HOWTO/README.html</loc>
     <lastmod>2021-10-07</lastmod>
   </url>
@@ -360,5 +364,9 @@ xmlns:xhtml="https://www.w3.org/1999/xhtml">
   <url>
     <loc>https://docs.arcare-robot.com/HOWTO/202109140001/README.html</loc>
     <lastmod>2021-11-30</lastmod>
+  </url>
+  <url>
+    <loc>https://docs.arcare-robot.com/HOWTO/202302060001/README.html</loc>
+    <lastmod>2023-02-06</lastmod>
   </url>
 </urlset>
