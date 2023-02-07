@@ -6,7 +6,7 @@ lang: zh_Tw
 ---
 
 ## IDE (Integrated Design Environment 設計台)
-- [IDE 結構展開圖](https://gitmind.com/app/doc/bde2737708){:target='_blank'}
+- [IDE 結構展開圖](IDE Structure.pdf){:target='_blank'}
 - [版本8.10.2](/doc/IDE_8.10.2/zh-Hant/index.html)
 - [版本8.10.1](/doc/IDE_8.10.1/zh-Hant/index.html) [[PDF版]](/library/8.10.0/zh-Hant/index.html){:target='_blank'}
 - [版本8.10.0](/doc/IDE_8.10.0/zh-Hant/index.html) [[PDF版]](/library/8.10.0/zh-Hant/index.html){:target='_blank'}
@@ -14,7 +14,7 @@ lang: zh_Tw
 
 
 ## RTE(Run Time Environment 運行台)
-- [RTE 結構展開圖](https://gitmind.com/app/doc/6522738050){:target='_blank'}
+- [RTE 結構展開圖](RTE Structure.pdf){:target='_blank'}
 - 系統工具操作說明
     - [8.10.2](/doc/RTE_8.10.2/zh-Hant/index.html)
     - [8.10.0](/doc/RTE_8.10.0/zh-Hant/index.html)
