@@ -57,6 +57,6 @@ lang: zh_TW
  
  
 ### ESG環境永續
- - [溫室氣體盤查系統](https://sit-3.arcare-robot.com/ArcareEng/login.jsp?Projectid={20D3CF34-4331-4E4F-ABA4-C87D70E52741}&corpid={D98F9B2D-A02B-425B-ABBB-47BB03FC08F0}&langCode=950&account=Admin_ESG&password=6mC4YR/uG/s=&userName=Admin_ESG){:target='_blank'} [操作說明](UserMenu-14064.pdf){:target='_blank'}
- - [產品碳足跡盤查系統]
- - [ESG永續報告書系統]https://sit-3.arcare-robot.com/ArcareEng/login.jsp?Projectid={699371F5-06F4-4FA7-967A-F646E119B41B}&corpid={2533CCCD-EE04-4B4E-9307-ACDC107C94EA}&langCode=950&account=Admin_ESG&password=6mC4YR/uG/s=&userName=Admin_ESG
+ - [溫室氣體盤查系統](https://sit-3.arcare-robot.com/ArcareEng/login.jsp?Projectid={20D3CF34-4331-4E4F-ABA4-C87D70E52741}&corpid={D98F9B2D-A02B-425B-ABBB-47BB03FC08F0}&langCode=950&account=Admin_ESG&password=6mC4YR/uG/s=&userName=Admin_ESG){:target='_blank'} ／ [操作說明](UserMenu-14064.pdf){:target='_blank'}
+ - 產品碳足跡盤查系統
+ - [ESG永續報告書系統](https://sit-3.arcare-robot.com/ArcareEng/login.jsp?Projectid={699371F5-06F4-4FA7-967A-F646E119B41B}&corpid={2533CCCD-EE04-4B4E-9307-ACDC107C94EA}&langCode=950&account=Admin_ESG&password=6mC4YR/uG/s=&userName=Admin_ESG){:target='_blank'}
