@@ -1,7 +1,7 @@
 ---
 layout: page
 title:  "Business Application Store"
-date:   2022-01-07 17:00:00 +0800
+date:   2023-02-13 17:00:00 +0800
 lang: zh_TW
 ---
 
@@ -11,10 +11,10 @@ lang: zh_TW
 
 
 ### 企業
- - [進銷存系統](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={EE12DBE6-E5CA-45AE-B58E-51D9FEF5F0EC}&corpid={365995BA-D4CC-4899-86E3-C5AF297A8295}&langCode=950&defaultLangCode=950&account=PJ000200000058&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2563&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
- - [總帳會計系統](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={B8CF74C2-1948-485C-B2A7-EE0B2FD6BF7F}&corpid={65884DFC-540C-49A1-9E41-D1A59597B239}&langCode=950&defaultLangCode=950&account=PJ000200000048&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2548&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
- - [產品製造流程](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={3E7C3F6E-D21E-4B89-8749-CF9A74BB1742}&corpid={0C3578AB-17FD-48E7-BD71-D11B01B09F56}&langCode=950&defaultLangCode=950&account=PJ000200000046&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2546&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
- - [採購流程](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={454FD570-9613-4EAD-A083-F30DA7CCFCD8}&corpid={7F17BADE-4213-407B-9D01-0AEE22709A4C}&langCode=950&defaultLangCode=950&account=PJ000200000049&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2549&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
+ - [進銷存系統](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={EE12DBE6-E5CA-45AE-B58E-51D9FEF5F0EC}&corpid={365995BA-D4CC-4899-86E3-C5AF297A8295}&langCode=950&defaultLangCode=950&account=Guest&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2563&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
+ - [總帳會計系統](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={B8CF74C2-1948-485C-B2A7-EE0B2FD6BF7F}&corpid={65884DFC-540C-49A1-9E41-D1A59597B239}&langCode=950&defaultLangCode=950&account=Guest&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2548&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
+ - [產品製造流程](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={3E7C3F6E-D21E-4B89-8749-CF9A74BB1742}&corpid={0C3578AB-17FD-48E7-BD71-D11B01B09F56}&langCode=950&defaultLangCode=950&account=Guest&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2546&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
+ - [採購流程](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={454FD570-9613-4EAD-A083-F30DA7CCFCD8}&corpid={7F17BADE-4213-407B-9D01-0AEE22709A4C}&langCode=950&defaultLangCode=950&account=Guest&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2549&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
  - 銷售流程
 
  
@@ -49,14 +49,14 @@ lang: zh_TW
  
 
 ### 財會帳務
- - [總帳會計系統](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={B8CF74C2-1948-485C-B2A7-EE0B2FD6BF7F}&corpid={65884DFC-540C-49A1-9E41-D1A59597B239}&langCode=950&defaultLangCode=950&account=PJ000200000048&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2548&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
- - [應收帳款模組](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={A8C130B7-D5E3-4C33-9CB9-0FFAA1E293CF}&corpid={2D7F1C18-EAB2-4CAF-96F1-D223A507F030}&langCode=950&defaultLangCode=950&account=PJ000200000052&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2552&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
- - [應付帳款模組](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={3A329E94-81BC-4B91-A69F-07C5B9F87707}&corpid={F42C2CAB-96A7-40BA-92F0-A208D5E43B12}&langCode=950&defaultLangCode=950&account=PJ000200000050&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2550&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
+ - [總帳會計系統](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={B8CF74C2-1948-485C-B2A7-EE0B2FD6BF7F}&corpid={65884DFC-540C-49A1-9E41-D1A59597B239}&langCode=950&defaultLangCode=950&account=Guest&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2548&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
+ - [應收帳款模組](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={A8C130B7-D5E3-4C33-9CB9-0FFAA1E293CF}&corpid={2D7F1C18-EAB2-4CAF-96F1-D223A507F030}&langCode=950&defaultLangCode=950&account=Guest&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2552&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
+ - [應付帳款模組](https://rte-5.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={3A329E94-81BC-4B91-A69F-07C5B9F87707}&corpid={F42C2CAB-96A7-40BA-92F0-A208D5E43B12}&langCode=950&defaultLangCode=950&account=Guest&password=6mC4YR/uG/s=&ideAddr=ide-2.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2550&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
  - 出納模組
  - 零用金模組
  
  
 ### ESG環境永續
- - [溫室氣體盤查系統](https://sit-3.arcare-robot.com/ArcareEng/login.jsp?Projectid={20D3CF34-4331-4E4F-ABA4-C87D70E52741}&corpid={D98F9B2D-A02B-425B-ABBB-47BB03FC08F0}&langCode=950&account=Admin_ESG&password=6mC4YR/uG/s=&userName=Admin_ESG){:target='_blank'} ／ [操作說明](UserMenu-14064.pdf){:target='_blank'}
+ - [溫室氣體盤查系統](https://sit-3.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={20D3CF34-4331-4E4F-ABA4-C87D70E52741}&corpid={D98F9B2D-A02B-425B-ABBB-47BB03FC08F0}&langCode=950&defaultLangCode=950&account=Admin_ESG&password=6mC4YR/uG/s=&ideAddr=ide-3.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2563&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'} ／ [操作說明](UserMenu-14064.pdf){:target='_blank'}
  - 產品碳足跡盤查系統
- - [ESG永續報告書系統](https://sit-3.arcare-robot.com/ArcareEng/login.jsp?Projectid={699371F5-06F4-4FA7-967A-F646E119B41B}&corpid={2533CCCD-EE04-4B4E-9307-ACDC107C94EA}&langCode=950&account=Admin_ESG&password=6mC4YR/uG/s=&userName=Admin_ESG){:target='_blank'}
+ - [ESG永續報告書系統](https://sit-3.arcare-robot.com/ArcareEng/login.jsp?templateProjectid={699371F5-06F4-4FA7-967A-F646E119B41B}&corpid={2533CCCD-EE04-4B4E-9307-ACDC107C94EA}&langCode=950&defaultLangCode=950&account=Admin_ESG&password=6mC4YR/uG/s=&ideAddr=ide-3.arcare-robot.com&ideUserName={IDEGuest}&idePrjId=2563&ideUserId=44ed935d-0926-4caf-9035-cef761f16346){:target='_blank'}
